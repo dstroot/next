@@ -1,0 +1,48 @@
+{
+  "hosting": {
+    "public": "build",
+    "headers": [
+      {
+        "source": "/serviceWorker.js",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      },
+      {
+        "source": "/index.html",
+        "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+      },
+      {
+        "source": "/static/**/*.*",
+        "headers": [{ "key": "Cache-Control", "value": "max-age=86400" }]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Feature-Policy",
+            "value": "camera 'none'; microphone 'none'"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          { "key": "x-frame-options", "value": "SAMEORIGIN" },
+          { "key": "X-XSS-Protection", "value": "1; mode=block" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          {
+            "key": "Content-Security-Policy",
+            "value": "script-src 'self' 'sha256-GgRxrVOKNdB4LrRsVPDSbzvfdV4UqglmviH9GoBJ5jk=' https://*.googleapis.com https://*.firebase.com https://*.firebaseio.com https://*.firebaseapp.com; object-src 'self';"
+          }
+        ]
+      }
+    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "cleanUrls": false,
+    "trailingSlash": false
+  }
+}
