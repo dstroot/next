@@ -9,15 +9,16 @@ const Doubler = ({ number }) => {
 
 const Header = () => <div>Header</div>;
 
+const Footer = () => <div>Footer</div>;
+
 const App = () => (
   <div className="mt-5">
     <Header />
     <NextSliders />
-    <div className="lead">
-      Welcome Team!
-      <Doubler number={4} />
-      <Doubler number={9} />
-    </div>
+    <div className="lead">Welcome Team!</div>
+    <Doubler number={4} />
+    <Doubler number={9} />
+    <Footer />
   </div>
 );
 
