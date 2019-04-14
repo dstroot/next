@@ -7,7 +7,7 @@ const Doubler = ({ number }) => {
   return <div>doubled number is {value}</div>;
 };
 
-const Header = () => <div>Header</div>;
+const Header = () => <h1 className="text-primary">Header</h1>;
 
 const Footer = () => <div>Footer</div>;
 

@@ -1,4 +1,4 @@
-/* 
+/*
 
 Theming bootstrap
 https://getbootstrap.com/docs/4.0/getting-started/theming/
@@ -8,11 +8,32 @@ https://getbootstrap.com/docs/4.0/getting-started/theming/
 // To modify an existing color in our $theme-colors map, or
 // to add a new color to $theme-colors, add the new key and value:
 $theme-colors: (
-  "primary": #007cbd
+  'primary': #00a677,
 );
 
 // then import Bootstrap
-@import "bootstrap";
+@import 'bootstrap';
+
+// overide heading font with Zilla Slab
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+  font-family: 'Zilla Slab', serif;
+}
 
 // then component styles
 // @import "../components/NavBar/styles.scss";
