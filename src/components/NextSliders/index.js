@@ -8,9 +8,11 @@ import 'rc-slider/assets/index.css';
 const NextSliders = () => {
   const [value, setValue] = useState(500);
 
+  // set value to slider position
   const handleChange = num => {
     setValue(num);
   };
+
   return (
     <div className="container">
       <div className="row">
