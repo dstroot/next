@@ -1,11 +1,10 @@
 import React from 'react';
 import './scss/main.scss';
 import NextSliders from './components/NextSliders';
-// import Section from './components/Section';
 
 const Doubler = ({ number }) => {
   let value = number * 2;
-  return <div>doubled number is {value}</div>;
+  return <div>Doubled number is {value}</div>;
 };
 
 const Header = () => (

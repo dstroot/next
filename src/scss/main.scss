@@ -9,7 +9,10 @@ https://getbootstrap.com/docs/4.0/getting-started/theming/
 // to add a new color to $theme-colors, add the new key and value:
 $theme-colors: (
   'primary': #00a677,
+  'accent': #f2d292,
 );
+
+$enable-responsive-font-sizes: true;
 
 // then import Bootstrap
 @import 'bootstrap';
@@ -17,7 +20,7 @@ $theme-colors: (
 // custom css
 .slab {
   font-family: 'Zilla Slab', serif;
-  font-size: 72px;
+  // font-size: 72px;
 }
 
 // then component styles
