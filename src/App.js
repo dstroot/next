@@ -1,5 +1,7 @@
 import React from 'react';
 import './scss/main.scss';
+
+// components
 import NextSliders from './components/NextSliders';
 
 const Doubler = ({ number }) => {
@@ -8,7 +10,7 @@ const Doubler = ({ number }) => {
 };
 
 const Header = () => (
-  <h1 className="text-center">
+  <h1 className="text-center slab">
     What’s your <span className="text-primary">next</span> adventure?
   </h1>
 );
@@ -18,7 +20,6 @@ const Footer = () => <h1 className="text-center">Footer</h1>;
 const App = () => (
   <div className="mt-5">
     <Header />
-    {/* <Section /> */}
     <NextSliders />
     <Doubler number={4} />
     <Doubler number={9} />

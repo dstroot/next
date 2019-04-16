@@ -1,0 +1,25 @@
+.navbar {
+  // box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
+  // text-transform: uppercase;
+  height: 110px;
+  border-bottom: 1px solid rgba(200, 200, 200, 1);
+  a {
+    // text-transform: uppercase;
+    font-weight: 500;
+    color: gray('800');
+    font-size: 24px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    padding-bottom: 2px;
+    &:hover {
+      color: theme-color('primary');
+    }
+  }
+  a.active {
+    // color: theme-color('primary');
+    border-bottom: 2px solid theme-color('primary');
+  }
+}
+
+body {
+  padding-top: 110px;
+}

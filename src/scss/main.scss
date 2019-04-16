@@ -11,17 +11,11 @@ $theme-colors: (
   'primary': #00a677,
   'accent': #f2d292,
 );
-
 $enable-responsive-font-sizes: true;
 
 // then import Bootstrap
 @import 'bootstrap';
 
-// custom css
-.slab {
-  font-family: 'Zilla Slab', serif;
-  // font-size: 72px;
-}
-
 // then component styles
-// @import "../components/NavBar/styles.scss";
+// @import '../components/NavBar/styles.scss';
+// @import '../components/Section/styles.scss';
