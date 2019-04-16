@@ -2,13 +2,14 @@ import React from 'react';
 import './styles.scss';
 
 // images
+import bg from './media/mainbg1animationB.svg';
 import moped from './media/moped.svg';
 import arrow from './media/arrowdown.svg';
 
 // styles
 const background = {
   /* Image  */
-  backgroundImage: `url(https://www.meetnext.com/s/sfsites/c/resource/mainbg1animationB)`,
+  backgroundImage: `url(${bg})`,
 
   /* Set height relative to width */
   height: '60vw',
@@ -25,8 +26,15 @@ const background = {
 const divText = {
   textAlign: 'center',
   position: 'absolute',
-  bottom: '50%',
+  top: '8vw',
   width: '100vw',
+};
+
+const textSmall = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  fontSize: `calc(10px + 1vw + 0.5vmin)`,
+  width: '70vw',
 };
 
 const mopedStyle = {
@@ -36,18 +44,19 @@ const mopedStyle = {
   left: '10%',
 };
 
+// our component
 const Section = () => {
   return (
     // https://www.meetnext.com/s/sfsites/c/resource/mainbg1animationB
     <div style={background}>
       <div style={divText}>
-        <h1 className="mt-5 slab text-center">
+        <h1 className="slab text-center">
           What’s your <span className="text-primary">next</span> adventure?
         </h1>
-        <h4 className="pl-5 pr-5 mr-5 ml-5 text-center">
+        <div style={textSmall}>
           Insurance products to complement your life goals and passions. We help
           you go after whatever's next for you.
-        </h4>
+        </div>
         <a
           href="https://www.meetnext.com/s/#bestlife"
           className="text-decoration-none"
@@ -56,7 +65,7 @@ const Section = () => {
           <img className="d-block-inline" width={45} src={arrow} alt="Arrow" />
         </a>
       </div>
-      <img style={mopedStyle} width={200} src={moped} alt="Moped" />
+      <img style={mopedStyle} src={moped} alt="Moped" />
     </div>
   );
 };
