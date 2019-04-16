@@ -3,7 +3,7 @@ import { Link } from '@reach/router';
 import logo from './media/NXT_Logo_light.svg';
 
 // isCurrent - true if the location.pathname is exactly the same as the anchor’s href.
-const isActive = ({ isCurrent }) => {
+export const isActive = ({ isCurrent }) => {
   return isCurrent
     ? { className: 'active nav-link' }
     : { className: 'nav-link' };

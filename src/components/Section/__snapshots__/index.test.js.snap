@@ -5,29 +5,70 @@ exports[`Section it should render 1`] = `
   style={
     Object {
       "backgroundImage": "url(https://www.meetnext.com/s/sfsites/c/resource/mainbg1animationB)",
-      "backgroundPosition": "center",
+      "backgroundPosition": "bottom",
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "cover",
-      "height": "80vw",
+      "height": "60vw",
+      "minHeight": "425px",
       "position": "relative",
     }
   }
 >
-  <h1
-    className="mt-5 slab text-center"
+  <div
+    style={
+      Object {
+        "bottom": "50%",
+        "position": "absolute",
+        "textAlign": "center",
+        "width": "100vw",
+      }
+    }
   >
-    What’s your 
-    <span
-      className="text-primary"
+    <h1
+      className="mt-5 slab text-center"
     >
-      next
-    </span>
-     adventure?
-  </h1>
-  <h4
-    className="mr-5 ml-5 text-center"
-  >
-    Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
-  </h4>
+      What’s your 
+      <span
+        className="text-primary"
+      >
+        next
+      </span>
+       adventure?
+    </h1>
+    <h4
+      className="pl-5 pr-5 mr-5 ml-5 text-center"
+    >
+      Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
+    </h4>
+    <a
+      className="text-decoration-none"
+      href="https://www.meetnext.com/s/#bestlife"
+    >
+      <p
+        className="mt-4 mb-0 text-uppercase text-primary"
+      >
+        Learn More
+      </p>
+      <img
+        alt="Arrow"
+        className="d-block-inline"
+        src="arrowdown.svg"
+        width={45}
+      />
+    </a>
+  </div>
+  <img
+    alt="Moped"
+    src="moped.svg"
+    style={
+      Object {
+        "bottom": "0",
+        "left": "10%",
+        "position": "absolute",
+        "width": "20vw",
+      }
+    }
+    width={200}
+  />
 </div>
 `;
