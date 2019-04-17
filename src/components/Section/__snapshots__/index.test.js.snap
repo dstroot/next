@@ -8,6 +8,7 @@ exports[`Section it should render 1`] = `
       "backgroundPosition": "bottom",
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "cover",
+      "borderBottom": "3px solid #DDE1E7",
       "height": "60vw",
       "minHeight": "425px",
       "position": "relative",
