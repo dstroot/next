@@ -20,6 +20,8 @@ const background = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   position: 'relative',
+
+  borderBottom: '3px solid #DDE1E7',
 };
 
 // place the text on the hero image - center text, viewport wide, at the bottom
