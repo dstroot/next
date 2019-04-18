@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NextSliders it should render 1`] = `
+exports[`NextSlider it should render 1`] = `
 <div
   className="container"
 >
@@ -13,12 +13,16 @@ exports[`NextSliders it should render 1`] = `
       <div
         className="mt-4"
       >
-        <span>
-          Intial Value
-        </span>
-        <span>
-          500
-        </span>
+        <div
+          className="d-flex justify-content-between"
+        >
+          <span>
+            Intial Value
+          </span>
+          <span>
+            500
+          </span>
+        </div>
         <div
           className="rc-slider"
           onBlur={[Function]}

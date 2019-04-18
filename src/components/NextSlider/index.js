@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import './styles.scss';
 
 // slider component
+// https://github.com/react-component/slider/
 import Slider from 'rc-slider/lib/Slider';
 import 'rc-slider/assets/index.css';
 
-const NextSliders = () => {
+const NextSlider = () => {
   const [value, setValue] = useState(500);
 
   // set value to slider position
@@ -18,8 +19,10 @@ const NextSliders = () => {
       <div className="row">
         <div className="col-md-6">
           <div className="mt-4">
-            <span>Intial Value</span>
-            <span>{value}</span>
+            <div className="d-flex justify-content-between">
+              <span>Intial Value</span>
+              <span>{value}</span>
+            </div>
             <Slider
               min={1}
               max={1000}
@@ -33,4 +36,4 @@ const NextSliders = () => {
   );
 };
 
-export default NextSliders;
+export default NextSlider;
