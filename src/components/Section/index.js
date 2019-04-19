@@ -12,7 +12,7 @@ const background = {
   backgroundImage: `url(${bg})`,
 
   /* Set height relative to width */
-  height: '60vw',
+  height: '80vh',
   minHeight: '425px',
 
   /* Position the image to scale nicely on all screens */
