@@ -10,7 +10,7 @@ Array [
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderBottom": "3px solid #DDE1E7",
-        "height": "60vw",
+        "height": "80vh",
         "minHeight": "425px",
         "position": "relative",
       }
