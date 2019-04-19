@@ -12,7 +12,7 @@ const background = {
   backgroundImage: `url(${bg})`,
 
   /* Set height relative to width */
-  height: '80vh',
+  height: '75vh',
   minHeight: '425px',
 
   /* Position the image to scale nicely on all screens */
@@ -36,7 +36,8 @@ const textSmall = {
   marginLeft: 'auto',
   marginRight: 'auto',
   fontSize: `calc(10px + 1vw + 0.5vmin)`,
-  width: '70vw',
+  width: '60vw',
+  fontFamily: 'CircularStd',
 };
 
 const mopedStyle = {
@@ -55,15 +56,15 @@ const Section = () => {
         <h1 className="slab text-center">
           What’s your <span className="text-primary">next</span> adventure?
         </h1>
-        <div style={textSmall}>
+        <div className="mt-4" style={textSmall}>
           Insurance products to complement your life goals and passions. We help
           you go after whatever's next for you.
         </div>
         <a
           href="https://www.meetnext.com/s/#bestlife"
-          className="text-decoration-none"
+          className="text-decoration-none mt-4"
         >
-          <p className="mt-4 mb-0 text-uppercase text-primary">Learn More</p>
+          <p className="mt-4 mb-2 text-uppercase text-primary">Learn More</p>
           <img className="d-block-inline" width={45} src={arrow} alt="Arrow" />
         </a>
       </div>
