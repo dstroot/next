@@ -13,9 +13,13 @@ $theme-colors: (
 );
 $enable-responsive-font-sizes: true;
 
+body {
+  padding-top: 110px;
+}
+
 // then import Bootstrap
 @import 'bootstrap';
 
 // then component styles
-// @import '../components/NavBar/styles.scss';
+@import '../components/NavBar/styles.scss';
 // @import '../components/Section/styles.scss';

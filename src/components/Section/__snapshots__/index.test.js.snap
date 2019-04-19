@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section it should render 1`] = `
+<div
+  style={
+    Object {
+      "backgroundImage": "url(mainbg1animationB.svg)",
+      "backgroundPosition": "bottom",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "borderBottom": "3px solid #DDE1E7",
+      "height": "60vw",
+      "minHeight": "425px",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "position": "absolute",
+        "textAlign": "center",
+        "top": "8vw",
+        "width": "100vw",
+      }
+    }
+  >
+    <h1
+      className="slab text-center"
+    >
+      What’s your 
+      <span
+        className="text-primary"
+      >
+        next
+      </span>
+       adventure?
+    </h1>
+    <div
+      style={
+        Object {
+          "fontSize": "calc(10px + 1vw + 0.5vmin)",
+          "marginLeft": "auto",
+          "marginRight": "auto",
+          "width": "70vw",
+        }
+      }
+    >
+      Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
+    </div>
+    <a
+      className="text-decoration-none"
+      href="https://www.meetnext.com/s/#bestlife"
+    >
+      <p
+        className="mt-4 mb-0 text-uppercase text-primary"
+      >
+        Learn More
+      </p>
+      <img
+        alt="Arrow"
+        className="d-block-inline"
+        src="arrowdown.svg"
+        width={45}
+      />
+    </a>
+  </div>
+  <img
+    alt="Moped"
+    src="moped.svg"
+    style={
+      Object {
+        "bottom": "0",
+        "left": "10%",
+        "position": "absolute",
+        "width": "20vw",
+      }
+    }
+  />
+</div>
+`;

@@ -6,6 +6,8 @@ import './styles.scss';
 import Slider from 'rc-slider/lib/Slider';
 import 'rc-slider/assets/index.css';
 
+import Doubler from '../Doubler';
+
 const NextSlider = () => {
   const [value, setValue] = useState(500);
 
@@ -29,6 +31,7 @@ const NextSlider = () => {
               defaultValue={value}
               onChange={handleChange}
             />
+            <Doubler number={value} />
           </div>
         </div>
       </div>

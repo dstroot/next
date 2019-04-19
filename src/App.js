@@ -1,28 +1,28 @@
 import React from 'react';
 import './scss/main.scss';
 
-// components
+// Fonts
+import 'circular-std';
+import 'typeface-zilla-slab';
+
+// Router
+import { Router } from '@reach/router';
+
+// Components
 import NextSlider from './components/NextSlider';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
-const Doubler = ({ number }) => {
-  let value = number * 2;
-  return <div>Doubled number is: {value}</div>;
-};
-
-const Header = () => (
-  <h1 className="text-center slab">
-    What’s your <span className="text-primary">next</span> adventure?
-  </h1>
-);
-
-const Footer = () => <h1 className="text-center">Footer</h1>;
+// Pages
+import Home from './pages/Home';
 
 const App = () => (
   <div className="mt-5">
-    <Header />
-    <NextSlider />
-    <Doubler number={4} />
-    <Doubler number={9} />
+    <NavBar />
+    <Router>
+      <Home path="/" />
+      <NextSlider path="/slider" />
+    </Router>
     <Footer />
   </div>
 );

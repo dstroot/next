@@ -69,6 +69,10 @@ exports[`NextSlider it should render 1`] = `
             className="rc-slider-mark"
           />
         </div>
+        <div>
+          Doubled number is: 
+          1000
+        </div>
       </div>
     </div>
   </div>
