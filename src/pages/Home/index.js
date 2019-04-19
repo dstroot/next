@@ -4,6 +4,8 @@ import './styles.scss';
 // Components
 import Section from '../../components/Section';
 import SectionBestLife from '../../components/SectionBestLife';
+import ManageUncertainty from '../../components/ManageUncertainty';
+import FirstProducts from '../../components/FirstProducts';
 
 const Home = () => {
   // Set the page title and position using the useEffect hook
@@ -16,6 +18,8 @@ const Home = () => {
     <>
       <Section />
       <SectionBestLife />
+      <ManageUncertainty />
+      <FirstProducts />
     </>
   );
 };
