@@ -9,7 +9,7 @@ exports[`Section it should render 1`] = `
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "cover",
       "borderBottom": "3px solid #DDE1E7",
-      "height": "80vh",
+      "height": "75vh",
       "minHeight": "425px",
       "position": "relative",
     }
@@ -37,23 +37,25 @@ exports[`Section it should render 1`] = `
        adventure?
     </h1>
     <div
+      className="mt-4"
       style={
         Object {
+          "fontFamily": "CircularStd",
           "fontSize": "calc(10px + 1vw + 0.5vmin)",
           "marginLeft": "auto",
           "marginRight": "auto",
-          "width": "70vw",
+          "width": "60vw",
         }
       }
     >
       Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
     </div>
     <a
-      className="text-decoration-none"
+      className="text-decoration-none mt-4"
       href="https://www.meetnext.com/s/#bestlife"
     >
       <p
-        className="mt-4 mb-0 text-uppercase text-primary"
+        className="mt-4 mb-2 text-uppercase text-primary"
       >
         Learn More
       </p>
