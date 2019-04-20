@@ -10,9 +10,8 @@ Array [
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderBottom": "3px solid #DDE1E7",
-        "height": "80vh",
-        "maxHeight": "80vw",
-        "minHeight": "600px",
+        "height": "75vh",
+        "minHeight": "500px",
         "position": "relative",
       }
     }
@@ -21,7 +20,6 @@ Array [
       style={
         Object {
           "position": "absolute",
-          "textAlign": "center",
           "top": "10vw",
           "width": "100vw",
         }
@@ -99,7 +97,7 @@ Array [
     className="bg-light py-5"
   >
     <div
-      className="container"
+      className="container text-center"
     >
       <div
         className="row my-5 py-5"

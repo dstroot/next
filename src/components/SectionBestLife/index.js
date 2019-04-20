@@ -8,7 +8,7 @@ import yoga from './media/yogalady.svg';
 const SectionBestLife = () => {
   return (
     <div className="bg-light py-5">
-      <div className="container">
+      <div className="container text-center">
         <div className="row my-5 py-5">
           <div className="col-md-5">
             <img className="img-fluid p-5" src={yoga} alt="Yoga Lady" />
