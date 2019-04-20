@@ -9,8 +9,9 @@ exports[`Section it should render 1`] = `
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "cover",
       "borderBottom": "3px solid #DDE1E7",
-      "height": "75vh",
-      "minHeight": "425px",
+      "height": "80vh",
+      "maxHeight": "80vw",
+      "minHeight": "600px",
       "position": "relative",
     }
   }
@@ -20,52 +21,64 @@ exports[`Section it should render 1`] = `
       Object {
         "position": "absolute",
         "textAlign": "center",
-        "top": "8vw",
+        "top": "10vw",
         "width": "100vw",
       }
     }
   >
-    <h1
-      className="slab text-center"
-    >
-      What’s your 
-      <span
-        className="text-primary"
-      >
-        next
-      </span>
-       adventure?
-    </h1>
     <div
-      className="mt-4"
-      style={
-        Object {
-          "fontFamily": "CircularStd",
-          "fontSize": "calc(10px + 1vw + 0.5vmin)",
-          "marginLeft": "auto",
-          "marginRight": "auto",
-          "width": "60vw",
-        }
-      }
+      className="container"
     >
-      Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
-    </div>
-    <a
-      className="text-decoration-none mt-4"
-      href="https://www.meetnext.com/s/#bestlife"
-    >
-      <p
-        className="mt-4 mb-2 text-uppercase text-primary"
+      <div
+        className="row"
       >
-        Learn More
-      </p>
-      <img
-        alt="Arrow"
-        className="d-block-inline"
-        src="arrowdown.svg"
-        width={45}
-      />
-    </a>
+        <div
+          className="col text-center"
+        >
+          <h1
+            className="slab"
+          >
+            What’s your 
+            <span
+              className="text-primary"
+            >
+              next
+            </span>
+             
+            adventure?
+          </h1>
+        </div>
+      </div>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-8 offset-md-2 text-center"
+        >
+          <p
+            className="mt-4 circular lead"
+          >
+            Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
+          </p>
+          <a
+            className="text-decoration-none mt-4"
+            href="https://www.meetnext.com/s/#bestlife"
+          >
+            <p
+              className="mt-4 mb-2 text-uppercase text-primary"
+            >
+              Learn More
+            </p>
+            <img
+              alt="Arrow"
+              className="d-block-inline"
+              src="arrowdown.svg"
+              width={45}
+            />
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
   <img
     alt="Moped"
@@ -74,6 +87,7 @@ exports[`Section it should render 1`] = `
       Object {
         "bottom": "0",
         "left": "10%",
+        "minWidth": "175px",
         "position": "absolute",
         "width": "20vw",
       }
