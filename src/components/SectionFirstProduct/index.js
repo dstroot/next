@@ -4,9 +4,9 @@ import './styles.scss';
 //compnent
 import Card from '../Card';
 
-const FirstProducts = () => {
+const SectionFirstProduct = () => {
   return (
-    <div className="nxt_gray pt-5 pb-5">
+    <div className="nxt_bg-gray pt-6 pb-6">
       <div className="container text-center">
         <div className="row">
           <div className="col-md-12">
@@ -19,4 +19,4 @@ const FirstProducts = () => {
   );
 };
 
-export default FirstProducts;
+export default SectionFirstProduct;

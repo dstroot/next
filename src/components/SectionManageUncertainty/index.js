@@ -4,9 +4,9 @@ import './styles.scss';
 // images
 import canoeCouple from './media/canoecouple.svg';
 
-const ManageUncertainty = () => {
+const SectionManageUncertainty = () => {
   return (
-    <div className="pt-5 pb-5">
+    <div className="pt-6 pb-6">
       <div className="container">
         <div className="row">
           <div className="col-md-8">
@@ -31,4 +31,4 @@ const ManageUncertainty = () => {
   );
 };
 
-export default ManageUncertainty;
+export default SectionManageUncertainty;

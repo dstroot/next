@@ -13,11 +13,20 @@ $theme-colors: (
 );
 $enable-responsive-font-sizes: true;
 
-body {
-  padding-top: 110px;
-}
+// extend spacer variable for custom spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    6: (
+      $spacer * 14,
+    ),
+  ),
+  $spacers
+);
 
-.nxt_gray {
+// custom NEXT classes
+.nxt_bg-gray {
   background-color: #f2f4f7;
 }
 
