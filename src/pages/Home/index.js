@@ -11,7 +11,7 @@ const Home = () => {
   // Set the page title and position using the useEffect hook
   useEffect(() => {
     document.title = `NEXT • Home`;
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   });
 
   return (

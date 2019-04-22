@@ -10,8 +10,8 @@ Array [
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
         "borderBottom": "3px solid #DDE1E7",
-        "height": "60vw",
-        "minHeight": "425px",
+        "height": "75vh",
+        "minHeight": "500px",
         "position": "relative",
       }
     }
@@ -20,51 +20,64 @@ Array [
       style={
         Object {
           "position": "absolute",
-          "textAlign": "center",
-          "top": "8vw",
+          "top": "10vw",
           "width": "100vw",
         }
       }
     >
-      <h1
-        className="slab text-center"
-      >
-        What’s your 
-        <span
-          className="text-primary"
-        >
-          next
-        </span>
-         adventure?
-      </h1>
       <div
-        style={
-          Object {
-            "fontSize": "calc(10px + 1vw + 0.5vmin)",
-            "marginLeft": "auto",
-            "marginRight": "auto",
-            "width": "70vw",
-          }
-        }
+        className="container"
       >
-        Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
-      </div>
-      <a
-        className="text-decoration-none"
-        href="https://www.meetnext.com/s/#bestlife"
-      >
-        <p
-          className="mt-4 mb-0 text-uppercase text-primary"
+        <div
+          className="row"
         >
-          Learn More
-        </p>
-        <img
-          alt="Arrow"
-          className="d-block-inline"
-          src="arrowdown.svg"
-          width={45}
-        />
-      </a>
+          <div
+            className="col text-center"
+          >
+            <h1
+              className="slab"
+            >
+              What’s your 
+              <span
+                className="text-primary"
+              >
+                next
+              </span>
+               
+              adventure?
+            </h1>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-8 offset-md-2 text-center"
+          >
+            <p
+              className="mt-4 circular lead"
+            >
+              Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
+            </p>
+            <a
+              className="text-decoration-none mt-4"
+              href="#bestlife"
+            >
+              <p
+                className="mt-4 mb-2 text-uppercase text-primary"
+              >
+                Learn More
+              </p>
+              <img
+                alt="Arrow"
+                className="d-block-inline"
+                src="arrowdown.svg"
+                width={45}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <img
       alt="Moped"
@@ -73,6 +86,7 @@ Array [
         Object {
           "bottom": "0",
           "left": "10%",
+          "minWidth": "175px",
           "position": "absolute",
           "width": "20vw",
         }
@@ -80,25 +94,26 @@ Array [
     />
   </div>,
   <div
-    className="bg-light pt-5 pb-5"
+    className="bg-light py-5"
+    id="bestlife"
   >
     <div
-      className="container"
+      className="container text-center"
     >
       <div
-        className="row"
+        className="row my-5 py-5"
       >
         <div
-          className="col-md-4"
+          className="col-md-5"
         >
           <img
             alt="Yoga Lady"
-            className="img-fluid"
+            className="img-fluid p-5"
             src="yogalady.svg"
           />
         </div>
         <div
-          className="col-md-8"
+          className="col-md-7"
         >
           <div
             className="mt-5"
@@ -106,10 +121,16 @@ Array [
             <h1
               className="slab"
             >
-              Keep living your best life
+              Keep living your 
+              <span
+                className="text-primary"
+              >
+                best
+              </span>
+               life
             </h1>
             <p
-              className="circular"
+              className="circular mt-4"
             >
               Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
             </p>

@@ -6,7 +6,7 @@ import Card from '../Card';
 
 const SectionFirstProduct = () => {
   return (
-    <div className="nxt_bg-gray pt-6 pb-6">
+    <div className="nxt_bg-gray py-6">
       <div className="container text-center">
         <div className="row">
           <div className="col-md-12">
