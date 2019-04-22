@@ -20,6 +20,11 @@ $enable-responsive-font-sizes: true;
 // then component styles
 @import '../components/NavBar/styles.scss';
 
+// smooth scroll for on page ancor tags
+html {
+  scroll-behavior: smooth;
+}
+
 // custom font styles
 .slab {
   font-family: 'Zilla Slab', serif;
