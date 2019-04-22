@@ -60,10 +60,7 @@ const Section = () => {
                 Insurance products to complement your life goals and passions.
                 We help you go after whatever's next for you.
               </p>
-              <a
-                href="https://www.meetnext.com/s/#bestlife"
-                className="text-decoration-none mt-4"
-              >
+              <a href="#bestlife" className="text-decoration-none mt-4">
                 <p className="mt-4 mb-2 text-uppercase text-primary">
                   Learn More
                 </p>

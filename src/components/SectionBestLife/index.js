@@ -7,7 +7,7 @@ import yoga from './media/yogalady.svg';
 // our component
 const SectionBestLife = () => {
   return (
-    <div className="bg-light py-5">
+    <div id="bestlife" className="bg-light py-5">
       <div className="container text-center">
         <div className="row my-5 py-5">
           <div className="col-md-5">
