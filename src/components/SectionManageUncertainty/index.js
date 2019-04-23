@@ -1,6 +1,9 @@
 import React from 'react';
 import './styles.scss';
 
+//reveal
+import Fade from 'react-reveal/Fade';
+
 // images
 import canoeCouple from './media/canoecouple.svg';
 
@@ -12,10 +15,12 @@ const SectionManageUncertainty = () => {
         <div className="row">
           <div className="col-md-7">
             <h1 className="slab">A way to manage uncertainty</h1>
+            <Fade bottom>
             <p className="circular">
               Plans change over time—your insurance products can too. Redefine
               your insurance products as life happens.
             </p>
+            </Fade>
           </div>
           <div className="col-md-5">
             <div>
