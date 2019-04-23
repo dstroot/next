@@ -225,7 +225,7 @@ Array [
               </p>
               <a
                 className="card-link"
-                href="#"
+                href="/"
               >
                 Learn More
               </a>

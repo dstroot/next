@@ -14,7 +14,7 @@ const Card = () => {
           Create a future income stream you can count on for the rest of your
           life by saving over time.
         </p>
-        <a href="#" className="card-link">
+        <a href="/" className="card-link">
           Learn More
         </a>
       </div>
