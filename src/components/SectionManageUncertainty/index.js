@@ -14,9 +14,9 @@ const SectionManageUncertainty = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-7">
-            <h1 className="slab">A way to manage uncertainty</h1>
+            <h1 className="slab">A way to <span className = "text-primary">manage</span> uncertainty</h1>
             <Fade bottom>
-            <p className="circular">
+            <p className="circular mt-4">
               Plans change over time—your insurance products can too. Redefine
               your insurance products as life happens.
             </p>

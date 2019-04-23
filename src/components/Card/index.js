@@ -4,6 +4,9 @@ import './styles.scss';
 // images
 import tree from './media/evergreen.svg';
 
+//componets
+import Button from '../Button'
+
 const Card = () => {
   return (
     <div className="card mx-auto" style={{ width: '18rem' }}>
@@ -14,9 +17,8 @@ const Card = () => {
           Create a future income stream you can count on for the rest of your
           life by saving over time.
         </p>
-        <a href="/" className="card-link">
-          Learn More
-        </a>
+        <Button buttonText = {"Learn More"} link = {"https:/google.com/"}>
+        </Button>
       </div>
     </div>
   );
