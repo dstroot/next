@@ -18,9 +18,7 @@ const SectionBestLife = () => {
           </div>
           <div className="col-md-7">
             <div className="mt-5">
-              <h1 className="slab">
-                Keep living your <span className="text-primary">best</span> life
-              </h1>
+              <h1 className="slab">Keep living your best life</h1>
               <Fade bottom>
                 <p className="circular mt-4">
                   Everyone deserves a chance to do what they love. Next by
