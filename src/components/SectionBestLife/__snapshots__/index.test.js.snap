@@ -2,14 +2,14 @@
 
 exports[`SectionBestLife it should render 1`] = `
 <div
-  className="bg-light py-5"
+  className="bg-light py-6"
   id="bestlife"
 >
   <div
     className="container text-center"
   >
     <div
-      className="row my-5 py-5"
+      className="row"
     >
       <div
         className="col-md-5"
@@ -38,7 +38,12 @@ exports[`SectionBestLife it should render 1`] = `
              life
           </h1>
           <p
-            className="circular mt-4"
+            className="react-reveal circular mt-4"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
             Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
           </p>

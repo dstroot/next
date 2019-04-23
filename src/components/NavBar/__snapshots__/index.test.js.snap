@@ -27,8 +27,11 @@ exports[`NavBar it should render 1`] = `
       onClick={[Function]}
       type="button"
     >
-      <span
-        className="navbar-toggler-icon"
+      <img
+        alt="Menu"
+        className="d-inline-block align-middle mr-auto"
+        src="burgermenu.svg"
+        width="35"
       />
     </button>
     <div

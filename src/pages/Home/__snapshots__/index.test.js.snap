@@ -94,14 +94,14 @@ Array [
     />
   </div>,
   <div
-    className="bg-light py-5"
+    className="bg-light py-6"
     id="bestlife"
   >
     <div
       className="container text-center"
     >
       <div
-        className="row my-5 py-5"
+        className="row"
       >
         <div
           className="col-md-5"
@@ -130,10 +130,106 @@ Array [
                life
             </h1>
             <p
-              className="circular mt-4"
+              className="react-reveal circular mt-4"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
               Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
             </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="py-6"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-7"
+        >
+          <h1
+            className="slab"
+          >
+            A way to manage uncertainty
+          </h1>
+          <p
+            className="circular"
+          >
+            Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
+          </p>
+        </div>
+        <div
+          className="col-md-5"
+        >
+          <div>
+            <img
+              alt="Couple in a Canoe"
+              className="img-fluid"
+              src="canoecouple.svg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="nxt_bg-gray py-6"
+  >
+    <div
+      className="container text-center"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-12"
+        >
+          <h1
+            className="slab"
+          >
+            Introducing our first product
+          </h1>
+          <div
+            className="card mx-auto"
+            style={
+              Object {
+                "width": "18rem",
+              }
+            }
+          >
+            <div
+              className="card-body text-center"
+            >
+              <img
+                alt="Evergreen"
+                src="evergreen.svg"
+              />
+              <h5
+                className="card-title"
+              >
+                Next Deferred Income Annuity
+              </h5>
+              <p
+                className="card-text"
+              >
+                Create a future income stream you can count on for the rest of your life by saving over time.
+              </p>
+              <a
+                className="card-link"
+                href="#"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </div>

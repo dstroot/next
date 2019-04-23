@@ -10,7 +10,7 @@ const SectionFirstProduct = () => {
       <div className="container text-center">
         <div className="row">
           <div className="col-md-12">
-            <h1 class="slab">Introducing our first product</h1>
+            <h1 className="slab">Introducing our first product</h1>
             <Card />
           </div>
         </div>
