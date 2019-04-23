@@ -1,6 +1,9 @@
 import React from 'react';
 import './styles.scss';
 
+// reveal
+import Fade from 'react-reveal/Fade';
+
 // images
 import yoga from './media/yogalady.svg';
 
@@ -18,11 +21,13 @@ const SectionBestLife = () => {
               <h1 className="slab">
                 Keep living your <span className="text-primary">best</span> life
               </h1>
-              <p className="circular mt-4">
-                Everyone deserves a chance to do what they love. Next by Pacific
-                Life helps you reach financial goals while you go after your
-                personal ones...
-              </p>
+              <Fade bottom>
+                <p className="circular mt-4">
+                  Everyone deserves a chance to do what they love. Next by
+                  Pacific Life helps you reach financial goals while you go
+                  after your personal ones...
+                </p>
+              </Fade>
             </div>
           </div>
         </div>
