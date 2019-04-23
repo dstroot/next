@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import logo from './media/NXT_Logo_light.svg';
+import burger from './media/burgermenu.svg';
 
 // isCurrent - true if the location.pathname is exactly the same as the anchor’s href.
 export const isActive = ({ isCurrent }) => {
@@ -33,7 +34,7 @@ class NavBar extends React.Component {
     if (this.state.isHidden) {
       buttonClasses = 'navbar-toggler collapsed';
     }
-    let dropDown = 'navbar-collapse collapse show';
+    let dropDown = 'navbar-collapse collapse show bg-white';
     if (this.state.isHidden) {
       dropDown = 'navbar-collapse collapse';
     }
@@ -58,18 +59,20 @@ class NavBar extends React.Component {
             onClick={this.toggleHidden}
             ref={this.buttonRef} // get a reference to the button
           >
-            <span className="navbar-toggler-icon" />
+            <img
+              className="d-inline-block align-middle mr-auto"
+              src={burger}
+              width="35"
+              alt="Menu"
+            />
           </button>
-
           <div className={dropDown}>
             <ExactNavLink to="/" onClick={this.toggleHidden}>
               Home
             </ExactNavLink>
-
             <ExactNavLink to="/about" onClick={this.toggleHidden}>
               About
             </ExactNavLink>
-
             <ExactNavLink to="/contact" onClick={this.toggleHidden}>
               Contact
             </ExactNavLink>
