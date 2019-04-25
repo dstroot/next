@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.scss';
 
 // images
 import canoeCouple from './media/canoecouple.svg';
@@ -11,8 +10,8 @@ const SectionManageUncertainty = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-7">
-            <h1 className="slab">A way to manage uncertainty</h1>
-            <p className="circular">
+            <h1 className="nxt_heading-xlarge">A way to manage uncertainty</h1>
+            <p className="mt-4">
               Plans change over time—your insurance products can too. Redefine
               your insurance products as life happens.
             </p>

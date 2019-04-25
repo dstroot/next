@@ -1,0 +1,72 @@
+/***************************************/
+/*            Typography              */
+/***************************************/
+
+// Main font
+$zilla-slab: 'Zilla Slab', serif;
+$circular: 'CircularStd', sans-serif;
+
+// custom font styles
+// .slab {
+//   font-family: $zilla-slab;
+//   font-size: calc(40px + 1.5vw + 0.5vmin);
+// }
+// ***** need to get rid of it. There is no need for it
+// but before we do, ask Dan about Calc()
+
+body {
+  font-family: $circular;
+  font-size: calc(24px);
+  line-height: 36px;
+}
+
+// Next custom header
+.nxt_heading-xlarge {
+  font-family: $zilla-slab;
+  font-size: calc(72px);
+  line-height: 86px;
+}
+
+.nxt_heading-large {
+  font-family: $zilla-slab;
+  font-size: calc(60px);
+  line-height: 72px;
+}
+
+.nxt_heading-medium {
+  font-family: $zilla-slab;
+  font-size: calc(48px);
+  line-height: 58px;
+}
+
+.nxt_heading-small {
+  font-family: $zilla-slab;
+  font-size: calc(36px);
+  line-height: 44px;
+}
+
+.nxt_subheading {
+  font-family: $zilla-slab;
+  font-size: calc(26px);
+  line-height: 34px;
+}
+
+// Next custom body
+
+.nxt_body {
+  font-family: $circular;
+  font-size: calc(24px);
+  line-height: 36px;
+}
+
+.nxt_body-small {
+  font-family: $circular;
+  font-size: calc(18px);
+  line-height: 28px;
+}
+
+.nxt_body-xsmall {
+  font-family: $circular;
+  font-size: calc(12px);
+  line-height: 24px;
+}

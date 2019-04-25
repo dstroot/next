@@ -9,19 +9,23 @@ import 'typeface-zilla-slab';
 import { Router } from '@reach/router';
 
 // Components
-import NextSlider from './components/NextSlider';
 import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 
 // Pages
 import Home from './pages/Home';
+import About from './pages/About';
+import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
+import Contact from './pages/Contact';
 
 const App = () => (
   <div className="mt-5">
     <NavBar />
     <Router>
       <Home path="/" />
-      <NextSlider path="/slider" />
+      <About path="/about" />
+      <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
+      <Contact path="/contact" />
     </Router>
     <Footer />
   </div>
