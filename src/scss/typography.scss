@@ -2,17 +2,21 @@
 /*            Typography              */
 /***************************************/
 
-// Main font
+// Main font variables
 $zilla-slab: 'Zilla Slab', serif;
 $circular: 'CircularStd', sans-serif;
 
-// custom font styles
-// .slab {
-//   font-family: $zilla-slab;
-//   font-size: calc(40px + 1.5vw + 0.5vmin);
-// }
-// ***** need to get rid of it. There is no need for it
-// but before we do, ask Dan about Calc()
+// custom font styles for hero section
+.slab {
+  font-family: $zilla-slab;
+  font-size: calc(40px + 1.5vw + 0.5vmin);
+}
+
+.circular {
+  font-family: $circular;
+  font-size: calc(18px + 0.5vw);
+}
+// ask Dan about Calc()
 
 body {
   font-family: $circular;

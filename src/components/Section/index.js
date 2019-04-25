@@ -47,7 +47,7 @@ const Section = () => {
         <div className="container">
           <div className="row">
             <div className="col text-center">
-              <h1 className="nxt_heading-xlarge">
+              <h1 className="slab">
                 What’s your <span className="text-primary">next</span>{' '}
                 adventure?
               </h1>
@@ -55,7 +55,7 @@ const Section = () => {
           </div>
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center">
-              <p className="mt-4">
+              <p className="mt-4 circular">
                 Insurance products to complement your life goals and passions.
                 We help you go after whatever's next for you.
               </p>

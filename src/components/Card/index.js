@@ -24,10 +24,7 @@ const Card = () => {
           Create a future income stream you can count on for the rest of your
           life by saving over time.
         </p>
-        <Button
-          path="../../pages/NextDeferredIncomeAnnuity"
-          buttonText="Learn More"
-        />
+        <Button path="/nextdeferredincomeannuity" buttonText="Learn More" />
       </div>
     </div>
   );
