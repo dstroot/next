@@ -26,34 +26,21 @@ $spacers: map-merge(
   $spacers
 );
 
-// custom NEXT classes
-.nxt_bg-gray {
-  background-color: #f2f4f7;
-}
-
 // then import Bootstrap
 @import 'bootstrap';
 
 // then component styles
 @import '../components/NavBar/styles.scss';
 
+// import typography
+@import 'typography.scss';
+
 // smooth scroll for on page ancor tags
 html {
   scroll-behavior: smooth;
 }
 
-// custom font styles
-.slab {
-  font-family: 'Zilla Slab', serif;
-  font-size: calc(40px + 2vw + 0.5vmin);
-}
-
-.heading-small {
-  font-family: 'Zilla Slab', serif;
-  font-size: calc(36px); // how does calc() function?
-}
-
-.circular {
-  font-family: CircularStd;
-  font-size: calc(18px + 0.5vw);
+// custom NEXT classes
+.nxt_bg-gray {
+  background-color: #f2f4f7;
 }

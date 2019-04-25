@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.scss';
 
 // reveal
 import Fade from 'react-reveal/Fade';
@@ -18,9 +17,9 @@ const SectionBestLife = () => {
           </div>
           <div className="col-md-7">
             <div className="mt-5">
-              <h1 className="slab">Keep living your best life</h1>
+              <h1 className="nxt_heading-xlarge">Keep living your best life</h1>
               <Fade bottom>
-                <p className="circular mt-4">
+                <p className="mt-4">
                   Everyone deserves a chance to do what they love. Next by
                   Pacific Life helps you reach financial goals while you go
                   after your personal ones...
