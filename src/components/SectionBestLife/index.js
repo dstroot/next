@@ -17,8 +17,8 @@ const SectionBestLife = () => {
           </div>
           <div className="col-md-7">
             <div className="mt-5">
+            <Fade bottom>
               <h1 className="nxt_heading-xlarge">Keep living your best life</h1>
-              <Fade bottom>
                 <p className="mt-4">
                   Everyone deserves a chance to do what they love. Next by
                   Pacific Life helps you reach financial goals while you go

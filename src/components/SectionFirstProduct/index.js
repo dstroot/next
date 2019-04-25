@@ -9,9 +9,9 @@ const SectionFirstProduct = () => {
       <div className="container text-center">
         <div className="row">
           <div className="col-md-12">
-            <h1 className="nxt_heading-xlarge">
-              Introducing our first product
-            </h1>
+              <h1 className="nxt_heading-xlarge">
+               Introducing our first product
+              </h1>
             <Card />
           </div>
         </div>
