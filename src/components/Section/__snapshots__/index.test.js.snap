@@ -54,7 +54,7 @@ exports[`Section it should render 1`] = `
           className="col-md-8 offset-md-2 text-center"
         >
           <p
-            className="mt-4 circular lead"
+            className="mt-4 circular"
           >
             Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
           </p>

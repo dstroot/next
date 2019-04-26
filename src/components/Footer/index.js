@@ -1,8 +1,9 @@
 import React from 'react';
-
+import { Link } from '@reach/router';
 import logo from './media/NXT_logo_footer_dark.svg';
 
 const Footer = () => {
+  const year = new Date();
   return (
     <div className="container-fluid bg-dark mt-5">
       <div className="row">
@@ -10,26 +11,9 @@ const Footer = () => {
           <img src={logo} className="pr-3 pb-3" alt="Logo" />
           <span className="font-weight-light text-white-50 nxt_body-xsmall">
             By using this website you accept our{' '}
-            <a
-              href="https://www.meetnext.com/s/terms"
-              className="text-accent text-decoration-none"
-            >
-              Terms of Use
-            </a>
-            ,{' '}
-            <a
-              href="https://www.meetnext.com/s/social"
-              className="text-accent text-decoration-none"
-            >
-              Social Media Guidelines
-            </a>
-            , and{' '}
-            <a
-              href="https://www.meetnext.com/s/privacy"
-              className="text-accent text-decoration-none"
-            >
-              Privacy Policy
-            </a>
+            <Link to="/terms">Terms of Use</Link> ,{' '}
+            <Link to="/social">Social Media Guidelines</Link> , and{' '}
+            <Link to="/privacy">Privacy Policy</Link>{' '}
           </span>
           <small>
             <div className="nxt_body-xsmall">
@@ -56,7 +40,8 @@ const Footer = () => {
                 annuity products are available through licensed third parties.
               </p>
               <p className="font-weight-light text-white-50">
-                © 2019 Pacific Life Insurance Company, Newport Beach, CA.
+                © {year.getFullYear()} Pacific Life Insurance Company, Newport
+                Beach, CA.
               </p>
             </div>
           </small>

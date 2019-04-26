@@ -27,18 +27,17 @@ exports[`SectionBestLife it should render 1`] = `
           className="mt-5"
         >
           <h1
-            className="slab"
+            className="react-reveal nxt_heading-xlarge"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
-            Keep living your 
-            <span
-              className="text-primary"
-            >
-              best
-            </span>
-             life
+            Keep living your best life
           </h1>
           <p
-            className="react-reveal circular mt-4"
+            className="react-reveal mt-4"
             style={
               Object {
                 "opacity": undefined,
