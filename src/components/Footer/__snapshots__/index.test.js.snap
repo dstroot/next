@@ -21,27 +21,28 @@ exports[`Footer it should render 1`] = `
         By using this website you accept our
          
         <a
-          className="text-accent text-decoration-none"
-          href="https://www.meetnext.com/s/terms"
+          href="/terms"
+          onClick={[Function]}
         >
           Terms of Use
         </a>
-        ,
+         ,
          
         <a
-          className="text-accent text-decoration-none"
-          href="https://www.meetnext.com/s/social"
+          href="/social"
+          onClick={[Function]}
         >
           Social Media Guidelines
         </a>
-        , and
+         , and
          
         <a
-          className="text-accent text-decoration-none"
-          href="https://www.meetnext.com/s/privacy"
+          href="/privacy"
+          onClick={[Function]}
         >
           Privacy Policy
         </a>
+         
       </span>
       <small>
         <div
@@ -70,7 +71,9 @@ exports[`Footer it should render 1`] = `
           <p
             className="font-weight-light text-white-50"
           >
-            © 2019 Pacific Life Insurance Company, Newport Beach, CA.
+            © 
+            2019
+             Pacific Life Insurance Company, Newport Beach, CA.
           </p>
         </div>
       </small>
