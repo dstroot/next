@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionManageUncertainty it should render 1`] = `
+<div
+  className="py-6"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-7"
+      >
+        <h1
+          className="react-reveal nxt_heading-xlarge"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          A way to manage uncertainty
+        </h1>
+        <p
+          className="react-reveal mt-4"
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
+        </p>
+      </div>
+      <div
+        className="col-md-5"
+      >
+        <div>
+          <img
+            alt="Couple in a Canoe"
+            className="img-fluid"
+            src="canoecouple.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

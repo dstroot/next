@@ -6,8 +6,8 @@ import Section from '../../components/Section';
 import SectionBestLife from '../../components/SectionBestLife';
 import SectionManageUncertainty from '../../components/SectionManageUncertainty';
 import SectionFirstProduct from '../../components/SectionFirstProduct';
-import SectionDesignName  from '../../components/SectionDesignName';
-import SectionAskUs  from '../../components/SectionAskUs';
+import SectionDesignWithYouInMind from '../../components/SectionDesignWithYouInMind';
+import SectionAskUs from '../../components/SectionAskUs';
 
 const Home = () => {
   // Set the page title and position using the useEffect hook
@@ -22,7 +22,7 @@ const Home = () => {
       <SectionBestLife />
       <SectionManageUncertainty />
       <SectionFirstProduct />
-      <SectionDesignName />
+      <SectionDesignWithYouInMind />
       <SectionAskUs />
     </>
   );
