@@ -1,6 +1,6 @@
 import React from 'react';
 
-const form = () => {
+const Form = () => {
   return null;
 };
-export default form;
+export default Form;
