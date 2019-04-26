@@ -55,7 +55,7 @@ Array [
             className="col-md-8 offset-md-2 text-center"
           >
             <p
-              className="mt-4 circular lead"
+              className="mt-4 circular"
             >
               Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
             </p>
@@ -119,18 +119,17 @@ Array [
             className="mt-5"
           >
             <h1
-              className="slab"
+              className="react-reveal nxt_heading-xlarge"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
-              Keep living your 
-              <span
-                className="text-primary"
-              >
-                best
-              </span>
-               life
+              Keep living your best life
             </h1>
             <p
-              className="react-reveal circular mt-4"
+              className="react-reveal mt-4"
               style={
                 Object {
                   "opacity": undefined,
@@ -157,12 +156,22 @@ Array [
           className="col-md-7"
         >
           <h1
-            className="slab"
+            className="react-reveal nxt_heading-xlarge"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
             A way to manage uncertainty
           </h1>
           <p
-            className="circular"
+            className="react-reveal mt-4"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
             Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
           </p>
@@ -194,45 +203,98 @@ Array [
           className="col-md-12"
         >
           <h1
-            className="slab"
+            className="nxt_heading-xlarge"
           >
             Introducing our first product
           </h1>
           <div
-            className="card mx-auto"
-            style={
-              Object {
-                "width": "18rem",
-              }
-            }
+            className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
           >
             <div
               className="card-body text-center"
             >
               <img
                 alt="Evergreen"
+                className="mb-2"
                 src="evergreen.svg"
               />
               <h5
-                className="card-title"
+                className="card-title nxt_heading-small mb-4"
               >
                 Next Deferred Income Annuity
               </h5>
               <p
-                className="card-text"
+                className="card-text circular mb-5"
               >
                 Create a future income stream you can count on for the rest of your life by saving over time.
               </p>
               <a
-                className="card-link"
-                href="/"
+                href="/nextdeferredincomeannuity"
+                onClick={[Function]}
               >
-                Learn More
+                <button
+                  className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                >
+                  Learn More
+                </button>
               </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>,
+  <div
+    className="py-6"
+  >
+    <div
+      className="container text-center"
+    >
+      <img
+        alt="Woman with the Phone"
+        src="womanphone.svg"
+      />
+      <h1>
+        Designed with you in mind
+      </h1>
+      <h2>
+        Fearlessly Flexible
+      </h2>
+      <p>
+        Our products adapt to your life’s biggest moments. Change them when your needs do.
+      </p>
+      <h2>
+        Radically Simple
+      </h2>
+      <p>
+        Straight forward products and features. Know what you're getting from the beginning.
+      </p>
+      <h2>
+        Brazenly Transparent
+      </h2>
+      <p>
+        No hidden fees or charges.
+      </p>
+    </div>
+  </div>,
+  <div
+    className="nxt_bg-gray py-6"
+  >
+    <div
+      className="container text-center"
+    >
+      <h1>
+        Ask us anything
+      </h1>
+      <h2>
+        Next by Pacific Life
+      </h2>
+      <p>
+        hello@meetnext.com
+      </p>
+      <p>
+        (833) 646-NEXT (6398) 
+      </p>
     </div>
   </div>,
 ]
