@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionFirstProduct it should render 1`] = `
+<div
+  className="nxt_bg-gray py-6"
+>
+  <div
+    className="container text-center"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-12"
+      >
+        <h1
+          className="nxt_heading-xlarge"
+        >
+          Introducing our first product
+        </h1>
+        <div
+          className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
+        >
+          <div
+            className="card-body text-center"
+          >
+            <img
+              alt="Evergreen"
+              className="mb-2"
+              src="evergreen.svg"
+            />
+            <h5
+              className="card-title nxt_heading-small mb-4"
+            >
+              Next Deferred Income Annuity
+            </h5>
+            <p
+              className="card-text circular mb-5"
+            >
+              Create a future income stream you can count on for the rest of your life by saving over time.
+            </p>
+            <a
+              href="/nextdeferredincomeannuity"
+              onClick={[Function]}
+            >
+              <button
+                className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+              >
+                Learn More
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
