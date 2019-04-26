@@ -7,9 +7,9 @@ const SectionDesignWithYouInMind = () => {
   return (
     <div className="py-6">
       <div className="container text-center">
+        <h1 className="nxt_heading-large">Designed with you in mind</h1>
         <img src={womanphone} alt="Woman with the Phone" />
 
-        <h1>Designed with you in mind</h1>
         <h2>Fearlessly Flexible</h2>
         <p>
           Our products adapt to your life’s biggest moments. Change them when
