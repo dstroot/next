@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from '../Form';
+import Form from '../../Form';
 
 const SectionAskUs = () => {
   return (
@@ -10,7 +10,7 @@ const SectionAskUs = () => {
           <div className="col-md-6">
             <Form />
           </div>
-          <div className="col-md-6 text-left">
+          <div className="col-md-6 text-left mt-4">
             <h2>Next by Pacific Life</h2>
             <a href="mailto: hello@meetnext.com">hello@meetnext.com</a>
             <p>(833) 646-NEXT (6398) </p>

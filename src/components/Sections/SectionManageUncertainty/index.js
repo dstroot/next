@@ -14,11 +14,13 @@ const SectionManageUncertainty = () => {
         <div className="row">
           <div className="col-md-7">
             <Fade bottom>
-            <h1 className="nxt_heading-xlarge">A way to manage uncertainty</h1>
-            <p className="mt-4">
-              Plans change over time—your insurance products can too. Redefine
-              your insurance products as life happens.
-            </p>
+              <h1 className="nxt_heading-xlarge">
+                A way to manage uncertainty
+              </h1>
+              <p className="mt-4">
+                Plans change over time—your insurance products can too. Redefine
+                your insurance products as life happens.
+              </p>
             </Fade>
           </div>
           <div className="col-md-5">

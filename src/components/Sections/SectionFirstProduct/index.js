@@ -1,10 +1,10 @@
 import React from 'react';
 
 //compnent
-import Card from '../Card';
+import Card from '../../Card';
 
 // images
-import Tree from '../Card/media/evergreen.svg';
+import Tree from '../../Card/media/evergreen.svg';
 
 const SectionFirstProduct = () => {
   return (

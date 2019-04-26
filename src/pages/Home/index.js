@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import './styles.scss';
 
 // Components
-import Section from '../../components/Section';
-import SectionBestLife from '../../components/SectionBestLife';
-import SectionManageUncertainty from '../../components/SectionManageUncertainty';
-import SectionFirstProduct from '../../components/SectionFirstProduct';
-import SectionDesignWithYouInMind from '../../components/SectionDesignWithYouInMind';
-import SectionAskUs from '../../components/SectionAskUs';
+import Section from '../../components/Sections/SectionHero';
+import SectionBestLife from '../../components/Sections/SectionBestLife';
+import SectionManageUncertainty from '../../components/Sections/SectionManageUncertainty';
+import SectionFirstProduct from '../../components/Sections/SectionFirstProduct';
+import SectionDesignWithYouInMind from '../../components/Sections/SectionDesignWithYouInMind';
+import SectionAskUs from '../../components/Sections/SectionAskUs';
 
 const Home = () => {
   // Set the page title and position using the useEffect hook
