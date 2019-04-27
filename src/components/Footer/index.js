@@ -5,7 +5,7 @@ import logo from './media/NXT_logo_footer_dark.svg';
 const Footer = () => {
   const year = new Date();
   return (
-    <div className="container-fluid bg-dark mt-5">
+    <div className="container-fluid bg-dark">
       <div className="row">
         <div className="col p-5">
           <img src={logo} className="pr-3 pb-3" alt="Logo" />
