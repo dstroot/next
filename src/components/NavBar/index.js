@@ -52,6 +52,7 @@ class NavBar extends React.Component {
             />
           </Link>
 
+          {/* Hamburger */}
           <button
             className={buttonClasses}
             type="button"
@@ -66,7 +67,10 @@ class NavBar extends React.Component {
               alt="Menu"
             />
           </button>
+
+          {/* Menu */}
           <div className={dropDown}>
+            <div className="mx-auto" />
             <ExactNavLink to="/" onClick={this.toggleHidden}>
               Home
             </ExactNavLink>
