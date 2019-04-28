@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from '@reach/router';
+
+// images
 import logo from './media/NXT_Logo_light.svg';
 import burger from './media/burgermenu.svg';
+
+// hooks
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 // isCurrent - true if the location.pathname is exactly the same as the anchor’s href.
 export const isActive = ({ isCurrent }) => {
@@ -14,77 +19,73 @@ export const isActive = ({ isCurrent }) => {
 // Useful for styling the anchor as active.
 const ExactNavLink = props => <Link getProps={isActive} {...props} />;
 
-class NavBar extends React.Component {
-  buttonRef = React.createRef();
-  state = {
-    isHidden: true,
+const NavBar = () => {
+  const small = useMediaQuery(`screen and (max-width: 575px)`);
+  const buttonRef = useRef(null);
+  const [hidden, setHidden] = useState(true);
+
+  const toggleHidden = event => {
+    if (small) {
+      setHidden(!hidden);
+      // blur the button (otherwise it stays pressed)
+      buttonRef.current.blur();
+    }
   };
 
-  toggleHidden = event => {
-    this.setState({
-      isHidden: !this.state.isHidden,
-    });
-    // blur the button (otherwise it stays pressed)
-    this.buttonRef.current.blur();
-  };
-
-  render() {
-    // hide and show classes
-    let buttonClasses = 'navbar-toggler';
-    if (this.state.isHidden) {
-      buttonClasses = 'navbar-toggler collapsed';
-    }
-    let dropDown = 'navbar-collapse collapse show bg-white';
-    if (this.state.isHidden) {
-      dropDown = 'navbar-collapse collapse';
-    }
-
-    return (
-      <nav className="navbar fixed-top navbar-expand-sm navbar-light bg-white">
-        <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
-            <img
-              className="d-inline-block align-middle mr-auto"
-              src={logo}
-              width="115"
-              height="53"
-              alt="NEXT by Pacific Life"
-            />
-          </Link>
-
-          {/* Hamburger */}
-          <button
-            className={buttonClasses}
-            type="button"
-            aria-label="Toggle navigation"
-            onClick={this.toggleHidden}
-            ref={this.buttonRef} // get a reference to the button
-          >
-            <img
-              className="d-inline-block align-middle mr-auto"
-              src={burger}
-              width="35"
-              alt="Menu"
-            />
-          </button>
-
-          {/* Menu */}
-          <div className={dropDown}>
-            <div className="mx-auto" />
-            <ExactNavLink to="/" onClick={this.toggleHidden}>
-              Home
-            </ExactNavLink>
-            <ExactNavLink to="/about" onClick={this.toggleHidden}>
-              About
-            </ExactNavLink>
-            <ExactNavLink to="/contact" onClick={this.toggleHidden}>
-              Contact
-            </ExactNavLink>
-          </div>
-        </div>
-      </nav>
-    );
+  // hide and show classes when small
+  let buttonClasses = 'navbar-toggler';
+  if (hidden) {
+    buttonClasses = 'navbar-toggler collapsed';
   }
-}
+  let dropDown = 'navbar-collapse collapse show bg-white';
+  if (hidden) {
+    dropDown = 'navbar-collapse collapse';
+  }
+
+  return (
+    <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
+      {/* Brand */}
+      <Link to="/" className="navbar-brand">
+        <img
+          className="d-inline-block align-middle"
+          src={logo}
+          width="115"
+          height="53"
+          alt="NEXT by Pacific Life"
+        />
+      </Link>
+
+      {/* Burger menu */}
+      <button
+        className={buttonClasses}
+        type="button"
+        aria-label="Toggle navigation"
+        onClick={toggleHidden}
+        ref={buttonRef} // get a reference to the button
+      >
+        <img
+          className="d-inline-block align-middle"
+          src={burger}
+          width="35"
+          alt="Menu"
+        />
+      </button>
+
+      {/* Links */}
+      <div className={dropDown}>
+        <div className="mx-auto" />
+        <ExactNavLink to="/" onClick={toggleHidden}>
+          Home
+        </ExactNavLink>
+        <ExactNavLink to="/about" onClick={toggleHidden}>
+          About
+        </ExactNavLink>
+        <ExactNavLink to="/contact" onClick={toggleHidden}>
+          Contact
+        </ExactNavLink>
+      </div>
+    </nav>
+  );
+};
 
 export default NavBar;
