@@ -251,32 +251,97 @@ Array [
       className="container text-center"
     >
       <h1
-        className="nxt_heading-large"
+        className="react-reveal nxt_heading-large mb-5"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
       >
         Designed with you in mind
       </h1>
-      <img
-        alt="Woman with the Phone"
-        src="womanphone.svg"
-      />
-      <h2>
-        Fearlessly Flexible
-      </h2>
-      <p>
-        Our products adapt to your life’s biggest moments. Change them when your needs do.
-      </p>
-      <h2>
-        Radically Simple
-      </h2>
-      <p>
-        Straight forward products and features. Know what you're getting from the beginning.
-      </p>
-      <h2>
-        Brazenly Transparent
-      </h2>
-      <p>
-        No hidden fees or charges.
-      </p>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-6"
+        >
+          <img
+            alt="Woman with the Phone"
+            className="react-reveal"
+            src="womanphone.svg"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          />
+        </div>
+        <div
+          className="col-md-6"
+        >
+          <h2
+            className="react-reveal nxt_heading-small mb-2"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+             Fearlessly Flexible
+          </h2>
+          <p
+            className="react-reveal mb-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            Our products adapt to your life’s biggest moments. Change them when your needs do.
+          </p>
+          <h2
+            className="react-reveal nxt_heading-small mb-2"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            Radically Simple
+          </h2>
+          <p
+            className="react-reveal mb-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            Straight forward products and features. Know what you're getting from the beginning.
+          </p>
+          <h2
+            className="react-reveal nxt_heading-small mb-2"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            Brazenly Transparent
+          </h2>
+          <p
+            className="react-reveal mb-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            No hidden fees or charges.
+          </p>
+        </div>
+      </div>
     </div>
   </div>,
   <div
@@ -285,18 +350,88 @@ Array [
     <div
       className="container text-center"
     >
-      <h1>
+      <h1
+        className="nxt_heading-large mb-5"
+      >
         Ask us anything
       </h1>
-      <h2>
-        Next by Pacific Life
-      </h2>
-      <p>
-        hello@meetnext.com
-      </p>
-      <p>
-        (833) 646-NEXT (6398) 
-      </p>
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-6"
+        >
+          <form>
+            <div
+              className="text-left nxt_body-xsmall"
+            >
+              <div
+                className="form-group"
+              >
+                <label
+                  htmlFor="Name"
+                >
+                  Name
+                </label>
+                <input
+                  className="form-control"
+                  id="InputName"
+                  type="text"
+                />
+                <label
+                  className="mt-3"
+                  htmlFor="Email"
+                >
+                  Email
+                </label>
+                <input
+                  className="form-control"
+                  id="InputEmail"
+                  type="email"
+                />
+                <label
+                  className="mt-3"
+                  htmlFor="Phone"
+                >
+                  Phone
+                </label>
+                <input
+                  className="form-control"
+                  id="InputPhone"
+                  type="phone"
+                />
+                <label
+                  className="mt-3"
+                  htmlFor="Message"
+                >
+                  Message
+                </label>
+                <textarea
+                  className="form-control"
+                  id="InputMessage"
+                  rows="3"
+                  type="text"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          className="col-md-6 text-left mt-4"
+        >
+          <h2>
+            Next by Pacific Life
+          </h2>
+          <a
+            href="mailto: hello@meetnext.com"
+          >
+            hello@meetnext.com
+          </a>
+          <p>
+            (833) 646-NEXT (6398) 
+          </p>
+        </div>
+      </div>
     </div>
   </div>,
 ]

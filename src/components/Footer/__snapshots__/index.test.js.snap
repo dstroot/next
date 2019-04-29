@@ -2,7 +2,7 @@
 
 exports[`Footer it should render 1`] = `
 <div
-  className="container-fluid bg-dark mt-5"
+  className="container-fluid bg-dark"
 >
   <div
     className="row"

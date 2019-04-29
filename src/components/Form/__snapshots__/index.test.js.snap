@@ -1,3 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form it should render 1`] = `null`;
+exports[`Form it should render 1`] = `
+<form>
+  <div
+    className="text-left nxt_body-xsmall"
+  >
+    <div
+      className="form-group"
+    >
+      <label
+        htmlFor="Name"
+      >
+        Name
+      </label>
+      <input
+        className="form-control"
+        id="InputName"
+        type="text"
+      />
+      <label
+        className="mt-3"
+        htmlFor="Email"
+      >
+        Email
+      </label>
+      <input
+        className="form-control"
+        id="InputEmail"
+        type="email"
+      />
+      <label
+        className="mt-3"
+        htmlFor="Phone"
+      >
+        Phone
+      </label>
+      <input
+        className="form-control"
+        id="InputPhone"
+        type="phone"
+      />
+      <label
+        className="mt-3"
+        htmlFor="Message"
+      >
+        Message
+      </label>
+      <textarea
+        className="form-control"
+        id="InputMessage"
+        rows="3"
+        type="text"
+      />
+    </div>
+  </div>
+</form>
+`;

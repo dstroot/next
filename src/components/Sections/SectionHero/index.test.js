@@ -1,14 +1,14 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 import { mount } from 'enzyme';
-import Section from '../Section';
+import SectionHero from '../SectionHero';
 
-describe('Section', () => {
+describe('SectionHero', () => {
   // mount the component
   let mountedComponent;
   const getMountedComponent = () => {
     if (!mountedComponent) {
-      mountedComponent = mount(<Section />);
+      mountedComponent = mount(<SectionHero />);
     }
     return mountedComponent;
   };
@@ -18,7 +18,7 @@ describe('Section', () => {
   });
 
   it('it should render', () => {
-    let tree = create(<Section />);
+    let tree = create(<SectionHero />);
     expect(tree.toJSON()).toMatchSnapshot();
   });
 });

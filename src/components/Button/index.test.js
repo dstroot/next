@@ -8,7 +8,7 @@ describe('Button', () => {
   let mountedComponent;
   const getMountedComponent = () => {
     if (!mountedComponent) {
-      mountedComponent = mount(<Button />);
+      mountedComponent = mount(<Button path="/" />);
     }
     return mountedComponent;
   };
@@ -18,7 +18,7 @@ describe('Button', () => {
   });
 
   it('it should render', () => {
-    let tree = create(<Button />);
+    let tree = create(<Button path="/" />);
     expect(tree.toJSON()).toMatchSnapshot();
   });
 });

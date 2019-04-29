@@ -2,64 +2,63 @@
 
 exports[`NavBar it should render 1`] = `
 <nav
-  className="navbar fixed-top navbar-expand-sm navbar-light bg-white"
+  className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
 >
-  <div
-    className="container-fluid"
+  <a
+    aria-current="page"
+    className="navbar-brand"
+    href="/"
+    onClick={[Function]}
   >
+    <img
+      alt="NEXT by Pacific Life"
+      className="d-inline-block align-middle"
+      height="53"
+      src="NXT_Logo_light.svg"
+      width="115"
+    />
+  </a>
+  <button
+    aria-label="Toggle navigation"
+    className="navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <img
+      alt="Menu"
+      className="d-inline-block align-middle"
+      src="burgermenu.svg"
+      width="35"
+    />
+  </button>
+  <div
+    className="navbar-collapse collapse"
+  >
+    <div
+      className="mx-auto"
+    />
     <a
       aria-current="page"
-      className="navbar-brand"
+      className="active nav-link"
       href="/"
       onClick={[Function]}
     >
-      <img
-        alt="NEXT by Pacific Life"
-        className="d-inline-block align-middle mr-auto"
-        height="53"
-        src="NXT_Logo_light.svg"
-        width="115"
-      />
+      Home
     </a>
-    <button
-      aria-label="Toggle navigation"
-      className="navbar-toggler collapsed"
+    <a
+      className="nav-link"
+      href="/about"
       onClick={[Function]}
-      type="button"
     >
-      <img
-        alt="Menu"
-        className="d-inline-block align-middle mr-auto"
-        src="burgermenu.svg"
-        width="35"
-      />
-    </button>
-    <div
-      className="navbar-collapse collapse"
+      About
+    </a>
+    <a
+      className="nav-link"
+      href="/contact"
+      onClick={[Function]}
     >
-      <a
-        aria-current="page"
-        className="active nav-link"
-        href="/"
-        onClick={[Function]}
-      >
-        Home
-      </a>
-      <a
-        className="nav-link"
-        href="/about"
-        onClick={[Function]}
-      >
-        About
-      </a>
-      <a
-        className="nav-link"
-        href="/contact"
-        onClick={[Function]}
-      >
-        Contact
-      </a>
-    </div>
+      Contact
+    </a>
   </div>
 </nav>
 `;
