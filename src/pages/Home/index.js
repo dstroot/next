@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import './styles.scss';
 
 // Components
-import Section from '../../components/Sections/SectionHero';
-import SectionBestLife from '../../components/Sections/SectionBestLife';
-import SectionManageUncertainty from '../../components/Sections/SectionManageUncertainty';
-import SectionFirstProduct from '../../components/Sections/SectionFirstProduct';
-import SectionDesignWithYouInMind from '../../components/Sections/SectionDesignWithYouInMind';
+import Section from '../../components/Sections/SectionHero/SectionHero';
+import SectionBestLife from '../../components/Sections/SectionTwoColumns/SectionBestLife';
+import SectionManageUncertainty from '../../components/Sections/SectionTwoColumns/SectionManageUncertainty';
+import SectionFirstProduct from '../../components/Sections/SectionOneColumn/SectionFirstProduct';
+import SectionDesignWithYouInMind from '../../components/Sections/SectionTwoColumns/SectionDesignWithYouInMind';
 import SectionAskUs from '../../components/Sections/SectionAskUs';
 
 const Home = () => {

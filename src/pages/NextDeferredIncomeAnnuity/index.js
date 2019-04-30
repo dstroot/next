@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 
 //components
-import SectionStayInTouch from '../../components/Sections/SectionStayInTouch';
-import SectionBeginModestly from '../../components/Sections/SectionBeginModestly';
-import SectionPlaysNice from '../../components/Sections/SectionPlaysNice';
-import SectionSafetyNet from '../../components/Sections/SectionSafetyNet';
+import SectionStayInTouch from '../../components/Sections/SectionOneColumn/SectionStayInTouch';
+import SectionBeginModestly from '../../components/Sections/SectionTwoColumns/SectionBeginModestly';
+import SectionSafetyNet from '../../components/Sections/SectionTwoColumns/SectionSafetyNet';
 
 const NextDeferredIncomeAnnuity = () => {
   // Set the page title and position using the useEffect hook
@@ -16,7 +15,6 @@ const NextDeferredIncomeAnnuity = () => {
   return (
     <div>
       <SectionSafetyNet />
-      <SectionPlaysNice />
       <SectionStayInTouch />
       <SectionBeginModestly />
     </div>

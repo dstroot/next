@@ -1,5 +1,8 @@
 import React from 'react';
 
+// component
+import SectionTwoColumns from '..';
+
 // reveal
 import Fade from 'react-reveal/Fade';
 
@@ -8,18 +11,14 @@ import womanphone from './media/womanphone.svg';
 
 const SectionDesignWithYouInMind = () => {
   return (
-    <div className="py-6">
-      <div className="container text-center">
-        <Fade bottom>
-          <h1 className="nxt_heading-large mb-5">Designed with you in mind</h1>
-        </Fade>
-        <div className="row">
-          <div className="col-md-6">
-            <Fade bottom>
-              <img src={womanphone} alt="Woman with the Phone" />
-            </Fade>
-          </div>
-          <div className="col-md-6">
+    <div>
+      <SectionTwoColumns
+        styleTextAlign="text-center"
+        sectionHead="Designed with you in mind"
+        sectionHeadStyle="nxt_heading-large mb-5"
+        contentLeft={<img src={womanphone} alt="Woman with the Phone" />}
+        contentRight={
+          <div>
             <Fade bottom>
               <h2 className="nxt_heading-small mb-2"> Fearlessly Flexible</h2>
             </Fade>
@@ -45,8 +44,8 @@ const SectionDesignWithYouInMind = () => {
               <p className="mb-5">No hidden fees or charges.</p>
             </Fade>
           </div>
-        </div>
-      </div>
+        }
+      />
     </div>
   );
 };
