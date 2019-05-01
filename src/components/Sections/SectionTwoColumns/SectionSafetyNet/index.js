@@ -7,8 +7,8 @@ import SectionTwoColumns from '..';
 import Fade from 'react-reveal/Fade';
 
 // images
-import ladylaptop1 from '../SectionSafetyNet/media/ladylaptop1.svg';
-import GirlandDog from '../SectionPlaysNice/media/GirlandDog.svg';
+import ladylaptop1 from '../../SectionTwoColumns/SectionSafetyNet/media/ladylaptop1.svg';
+import GirlandDog from '../../SectionTwoColumns/SectionSafetyNet/media/GirlandDog.svg';
 
 // our component
 const SectionSafetyNet = () => {
