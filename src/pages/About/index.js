@@ -1,5 +1,8 @@
 import React, { useEffect } from 'react';
 
+// component
+import SectionBornInCalifornia from '../../components/Sections/SectionHero/SectionBornInCalifornia';
+
 const About = () => {
   // Set the page title and position using the useEffect hook
   useEffect(() => {
@@ -9,7 +12,7 @@ const About = () => {
 
   return (
     <div>
-      <h1>This is the About Page</h1>
+      <SectionBornInCalifornia />
     </div>
   );
 };

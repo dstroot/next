@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+// component
+import SectionHereToHelp from '../../components/Sections/SectionHero/SectionHereToHelp';
 
 const Contact = () => {
   // Set the page title and position using the useEffect hook
@@ -9,7 +11,7 @@ const Contact = () => {
 
   return (
     <div>
-      <h1>This is the Contact Page</h1>
+      <SectionHereToHelp />
     </div>
   );
 };
