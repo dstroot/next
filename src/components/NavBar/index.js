@@ -32,16 +32,6 @@ const NavBar = () => {
     }
   };
 
-  // hide and show classes when small
-  let buttonClasses = 'navbar-toggler';
-  if (hidden) {
-    buttonClasses = 'navbar-toggler collapsed';
-  }
-  let dropDown = 'navbar-collapse collapse show bg-white';
-  if (hidden) {
-    dropDown = 'navbar-collapse collapse';
-  }
-
   return (
     <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
       {/* Brand */}
@@ -54,10 +44,9 @@ const NavBar = () => {
           alt="NEXT by Pacific Life"
         />
       </Link>
-
       {/* Burger menu */}
       <button
-        className={buttonClasses}
+        className={hidden ? 'navbar-toggler collapsed' : 'navbar-toggler'}
         type="button"
         aria-label="Toggle navigation"
         onClick={toggleHidden}
@@ -70,9 +59,14 @@ const NavBar = () => {
           alt="Menu"
         />
       </button>
-
       {/* Links */}
-      <div className={dropDown}>
+      <div
+        className={
+          hidden
+            ? 'navbar-collapse collapse'
+            : 'navbar-collapse collapse show bg-white'
+        }
+      >
         <div className="mx-auto" />
         <ExactNavLink to="/" onClick={toggleHidden}>
           Home
