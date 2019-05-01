@@ -1,7 +1,7 @@
 import React from 'react';
 
 // component
-import SectionTwoColumns from '..';
+import SectionTwoColumns from '../../SectionTwoColumns';
 
 //reveal
 import Fade from 'react-reveal/Fade';
@@ -12,7 +12,7 @@ import canoeCouple from './media/canoecouple.svg';
 // our component
 const SectionManageUncertainty = () => {
   return (
-    <div id="bestlife">
+    <div>
       <SectionTwoColumns
         styleLeft="order-2"
         styleRight="order-1"

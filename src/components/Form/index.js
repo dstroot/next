@@ -1,7 +1,7 @@
 import React from 'react';
 
 //components
-// import Button from '../Button';
+import Button from '../Button';
 
 const Form = () => {
   return (
@@ -30,6 +30,9 @@ const Form = () => {
             id="InputMessage"
             rows="3"
           />
+        </div>
+        <div className="mt-5">
+          <Button path="#" buttonText="Submit" />
         </div>
       </div>
     </form>

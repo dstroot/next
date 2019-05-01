@@ -10,7 +10,7 @@ import Tree from '../../../Card/media/evergreen.svg';
 const SectionFirstProduct = () => {
   return (
     <SectionOneColumn
-      styleBackground="nxt_bg-gray"
+      styleBackground="bg-light"
       sectionHeadStyle="nxt_heading-xlarge"
       sectionHead="Introducing our first product"
       content={

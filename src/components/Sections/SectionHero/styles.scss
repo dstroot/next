@@ -1,0 +1,31 @@
+// styles
+.background {
+  /* Set height relative to width */
+  height: 75vh;
+  min-height: 500px;
+
+  /* Position the image to scale nicely on all screens */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* bottom border */
+  border-bottom: 3px solid #dde1e7;
+}
+
+// place hero image on the background
+.hero-image {
+  width: 20vw;
+  min-width: 175px;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+// place the text on the background image
+.divText {
+  position: absolute;
+  top: 10vw;
+  width: 100vw;
+}
