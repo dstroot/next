@@ -16,7 +16,13 @@ const SectionDesignWithYouInMind = () => {
         styleTextAlign="text-center"
         sectionHead="Designed with you in mind"
         sectionHeadStyle="nxt_heading-large mb-5"
-        contentLeft={<img src={womanphone} alt="Woman with the Phone" />}
+        contentLeft={
+          <img
+            className="img-fluid p-5"
+            src={womanphone}
+            alt="Woman with the Phone"
+          />
+        }
         contentRight={
           <div>
             <Fade bottom>

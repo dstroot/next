@@ -3,9 +3,6 @@ import React from 'react';
 //components
 import SectionTwoColumns from '..';
 
-//reveal
-import Fade from 'react-reveal/Fade';
-
 // images
 import ladylaptop1 from '../../SectionTwoColumns/SectionSafetyNet/media/ladylaptop1.svg';
 import GirlandDog from '../../SectionTwoColumns/SectionSafetyNet/media/GirlandDog.svg';
@@ -15,7 +12,7 @@ const SectionSafetyNet = () => {
   return (
     <div>
       <SectionTwoColumns
-        styleBackground="nxt_bg-gray"
+        styleBackground="bg-light"
         styleLeft="order-2"
         styleRight="order-1"
         heading="A safety net for later"
@@ -24,14 +21,14 @@ const SectionSafetyNet = () => {
       Annuity provides an income stream that you can't outlive."
         contentLeft={
           <img
-            className="img-fluid"
+            className="img-fluid p-5"
             src={ladylaptop1}
             alt="Lady on the Laptop"
           />
         }
       />
       <SectionTwoColumns
-        styleBackground="nxt_bg-gray"
+        styleBackground="bg-light"
         contentLeft={
           <img className="img-fluid p-5" src={GirlandDog} alt="Girla and Dog" />
         }

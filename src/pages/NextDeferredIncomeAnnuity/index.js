@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 
 //components
+import SectionDeferedIncomeAnnuity from '../../components/Sections/SectionHero/SectionDeferedIncomeAnnuity';
+import SectionSafetyNet from '../../components/Sections/SectionTwoColumns/SectionSafetyNet';
 import SectionStayInTouch from '../../components/Sections/SectionOneColumn/SectionStayInTouch';
 import SectionBeginModestly from '../../components/Sections/SectionTwoColumns/SectionBeginModestly';
-import SectionSafetyNet from '../../components/Sections/SectionTwoColumns/SectionSafetyNet';
+import SectionHowItWorks from '../../components/Sections/SectionThreeColumns/SectionHowItWorks';
+import SectionQuoteToday from '../../components/Sections/SectionOneColumn/SectionQuoteToday';
 
 const NextDeferredIncomeAnnuity = () => {
   // Set the page title and position using the useEffect hook
@@ -14,9 +17,12 @@ const NextDeferredIncomeAnnuity = () => {
 
   return (
     <div>
+      <SectionDeferedIncomeAnnuity />
       <SectionSafetyNet />
       <SectionStayInTouch />
       <SectionBeginModestly />
+      <SectionHowItWorks />
+      <SectionQuoteToday />
     </div>
   );
 };

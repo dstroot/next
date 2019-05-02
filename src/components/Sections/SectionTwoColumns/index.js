@@ -1,6 +1,6 @@
 import React from 'react';
 
-// reveal
+// Animation
 import Fade from 'react-reveal/Fade';
 
 const SectionTwoColumns = props => {
@@ -9,7 +9,7 @@ const SectionTwoColumns = props => {
       <div className="container text-left">
         <div className={`container ${props.styleTextAlign}`}>
           <Fade bottom>
-            <h1 className={` ${props.sectionHeadStyle} `}>
+            <h1 className={` nxt_heading-xlarge ${props.sectionHeadStyle} `}>
               {props.sectionHead}
             </h1>
           </Fade>
@@ -23,7 +23,7 @@ const SectionTwoColumns = props => {
               <div className="mt-5">
                 <Fade bottom>
                   <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-                  <p className="mt-4">{props.contentRight}</p>
+                  <p className="mt-4 pr-5">{props.contentRight}</p>
                 </Fade>
               </div>
             </div>

@@ -12,7 +12,7 @@ import Windsailing from './media/Windsailing.svg';
 const SectionBeginModestly = () => {
   return (
     <SectionTwoColumns
-      styleBackground="nxt_bg-gray"
+      styleBackground="bg-light"
       contentLeft={
         <img className="img-fluid p-5" src={Windsailing} alt="Windsailing" />
       }
