@@ -53,6 +53,20 @@ exports[`Form it should render 1`] = `
         type="text"
       />
     </div>
+    <div
+      className="mt-5"
+    >
+      <a
+        href="/#"
+        onClick={[Function]}
+      >
+        <button
+          className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+        >
+          Submit
+        </button>
+      </a>
+    </div>
   </div>
 </form>
 `;

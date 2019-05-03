@@ -55,4 +55,5 @@ const SectionDesignWithYouInMind = () => {
     </div>
   );
 };
+
 export default SectionDesignWithYouInMind;

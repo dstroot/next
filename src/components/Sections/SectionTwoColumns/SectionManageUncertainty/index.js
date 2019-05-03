@@ -4,7 +4,7 @@ import React from 'react';
 import SectionTwoColumns from '../../SectionTwoColumns';
 
 //reveal
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 // images
 import canoeCouple from './media/canoecouple.svg';

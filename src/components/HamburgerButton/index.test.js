@@ -1,9 +1,9 @@
-import React from "react";
-import { create } from "react-test-renderer";
-import { mount } from "enzyme";
-import HamburgerButton from "../HamburgerButton";
+import React from 'react';
+import { create } from 'react-test-renderer';
+import { mount } from 'enzyme';
+import HamburgerButton from '../HamburgerButton';
 
-describe("HamburgerButton", () => {
+describe('HamburgerButton', () => {
   // mount the component
   let mountedComponent;
   const getMountedComponent = () => {
@@ -17,17 +17,22 @@ describe("HamburgerButton", () => {
     mountedComponent = undefined;
   });
 
-  it("it should render", () => {
-    let tree = create(<HamburgerButton />);
+  it('it should render `unclicked`', () => {
+    let tree = create(<HamburgerButton clicked={false} />);
     expect(tree.toJSON()).toMatchSnapshot();
   });
 
-  it("it should say HamburgerButton!", () => {
-    const h1 = getMountedComponent()
-      .find("h1")
+  it('it should render `clicked`', () => {
+    let tree = create(<HamburgerButton clicked={true} />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+
+  it('it should contain an svg', () => {
+    const svg = getMountedComponent()
+      .find('svg')
       .first();
 
-    expect(h1.text()).toContain("HamburgerButton!");
+    expect(svg.length).toBe(1);
   });
 });
 

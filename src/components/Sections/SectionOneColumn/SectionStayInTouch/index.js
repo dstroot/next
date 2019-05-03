@@ -5,7 +5,7 @@ import SectionOneColumn from '..';
 import Button from '../../../Button';
 
 //animation
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 const SectionStayInTouch = () => {
   return (

@@ -1,28 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SectionHero it should render 1`] = `
+exports[`SectionWhatsYourNext it should render 1`] = `
 <div
+  className="background"
   style={
     Object {
       "backgroundImage": "url(mainbg1animationB.svg)",
-      "backgroundPosition": "bottom",
-      "backgroundRepeat": "no-repeat",
-      "backgroundSize": "cover",
-      "borderBottom": "3px solid #DDE1E7",
-      "height": "75vh",
-      "minHeight": "500px",
-      "position": "relative",
     }
   }
 >
   <div
-    style={
-      Object {
-        "position": "absolute",
-        "top": "10vw",
-        "width": "100vw",
-      }
-    }
+    className="divText"
   >
     <div
       className="container"
@@ -34,16 +22,9 @@ exports[`SectionHero it should render 1`] = `
           className="col text-center"
         >
           <h1
-            className="slab"
+            className="nxt_heading-large"
           >
-            What’s your 
-            <span
-              className="text-primary"
-            >
-              next
-            </span>
-             
-            adventure?
+            What’s your next adventure?
           </h1>
         </div>
       </div>
@@ -79,17 +60,9 @@ exports[`SectionHero it should render 1`] = `
     </div>
   </div>
   <img
-    alt="Moped"
+    alt="moped"
+    className="hero-image"
     src="moped.svg"
-    style={
-      Object {
-        "bottom": "0",
-        "left": "10%",
-        "minWidth": "175px",
-        "position": "absolute",
-        "width": "20vw",
-      }
-    }
   />
 </div>
 `;

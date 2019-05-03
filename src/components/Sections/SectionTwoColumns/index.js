@@ -23,6 +23,11 @@ const SectionTwoColumns = props => {
               <div className="mt-5">
                 <Fade bottom>
                   <h1 className="nxt_heading-xlarge">{props.heading}</h1>
+                  {/* TODO: p below should be div
+                    Content ois throwing an error:
+                    Warning: validateDOMNesting(...): <h2> cannot appear as a descendant of <p>.
+                    in h2 (at SectionDesignWithYouInMind/index.js:29)
+                  */}
                   <p className="mt-4 pr-5">{props.contentRight}</p>
                 </Fade>
               </div>

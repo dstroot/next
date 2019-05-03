@@ -4,7 +4,7 @@ import React from 'react';
 import SectionTwoColumns from '..';
 
 // reveal
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 
 // images
 import yoga from './media/yogalady.svg';
