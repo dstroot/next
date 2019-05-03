@@ -51,51 +51,55 @@ exports[`NavBar it should render large 1`] = `
 `;
 
 exports[`NavBar it should render small 1`] = `
-<nav
-  className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
+<div
+  width="400px"
 >
-  <a
-    aria-current="page"
-    className="navbar-brand"
-    href="/"
-    onClick={[Function]}
+  <nav
+    className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
   >
-    <img
-      alt="NEXT by Pacific Life"
-      className="d-inline-block align-middle"
-      height="53"
-      src="NXT_Logo_light.svg"
-      width="115"
-    />
-  </a>
-  <div
-    className="navbar-collapse collapse"
-  >
-    <div
-      className="mx-auto"
-    />
     <a
       aria-current="page"
-      className="active nav-link"
+      className="navbar-brand"
       href="/"
       onClick={[Function]}
     >
-      Home
+      <img
+        alt="NEXT by Pacific Life"
+        className="d-inline-block align-middle"
+        height="53"
+        src="NXT_Logo_light.svg"
+        width="115"
+      />
     </a>
-    <a
-      className="nav-link"
-      href="/about"
-      onClick={[Function]}
+    <div
+      className="navbar-collapse collapse"
     >
-      About
-    </a>
-    <a
-      className="nav-link"
-      href="/contact"
-      onClick={[Function]}
-    >
-      Contact
-    </a>
-  </div>
-</nav>
+      <div
+        className="mx-auto"
+      />
+      <a
+        aria-current="page"
+        className="active nav-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Home
+      </a>
+      <a
+        className="nav-link"
+        href="/about"
+        onClick={[Function]}
+      >
+        About
+      </a>
+      <a
+        className="nav-link"
+        href="/contact"
+        onClick={[Function]}
+      >
+        Contact
+      </a>
+    </div>
+  </nav>
+</div>
 `;

@@ -27,7 +27,11 @@ describe('NavBar', () => {
 
   it('it should render small', () => {
     fireResize(320);
-    const component = renderer.create(<NavBar />);
+    const component = renderer.create(
+      <div width="400px">
+        <NavBar />
+      </div>
+    );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -50,18 +54,18 @@ describe('NavBar', () => {
 
   // it('menu should appear when button is pressed', () => {
   //   // make the window small
-  //   fireResize(320);
+  //   fireResize(420);
 
   //   // now click the button
-  //   const button = getMountedComponent().find('button');
+  //   const button = getMountedComponent().find('svg');
   //   button.simulate('click');
 
   //   // menu items should be visible
   //   expect(
   //     getMountedComponent()
-  //       .find('button')
-  //       .first()
-  //       .hasClass('navbar-toggler')
+  //       .find('a')
+  //       .second()
+  //       .hasClass('nav-link')
   //   ).toBe(true);
 
   //   // now click the button again
