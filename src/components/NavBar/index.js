@@ -17,7 +17,7 @@ export const isActive = ({ isCurrent }) => {
     : { className: 'nav-link' };
 };
 
-// `getProps` Calls up to you to get props for the underlying anchor element.
+// getProps` Calls up to you to get props for the underlying anchor element.
 // Useful for styling the anchor as active.
 const ExactNavLink = props => <Link getProps={isActive} {...props} />;
 
@@ -53,7 +53,7 @@ const NavBar = () => {
 
         {/* Links */}
         {clicked ? (
-          <div className="navbar-collapse collapse show bg-white">
+          <div className="navbar-collapse show bg-white">
             <ExactNavLink to="/" onClick={toggle}>
               Home
             </ExactNavLink>
