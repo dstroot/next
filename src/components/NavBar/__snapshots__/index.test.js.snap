@@ -18,19 +18,6 @@ exports[`NavBar it should render large 1`] = `
       width="115"
     />
   </a>
-  <button
-    aria-label="Toggle navigation"
-    className="navbar-toggler collapsed"
-    onClick={[Function]}
-    type="button"
-  >
-    <img
-      alt="Menu"
-      className="d-inline-block align-middle"
-      src="burgermenu.svg"
-      width="35"
-    />
-  </button>
   <div
     className="navbar-collapse collapse"
   >
@@ -81,19 +68,6 @@ exports[`NavBar it should render small 1`] = `
       width="115"
     />
   </a>
-  <button
-    aria-label="Toggle navigation"
-    className="navbar-toggler collapsed"
-    onClick={[Function]}
-    type="button"
-  >
-    <img
-      alt="Menu"
-      className="d-inline-block align-middle"
-      src="burgermenu.svg"
-      width="35"
-    />
-  </button>
   <div
     className="navbar-collapse collapse"
   >
