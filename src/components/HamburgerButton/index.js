@@ -2,7 +2,7 @@ import React from 'react';
 import { Motion, spring, presets } from 'react-motion';
 
 // From: https://codepen.io/du5rte/pen/EyRVkJ
-const HamburgerButton = ({ toggler, hidden }) => {
+const HamburgerButton = ({ toggler, clicked }) => {
   const style = {
     overflow: 'visible',
     cursor: 'pointer',
@@ -14,8 +14,8 @@ const HamburgerButton = ({ toggler, hidden }) => {
     <svg viewBox="0 0 96 96" height="1.3em" onClick={toggler} style={style}>
       <Motion
         style={{
-          x: spring(!hidden ? 1 : 0, presets.wobbly),
-          y: spring(!hidden ? 0 : 1, presets.wobbly),
+          x: spring(clicked ? 1 : 0, presets.wobbly),
+          y: spring(clicked ? 0 : 1, presets.wobbly),
         }}
       >
         {({ x, y }) => (

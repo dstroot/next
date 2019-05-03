@@ -23,10 +23,10 @@ const ExactNavLink = props => <Link getProps={isActive} {...props} />;
 
 const NavBar = () => {
   const small = useMediaQuery(`screen and (max-width: 575px)`);
-  const [hidden, setHidden] = useState(true);
+  const [clicked, setClicked] = useState(false);
 
   const toggle = event => {
-    setHidden(!hidden);
+    setClicked(!clicked);
   };
 
   if (small) {
@@ -48,11 +48,11 @@ const NavBar = () => {
           type="button"
           aria-label="Toggle navigation"
           toggler={toggle}
-          hidden={hidden}
+          clicked={clicked}
         />
 
         {/* Links */}
-        {!hidden ? (
+        {clicked ? (
           <div className="navbar-collapse collapse show bg-white">
             <ExactNavLink to="/" onClick={toggle}>
               Home

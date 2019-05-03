@@ -48,45 +48,45 @@ describe('NavBar', () => {
     ).toBe(true);
   });
 
-  it('menu should appear when button is pressed', () => {
-    // make the window small
-    fireResize(320);
+  // it('menu should appear when button is pressed', () => {
+  //   // make the window small
+  //   fireResize(320);
 
-    // now click the button
-    const button = getMountedComponent().find('button');
-    button.simulate('click');
+  //   // now click the button
+  //   const button = getMountedComponent().find('button');
+  //   button.simulate('click');
 
-    // menu items should be visible
-    expect(
-      getMountedComponent()
-        .find('button')
-        .first()
-        .hasClass('navbar-toggler')
-    ).toBe(true);
+  //   // menu items should be visible
+  //   expect(
+  //     getMountedComponent()
+  //       .find('button')
+  //       .first()
+  //       .hasClass('navbar-toggler')
+  //   ).toBe(true);
 
-    // now click the button again
-    button.simulate('click');
+  //   // now click the button again
+  //   button.simulate('click');
 
-    // menu items should be hidden
-    expect(
-      getMountedComponent()
-        .find('button')
-        .first()
-        .hasClass('navbar-toggler collapsed')
-    ).toBe(true);
+  //   // menu items should be hidden
+  //   expect(
+  //     getMountedComponent()
+  //       .find('button')
+  //       .first()
+  //       .hasClass('navbar-toggler collapsed')
+  //   ).toBe(true);
 
-    // make the window large
-    fireResize(1000);
+  //   // make the window large
+  //   fireResize(1000);
 
-    // now click the button again
-    button.simulate('click');
+  //   // now click the button again
+  //   button.simulate('click');
 
-    // menu items should be hidden
-    expect(
-      getMountedComponent()
-        .find('button')
-        .first()
-        .hasClass('navbar-toggler collapsed')
-    ).toBe(true);
-  });
+  //   // menu items should be hidden
+  //   expect(
+  //     getMountedComponent()
+  //       .find('button')
+  //       .first()
+  //       .hasClass('navbar-toggler collapsed')
+  //   ).toBe(true);
+  // });
 });
