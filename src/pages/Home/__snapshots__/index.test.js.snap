@@ -119,16 +119,17 @@ Array [
                 >
                   Keep living your best life
                 </h1>
-                <p
-                  className="react-reveal mt-4 pr-5"
+                <div
+                  className="react-reveal"
                   style={
                     Object {
                       "opacity": undefined,
                     }
                   }
                 >
+                  className="mt-4 pr-5"&gt;
                   Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -187,16 +188,17 @@ Array [
                 >
                   A way to manage uncertainty
                 </h1>
-                <p
-                  className="react-reveal mt-4 pr-5"
+                <div
+                  className="react-reveal"
                   style={
                     Object {
                       "opacity": undefined,
                     }
                   }
                 >
+                  className="mt-4 pr-5"&gt;
                   Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -323,14 +325,15 @@ Array [
                     }
                   }
                 />
-                <p
-                  className="react-reveal mt-4 pr-5"
+                <div
+                  className="react-reveal"
                   style={
                     Object {
                       "opacity": undefined,
                     }
                   }
                 >
+                  className="mt-4 pr-5"&gt;
                   <div>
                     <h2
                       className="react-reveal nxt_heading-small mb-2"
@@ -393,7 +396,7 @@ Array [
                       No hidden fees or charges.
                     </p>
                   </div>
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -459,14 +462,15 @@ Array [
                   }
                 }
               />
-              <p
-                className="react-reveal mt-4 pr-5"
+              <div
+                className="react-reveal"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
+                className="mt-4 pr-5"&gt;
                 <form>
                   <div
                     className="text-left nxt_body-xsmall"
@@ -535,7 +539,7 @@ Array [
                     </div>
                   </div>
                 </form>
-              </p>
+              </div>
             </div>
           </div>
         </div>

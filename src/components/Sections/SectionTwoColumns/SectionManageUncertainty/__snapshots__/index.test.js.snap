@@ -52,16 +52,17 @@ exports[`SectionManageUncertainty it should render 1`] = `
               >
                 A way to manage uncertainty
               </h1>
-              <p
-                className="react-reveal mt-4 pr-5"
+              <div
+                className="react-reveal"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
+                className="mt-4 pr-5"&gt;
                 Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
-              </p>
+              </div>
             </div>
           </div>
         </div>

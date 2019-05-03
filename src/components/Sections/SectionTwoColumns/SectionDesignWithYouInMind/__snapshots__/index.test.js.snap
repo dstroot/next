@@ -52,14 +52,15 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
                   }
                 }
               />
-              <p
-                className="react-reveal mt-4 pr-5"
+              <div
+                className="react-reveal"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
+                className="mt-4 pr-5"&gt;
                 <div>
                   <h2
                     className="react-reveal nxt_heading-small mb-2"
@@ -122,7 +123,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
                     No hidden fees or charges.
                   </p>
                 </div>
-              </p>
+              </div>
             </div>
           </div>
         </div>
