@@ -3,6 +3,8 @@ import React from 'react';
 // Animation
 import Fade from 'react-reveal/Fade';
 
+//fix double containers
+
 const SectionTwoColumns = props => {
   return (
     <div className={`py-6 ${props.styleBackground}`}>
