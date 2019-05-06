@@ -1,9 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from '@reach/router';
+
+// components
+import HamburgerButton from '../HamburgerButton';
 
 // images
 import logo from './media/NXT_Logo_light.svg';
-import burger from './media/burgermenu.svg';
 
 // hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -15,22 +17,57 @@ export const isActive = ({ isCurrent }) => {
     : { className: 'nav-link' };
 };
 
-// `getProps` Calls up to you to get props for the underlying anchor element.
+// getProps` Calls up to you to get props for the underlying anchor element.
 // Useful for styling the anchor as active.
 const ExactNavLink = props => <Link getProps={isActive} {...props} />;
 
 const NavBar = () => {
   const small = useMediaQuery(`screen and (max-width: 575px)`);
-  const buttonRef = useRef(null);
-  const [hidden, setHidden] = useState(true);
+  const [clicked, setClicked] = useState(false);
 
-  const toggleHidden = event => {
-    if (small) {
-      setHidden(!hidden);
-      // blur the button (otherwise it stays pressed)
-      buttonRef.current.blur();
-    }
+  const toggle = event => {
+    setClicked(!clicked);
   };
+
+  if (small) {
+    return (
+      <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
+        {/* Brand */}
+        <Link to="/" className="navbar-brand">
+          <img
+            className="d-inline-block align-middle"
+            src={logo}
+            width="115"
+            height="53"
+            alt="NEXT by Pacific Life"
+          />
+        </Link>
+
+        {/* Burger menu */}
+        <HamburgerButton
+          type="button"
+          aria-label="Toggle navigation"
+          toggler={toggle}
+          clicked={clicked}
+        />
+
+        {/* Links */}
+        {clicked ? (
+          <div className="navbar-collapse show bg-white">
+            <ExactNavLink to="/" onClick={toggle}>
+              Home
+            </ExactNavLink>
+            <ExactNavLink to="/about" onClick={toggle}>
+              About
+            </ExactNavLink>
+            <ExactNavLink to="/contact" onClick={toggle}>
+              Contact
+            </ExactNavLink>
+          </div>
+        ) : null}
+      </nav>
+    );
+  }
 
   return (
     <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
@@ -44,37 +81,17 @@ const NavBar = () => {
           alt="NEXT by Pacific Life"
         />
       </Link>
-      {/* Burger menu */}
-      <button
-        className={hidden ? 'navbar-toggler collapsed' : 'navbar-toggler'}
-        type="button"
-        aria-label="Toggle navigation"
-        onClick={toggleHidden}
-        ref={buttonRef} // get a reference to the button
-      >
-        <img
-          className="d-inline-block align-middle"
-          src={burger}
-          width="35"
-          alt="Menu"
-        />
-      </button>
+
       {/* Links */}
-      <div
-        className={
-          hidden
-            ? 'navbar-collapse collapse'
-            : 'navbar-collapse collapse show bg-white'
-        }
-      >
+      <div className="navbar-collapse collapse">
         <div className="mx-auto" />
-        <ExactNavLink to="/" onClick={toggleHidden}>
+        <ExactNavLink to="/" onClick={toggle}>
           Home
         </ExactNavLink>
-        <ExactNavLink to="/about" onClick={toggleHidden}>
+        <ExactNavLink to="/about" onClick={toggle}>
           About
         </ExactNavLink>
-        <ExactNavLink to="/contact" onClick={toggleHidden}>
+        <ExactNavLink to="/contact" onClick={toggle}>
           Contact
         </ExactNavLink>
       </div>

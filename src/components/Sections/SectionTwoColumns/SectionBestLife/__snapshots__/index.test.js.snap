@@ -2,50 +2,71 @@
 
 exports[`SectionBestLife it should render 1`] = `
 <div
-  className="bg-light py-6"
   id="bestlife"
 >
   <div
-    className="container text-center"
+    className="py-6 bg-light"
   >
     <div
-      className="row"
+      className="container text-left"
     >
       <div
-        className="col-md-5"
+        className="container undefined"
       >
-        <img
-          alt="Yoga Lady"
-          className="img-fluid p-5"
-          src="yogalady.svg"
+        <h1
+          className="react-reveal  nxt_heading-xlarge undefined "
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
         />
-      </div>
-      <div
-        className="col-md-7"
-      >
         <div
-          className="mt-5"
+          className="row"
         >
-          <h1
-            className="react-reveal nxt_heading-xlarge"
+          <div
+            className="react-reveal col-md-5 undefined"
             style={
               Object {
                 "opacity": undefined,
               }
             }
           >
-            Keep living your best life
-          </h1>
-          <p
-            className="react-reveal mt-4"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
+            <img
+              alt="Yoga Lady"
+              className="img-fluid p-5"
+              src="yogalady.svg"
+            />
+          </div>
+          <div
+            className="col-md-7 undefined"
           >
-            Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
-          </p>
+            <div
+              className="mt-5"
+            >
+              <h1
+                className="react-reveal nxt_heading-xlarge"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                Keep living your best life
+              </h1>
+              <div
+                className="react-reveal"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                className="mt-4 pr-5"&gt;
+                Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

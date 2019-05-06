@@ -3,27 +3,15 @@
 exports[`Home it should render 1`] = `
 Array [
   <div
+    className="background"
     style={
       Object {
         "backgroundImage": "url(mainbg1animationB.svg)",
-        "backgroundPosition": "bottom",
-        "backgroundRepeat": "no-repeat",
-        "backgroundSize": "cover",
-        "borderBottom": "3px solid #DDE1E7",
-        "height": "75vh",
-        "minHeight": "500px",
-        "position": "relative",
       }
     }
   >
     <div
-      style={
-        Object {
-          "position": "absolute",
-          "top": "10vw",
-          "width": "100vw",
-        }
-      }
+      className="divText"
     >
       <div
         className="container"
@@ -35,16 +23,9 @@ Array [
             className="col text-center"
           >
             <h1
-              className="slab"
+              className="nxt_heading-large"
             >
-              What’s your 
-              <span
-                className="text-primary"
-              >
-                next
-              </span>
-               
-              adventure?
+              What’s your next adventure?
             </h1>
           </div>
         </div>
@@ -80,164 +61,145 @@ Array [
       </div>
     </div>
     <img
-      alt="Moped"
+      alt="moped"
+      className="hero-image"
       src="moped.svg"
-      style={
-        Object {
-          "bottom": "0",
-          "left": "10%",
-          "minWidth": "175px",
-          "position": "absolute",
-          "width": "20vw",
-        }
-      }
     />
   </div>,
   <div
-    className="bg-light py-6"
     id="bestlife"
   >
     <div
-      className="container text-center"
+      className="py-6 bg-light"
     >
       <div
-        className="row"
+        className="container text-left"
       >
         <div
-          className="col-md-5"
+          className="container undefined"
         >
-          <img
-            alt="Yoga Lady"
-            className="img-fluid p-5"
-            src="yogalady.svg"
+          <h1
+            className="react-reveal  nxt_heading-xlarge undefined "
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           />
-        </div>
-        <div
-          className="col-md-7"
-        >
           <div
-            className="mt-5"
-          >
-            <h1
-              className="react-reveal nxt_heading-xlarge"
-              style={
-                Object {
-                  "opacity": undefined,
-                }
-              }
-            >
-              Keep living your best life
-            </h1>
-            <p
-              className="react-reveal mt-4"
-              style={
-                Object {
-                  "opacity": undefined,
-                }
-              }
-            >
-              Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="py-6"
-  >
-    <div
-      className="container"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="col-md-7"
-        >
-          <h1
-            className="react-reveal nxt_heading-xlarge"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            A way to manage uncertainty
-          </h1>
-          <p
-            className="react-reveal mt-4"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
-          </p>
-        </div>
-        <div
-          className="col-md-5"
-        >
-          <div>
-            <img
-              alt="Couple in a Canoe"
-              className="img-fluid"
-              src="canoecouple.svg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>,
-  <div
-    className="nxt_bg-gray py-6"
-  >
-    <div
-      className="container text-center"
-    >
-      <div
-        className="row"
-      >
-        <div
-          className="col-md-12"
-        >
-          <h1
-            className="nxt_heading-xlarge"
-          >
-            Introducing our first product
-          </h1>
-          <div
-            className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
+            className="row"
           >
             <div
-              className="card-body text-center"
+              className="react-reveal col-md-5 undefined"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
               <img
-                alt="Evergreen"
-                className="mb-2"
-                src="evergreen.svg"
+                alt="Yoga Lady"
+                className="img-fluid p-5"
+                src="yogalady.svg"
               />
-              <h5
-                className="card-title nxt_heading-small mb-4"
+            </div>
+            <div
+              className="col-md-7 undefined"
+            >
+              <div
+                className="mt-5"
               >
-                Next Deferred Income Annuity
-              </h5>
-              <p
-                className="card-text circular mb-5"
-              >
-                Create a future income stream you can count on for the rest of your life by saving over time.
-              </p>
-              <a
-                href="/nextdeferredincomeannuity"
-                onClick={[Function]}
-              >
-                <button
-                  className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                <h1
+                  className="react-reveal nxt_heading-xlarge"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
                 >
-                  Learn More
-                </button>
-              </a>
+                  Keep living your best life
+                </h1>
+                <div
+                  className="react-reveal"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
+                >
+                  className="mt-4 pr-5"&gt;
+                  Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div
+      className="py-6 undefined"
+    >
+      <div
+        className="container text-left"
+      >
+        <div
+          className="container undefined"
+        >
+          <h1
+            className="react-reveal  nxt_heading-xlarge undefined "
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          />
+          <div
+            className="row"
+          >
+            <div
+              className="react-reveal col-md-5 order-2"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
+            >
+              <img
+                alt="Canoe Couple"
+                className="img-fluid p-5"
+                src="canoecouple.svg"
+              />
+            </div>
+            <div
+              className="col-md-7 order-1"
+            >
+              <div
+                className="mt-5"
+              >
+                <h1
+                  className="react-reveal nxt_heading-xlarge"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
+                >
+                  A way to manage uncertainty
+                </h1>
+                <div
+                  className="react-reveal"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
+                >
+                  className="mt-4 pr-5"&gt;
+                  Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -245,11 +207,21 @@ Array [
     </div>
   </div>,
   <div
-    className="py-6"
+    className="py-6 bg-light"
   >
     <div
       className="container text-center"
     >
+      <h1
+        className="react-reveal  nxt_heading-xlarge "
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      >
+        Introducing our first product
+      </h1>
       <h1
         className="react-reveal nxt_heading-large mb-5"
         style={
@@ -257,179 +229,319 @@ Array [
             "opacity": undefined,
           }
         }
-      >
-        Designed with you in mind
-      </h1>
+      />
       <div
-        className="row"
+        className="react-reveal"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
       >
         <div
-          className="col-md-6"
+          className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
         >
-          <img
-            alt="Woman with the Phone"
-            className="react-reveal"
-            src="womanphone.svg"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          />
+          <div
+            className="card-body text-center"
+          >
+            <img
+              alt="Evergreen"
+              className="mb-2"
+              src="evergreen.svg"
+            />
+            <h5
+              className="card-title nxt_heading-small mb-4"
+            >
+              Next Deferred Income Annuity
+            </h5>
+            <p
+              className="card-text circular mb-5"
+            >
+              Create a future income stream you can count on for the rest of your life by saving over time.
+            </p>
+            <a
+              href="/nextdeferredincomeannuity"
+              onClick={[Function]}
+            >
+              <button
+                className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+              >
+                Learn More
+              </button>
+            </a>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>,
+  <div>
+    <div
+      className="py-6 undefined"
+    >
+      <div
+        className="container text-left"
+      >
         <div
-          className="col-md-6"
+          className="container text-center"
         >
-          <h2
-            className="react-reveal nxt_heading-small mb-2"
+          <h1
+            className="react-reveal  nxt_heading-xlarge nxt_heading-large mb-5 "
             style={
               Object {
                 "opacity": undefined,
               }
             }
           >
-             Fearlessly Flexible
-          </h2>
-          <p
-            className="react-reveal mb-5"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
+            Designed with you in mind
+          </h1>
+          <div
+            className="row"
           >
-            Our products adapt to your life’s biggest moments. Change them when your needs do.
-          </p>
-          <h2
-            className="react-reveal nxt_heading-small mb-2"
-            style={
-              Object {
-                "opacity": undefined,
+            <div
+              className="react-reveal col-md-5 undefined"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
               }
-            }
-          >
-            Radically Simple
-          </h2>
-          <p
-            className="react-reveal mb-5"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            Straight forward products and features. Know what you're getting from the beginning.
-          </p>
-          <h2
-            className="react-reveal nxt_heading-small mb-2"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            Brazenly Transparent
-          </h2>
-          <p
-            className="react-reveal mb-5"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            No hidden fees or charges.
-          </p>
+            >
+              <img
+                alt="Woman with the Phone"
+                className="img-fluid p-5"
+                src="womanphone.svg"
+              />
+            </div>
+            <div
+              className="col-md-7 undefined"
+            >
+              <div
+                className="mt-5"
+              >
+                <h1
+                  className="react-reveal nxt_heading-xlarge"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
+                />
+                <div
+                  className="react-reveal"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
+                >
+                  className="mt-4 pr-5"&gt;
+                  <div>
+                    <h2
+                      className="react-reveal nxt_heading-small mb-2"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                       Fearlessly Flexible
+                    </h2>
+                    <p
+                      className="react-reveal mb-5"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                      Our products adapt to your life’s biggest moments. Change them when your needs do.
+                    </p>
+                    <h2
+                      className="react-reveal nxt_heading-small mb-2"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                      Radically Simple
+                    </h2>
+                    <p
+                      className="react-reveal mb-5"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                      Straight forward products and features. Know what you're getting from the beginning.
+                    </p>
+                    <h2
+                      className="react-reveal nxt_heading-small mb-2"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                      Brazenly Transparent
+                    </h2>
+                    <p
+                      className="react-reveal mb-5"
+                      style={
+                        Object {
+                          "opacity": undefined,
+                        }
+                      }
+                    >
+                      No hidden fees or charges.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>,
   <div
-    className="nxt_bg-gray py-6"
+    className="py-6 bg-light"
   >
     <div
-      className="container text-center"
+      className="container text-left"
     >
-      <h1
-        className="nxt_heading-large mb-5"
-      >
-        Ask us anything
-      </h1>
       <div
-        className="row"
+        className="container text-center"
       >
-        <div
-          className="col-md-6"
+        <h1
+          className="react-reveal  nxt_heading-xlarge nxt_heading-large "
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
         >
-          <form>
-            <div
-              className="text-left nxt_body-xsmall"
-            >
-              <div
-                className="form-group"
+          Ask us anything
+        </h1>
+        <div
+          className="row"
+        >
+          <div
+            className="react-reveal col-md-5 order-2 mt-5 text-left"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            <div>
+              <h2>
+                Next by Pacific Life
+              </h2>
+              <a
+                href="mailto: hello@meetnext.com"
               >
-                <label
-                  htmlFor="Name"
-                >
-                  Name
-                </label>
-                <input
-                  className="form-control"
-                  id="InputName"
-                  type="text"
-                />
-                <label
-                  className="mt-3"
-                  htmlFor="Email"
-                >
-                  Email
-                </label>
-                <input
-                  className="form-control"
-                  id="InputEmail"
-                  type="email"
-                />
-                <label
-                  className="mt-3"
-                  htmlFor="Phone"
-                >
-                  Phone
-                </label>
-                <input
-                  className="form-control"
-                  id="InputPhone"
-                  type="phone"
-                />
-                <label
-                  className="mt-3"
-                  htmlFor="Message"
-                >
-                  Message
-                </label>
-                <textarea
-                  className="form-control"
-                  id="InputMessage"
-                  rows="3"
-                  type="text"
-                />
+                hello@meetnext.com
+              </a>
+              <p>
+                (833) 646-NEXT (6398) 
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-md-7 order-1 text-left"
+          >
+            <div
+              className="mt-5"
+            >
+              <h1
+                className="react-reveal nxt_heading-xlarge"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              />
+              <div
+                className="react-reveal"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                className="mt-4 pr-5"&gt;
+                <form>
+                  <div
+                    className="text-left nxt_body-xsmall"
+                  >
+                    <div
+                      className="form-group"
+                    >
+                      <label
+                        htmlFor="Name"
+                      >
+                        Name
+                      </label>
+                      <input
+                        className="form-control"
+                        id="InputName"
+                        type="text"
+                      />
+                      <label
+                        className="mt-3"
+                        htmlFor="Email"
+                      >
+                        Email
+                      </label>
+                      <input
+                        className="form-control"
+                        id="InputEmail"
+                        type="email"
+                      />
+                      <label
+                        className="mt-3"
+                        htmlFor="Phone"
+                      >
+                        Phone
+                      </label>
+                      <input
+                        className="form-control"
+                        id="InputPhone"
+                        type="phone"
+                      />
+                      <label
+                        className="mt-3"
+                        htmlFor="Message"
+                      >
+                        Message
+                      </label>
+                      <textarea
+                        className="form-control"
+                        id="InputMessage"
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      className="mt-5"
+                    >
+                      <a
+                        href="/#"
+                        onClick={[Function]}
+                      >
+                        <button
+                          className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                        >
+                          Submit
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-          </form>
-        </div>
-        <div
-          className="col-md-6 text-left mt-4"
-        >
-          <h2>
-            Next by Pacific Life
-          </h2>
-          <a
-            href="mailto: hello@meetnext.com"
-          >
-            hello@meetnext.com
-          </a>
-          <p>
-            (833) 646-NEXT (6398) 
-          </p>
+          </div>
         </div>
       </div>
     </div>

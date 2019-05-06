@@ -1,0 +1,333 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About it should render 1`] = `
+<div>
+  <div
+    className="background"
+    style={
+      Object {
+        "backgroundImage": "url(Office.svg)",
+      }
+    }
+  >
+    <div
+      className="divText"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col text-center"
+          >
+            <h1
+              className="nxt_heading-large"
+            >
+              Born in California
+            </h1>
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col-md-8 offset-md-2 text-center"
+          >
+            <p
+              className="mt-4 circular"
+            >
+              Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      className="hero-image"
+    />
+  </div>
+  <div
+    className="py-6 bg-light"
+  >
+    <div
+      className="container text-left"
+    >
+      <div
+        className="container undefined"
+      >
+        <h1
+          className="react-reveal  nxt_heading-xlarge undefined "
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        />
+        <div
+          className="row"
+        >
+          <div
+            className="react-reveal col-md-5 order-2"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            <img
+              alt="Our Story Group"
+              className="img-fluid pd-5"
+              src="ourstorygroup.svg"
+            />
+          </div>
+          <div
+            className="col-md-7 order-1"
+          >
+            <div
+              className="mt-5"
+            >
+              <h1
+                className="react-reveal nxt_heading-xlarge"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                Our Story
+              </h1>
+              <div
+                className="react-reveal"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                className="mt-4 pr-5"&gt;
+                We started Next by Pacific Life with the goal of creating a better, seamless digital experience for the modern investor. We talked to all types of customers. What became clear is customers wanted simple, easy-to-understand products with clear value propositions. We are creating transparent products and an engaging customer experience by starting with the customer and working backwards.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="py-6 undefined"
+  >
+    <div
+      className="container text-left"
+    >
+      <div
+        className="container undefined"
+      >
+        <h1
+          className="react-reveal  nxt_heading-xlarge text-center mb-5 "
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          Our Design Principles
+        </h1>
+        <div
+          className="row"
+        >
+          <div
+            className="react-reveal col-md-5 undefined"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            <img
+              alt="Design System"
+              src="designsystemhi.svg"
+            />
+          </div>
+          <div
+            className="col-md-7 undefined"
+          >
+            <div
+              className="mt-5"
+            >
+              <h1
+                className="react-reveal nxt_heading-xlarge"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              />
+              <div
+                className="react-reveal"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                className="mt-4 pr-5"&gt;
+                <div
+                  className="m-5"
+                >
+                  <h3
+                    className="nxt_heading-small"
+                  >
+                     Simplicity 
+                  </h3>
+                  <p
+                    className="pb-4"
+                  >
+                    We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
+                  </p>
+                  <h3
+                    className="nxt_heading-small"
+                  >
+                     Empowerment 
+                  </h3>
+                  <p
+                    className="pb-4"
+                  >
+                    Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
+                  </p>
+                  <h3
+                    className="nxt_heading-small"
+                  >
+                     Flexibility 
+                  </h3>
+                  <p
+                    className="pb-4"
+                  >
+                    We recognize that customers’ needs change over time. Adopting a fluid mindset helps us design products that adapt to the customer over time.
+                  </p>
+                  <h3
+                    className="nxt_heading-small"
+                  >
+                     Engagement 
+                  </h3>
+                  <p
+                    className="pb-4"
+                  >
+                    Customers expect that we will be around for their entire lives, but traditionally most contact is at time of purchase and claims. We interact with customers in a meaningful and helpful way throughout the lifelong partnership.
+                  </p>
+                  <h3
+                    className="nxt_heading-small"
+                  >
+                     Transparency 
+                  </h3>
+                  <p
+                    className="pb-4"
+                  >
+                    We believe in an open and honest dialogue. Our industry may be complex, but we choose to always work in the best interest of the customer. That means we have to be clear about how our products work and the value they provide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="py-6 undefined"
+  >
+    <div
+      className="container text-left"
+    >
+      <div
+        className="container undefined"
+      >
+        <h1
+          className="react-reveal  nxt_heading-xlarge text-center "
+          style={
+            Object {
+              "opacity": undefined,
+            }
+          }
+        >
+          Backed by Pacific Life
+        </h1>
+        <div
+          className="row"
+        >
+          <div
+            className="react-reveal col-md-5 text-center"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            <div
+              className="mt-5"
+            >
+              <img
+                alt="Pacific Life Logo"
+                src="PLVertBWv2.svg"
+              />
+              <img
+                alt="2.3 Billions in Benefits"
+                src="Twobillies.svg"
+              />
+              <p>
+                Combined insurance and annuities in 2017
+              </p>
+            </div>
+          </div>
+          <div
+            className="col-md-7 undefined"
+          >
+            <div
+              className="mt-5"
+            >
+              <h1
+                className="react-reveal nxt_heading-xlarge"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              />
+              <div
+                className="react-reveal"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                className="mt-4 pr-5"&gt;
+                <div
+                  className="mt-5"
+                >
+                  <p>
+                    Pacific Life is one of the most dependable and experienced insurers in the industry. Backed by 150 years of experience, you can count on us to be there so you can go out and pursue your passions.
+                  </p>
+                  <img
+                    alt="A+ Superior"
+                    src="ARating.svg"
+                  />
+                  <p>
+                    A.M. Best rating for financial strength and claims-paying ability.
+                    <a
+                      href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
+                    >
+                      What the ratings mean.
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

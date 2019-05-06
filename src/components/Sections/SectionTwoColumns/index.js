@@ -3,6 +3,8 @@ import React from 'react';
 // Animation
 import Fade from 'react-reveal/Fade';
 
+//fix double containers
+
 const SectionTwoColumns = props => {
   return (
     <div className={`py-6 ${props.styleBackground}`}>
@@ -23,7 +25,7 @@ const SectionTwoColumns = props => {
               <div className="mt-5">
                 <Fade bottom>
                   <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-                  <p className="mt-4 pr-5">{props.contentRight}</p>
+                  <div>className="mt-4 pr-5">{props.contentRight}</div>
                 </Fade>
               </div>
             </div>

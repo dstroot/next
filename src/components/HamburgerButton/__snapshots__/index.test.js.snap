@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HamburgerButton it should render \`clicked\` 1`] = `
+<svg
+  height="1.3em"
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "cursor": "pointer",
+      "overflow": "visible",
+    }
+  }
+  viewBox="0 0 96 96"
+>
+  <g
+    fill="none"
+    id="navicon"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="14"
+  >
+    <line
+      transform="translate(12, -7) rotate(45, 7, 26)"
+      x1="7"
+      x2="89"
+      y1="26"
+      y2="26"
+    />
+    <line
+      transform="translate(12, 7) rotate(-45, 7, 70)"
+      x1="7"
+      x2="89"
+      y1="70"
+      y2="70"
+    />
+    <line
+      opacity={0}
+      transform="translate(-96)"
+      x1="7"
+      x2="89"
+      y1="48"
+      y2="48"
+    />
+  </g>
+</svg>
+`;
+
+exports[`HamburgerButton it should render \`unclicked\` 1`] = `
+<svg
+  height="1.3em"
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "cursor": "pointer",
+      "overflow": "visible",
+    }
+  }
+  viewBox="0 0 96 96"
+>
+  <g
+    fill="none"
+    id="navicon"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="14"
+  >
+    <line
+      transform="translate(0, 0) rotate(0, 7, 26)"
+      x1="7"
+      x2="89"
+      y1="26"
+      y2="26"
+    />
+    <line
+      transform="translate(0, 0) rotate(0, 7, 70)"
+      x1="7"
+      x2="89"
+      y1="70"
+      y2="70"
+    />
+    <line
+      opacity={1}
+      transform="translate(0)"
+      x1="7"
+      x2="89"
+      y1="48"
+      y2="48"
+    />
+  </g>
+</svg>
+`;

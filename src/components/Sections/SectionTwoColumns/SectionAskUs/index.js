@@ -19,8 +19,7 @@ const SectionAskUs = () => {
           <p>(833) 646-NEXT (6398) </p>
         </div>
       }
-      styleRight="order-1"
-      styleRight="text-left"
+      styleRight="order-1 text-left"
       contentRight={<Form />}
     />
   );
