@@ -14,11 +14,7 @@
     "rc-slider": "^8.6.9",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
-<<<<<<< HEAD
-    "react-gsap": "^1.2.0",
-=======
     "react-motion": "^0.5.2",
->>>>>>> a588c4e94f870619617b3a34c4e4a60993eb0e7c
     "react-reveal": "^1.2.2",
     "react-scripts": "^2.1.5",
     "react-testing-library": "^6.0.3",

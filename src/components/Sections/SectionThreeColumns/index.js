@@ -7,6 +7,7 @@ const SectionThreeColumns = props => {
   return (
     <div className={`${props.stylePadding} ${props.styleBackground}`}>
       <div className="container text-center">
+        {/* delete the extra container */}
         <div className={`container ${props.styleTextAlign}`} />
         <Fade bottom>
           <h1 className={` nxt_heading-xlarge ${props.sectionHeadStyle} `}>
