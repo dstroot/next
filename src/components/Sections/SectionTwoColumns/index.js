@@ -23,7 +23,7 @@ const SectionTwoColumns = props => {
               <div className="mt-5">
                 <Fade bottom>
                   <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-                  <div>className="mt-4 pr-5">{props.contentRight}</div>
+                  <div className="mt-4 pr-5">{props.contentRight}</div>
                 </Fade>
               </div>
             </div>
