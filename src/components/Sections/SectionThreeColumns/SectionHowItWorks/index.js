@@ -12,14 +12,22 @@ const SectionHowItWorks = () => {
   return (
     <div className="py-6">
       <SectionThreeColumns
-        sectionHead="How it works"
-        sectionHeadStyle="nxt_heading-xlarge"
-      />
-      <SectionThreeColumns
+        heading="How it works"
         styleColumnAlign="align-items-center"
-        contentLeft={<img src={pottedplant} width={60} alt="Potted Plant" />}
-        contentMiddle={<img src={Arrows} width={115} alt="Arrows" />}
-        contentRight={<img src={clock} width={115} alt="Clock" />}
+        contentLeft={
+          <img
+            className="mt-5"
+            src={pottedplant}
+            width={60}
+            alt="Potted Plant"
+          />
+        }
+        contentMiddle={
+          <img className="mt-5" src={Arrows} width={115} alt="Arrows" />
+        }
+        contentRight={
+          <img className="mt-5" src={clock} width={115} alt="Clock" />
+        }
       />
       <SectionThreeColumns
         contentLeft={

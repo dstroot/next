@@ -11,8 +11,7 @@ const SectionFirstProduct = () => {
   return (
     <SectionOneColumn
       styleBackground="bg-light"
-      sectionHeadStyle="nxt_heading-xlarge"
-      sectionHead="Introducing our first product"
+      heading="Introducing our first product"
       content={
         <Card
           img={Tree}

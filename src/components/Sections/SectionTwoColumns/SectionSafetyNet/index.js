@@ -10,7 +10,7 @@ import GirlandDog from '../../SectionTwoColumns/SectionSafetyNet/media/GirlandDo
 // our component
 const SectionSafetyNet = () => {
   return (
-    <div>
+    <div className="pd-1">
       <SectionTwoColumns
         styleBackground="bg-light"
         styleLeft="order-2"

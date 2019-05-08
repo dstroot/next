@@ -25,30 +25,18 @@ const SectionDesignWithYouInMind = () => {
         }
         contentRight={
           <div>
-            <Fade bottom>
-              <h2 className="nxt_heading-small mb-2"> Fearlessly Flexible</h2>
-            </Fade>
-            <Fade bottom>
-              <p className="mb-5">
-                Our products adapt to your life’s biggest moments. Change them
-                when your needs do.
-              </p>
-            </Fade>
-            <Fade bottom>
-              <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
-            </Fade>
-            <Fade bottom>
-              <p className="mb-5">
-                Straight forward products and features. Know what you're getting
-                from the beginning.
-              </p>
-            </Fade>
-            <Fade bottom>
-              <h2 className="nxt_heading-small mb-2">Brazenly Transparent</h2>
-            </Fade>
-            <Fade bottom>
-              <p className="mb-5">No hidden fees or charges.</p>
-            </Fade>
+            <h2 className="nxt_heading-small mb-2"> Fearlessly Flexible</h2>
+            <p className="mb-5">
+              Our products adapt to your life’s biggest moments. Change them
+              when your needs do.
+            </p>
+            <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
+            <p className="mb-5">
+              Straight forward products and features. Know what you're getting
+              from the beginning.
+            </p>
+            <h2 className="nxt_heading-small mb-2">Brazenly Transparent</h2>
+            <p className="mb-5">No hidden fees or charges.</p>
           </div>
         }
       />
