@@ -10,7 +10,7 @@ const About = () => {
   // Set the page title and position using the useEffect hook
   useEffect(() => {
     document.title = `NEXT • About`;
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   });
 
   return (

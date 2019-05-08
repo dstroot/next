@@ -99,14 +99,13 @@ exports[`About it should render 1`] = `
                 Our Story
               </h1>
               <div
-                className="react-reveal"
+                className="react-reveal mt-4 pr-5"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                className="mt-4 pr-5"&gt;
                 We started Next by Pacific Life with the goal of creating a better, seamless digital experience for the modern investor. We talked to all types of customers. What became clear is customers wanted simple, easy-to-understand products with clear value propositions. We are creating transparent products and an engaging customer experience by starting with the customer and working backwards.
               </div>
             </div>
@@ -165,14 +164,13 @@ exports[`About it should render 1`] = `
                 }
               />
               <div
-                className="react-reveal"
+                className="react-reveal mt-4 pr-5"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                className="mt-4 pr-5"&gt;
                 <div
                   className="m-5"
                 >
@@ -295,14 +293,13 @@ exports[`About it should render 1`] = `
                 }
               />
               <div
-                className="react-reveal"
+                className="react-reveal mt-4 pr-5"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                className="mt-4 pr-5"&gt;
                 <div
                   className="mt-5"
                 >

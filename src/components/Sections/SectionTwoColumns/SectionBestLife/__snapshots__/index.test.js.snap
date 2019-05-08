@@ -55,14 +55,13 @@ exports[`SectionBestLife it should render 1`] = `
                 Keep living your best life
               </h1>
               <div
-                className="react-reveal"
+                className="react-reveal mt-4 pr-5"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                className="mt-4 pr-5"&gt;
                 Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
               </div>
             </div>
