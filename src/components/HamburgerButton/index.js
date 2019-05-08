@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Motion, spring, presets } from 'react-motion';
 
 // From: https://codepen.io/du5rte/pen/EyRVkJ
@@ -59,3 +60,10 @@ const HamburgerButton = ({ toggler, clicked }) => {
 };
 
 export default HamburgerButton;
+
+HamburgerButton.propTypes = {
+  /** Function to toggle button clicked state */
+  toggler: PropTypes.func.isRequired,
+  /** Should be set to "true" if the button has been clicked */
+  clicked: PropTypes.bool.isRequired,
+};

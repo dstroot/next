@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Link } from '@reach/router';
 
 // components
-import HamburgerButton from '../HamburgerButton';
+// import HamburgerButton from '../HamburgerButton';
+import HamButton from '../HamButton';
 
 // images
 import logo from './media/NXT_Logo_light.svg';
@@ -27,33 +28,41 @@ const NavBar = () => {
 
   const toggle = event => {
     setClicked(!clicked);
+    window.scrollTo(0, 0);
   };
 
   if (small) {
     return (
-      <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
-        {/* Brand */}
-        <Link to="/" className="navbar-brand">
-          <img
-            className="d-inline-block align-middle"
-            src={logo}
-            width="115"
-            height="53"
-            alt="NEXT by Pacific Life"
+      <>
+        <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
+          {/* Brand */}
+          <Link to="/" className="navbar-brand">
+            <img
+              className="d-inline-block align-middle"
+              src={logo}
+              width="115"
+              height="53"
+              alt="NEXT by Pacific Life"
+            />
+          </Link>
+
+          {/* Burger menu */}
+          <HamButton
+            type="button"
+            toggler={toggle}
+            clicked={clicked}
+            aria-label="Toggle navigation"
           />
-        </Link>
+          {/* <HamburgerButton
+            type="button"
+            aria-label="Toggle navigation"
+            toggler={toggle}
+            clicked={clicked}
+          /> */}
+        </nav>
 
-        {/* Burger menu */}
-        <HamburgerButton
-          type="button"
-          aria-label="Toggle navigation"
-          toggler={toggle}
-          clicked={clicked}
-        />
-
-        {/* Links */}
         {clicked ? (
-          <div className="navbar-collapse show bg-white">
+          <div className="overlay text-right">
             <ExactNavLink to="/" onClick={toggle}>
               Home
             </ExactNavLink>
@@ -65,7 +74,7 @@ const NavBar = () => {
             </ExactNavLink>
           </div>
         ) : null}
-      </nav>
+      </>
     );
   }
 

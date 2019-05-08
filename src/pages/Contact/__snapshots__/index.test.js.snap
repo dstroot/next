@@ -107,14 +107,13 @@ exports[`Contact it should render 1`] = `
                 }
               />
               <div
-                className="react-reveal"
+                className="react-reveal mt-4 pr-5"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                className="mt-4 pr-5"&gt;
                 <form>
                   <div
                     className="text-left nxt_body-xsmall"

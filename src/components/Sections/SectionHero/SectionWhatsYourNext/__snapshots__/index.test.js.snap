@@ -1,68 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SectionWhatsYourNext it should render 1`] = `
-<div
-  className="background"
-  style={
-    Object {
-      "backgroundImage": "url(mainbg1animationB.svg)",
-    }
-  }
->
+<div>
   <div
-    className="divText"
+    className="background"
+    style={
+      Object {
+        "backgroundImage": "url(city.svg)",
+      }
+    }
   >
     <div
-      className="container"
+      className="divText"
     >
       <div
-        className="row"
+        className="container"
       >
         <div
-          className="col text-center"
+          className="row"
         >
-          <h1
-            className="nxt_heading-large"
+          <div
+            className="col text-center"
           >
-            What’s your next adventure?
-          </h1>
+            <h1
+              className="nxt_heading-large"
+            >
+              What’s your next adventure?
+            </h1>
+          </div>
         </div>
-      </div>
-      <div
-        className="row"
-      >
         <div
-          className="col-md-8 offset-md-2 text-center"
+          className="row"
         >
-          <p
-            className="mt-4 circular"
-          >
-            Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
-          </p>
-          <a
-            className="text-decoration-none mt-4"
-            href="#bestlife"
+          <div
+            className="col-md-8 offset-md-2 text-center"
           >
             <p
-              className="mt-4 mb-2 text-uppercase text-primary"
+              className="mt-4 circular"
             >
-              Learn More
+              Insurance products to complement your life goals and passions. We help you go after whatever's next for you.
             </p>
-            <img
-              alt="Arrow"
-              className="d-block-inline"
-              src="arrowdown.svg"
-              width={45}
-            />
-          </a>
+            <a
+              className="text-decoration-none mt-4"
+              href="#bestlife"
+            >
+              <p
+                className="mt-4 mb-2 text-uppercase text-primary"
+              >
+                Learn More
+              </p>
+              <img
+                alt="Arrow"
+                className="d-block-inline"
+                src="arrowdown.svg"
+                width={45}
+              />
+            </a>
+          </div>
         </div>
       </div>
     </div>
+    <img
+      alt="moped"
+      className="hero-image"
+      id="moped"
+      src="moped.svg"
+    />
   </div>
-  <img
-    alt="moped"
-    className="hero-image"
-    src="moped.svg"
-  />
 </div>
 `;
