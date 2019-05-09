@@ -78,7 +78,7 @@ const mopedBody = {
   minWidth: '105px',
   position: 'absolute',
   bottom: '4%',
-  left: '-500px',
+  left: '-200px',
   zIndex: '999',
 };
 

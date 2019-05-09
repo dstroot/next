@@ -9,13 +9,13 @@ const SectionHero = props => {
       <div className="divText">
         <div className="container">
           <div className="row">
-            <div className="col text-center mt-6">
-              <h1 className="nxt_heading-large mt-5">{props.heading}</h1>
+            <div className="col text-center">
+              <h1 className="nxt_heading-large">{props.heading}</h1>
             </div>
           </div>
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center">
-              <p className="mt-4">{props.content}</p>
+              <p className="mt-4 circular">{props.content}</p>
               {props.linkElement}
             </div>
           </div>
