@@ -1,6 +1,7 @@
 import React from 'react';
 // component
 import SectionHero from '../../SectionHero';
+import Clock from '../SectionBornInCalifornia/media/Clock';
 
 // image
 
@@ -14,11 +15,14 @@ const background = {
 
 const SectionBornInCalifornia = () => {
   return (
-    <SectionHero
-      backgroundImage={background}
-      heading="Born in California"
-      content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
-    />
+    <>
+      <Clock />
+      <SectionHero
+        backgroundImage={background}
+        heading="Born in California"
+        content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
+      />
+    </>
   );
 };
 
