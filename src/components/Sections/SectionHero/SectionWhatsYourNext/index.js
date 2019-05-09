@@ -2,12 +2,12 @@ import React from 'react';
 
 // component
 import SectionHero from '../../SectionHero';
+import Moped from '../SectionWhatsYourNext/media/Moped';
 
 // image
 import arrow from './media/arrowdown.svg';
 import moped from './media/moped.svg';
 import bg from './media/city.svg';
-import cloud from './media/cloud.svg';
 
 // styles
 const background = {
@@ -16,7 +16,8 @@ const background = {
 
 const SectionWhatsYourNext = () => {
   return (
-    <div>
+    <>
+      <Moped />
       <SectionHero
         backgroundImage={background}
         heading="What’s your next adventure?"
@@ -32,11 +33,10 @@ const SectionWhatsYourNext = () => {
             />
           </a>
         }
-        heroId="moped"
         heroImage={moped}
         heroImageAlt="moped"
       />
-    </div>
+    </>
   );
 };
 

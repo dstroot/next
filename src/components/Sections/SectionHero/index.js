@@ -21,12 +21,11 @@ const SectionHero = props => {
           </div>
         </div>
       </div>
-      <img
-        id={props.heroId}
+      {/* <img
         className="hero-image"
         src={props.heroImage}
         alt={props.heroImageAlt}
-      />
+      /> */}
     </div>
   );
 };

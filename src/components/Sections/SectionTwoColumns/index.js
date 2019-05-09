@@ -9,11 +9,6 @@ const SectionTwoColumns = props => {
   return (
     <div className={`py-6 ${props.styleBackground}`}>
       <div className={`container ${props.styleTextAlign}`}>
-        <Fade bottom>
-          <h1 className={` nxt_heading-xlarge ${props.sectionHeadStyle} `}>
-            {props.sectionHead}
-          </h1>
-        </Fade>
         <div className="row">
           <Fade bottom>
             <div className={`col-md-5 ${props.styleLeft}`}>
