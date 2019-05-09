@@ -13,14 +13,18 @@ const SectionStayInTouch = () => {
       heading="Stay in Touch"
       content={
         <div>
-          <p>Enter your email address to receive updates</p>
-          <div className="form-group">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Email Address"
-              id="InputEmail"
-            />
+          <p className="mb-4">Enter your email address to receive updates</p>
+          <div class="container">
+            <div class="row justify-content-md-center mb-4">
+              <div class="col-md-6">
+                <input
+                  className="form-control"
+                  type="text"
+                  placeholder="Email Address"
+                  id="InputEmail"
+                />
+              </div>
+            </div>
           </div>
           <Button path="/" buttonText="Submit" />
         </div>

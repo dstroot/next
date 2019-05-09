@@ -1,19 +1,20 @@
 import React from 'react';
 
 // components
-import SectionOneColumn from '..';
+import SectionTwoColumnsMultipleRows from '../../SectionTwoColumnsMultipleRows';
 
 //images
-import ARating from '../../SectionOneColumn/SectionBackedByPL/media/ARating.svg';
-import PLVertBWv2 from '../../SectionOneColumn/SectionBackedByPL/media/PLVertBWv2.svg';
-import Twobillies from '../../SectionOneColumn/SectionBackedByPL/media/Twobillies.svg';
+import ARating from '../../SectionTwoColumnsMultipleRows/SectionBackedByPL/media/ARating.svg';
+import PLVertBWv2 from '../../SectionTwoColumnsMultipleRows/SectionBackedByPL/media/PLVertBWv2.svg';
+import Twobillies from '../../SectionTwoColumnsMultipleRows/SectionBackedByPL/media/Twobillies.svg';
 
 const SectionBackedByPL = () => {
   return (
     <div>
-      <SectionOneColumn
+      <SectionTwoColumnsMultipleRows
         styleBackground="bg-light"
-        heading="Backed by Pacific Life"
+        styleTextAlign="text-center"
+        sectionHead="Backed by Pacific Life"
         content={
           <div>
             <div className="row">
@@ -26,7 +27,7 @@ const SectionBackedByPL = () => {
                 />
               </div>
               <div className="col-md-6">
-                <p className="text-left mt-5 ml-4">
+                <p className="text-left mt-5 ml-5">
                   Pacific Life is one of the most dependable and experienced
                   insurers in the industry. Backed by 150 years of experience,
                   you can count on us to be there so you can go out and pursue
@@ -44,7 +45,7 @@ const SectionBackedByPL = () => {
                   <img src={ARating} alt="A+ Superior" />
                   <p className="mt-4">
                     A.M. Best rating for financial strength and claims-paying
-                    ability.
+                    ability.&nbsp;
                     <a
                       href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
                       target="_blank"
