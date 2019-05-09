@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from '@reach/router';
 
 // components
-// import HamburgerButton from '../HamburgerButton';
+import HamburgerButton from '../HamburgerButton';
 import HamButton from '../HamButton';
 
 // images
@@ -53,12 +53,14 @@ const NavBar = () => {
             clicked={clicked}
             aria-label="Toggle navigation"
           />
-          {/* <HamburgerButton
+          {/*
+          <HamburgerButton
             type="button"
             aria-label="Toggle navigation"
             toggler={toggle}
             clicked={clicked}
-          /> */}
+          />
+          */}
         </nav>
 
         {clicked ? (
