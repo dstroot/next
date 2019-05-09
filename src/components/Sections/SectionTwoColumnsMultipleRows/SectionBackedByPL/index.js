@@ -1,7 +1,7 @@
 import React from 'react';
 
 // components
-import SectionOneColumn from '..';
+import SectionOneColumn from '../../SectionOneColumn';
 
 //images
 import ARating from '../../SectionOneColumn/SectionBackedByPL/media/ARating.svg';
@@ -44,7 +44,7 @@ const SectionBackedByPL = () => {
                   <img src={ARating} alt="A+ Superior" />
                   <p className="mt-4">
                     A.M. Best rating for financial strength and claims-paying
-                    ability.
+                    ability.&nbsp;
                     <a
                       href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
                       target="_blank"
