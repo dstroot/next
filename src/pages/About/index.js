@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 import SectionBornInCalifornia from '../../components/Sections/SectionHero/SectionBornInCalifornia';
 import SectionOurStory from '../../components/Sections/SectionTwoColumns/SectionOurStory';
 import SectionDesignPrinciples from '../../components/Sections/SectionTwoColumns/SectionDesignPrinciples';
-import SectionBackedByPL from '../../components/Sections/SectionOneColumn/SectionBackedByPL';
+import SectionBackedByPL from '../../components/Sections/SectionTwoColumnsMultipleRows/SectionBackedByPL';
 
 const About = () => {
   // Set the page title and position using the useEffect hook
