@@ -45,7 +45,10 @@ const SectionBackedByPL = () => {
                   <p className="mt-4">
                     A.M. Best rating for financial strength and claims-paying
                     ability.
-                    <a href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf">
+                    <a
+                      href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
+                      target="_blank"
+                    >
                       What the ratings mean.
                     </a>
                   </p>
