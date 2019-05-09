@@ -8,8 +8,6 @@ const SectionAskUs = () => {
   return (
     <SectionTwoColumns
       styleBackground="bg-light"
-      styleTextAlign="text-center"
-      sectionHeadStyle="nxt_heading-large"
       sectionHead="Ask us anything"
       styleLeft="order-2 mt-5 text-left"
       contentLeft={

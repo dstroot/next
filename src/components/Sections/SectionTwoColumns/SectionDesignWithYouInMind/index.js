@@ -13,9 +13,7 @@ const SectionDesignWithYouInMind = () => {
   return (
     <div>
       <SectionTwoColumns
-        styleTextAlign="text-center"
         sectionHead="Designed with you in mind"
-        sectionHeadStyle="nxt_heading-large mb-5"
         contentLeft={
           <img
             className="img-fluid p-5"

@@ -8,7 +8,12 @@ import Fade from 'react-reveal/Fade';
 const SectionTwoColumns = props => {
   return (
     <div className={`py-6 ${props.styleBackground}`}>
-      <div className={`container ${props.styleTextAlign}`}>
+      <div className="container">
+        <Fade bottom>
+          <h1 className={'text-center nxt_heading-xlarge mb-5'}>
+            {props.sectionHead}
+          </h1>
+        </Fade>
         <div className="row">
           <Fade bottom>
             <div className={`col-md-5 ${props.styleLeft}`}>
