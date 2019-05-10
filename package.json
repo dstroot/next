@@ -20,6 +20,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "^2.1.5",
     "react-testing-library": "^6.0.3",
+    "scrollmagic": "^2.0.6",
     "typeface-zilla-slab": "^0.0.72"
   },
   "scripts": {
