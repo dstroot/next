@@ -33,14 +33,14 @@ const SectionSafetyNet = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 order-2 order-sm-1">
               <img
                 className="img-fluid p-5"
                 src={GirlandDog}
                 alt="Girl and Dog"
               />
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 order-1 order-sm-2">
               <h1 className="nxt_heading-xlarge">
                 Plays nice with other retirement products
               </h1>

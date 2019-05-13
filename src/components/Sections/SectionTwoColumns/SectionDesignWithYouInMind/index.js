@@ -38,7 +38,7 @@ class SectionDesignWithYouInMind extends React.Component {
     // Scrollmagic
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
-      duration: 5800, // increase duratio of each animated scroll
+      duration: '600%', // increase duration of each animated scroll
       offset: 540, // start this scene after triggerElement
     })
       .setTween(this.tl)
@@ -52,6 +52,8 @@ class SectionDesignWithYouInMind extends React.Component {
         {/* extra div required for scrollmagic reach-router fix */}
         <div id="scrollStarts">
           <SectionTwoColumns
+            styleLeft="order-2 order-sm-1"
+            styleRight="order-1 order-sm-2"
             sectionHead="Designed with you in mind"
             contentLeft={
               <img

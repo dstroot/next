@@ -14,6 +14,8 @@ const SectionBestLife = () => {
   return (
     <div id="bestlife">
       <SectionTwoColumns
+        styleLeft="order-2 order-sm-1"
+        styleRight="order-1 order-sm-2"
         styleBackground="bg-light"
         contentLeft={
           <img className="img-fluid p-5" src={yoga} alt="Yoga Lady" />
