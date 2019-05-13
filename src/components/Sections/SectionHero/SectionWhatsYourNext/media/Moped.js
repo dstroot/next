@@ -79,7 +79,7 @@ const mopedBody = {
   position: 'absolute',
   bottom: '4%',
   left: '-200px',
-  zIndex: '999',
+  zIndex: '1',
 };
 
 // Find Device width
