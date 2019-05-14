@@ -22,7 +22,7 @@ const SectionQuoteToday = () => {
           <img className="mb-5" src={Blueprint_Logo} alt="Blueprint Logo" />
           <div className="mb-5">
             <Button
-              path="https://www.blueprintincome.com/personal-pension"
+              path="//www.blueprintincome.com/personal-pension"
               buttonText="View Site"
             />
           </div>

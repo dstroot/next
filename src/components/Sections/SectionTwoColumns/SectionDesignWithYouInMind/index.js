@@ -66,7 +66,6 @@ class SectionDesignWithYouInMind extends React.Component {
               <div>
                 <div className="para" ref={div => (this.para1 = div)}>
                   <h2 className="nxt_heading-small mb-2">
-                    {' '}
                     Fearlessly Flexible
                   </h2>
                   <p className="mb-5">
