@@ -1,7 +1,6 @@
 import React from 'react';
-import { TimelineLite } from 'gsap';
+import { TimelineLite } from 'gsap/TimelineLite';
 import ScrollMagic from 'scrollmagic';
-import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 // styles
 import './styles.scss';
