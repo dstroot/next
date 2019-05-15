@@ -1,6 +1,6 @@
 import React from 'react';
-import './styles.scss';
 import PropTypes from 'prop-types';
+import './styles.scss';
 
 /**
  * https://jonsuh.com/hamburgers/
