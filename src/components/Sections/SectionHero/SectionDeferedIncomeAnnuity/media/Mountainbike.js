@@ -61,7 +61,7 @@ const bikeBody = {
   width: '12vw',
   minWidth: '105px',
   position: 'absolute',
-  bottom: '5%',
+  bottom: '0',
   left: '-200px',
   zIndex: '999',
 };

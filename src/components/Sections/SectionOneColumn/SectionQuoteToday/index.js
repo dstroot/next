@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 // components
 import SectionOneColumn from '..';
@@ -27,7 +28,7 @@ const SectionQuoteToday = () => {
             />
           </div>
           <h2 className="nxt_heading-small">
-            Still have questions? <a href="/contact">Contact us.</a>
+            Still have questions? <Link to="/contact">Contact us.</Link>
           </h2>
         </div>
       }

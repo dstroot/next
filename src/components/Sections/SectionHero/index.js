@@ -10,7 +10,7 @@ const SectionHero = props => {
         <div className="container">
           <div className="row">
             <div className="col text-center">
-              <h1 className="nxt_heading-large">{props.heading}</h1>
+              <h1 className="nxt_heading-xlarge">{props.heading}</h1>
             </div>
           </div>
           <div className="row">
