@@ -14,9 +14,9 @@ const SectionStayInTouch = () => {
       content={
         <div>
           <p className="mb-4">Enter your email address to receive updates</p>
-          <div class="container">
-            <div class="row justify-content-md-center mb-4">
-              <div class="col-md-6">
+          <div className="container">
+            <div className="row justify-content-md-center mb-4">
+              <div className="col-md-6">
                 <input
                   className="form-control"
                   type="text"

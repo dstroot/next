@@ -23,7 +23,7 @@ const st4 = {
 };
 
 const st5 = {
-  fill: '#3D3F3F;',
+  fill: '#3D3F3F',
 };
 
 const st6 = {
@@ -58,10 +58,10 @@ const st12 = {
 
 // Position SVG
 const bikeBody = {
-  width: '16vw',
+  width: '12vw',
   minWidth: '105px',
   position: 'absolute',
-  bottom: '4%',
+  bottom: '5%',
   left: '-200px',
   zIndex: '999',
 };

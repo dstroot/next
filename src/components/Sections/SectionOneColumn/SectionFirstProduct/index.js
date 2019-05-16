@@ -17,17 +17,10 @@ const SectionFirstProduct = () => {
         <Card
           img={Tree}
           title="Next Deferred Income Annuity"
-          content={
-            <div>
-              <p className="mb-5">
-                Create a future income stream you can count on for the rest of
-                your life by saving over time.
-              </p>
-              <Button
-                path="/nextdeferredincomeannuity"
-                buttonText="Learn More"
-              />
-            </div>
+          content="Create a future income stream you can count on for the rest of
+          your life by saving over time."
+          button={
+            <Button path="/nextdeferredincomeannuity" buttonText="Learn More" />
           }
         />
       }
