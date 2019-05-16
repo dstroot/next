@@ -13,15 +13,15 @@ const Footer = () => {
             By using this website you accept our{' '}
             <Link to="/terms">
               <span className="text-accent">Terms of Use</span>
-            </Link>{' '}
+            </Link>
             ,{' '}
             <Link to="/social">
               <span className="text-accent">Social Media Guidelines</span>
-            </Link>{' '}
+            </Link>
             , and{' '}
             <Link to="/privacy">
               <span className="text-accent">Privacy Policy</span>
-            </Link>{' '}
+            </Link>
           </span>
           <small>
             <div className="nxt_footer">

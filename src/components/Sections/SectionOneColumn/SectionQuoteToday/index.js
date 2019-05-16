@@ -3,7 +3,7 @@ import { Link } from '@reach/router';
 
 // components
 import SectionOneColumn from '..';
-import Button from '../../../Button';
+import ExternalLinkButton from '../../../Buttons/ExternalLinkButton';
 
 // image
 import Blueprint_Logo from '../SectionQuoteToday/media/Blueprint_Logo.svg';
@@ -22,8 +22,9 @@ const SectionQuoteToday = () => {
           </p>
           <img className="mb-5" src={Blueprint_Logo} alt="Blueprint Logo" />
           <div className="mb-5">
-            <Button
-              path="//www.blueprintincome.com/personal-pension"
+            <ExternalLinkButton
+              link="//www.blueprintincome.com/personal-pension"
+              target="_blank"
               buttonText="View Site"
             />
           </div>

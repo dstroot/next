@@ -3,7 +3,6 @@
   /* Set height relative to width */
   height: 100vh;
   min-height: 500px;
-  width: 100%;
 
   /* Position the image to scale nicely on all screens */
   background-position: bottom;
@@ -11,7 +10,10 @@
   background-size: cover;
   position: relative;
 
-  display: table;
+  /* Center child content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   /* bottom border */
   border-bottom: 3px solid #dde1e7;
@@ -28,6 +30,6 @@
 
 // place the text on the background image
 .divText {
-  display: table-cell;
-  vertical-align: middle;
+  max-width: 90%;
+  margin-top: -8vh;
 }
