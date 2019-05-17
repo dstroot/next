@@ -2,6 +2,7 @@ import React from 'react';
 import { TimelineLite } from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
 // styles
 import './styles.scss';
@@ -39,10 +40,11 @@ class SectionDesignWithYouInMind extends React.Component {
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
       duration: '600%', // increase duration of each animated scroll
-      offset: 440, // start this scene after triggerElement
+      offset: 540, // start this scene after triggerElement
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')
+      // .addIndicators() // for debugging
       .addTo(this.controller);
   }
 
@@ -63,8 +65,8 @@ class SectionDesignWithYouInMind extends React.Component {
               />
             }
             noFadeContentRight={
-              <div>
-                <div className="para" ref={div => (this.para1 = div)}>
+              <div id="para-container">
+                <div className="dwyim-para" ref={div => (this.para1 = div)}>
                   <h2 className="nxt_heading-small mb-2">
                     Fearlessly Flexible
                   </h2>
@@ -73,14 +75,14 @@ class SectionDesignWithYouInMind extends React.Component {
                     them when your needs do.
                   </p>
                 </div>
-                <div className="para" ref={div => (this.para2 = div)}>
+                <div className="dwyim-para" ref={div => (this.para2 = div)}>
                   <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
                   <p className="mb-5">
                     Straight forward products and features. Know what you're
                     getting from the beginning.
                   </p>
                 </div>
-                <div className="para" ref={div => (this.para3 = div)}>
+                <div className="dwyim-para" ref={div => (this.para3 = div)}>
                   <h2 className="nxt_heading-small mb-2">
                     Brazenly Transparent
                   </h2>

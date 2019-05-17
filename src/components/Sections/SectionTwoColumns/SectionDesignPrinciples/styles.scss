@@ -1,40 +1,14 @@
-.para {
+.odp-para {
   position: absolute;
-  margin-left: 15%;
-  // top: 30%; -- not doing anthing?
+  left: 10%;
+  top: 10%;
 }
 
-.image {
+//look into scss variables or mixins for browser prefixes
+
+.easel-icon {
   position: absolute;
-  // top: 30%; -- not doing anthing?
-}
-
-.flag_pos {
-  position: relative;
-  left: 325%;
   top: 120px;
-}
-
-.hi_pos {
-  position: relative;
-  left: 345%;
-  top: 120px;
-}
-
-.lock_pos {
-  position: relative;
-  left: 500%;
-  top: 115px;
-}
-
-.lollypop_pos {
-  position: relative;
-  left: 460%;
-  top: 120px;
-}
-
-.paperplane_pos {
-  position: relative;
-  left: 435%;
-  top: 120px;
+  left: 210px;
+  width: 80px;
 }
