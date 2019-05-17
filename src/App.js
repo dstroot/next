@@ -29,7 +29,7 @@ const App = () => (
       <About path="/about" />
       <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
       <Contact path="/contact" />
-      {/*foooter*/}
+      {/*footer*/}
       <TermsOfUse path="/terms" />
       <PrivacyPolicy path="/privacy" />
       <SocialMediaGuidelines path="/social" />

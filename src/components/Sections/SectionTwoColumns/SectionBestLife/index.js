@@ -12,7 +12,7 @@ import yoga from './media/yogalady.svg';
 // our component
 const SectionBestLife = () => {
   return (
-    <div>
+    <div id="bestlife">
       <SectionTwoColumns
         styleLeft="order-2 order-sm-1"
         styleRight="order-1 order-sm-2"

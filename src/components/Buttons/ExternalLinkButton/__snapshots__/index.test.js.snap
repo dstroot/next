@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button it should render 1`] = `
-<a
-  aria-current="page"
-  href="/"
-  onClick={[Function]}
->
+<a>
   <button
     className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
   />

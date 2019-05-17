@@ -6,62 +6,62 @@ exports[`SectionManageUncertainty it should render 1`] = `
     className="py-6 undefined"
   >
     <div
-      className="container text-left"
+      className="container"
     >
+      <h1
+        className="react-reveal text-center nxt_heading-xlarge mb-5"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      />
       <div
-        className="container undefined"
+        className="row"
       >
-        <h1
-          className="react-reveal  nxt_heading-xlarge undefined "
+        <div
+          className="react-reveal col-md-5 order-2"
           style={
             Object {
               "opacity": undefined,
             }
           }
-        />
+        >
+          <img
+            alt="Canoe Couple"
+            className="img-fluid p-5"
+            src="canoecouple.svg"
+          />
+        </div>
         <div
-          className="row"
+          className="col-md-7 order-1"
         >
           <div
-            className="react-reveal col-md-5 order-2"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            <img
-              alt="Canoe Couple"
-              className="img-fluid p-5"
-              src="canoecouple.svg"
-            />
-          </div>
-          <div
-            className="col-md-7 order-1"
+            className="mt-5"
           >
             <div
-              className="mt-5"
+              className="react-reveal"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
               <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="nxt_heading-xlarge"
               >
                 A way to manage uncertainty
               </h1>
               <div
-                className="react-reveal mt-4 pr-5"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="mt-4 pr-5"
               >
                 Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
               </div>
+            </div>
+            <div>
+              <div
+                className="mt-4 pr-5"
+              />
             </div>
           </div>
         </div>

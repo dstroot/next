@@ -16,7 +16,7 @@ exports[`Footer it should render 1`] = `
         src="NXT_logo_footer_dark.svg"
       />
       <span
-        className="font-weight-light text-white-50 nxt_body-xsmall"
+        className="nxt_footer"
       >
         By using this website you accept our
          
@@ -24,53 +24,56 @@ exports[`Footer it should render 1`] = `
           href="/terms"
           onClick={[Function]}
         >
-          Terms of Use
+          <span
+            className="text-accent"
+          >
+            Terms of Use
+          </span>
         </a>
-         ,
+        ,
          
         <a
           href="/social"
           onClick={[Function]}
         >
-          Social Media Guidelines
+          <span
+            className="text-accent"
+          >
+            Social Media Guidelines
+          </span>
         </a>
-         , and
+        , and
          
         <a
           href="/privacy"
           onClick={[Function]}
         >
-          Privacy Policy
+          <span
+            className="text-accent"
+          >
+            Privacy Policy
+          </span>
         </a>
-         
       </span>
       <small>
         <div
-          className="nxt_body-xsmall"
+          className="nxt_footer"
         >
-          <p
-            className="font-weight-light text-white-50"
-          >
+          <p>
             No bank guarantee • Not a deposit • May lose value • Not FDIC/NCUA insured • Not insured by any federal government agency
           </p>
-          <p
-            className="font-weight-light text-white-50"
-          >
+          <p>
             Pacific Life, its affiliates, its distributors, and respective representatives do not provide tax, accounting, or legal advice. Any taxpayer should seek advice based on the taxpayer's particular circumstances from an independent tax advisor or attorney.
           </p>
-          <p
-            className="font-weight-light text-white-50"
-          >
-            Pacific Life is a product provider. It is not a fiduciary and therefore does not give advice or make recommendations regarding insurance or investment products.
+          <p>
+            <i>
+              Pacific Life is a product provider. It is not a fiduciary and therefore does not give advice or make recommendations regarding insurance or investment products.
+            </i>
           </p>
-          <p
-            className="font-weight-light text-white-50"
-          >
+          <p>
             Pacific Life Insurance Company (Newport Beach, CA) is licensed to issue insurance products in all states except New York. Product availability and features may vary by state. Fixed annuity products are available through licensed third parties.
           </p>
-          <p
-            className="font-weight-light text-white-50"
-          >
+          <p>
             © 
             2019
              Pacific Life Insurance Company, Newport Beach, CA.

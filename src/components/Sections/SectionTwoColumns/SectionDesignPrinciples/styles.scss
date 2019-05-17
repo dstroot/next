@@ -6,9 +6,19 @@
 
 //look into scss variables or mixins for browser prefixes
 
-.easel-icon {
-  position: absolute;
-  top: 120px;
-  left: 210px;
-  width: 80px;
+#easel-container {
+  position: relative;
+  height: 300px; //relook into this for mobile sizes
+
+  #easel {
+    position: absolute;
+    left: 140px;
+  }
+
+  .easel-icon {
+    position: absolute;
+    top: 120px;
+    left: 210px;
+    width: 80px;
+  }
 }

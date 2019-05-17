@@ -66,3 +66,31 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Scrollmagic Plugin Fix
+
+Follow these steps in order to use Scrollmagic plugins:
+
+Open `\node_modules\react-scripts\config\webpack.config.js`
+
+Find module.exports and add the following dependencies to alias property:
+
+```
+module.exports = {
+  ...
+  resolve: {
+    ...
+    alias: {
+      "TweenLite": path.resolve('node_modules', 'gsap/src/uncompressed/TweenLite.js'),
+      "TweenMax": path.resolve('node_modules', 'gsap/src/uncompressed/TweenMax.js'),
+      "TimelineLite": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineLite.js'),
+      "TimelineMax": path.resolve('node_modules', 'gsap/src/uncompressed/TimelineMax.js'),
+      "ScrollMagic": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'),
+      "animation.gsap": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'),
+      "debug.addIndicators": path.resolve('node_modules', 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'),
+    },
+    ...
+  },
+  ...
+}
+```

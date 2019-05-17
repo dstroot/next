@@ -82,7 +82,7 @@ class SectionDesignPrinciples extends React.Component {
             sectionHead="Our Design Principles"
             contentLeft={
               // add spacing to the end of the page since the image is larger then the conteiner
-              <div className="text-center mb-6">
+              <div className="text-center mb-6" id="easel-container">
                 <img id="easel" src={Easel} alt="Design System" width={200} />
                 <img
                   ref={img => (this.img1 = img)}
