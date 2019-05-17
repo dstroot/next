@@ -23,9 +23,15 @@ const SectionTwoColumns = props => {
           <div className={`col-md-7 ${props.styleRight}`}>
             <div className="mt-5">
               <Fade bottom>
-                <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-                <div className="mt-4 pr-5">{props.contentRight}</div>
+                <div>
+                  <h1 className="nxt_heading-xlarge">{props.heading}</h1>
+                  <div className="mt-4 pr-5">{props.contentRight}</div>
+                </div>
               </Fade>
+              {/* Optional div to bypass Fade */}
+              <div>
+                <div className="mt-4 pr-5">{props.noFadeContentRight}</div>
+              </div>
             </div>
           </div>
         </div>

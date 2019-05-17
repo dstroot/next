@@ -19,7 +19,7 @@ const lightStyle = {
   position: 'absolute',
   marginLeft: 'auto',
   marginRight: 'auto',
-  marginTop: '40px',
+  marginTop: '16vh',
   left: '0',
   right: '0',
 };

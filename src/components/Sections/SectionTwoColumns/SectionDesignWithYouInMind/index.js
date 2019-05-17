@@ -39,7 +39,7 @@ class SectionDesignWithYouInMind extends React.Component {
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
       duration: '600%', // increase duration of each animated scroll
-      offset: 540, // start this scene after triggerElement
+      offset: 440, // start this scene after triggerElement
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')
@@ -62,7 +62,7 @@ class SectionDesignWithYouInMind extends React.Component {
                 alt="Woman with the Phone"
               />
             }
-            contentRight={
+            noFadeContentRight={
               <div>
                 <div className="para" ref={div => (this.para1 = div)}>
                   <h2 className="nxt_heading-small mb-2">

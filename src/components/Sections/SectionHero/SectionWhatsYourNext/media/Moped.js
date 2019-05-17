@@ -74,10 +74,10 @@ const st16 = {
 
 // Position SVG
 const mopedBody = {
-  width: '20vw',
+  width: '14vw',
   minWidth: '105px',
   position: 'absolute',
-  bottom: '4%',
+  bottom: '0',
   left: '-200px',
   zIndex: '1',
 };

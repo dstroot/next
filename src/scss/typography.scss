@@ -27,8 +27,8 @@ body {
 // Next custom header
 .nxt_heading-xlarge {
   font-family: $zilla-slab;
-  font-size: calc(72px);
-  line-height: 86px;
+  font-size: calc(40px + 1.5vw + 0.5vmin);
+  line-height: calc(40px + 1.5vw + 0.5vmin);
   font-weight: 600;
 }
 

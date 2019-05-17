@@ -30,16 +30,13 @@
   }
 }
 
-// match height of NavBar
-body {
-  padding-top: 50px;
-}
-
 .overlay {
   // display: block;
   // height: 100vh;
   // transition: all 0.4s linear;
   // background: gray;
+
+  padding-top: 100px;
 
   a {
     // text-transform: uppercase;
