@@ -5,126 +5,126 @@ exports[`SectionAskUs it should render 1`] = `
   className="py-6 bg-light"
 >
   <div
-    className="container text-left"
+    className="container"
   >
-    <div
-      className="container text-center"
+    <h1
+      className="react-reveal text-center nxt_heading-xlarge mb-5"
+      style={
+        Object {
+          "opacity": undefined,
+        }
+      }
     >
-      <h1
-        className="react-reveal  nxt_heading-xlarge nxt_heading-large "
+      Ask us anything
+    </h1>
+    <div
+      className="row"
+    >
+      <div
+        className="react-reveal col-md-5 order-2 mt-5 text-left"
         style={
           Object {
             "opacity": undefined,
           }
         }
       >
-        Ask us anything
-      </h1>
+        <div>
+          <h2>
+            Next by Pacific Life
+          </h2>
+          <a
+            href="mailto: hello@meetnext.com"
+          >
+            hello@meetnext.com
+          </a>
+          <p>
+            (833) 646-NEXT (6398) 
+          </p>
+        </div>
+      </div>
       <div
-        className="row"
+        className="col-md-7 order-1 text-left"
       >
         <div
-          className="react-reveal col-md-5 order-2 mt-5 text-left"
-          style={
-            Object {
-              "opacity": undefined,
+          className="mt-5"
+        >
+          <h1
+            className="react-reveal nxt_heading-xlarge"
+            style={
+              Object {
+                "opacity": undefined,
+              }
             }
-          }
-        >
-          <div>
-            <h2>
-              Next by Pacific Life
-            </h2>
-            <a
-              href="mailto: hello@meetnext.com"
-            >
-              hello@meetnext.com
-            </a>
-            <p>
-              (833) 646-NEXT (6398) 
-            </p>
-          </div>
-        </div>
-        <div
-          className="col-md-7 order-1 text-left"
-        >
+          />
           <div
-            className="mt-5"
+            className="react-reveal mt-4 pr-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
-            <h1
-              className="react-reveal nxt_heading-xlarge"
-              style={
-                Object {
-                  "opacity": undefined,
-                }
-              }
-            />
-            <div
-              className="react-reveal mt-4 pr-5"
-              style={
-                Object {
-                  "opacity": undefined,
-                }
-              }
-            >
-              <form>
+            <form>
+              <div
+                className="text-left nxt_body-xsmall"
+              >
                 <div
-                  className="text-left nxt_body-xsmall"
+                  className="form-group"
                 >
-                  <div
-                    className="form-group"
+                  <label
+                    htmlFor="Name"
                   >
-                    <label
-                      htmlFor="Name"
-                    >
-                      Name
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputName"
-                      type="text"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputEmail"
-                      type="email"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Phone"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputPhone"
-                      type="phone"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Message"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="InputMessage"
-                      rows="3"
-                      type="text"
-                    />
-                  </div>
-                  <div
-                    className="mt-5"
+                    Name
+                  </label>
+                  <input
+                    className="form-control"
+                    id="InputName"
+                    type="text"
+                  />
+                  <label
+                    className="mt-3"
+                    htmlFor="Email"
+                  >
+                    Email
+                  </label>
+                  <input
+                    className="form-control"
+                    id="InputEmail"
+                    type="email"
+                  />
+                  <label
+                    className="mt-3"
+                    htmlFor="Phone"
+                  >
+                    Phone
+                  </label>
+                  <input
+                    className="form-control"
+                    id="InputPhone"
+                    type="phone"
+                  />
+                  <label
+                    className="mt-3"
+                    htmlFor="Message"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="InputMessage"
+                    rows="3"
+                    type="text"
+                  />
+                </div>
+                <div
+                  className="mt-5"
+                >
+                  <a
+                    href="/#"
+                    onClick={[Function]}
                   >
                     <a
-                      href="/#"
-                      onClick={[Function]}
+                      target="_blank"
                     >
                       <button
                         className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
@@ -132,10 +132,10 @@ exports[`SectionAskUs it should render 1`] = `
                         Submit
                       </button>
                     </a>
-                  </div>
+                  </a>
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

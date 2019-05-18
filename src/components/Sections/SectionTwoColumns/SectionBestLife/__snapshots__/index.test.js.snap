@@ -8,62 +8,58 @@ exports[`SectionBestLife it should render 1`] = `
     className="py-6 bg-light"
   >
     <div
-      className="container text-left"
+      className="container"
     >
+      <h1
+        className="react-reveal text-center nxt_heading-xlarge mb-5"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      />
       <div
-        className="container undefined"
+        className="row"
       >
-        <h1
-          className="react-reveal  nxt_heading-xlarge undefined "
+        <div
+          className="react-reveal col-md-5 order-2 order-sm-1"
           style={
             Object {
               "opacity": undefined,
             }
           }
-        />
+        >
+          <img
+            alt="Yoga Lady"
+            className="img-fluid p-5"
+            src="yogalady.svg"
+          />
+        </div>
         <div
-          className="row"
+          className="col-md-7 order-1 order-sm-2"
         >
           <div
-            className="react-reveal col-md-5 undefined"
-            style={
-              Object {
-                "opacity": undefined,
+            className="mt-5"
+          >
+            <h1
+              className="react-reveal nxt_heading-xlarge"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
               }
-            }
-          >
-            <img
-              alt="Yoga Lady"
-              className="img-fluid p-5"
-              src="yogalady.svg"
-            />
-          </div>
-          <div
-            className="col-md-7 undefined"
-          >
-            <div
-              className="mt-5"
             >
-              <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
+              Keep living your best life
+            </h1>
+            <div
+              className="react-reveal mt-4 pr-5"
+              style={
+                Object {
+                  "opacity": undefined,
                 }
-              >
-                Keep living your best life
-              </h1>
-              <div
-                className="react-reveal mt-4 pr-5"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              >
-                Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
-              </div>
+              }
+            >
+              Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
             </div>
           </div>
         </div>

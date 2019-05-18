@@ -8,7 +8,7 @@ exports[`SectionFirstProduct it should render 1`] = `
     className="container text-center"
   >
     <h1
-      className="react-reveal  nxt_heading-xlarge "
+      className="react-reveal nxt_heading-xlarge mb-5"
       style={
         Object {
           "opacity": undefined,
@@ -17,14 +17,6 @@ exports[`SectionFirstProduct it should render 1`] = `
     >
       Introducing our first product
     </h1>
-    <h1
-      className="react-reveal nxt_heading-large mb-5"
-      style={
-        Object {
-          "opacity": undefined,
-        }
-      }
-    />
     <div
       className="react-reveal"
       style={
@@ -52,18 +44,28 @@ exports[`SectionFirstProduct it should render 1`] = `
           <p
             className="card-text circular mb-5"
           >
-            Create a future income stream you can count on for the rest of your life by saving over time.
+            <div>
+              <p
+                className="mb-5"
+              >
+                Create a future income stream you can count on for the rest of your life by saving over time.
+              </p>
+              <a
+                href="/nextdeferredincomeannuity"
+                onClick={[Function]}
+              >
+                <a
+                  target="_blank"
+                >
+                  <button
+                    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                  >
+                    Learn More
+                  </button>
+                </a>
+              </a>
+            </div>
           </p>
-          <a
-            href="/nextdeferredincomeannuity"
-            onClick={[Function]}
-          >
-            <button
-              className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
-            >
-              Learn More
-            </button>
-          </a>
         </div>
       </div>
     </div>
