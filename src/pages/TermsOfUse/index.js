@@ -201,11 +201,12 @@ const TermsOfUse = () => {
           </p>
           <h2 className="nxt_heading-small">Trademarks</h2>
           <p>
-            The logo shown here <img src={PLVertBWv2} width={60} /> and the
-            PACIFIC LIFE mark are registered trademarks of Pacific Life
-            Insurance Company. All trademarks, service marks, and trade names
-            are proprietary to Pacific Life or its third party licensors.
-            Pacific Life and its third party licensors enforce their respective
+            The logo shown here{' '}
+            <img src={PLVertBWv2} width={60} alt="Our Logo" /> and the PACIFIC
+            LIFE mark are registered trademarks of Pacific Life Insurance
+            Company. All trademarks, service marks, and trade names are
+            proprietary to Pacific Life or its third party licensors. Pacific
+            Life and its third party licensors enforce their respective
             intellectual property rights. Use in commerce other than as "fair
             use" is prohibited by law except by express license from Pacific
             Life or its third party licensors. Other trademarks and service

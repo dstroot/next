@@ -1,5 +1,5 @@
 import React from 'react';
-import Tween, { TweenMax } from 'gsap';
+import { TweenMax } from 'gsap';
 
 // SVG styles
 const st0 = {

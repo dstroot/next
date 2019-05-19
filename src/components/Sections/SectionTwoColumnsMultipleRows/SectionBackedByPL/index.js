@@ -49,6 +49,7 @@ const SectionBackedByPL = () => {
                     <a
                       href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       What the ratings mean.
                     </a>

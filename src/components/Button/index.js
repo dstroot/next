@@ -4,7 +4,7 @@ import { Link } from '@reach/router';
 const Button = props => {
   return (
     <Link to={props.path}>
-      <a href={props.href} target="_blank">
+      <a href={props.href} target="_blank" rel="noopener noreferrer">
         <button className="btn btn-primary rounded-pill nxt_body-small px-4 py-2">
           {props.buttonText}
         </button>

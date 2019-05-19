@@ -131,7 +131,11 @@ const SocialMediaGuidelines = () => {
             disbursement of prize money for lotteries operated on social media.
             If you have been subjected to an online crime please file a
             complaint with{' '}
-            <a target="_blank" href="https://www.ic3.gov/default.aspx">
+            <a
+              target="_blank"
+              href="https://www.ic3.gov/default.aspx"
+              rel="noopener noreferrer"
+            >
               www.ic3.gov
             </a>
             . If you receive a questionable email or social media message that
@@ -149,17 +153,23 @@ const SocialMediaGuidelines = () => {
           <p className="ml-5">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.facebook.com/communitystandards"
             >
               facebook.com/communitystandards
             </a>
             <br />
-            <a target="_blank" href="https://twitter.com/privacy">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/privacy"
+            >
               twitter.com/privacy
             </a>
             <br />
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="http://help.linkedin.com/app/answers/detail/a_id/34593/"
             >
               help.linkedin.com/app/answers/detail/a_id/34593/
@@ -167,6 +177,7 @@ const SocialMediaGuidelines = () => {
             <br />
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="https://help.instagram.com/477434105621119"
             >
               help.instagram.com/477434105621119
@@ -174,6 +185,7 @@ const SocialMediaGuidelines = () => {
             <br />
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href="http://www.youtube.com/yt/policyandsafety/policy.html"
             >
               youtube.com/yt/policyandsafety/policy.html
