@@ -27,7 +27,7 @@ const lightStyle = {
 const SectionHereToHelp = () => {
   return (
     <>
-      <img src={twoLights} style={lightStyle} />
+      <img src={twoLights} style={lightStyle} alt="Two Lights" />
       <SectionHero
         backgroundImage={background}
         heading="Here to help whenever you need us!"

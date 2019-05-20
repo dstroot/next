@@ -30,6 +30,10 @@ exports[`Footer it should render 1`] = `
             Terms of Use
           </span>
         </a>
+<<<<<<< HEAD
+=======
+         
+>>>>>>> animation
         ,
          
         <a
@@ -42,6 +46,10 @@ exports[`Footer it should render 1`] = `
             Social Media Guidelines
           </span>
         </a>
+<<<<<<< HEAD
+=======
+         
+>>>>>>> animation
         , and
          
         <a

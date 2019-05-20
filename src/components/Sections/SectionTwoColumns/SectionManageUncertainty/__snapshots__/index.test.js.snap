@@ -39,14 +39,30 @@ exports[`SectionManageUncertainty it should render 1`] = `
           <div
             className="mt-5"
           >
+<<<<<<< HEAD
             <div
               className="react-reveal"
+=======
+            <h1
+              className="react-reveal nxt_heading-xlarge"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
+              A way to manage uncertainty
+            </h1>
+            <div
+              className="react-reveal mt-4 pr-5"
+>>>>>>> animation
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
+            >
+<<<<<<< HEAD
               <h1
                 className="nxt_heading-xlarge"
               >
@@ -57,6 +73,9 @@ exports[`SectionManageUncertainty it should render 1`] = `
               >
                 Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
               </div>
+=======
+              Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
+>>>>>>> animation
             </div>
             <div>
               <div

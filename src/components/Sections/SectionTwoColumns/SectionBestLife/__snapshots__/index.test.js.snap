@@ -39,14 +39,30 @@ exports[`SectionBestLife it should render 1`] = `
           <div
             className="mt-5"
           >
+<<<<<<< HEAD
             <div
               className="react-reveal"
+=======
+            <h1
+              className="react-reveal nxt_heading-xlarge"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
+              Keep living your best life
+            </h1>
+            <div
+              className="react-reveal mt-4 pr-5"
+>>>>>>> animation
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
+            >
+<<<<<<< HEAD
               <h1
                 className="nxt_heading-xlarge"
               >
@@ -57,6 +73,9 @@ exports[`SectionBestLife it should render 1`] = `
               >
                 Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
               </div>
+=======
+              Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
+>>>>>>> animation
             </div>
             <div>
               <div

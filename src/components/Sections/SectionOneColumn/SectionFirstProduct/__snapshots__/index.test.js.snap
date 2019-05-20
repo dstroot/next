@@ -44,8 +44,29 @@ exports[`SectionFirstProduct it should render 1`] = `
           <p
             className="card-text circular mb-5"
           >
-            Create a future income stream you can count on for the rest of your life by saving over time.
+            <div>
+              <p
+                className="mb-5"
+              >
+                Create a future income stream you can count on for the rest of your life by saving over time.
+              </p>
+              <a
+                href="/nextdeferredincomeannuity"
+                onClick={[Function]}
+              >
+                <a
+                  target="_blank"
+                >
+                  <button
+                    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                  >
+                    Learn More
+                  </button>
+                </a>
+              </a>
+            </div>
           </p>
+<<<<<<< HEAD
           <div>
             <a
               href="/nextdeferredincomeannuity"
@@ -58,6 +79,8 @@ exports[`SectionFirstProduct it should render 1`] = `
               </button>
             </a>
           </div>
+=======
+>>>>>>> animation
         </div>
       </div>
     </div>

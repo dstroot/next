@@ -29,13 +29,13 @@ $spacers: map-merge(
 // then import Bootstrap
 @import 'bootstrap';
 
-// then component styles
-@import '../components/NavBar/styles.scss';
-
 // import typography
 @import 'typography.scss';
 
-// smooth scroll for on page ancor tags
+// then component styles
+@import '../components/NavBar/styles.scss';
+
+// smooth scroll for on page anchor tags
 html {
   // scroll-behavior: smooth;
 }
