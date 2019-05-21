@@ -1,5 +1,6 @@
 import React from 'react';
 import { TweenMax } from 'gsap';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
 // SVG styles
 const st0 = {
@@ -78,35 +79,67 @@ const mopedBody = {
   minWidth: '105px',
   position: 'absolute',
   bottom: '0',
-  left: '-200px',
   zIndex: '1',
 };
 
-// Find Device width
+// prepare variables for animation
 const deviceWidth = window.innerWidth;
 
 class Moped extends React.Component {
   constructor(props) {
     super(props);
+
+    this.tl = new TimelineMax({
+      repeat: -1,
+      repeatDelay: 6,
+    });
+
     this.moped = null;
     this.wheel = null;
     this.wheelFront = null;
-    this.moveMoped = null;
-    this.spinWheel = null;
   }
 
   componentDidMount() {
-    this.moveMoped = TweenMax.to(this.moped, 18, {
-      x: deviceWidth + 1600,
-      repeat: -1,
-      ease: 'Linear.easeNone',
-    });
-    this.spinWheel = TweenMax.to([this.wheel, this.wheelFront], 3, {
-      rotation: 360,
-      repeat: -1,
-      transformOrigin: '50% 50%',
-      ease: 'Linear.easeNone',
-    });
+    this.tl.fromTo(
+      this.moped,
+      16,
+      {
+        x: '-400',
+        ease: 'Linear.easeNone',
+      },
+      {
+        x: deviceWidth,
+        ease: 'Linear.easeNone',
+      }
+    );
+
+    // this.tl
+    //   .from(this.moped, 1, {
+    //     delay: 2,
+    //   })
+    //   .from(this.moped, 3, {
+    //     x: '-400',
+    //     ease: 'Linear.easeNone',
+    //   })
+    //   .to(this.moped, 8, {
+    //     x: deviceWidth,
+    //     ease: 'Linear.easeNone',
+    //   });
+
+    // this.moveMoped = TweenMax.from(this.moped, 6, {
+    //   x: '-200px',
+    // });
+    // this.moveMoped = TweenMax.to(this.moped, 6, {
+    //   x: deviceWidth,
+    //   repeat: -1,
+    //   ease: 'Linear.easeNone',
+    // });
+    // this.spinWheel = TweenMax.to([this.wheel, this.wheelFront], 3, {
+    //   rotation: 360,
+    //   repeat: -1,
+    //   transformOrigin: '50% 50%',
+    //   ease: 'Linear.easeNone',
+    // });
   }
 
   render() {

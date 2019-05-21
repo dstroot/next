@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 // component
 import SectionHero from '../../SectionHero';
@@ -27,7 +28,7 @@ const SectionWhatsYourNext = () => {
         }
         content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
         linkElement={
-          <a href="#bestlife" className="text-decoration-none mt-4">
+          <AnchorLink href="#bestlife" className="text-decoration-none mt-4">
             <p className="mt-4 mb-2 text-uppercase text-primary">Learn More</p>
             <img
               className="d-block-inline"
@@ -35,7 +36,7 @@ const SectionWhatsYourNext = () => {
               src={arrow}
               alt="Arrow"
             />
-          </a>
+          </AnchorLink>
         }
         heroImage={moped}
         heroImageAlt="moped"

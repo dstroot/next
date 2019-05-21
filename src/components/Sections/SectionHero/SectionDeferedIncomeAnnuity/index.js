@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 //component
 import SectionHero from '../../SectionHero';
@@ -15,6 +16,9 @@ const background = {
 };
 
 const SectiionDeferedIncomeAnnuity = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <>
       <Mountainbike />
@@ -24,7 +28,7 @@ const SectiionDeferedIncomeAnnuity = () => {
         content="A predictable and reliable paycheck for life."
         heroImage={mountainbike}
         linkElement={
-          <a href="#bestlife" className="text-decoration-none mt-4">
+          <AnchorLink href="#stayintouch" className="text-decoration-none mt-4">
             <p className="mt-4 mb-2 text-uppercase text-primary">Learn More</p>
             <img
               className="d-block-inline"
@@ -32,7 +36,7 @@ const SectiionDeferedIncomeAnnuity = () => {
               src={arrow}
               alt="Arrow"
             />
-          </a>
+          </AnchorLink>
         }
         heroImageAlt="Mountain Bike"
       />

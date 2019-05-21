@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import './styles.scss';
 
 // Components
 import SectionWhatsYourNext from '../../components/Sections/SectionHero/SectionWhatsYourNext';
@@ -13,6 +12,7 @@ const Home = () => {
   // Set the page title and position using the useEffect hook
   useEffect(() => {
     document.title = `NEXT by Pacific Life - What's your next?`;
+    window.scrollTo(0, 0);
   });
 
   return (

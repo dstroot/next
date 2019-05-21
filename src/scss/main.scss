@@ -35,11 +35,6 @@ $spacers: map-merge(
 // then component styles
 @import '../components/NavBar/styles.scss';
 
-// smooth scroll for on page anchor tags
-html {
-  // scroll-behavior: smooth;
-}
-
 body {
   margin-top: -50px;
 }

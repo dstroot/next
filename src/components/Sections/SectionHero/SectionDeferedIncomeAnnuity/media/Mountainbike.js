@@ -1,5 +1,6 @@
 import React from 'react';
 import { TweenMax } from 'gsap';
+import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
 // SVG styles
 const st0 = {
@@ -62,7 +63,6 @@ const bikeBody = {
   minWidth: '105px',
   position: 'absolute',
   bottom: '0',
-  left: '-200px',
   zIndex: '999',
 };
 
@@ -72,24 +72,43 @@ const deviceWidth = window.innerWidth;
 class Mountainbike extends React.Component {
   constructor(props) {
     super(props);
+
+    this.tl = new TimelineMax({
+      repeat: -1,
+      repeatDelay: 1,
+    });
+
     this.bike = null;
     this.wheel = null;
-    this.moveBike = null;
-    this.spinWheel = null;
+    this.wheelFront = null;
   }
 
   componentDidMount() {
-    this.moveBike = TweenMax.to(this.bike, 18, {
-      x: deviceWidth + 1600,
-      repeat: -1,
-      ease: 'Linear.easeNone',
-    });
-    this.spinWheel = TweenMax.to([this.wheel, this.wheelFront], 3, {
-      rotation: 360,
-      repeat: -1,
-      transformOrigin: '50% 50%',
-      ease: 'Linear.easeNone',
-    });
+    this.tl
+      .to(this.wheel, 2, {
+        rotation: 360,
+        repeat: -1,
+        transformOrigin: '50% 50%',
+        ease: 'Linear.easeNone',
+      })
+      .to(this.wheelFront, 2, {
+        rotation: 360,
+        repeat: -1,
+        transformOrigin: '50% 50%',
+        ease: 'Linear.easeNone',
+      })
+      .fromTo(
+        this.bike,
+        2,
+        {
+          x: '-400',
+          ease: 'Linear.easeNone',
+        },
+        {
+          x: deviceWidth,
+          ease: 'Linear.easeNone',
+        }
+      );
   }
 
   render() {

@@ -9,27 +9,29 @@ import Button from '../../../Buttons/Button';
 
 const SectionStayInTouch = () => {
   return (
-    <SectionOneColumn
-      heading="Stay in Touch"
-      content={
-        <div>
-          <p className="mb-4">Enter your email address to receive updates</p>
-          <div className="container">
-            <div className="row justify-content-md-center mb-4">
-              <div className="col-md-6">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Email Address"
-                  id="InputEmail"
-                />
+    <div id="stayintouch">
+      <SectionOneColumn
+        heading="Stay in Touch"
+        content={
+          <div>
+            <p className="mb-4">Enter your email address to receive updates</p>
+            <div className="container">
+              <div className="row justify-content-md-center mb-4">
+                <div className="col-md-6">
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Email Address"
+                    id="InputEmail"
+                  />
+                </div>
               </div>
             </div>
+            <Button path="/" buttonText="Submit" />
           </div>
-          <Button path="/" buttonText="Submit" />
-        </div>
-      }
-    />
+        }
+      />
+    </div>
   );
 };
 

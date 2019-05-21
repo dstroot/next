@@ -17,19 +17,10 @@
 
   /* bottom border */
   border-bottom: 3px solid #dde1e7;
-}
 
-// place hero image on the background
-.hero-image {
-  width: 20vw;
-  min-width: 175px;
-  position: absolute;
-  bottom: 0;
-  left: 10%;
-}
-
-// place the text on the background image
-.divText {
-  max-width: 90%;
-  margin-top: -8vh;
+  // place the text on the background image
+  .divText {
+    max-width: 90%;
+    margin-top: -8vh;
+  }
 }
