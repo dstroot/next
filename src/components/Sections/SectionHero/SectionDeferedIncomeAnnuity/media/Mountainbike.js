@@ -1,5 +1,5 @@
 import React from 'react';
-import { TweenMax } from 'gsap';
+import { TweenMax, RoughEase, Power0 } from 'gsap';
 import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
 // SVG styles
@@ -62,7 +62,7 @@ const bikeBody = {
   width: '12vw',
   minWidth: '105px',
   position: 'absolute',
-  bottom: '0',
+  bottom: '12px',
   zIndex: '999',
 };
 
@@ -73,9 +73,7 @@ class Mountainbike extends React.Component {
   constructor(props) {
     super(props);
 
-    this.tl = new TimelineMax({
-      repeatDelay: 1,
-    });
+    this.tl = new TimelineMax();
 
     this.bike = null;
     this.wheel = null;
@@ -102,13 +100,33 @@ class Mountainbike extends React.Component {
         {
           x: '-400',
           repeat: -1,
+          repeatDelay: 6,
           ease: 'Linear.easeNone',
         },
         {
           x: deviceWidth,
           repeat: -1,
+          repeatDelay: 6,
           ease: 'Linear.easeNone',
         }
+      )
+      .to(
+        this.bike,
+        16,
+        {
+          repeat: -1,
+          repeatDelay: 6,
+          y: 12,
+          ease: RoughEase.ease.config({
+            template: Power0.easeNone,
+            strenght: 20,
+            points: 60,
+            taper: 'none',
+            randomize: true,
+            clamp: true,
+          }),
+        },
+        '-=16'
       );
   }
 

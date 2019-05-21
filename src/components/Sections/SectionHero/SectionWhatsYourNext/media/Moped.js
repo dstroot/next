@@ -1,5 +1,5 @@
 import React from 'react';
-import { TweenMax } from 'gsap';
+import { TweenMax, RoughEase, Power0 } from 'gsap';
 import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
 // SVG styles
@@ -78,7 +78,7 @@ const mopedBody = {
   width: '14vw',
   minWidth: '105px',
   position: 'absolute',
-  bottom: '0',
+  bottom: '4px',
   zIndex: '1',
 };
 
@@ -89,10 +89,7 @@ class Moped extends React.Component {
   constructor(props) {
     super(props);
 
-    this.tl = new TimelineMax({
-      repeat: -1,
-      repeatDelay: 6,
-    });
+    this.tl = new TimelineMax();
 
     this.moped = null;
     this.wheel = null;
@@ -100,46 +97,52 @@ class Moped extends React.Component {
   }
 
   componentDidMount() {
-    this.tl.fromTo(
-      this.moped,
-      16,
-      {
-        x: '-400',
+    this.tl
+      .to(this.wheel, 2, {
+        rotation: 360,
+        repeat: -1,
+        transformOrigin: '50% 50%',
         ease: 'Linear.easeNone',
-      },
-      {
-        x: deviceWidth,
+      })
+      .to(this.wheelFront, 2, {
+        rotation: 360,
+        repeat: -1,
+        transformOrigin: '50% 50%',
         ease: 'Linear.easeNone',
-      }
-    );
-
-    // this.tl
-    //   .from(this.moped, 1, {
-    //     delay: 2,
-    //   })
-    //   .from(this.moped, 3, {
-    //     x: '-400',
-    //     ease: 'Linear.easeNone',
-    //   })
-    //   .to(this.moped, 8, {
-    //     x: deviceWidth,
-    //     ease: 'Linear.easeNone',
-    //   });
-
-    // this.moveMoped = TweenMax.from(this.moped, 6, {
-    //   x: '-200px',
-    // });
-    // this.moveMoped = TweenMax.to(this.moped, 6, {
-    //   x: deviceWidth,
-    //   repeat: -1,
-    //   ease: 'Linear.easeNone',
-    // });
-    // this.spinWheel = TweenMax.to([this.wheel, this.wheelFront], 3, {
-    //   rotation: 360,
-    //   repeat: -1,
-    //   transformOrigin: '50% 50%',
-    //   ease: 'Linear.easeNone',
-    // });
+      })
+      .fromTo(
+        this.moped,
+        12,
+        {
+          x: '-400',
+          repeat: -1,
+          repeatDelay: 6,
+          ease: 'Linear.easeNone',
+        },
+        {
+          x: deviceWidth,
+          repeat: -1,
+          ease: 'Linear.easeNone',
+        }
+      )
+      .to(
+        this.moped,
+        16,
+        {
+          repeat: -1,
+          repeatDelay: 6,
+          y: 12,
+          ease: RoughEase.ease.config({
+            template: Power0.easeNone,
+            strenght: 10,
+            points: 30,
+            taper: 'none',
+            randomize: true,
+            clamp: true,
+          }),
+        },
+        '-=16'
+      );
   }
 
   render() {
