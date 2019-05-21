@@ -4,12 +4,12 @@ exports[`TermsOfUse it should render 1`] = `
 <div
   className="container mb-6"
 >
-  <h1
+  <div
     className="nxt_heading-xlarge text-center py-6"
   >
     Terms of Use
-  </h1>
-  <p
+  </div>
+  <div
     className="text-left"
   >
     <div>
@@ -141,8 +141,10 @@ exports[`TermsOfUse it should render 1`] = `
         Trademarks
       </h2>
       <p>
-        The logo shown here 
+        The logo shown here
+         
         <img
+          alt="Our Logo"
           src="PLVertBWv2.svg"
           width={60}
         />
@@ -240,6 +242,6 @@ exports[`TermsOfUse it should render 1`] = `
         </b>
       </p>
     </div>
-  </p>
+  </div>
 </div>
 `;

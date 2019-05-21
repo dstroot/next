@@ -4,12 +4,12 @@ exports[`SocialMediaGuidelines it should render 1`] = `
 <div
   className="container mb-6"
 >
-  <h1
+  <div
     className="nxt_heading-xlarge text-center py-6"
   >
     Social Media Guidelines
-  </h1>
-  <p
+  </div>
+  <div
     className="text-left"
   >
     <div>
@@ -83,6 +83,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
          
         <a
           href="https://www.ic3.gov/default.aspx"
+          rel="noopener noreferrer"
           target="_blank"
         >
           www.ic3.gov
@@ -97,6 +98,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
       >
         <a
           href="https://www.facebook.com/communitystandards"
+          rel="noopener noreferrer"
           target="_blank"
         >
           facebook.com/communitystandards
@@ -104,6 +106,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
         <br />
         <a
           href="https://twitter.com/privacy"
+          rel="noopener noreferrer"
           target="_blank"
         >
           twitter.com/privacy
@@ -111,6 +114,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
         <br />
         <a
           href="http://help.linkedin.com/app/answers/detail/a_id/34593/"
+          rel="noopener noreferrer"
           target="_blank"
         >
           help.linkedin.com/app/answers/detail/a_id/34593/
@@ -118,6 +122,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
         <br />
         <a
           href="https://help.instagram.com/477434105621119"
+          rel="noopener noreferrer"
           target="_blank"
         >
           help.instagram.com/477434105621119
@@ -125,6 +130,7 @@ exports[`SocialMediaGuidelines it should render 1`] = `
         <br />
         <a
           href="http://www.youtube.com/yt/policyandsafety/policy.html"
+          rel="noopener noreferrer"
           target="_blank"
         >
           youtube.com/yt/policyandsafety/policy.html
@@ -138,6 +144,6 @@ exports[`SocialMediaGuidelines it should render 1`] = `
         For more than 150 years, Pacific Life has been helping individuals and families with a portfolio of insurance products, annuities, and mutual funds. Thank you for your interest in our brand.
       </p>
     </div>
-  </p>
+  </div>
 </div>
 `;
