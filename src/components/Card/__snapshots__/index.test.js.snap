@@ -17,10 +17,7 @@ exports[`Card it should render 1`] = `
     <p
       className="card-text circular mb-5"
     />
-<<<<<<< HEAD
     <div />
-=======
->>>>>>> animation
   </div>
 </div>
 `;

@@ -6,12 +6,8 @@ exports[`Button it should render 1`] = `
   href="/"
   onClick={[Function]}
 >
-  <a
-    target="_blank"
-  >
-    <button
-      className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
-    />
-  </a>
+  <button
+    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+  />
 </a>
 `;

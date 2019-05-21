@@ -3,17 +3,14 @@
 exports[`Contact it should render 1`] = `
 <div>
   <img
+    alt="Two Lights"
     src="twolights.svg"
     style={
       Object {
         "left": "0",
         "marginLeft": "auto",
         "marginRight": "auto",
-<<<<<<< HEAD
         "marginTop": "16vh",
-=======
-        "marginTop": "40px",
->>>>>>> animation
         "minWidth": "50px",
         "position": "absolute",
         "right": "0",
@@ -111,28 +108,14 @@ exports[`Contact it should render 1`] = `
           <div
             className="mt-5"
           >
-<<<<<<< HEAD
             <div
               className="react-reveal"
-=======
-            <h1
-              className="react-reveal nxt_heading-xlarge"
-              style={
-                Object {
-                  "opacity": undefined,
-                }
-              }
-            />
-            <div
-              className="react-reveal mt-4 pr-5"
->>>>>>> animation
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
-<<<<<<< HEAD
               <h1
                 className="nxt_heading-xlarge"
               />
@@ -195,75 +178,11 @@ exports[`Contact it should render 1`] = `
                       </form>
                       <div
                         className="mt-5"
-=======
-              <form>
-                <div
-                  className="text-left nxt_body-xsmall"
-                >
-                  <div
-                    className="form-group"
-                  >
-                    <label
-                      htmlFor="Name"
-                    >
-                      Name
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputName"
-                      type="text"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Email"
-                    >
-                      Email
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputEmail"
-                      type="email"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Phone"
-                    >
-                      Phone
-                    </label>
-                    <input
-                      className="form-control"
-                      id="InputPhone"
-                      type="phone"
-                    />
-                    <label
-                      className="mt-3"
-                      htmlFor="Message"
-                    >
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control"
-                      id="InputMessage"
-                      rows="3"
-                      type="text"
-                    />
-                  </div>
-                  <div
-                    className="mt-5"
-                  >
-                    <a
-                      href="/#"
-                      onClick={[Function]}
-                    >
-                      <a
-                        target="_blank"
->>>>>>> animation
                       >
                         <a
                           href="/#"
                           onClick={[Function]}
                         >
-<<<<<<< HEAD
                           <button
                             className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
                           >
@@ -278,15 +197,6 @@ exports[`Contact it should render 1`] = `
                   />
                 </div>
               </div>
-=======
-                          Submit
-                        </button>
-                      </a>
-                    </a>
-                  </div>
-                </div>
-              </form>
->>>>>>> animation
             </div>
             <div>
               <div
