@@ -74,7 +74,6 @@ class Mountainbike extends React.Component {
     super(props);
 
     this.tl = new TimelineMax({
-      repeat: -1,
       repeatDelay: 1,
     });
 
@@ -99,13 +98,15 @@ class Mountainbike extends React.Component {
       })
       .fromTo(
         this.bike,
-        2,
+        8,
         {
           x: '-400',
+          repeat: -1,
           ease: 'Linear.easeNone',
         },
         {
           x: deviceWidth,
+          repeat: -1,
           ease: 'Linear.easeNone',
         }
       );
