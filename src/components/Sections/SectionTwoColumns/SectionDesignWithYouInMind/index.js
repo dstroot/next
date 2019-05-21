@@ -2,7 +2,7 @@ import React from 'react';
 import TimelineLite from 'gsap/src/uncompressed/TimelineLite';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
 // styles
 import './styles.scss';
@@ -39,8 +39,9 @@ class SectionDesignWithYouInMind extends React.Component {
     // Scrollmagic
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
+      triggerHook: 0.15,
       duration: '600%', // increase duration of each animated scroll
-      offset: 540, // start this scene after triggerElement
+      offset: 50, // start this scene after triggerElement
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')
@@ -59,6 +60,7 @@ class SectionDesignWithYouInMind extends React.Component {
             sectionHead="Designed with you in mind"
             contentLeft={
               <img
+                id="dwyim-woman"
                 className="img-fluid p-5"
                 src={womanphone}
                 alt="Woman with the Phone"

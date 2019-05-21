@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="container-fluid bg-dark">
       <div className="row">
-        <div className="col p-5">
-          <img src={logo} className="pr-3 pb-3" alt="Logo" />
+        <div className="col p-3">
+          <img src={logo} className="pr-3 pb-4" alt="Logo" />
           <span className="nxt_footer">
             By using this website you accept our{' '}
             <Link to="/terms">

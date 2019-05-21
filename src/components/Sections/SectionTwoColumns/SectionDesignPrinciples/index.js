@@ -64,8 +64,9 @@ class SectionDesignPrinciples extends React.Component {
       .from(this.img5, 80, { opacity: 0 }, '-=80');
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
+      triggerHook: 0.15,
       duration: '1000%',
-      offset: 540,
+      offset: 100,
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')

@@ -12,6 +12,7 @@ $theme-colors: (
   'accent': #f2d292,
   'light': #f2f4f7,
 );
+
 $enable-responsive-font-sizes: true;
 
 // extend spacer variable for custom spacing
@@ -20,7 +21,7 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     6: (
-      $spacer * 14,
+      calc(4px + 8vw + 8vh),
     ),
   ),
   $spacers

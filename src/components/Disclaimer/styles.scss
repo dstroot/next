@@ -1,6 +1,5 @@
-.dwyim-para {
-  position: absolute;
-  top: 30%;
+.disc-container {
+  margin-top: 10%;
 }
 
 /***************************************/
@@ -10,26 +9,15 @@
 /******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .dwyim-para {
-    top: -40%;
-    width: 90%;
-    text-align: center;
-  }
-  #dwyim-woman {
-    margin-top: 38px;
+  .disc-container {
+    margin-top: 34%;
   }
 }
 
 /******************* iPad in portrait & landscape ********************/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .dwyim-para {
-    top: 10%;
-    right: 20%;
-    width: 90%;
-    text-align: left;
-  }
-  #dwyim-woman {
-    margin-top: 0px;
+  .disc-container {
+    margin-top: 20%;
   }
 }
