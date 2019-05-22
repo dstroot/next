@@ -11,6 +11,8 @@ const SectionOneColumn = props => {
           <h1 className="nxt_heading-xlarge mb-5">{props.heading}</h1>
           <div>{props.content}</div>
         </Fade>
+        {/* Optional div to bypass Fade */}
+        <div>{props.noFadeContent}</div>
       </div>
     </div>
   );
