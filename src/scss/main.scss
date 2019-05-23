@@ -9,6 +9,7 @@ https://getbootstrap.com/docs/4.0/getting-started/theming/
 // to add a new color to $theme-colors, add the new key and value:
 $theme-colors: (
   'primary': #00a677,
+  'primary-dark': #3c444c,
   'accent': #f2d292,
   'light': #f2f4f7,
 );
@@ -36,12 +37,9 @@ $spacers: map-merge(
 // then component styles
 @import '../components/NavBar/styles.scss';
 
-// nxt colors
-$primary-dark: #3c444c;
-
 body {
   margin-top: -50px;
-  color: $primary-dark;
+  color: theme-color('primary-dark');
 }
 
 label {

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { TweenMax, TimelineMax, TweenLite } from 'gsap';
 import { Link } from '@reach/router';
 
 // components
@@ -29,6 +30,22 @@ const NavBar = () => {
     setClicked(!clicked);
     window.scrollTo(0, 0);
   };
+
+  let navLine = useRef(null);
+
+  const [animation, setAnimation] = useState(null);
+
+  useEffect(() => {
+    setAnimation(
+      TweenLite.to(navLine, 5, {
+        css: {
+          borderBottom: '1px solid #dde1e7',
+          background: 'red !important',
+          backgroundColor: 'red !important',
+        },
+      })
+    );
+  }, []);
 
   if (small) {
     return (
@@ -79,7 +96,10 @@ const NavBar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3">
+    <nav
+      className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
+      ref={nav => (navLine = nav)}
+    >
       {/* Brand */}
       <Link to="/" className="navbar-brand">
         <img

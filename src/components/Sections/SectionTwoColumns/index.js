@@ -10,7 +10,11 @@ const SectionTwoColumns = props => {
     <div className={`py-6 ${props.styleBackground}`}>
       <div className="container">
         <Fade bottom>
-          <h1 className={'text-center nxt_heading-xlarge mb-5'}>
+          <h1
+            className={`text-center nxt_heading-xlarge ${
+              props.sectionHeadStyle
+            }`}
+          >
             {props.sectionHead}
           </h1>
         </Fade>

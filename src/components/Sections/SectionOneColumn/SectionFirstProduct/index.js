@@ -44,6 +44,7 @@ class SectionFirstProduct extends React.Component {
     })
       .setTween(this.cardTl)
       // .addIndicators() // for debugging
+      .reverse(false)
       .addTo(this.controller);
   }
 

@@ -57,6 +57,7 @@ class SectionDesignWithYouInMind extends React.Component {
           <SectionTwoColumns
             styleLeft="order-2 order-sm-1"
             styleRight="order-1 order-sm-2"
+            sectionHeadStyle="mb-5"
             sectionHead="Designed with you in mind"
             contentLeft={
               <img
