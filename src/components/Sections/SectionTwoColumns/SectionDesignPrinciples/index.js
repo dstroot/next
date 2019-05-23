@@ -66,7 +66,7 @@ class SectionDesignPrinciples extends React.Component {
       triggerElement: '#scrollStarts',
       triggerHook: 0.15,
       duration: '1000%',
-      offset: 100,
+      offset: 180,
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')

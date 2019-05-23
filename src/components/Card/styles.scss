@@ -1,8 +1,8 @@
-// .nxt_card-width {
-//   width: 90%;
-//   max-width: 24rem;
-// }
+@import '../../scss/main.scss';
 
-// .nxt_rounded-corner {
-//   border-radius: 12px;
-// }
+.card {
+  border-radius: 12px;
+  border: 1px solid $primary-dark;
+  max-width: 400px;
+  margin: 0 auto;
+}

@@ -36,8 +36,12 @@ $spacers: map-merge(
 // then component styles
 @import '../components/NavBar/styles.scss';
 
+// nxt colors
+$primary-dark: #3c444c;
+
 body {
   margin-top: -50px;
+  color: $primary-dark;
 }
 
 label {

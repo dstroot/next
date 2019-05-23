@@ -41,7 +41,7 @@ class SectionDesignWithYouInMind extends React.Component {
       triggerElement: '#scrollStarts',
       triggerHook: 0.15,
       duration: '600%', // increase duration of each animated scroll
-      offset: 50, // start this scene after triggerElement
+      offset: 180, // start this scene after triggerElement
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')
