@@ -32,6 +32,11 @@
   .show a.active {
     color: theme-color('primary');
   }
+
+  .navbar-brand img {
+    width: 115px;
+    height: 53px;
+  }
 }
 
 .overlay {
