@@ -1,6 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { TweenMax, TimelineMax, TweenLite } from 'gsap';
 import { Link } from '@reach/router';
+
+// animations
+import { TimelineMax } from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
 // components
 import HamButton from '../HamButton';
@@ -31,19 +36,35 @@ const NavBar = () => {
     window.scrollTo(0, 0);
   };
 
-  let navLine = useRef(null);
-
   const [animation, setAnimation] = useState(null);
+
+  // GSAP
+  let tl = new TimelineMax();
+
+  // ScrollMagic
+  let controller = useRef(null);
+  controller = new ScrollMagic.Controller();
 
   useEffect(() => {
     setAnimation(
-      TweenLite.to(navLine, 5, {
+      // GSAP
+      tl.to('.navbar', 0.5, {
         css: {
-          borderBottom: '1px solid #dde1e7',
-          background: 'red !important',
-          backgroundColor: 'red !important',
+          borderBottom: '1px solid rgba(200, 200, 200, 1)',
+          backgroundColor: '#ffffff',
         },
       })
+    );
+    setAnimation(
+      // ScrollMagic
+      new ScrollMagic.Scene({
+        triggerElement: '#trig',
+        triggerHook: 0.2,
+        offset: 100,
+      })
+        .setTween(tl)
+        // .addIndicators() // for debugging
+        .addTo(controller)
     );
   }, []);
 
@@ -96,10 +117,7 @@ const NavBar = () => {
   }
 
   return (
-    <nav
-      className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
-      ref={nav => (navLine = nav)}
-    >
+    <nav className="navbar navbar-expand-sm navbar-light fixed-top p-3">
       {/* Brand */}
       <Link to="/" className="navbar-brand">
         <img
