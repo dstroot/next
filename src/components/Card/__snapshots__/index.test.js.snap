@@ -2,10 +2,10 @@
 
 exports[`Card it should render 1`] = `
 <div
-  className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
+  className="card h-100"
 >
   <div
-    className="card-body text-center"
+    className="card-body py-4"
   >
     <img
       alt="Evergreen"

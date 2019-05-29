@@ -8,11 +8,11 @@ exports[`Footer it should render 1`] = `
     className="row"
   >
     <div
-      className="col p-5"
+      className="col p-3"
     >
       <img
         alt="Logo"
-        className="pr-3 pb-3"
+        className="pr-3 pb-4"
         src="NXT_logo_footer_dark.svg"
       />
       <span

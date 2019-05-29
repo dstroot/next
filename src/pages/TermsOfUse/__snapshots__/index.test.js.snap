@@ -2,7 +2,7 @@
 
 exports[`TermsOfUse it should render 1`] = `
 <div
-  className="container mb-6"
+  className="container pb-6 disc-container"
 >
   <div
     className="nxt_heading-xlarge text-center py-6"

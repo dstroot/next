@@ -10,7 +10,7 @@ exports[`Contact it should render 1`] = `
         "left": "0",
         "marginLeft": "auto",
         "marginRight": "auto",
-        "marginTop": "16vh",
+        "marginTop": "12vh",
         "minWidth": "50px",
         "position": "absolute",
         "right": "0",
@@ -68,7 +68,7 @@ exports[`Contact it should render 1`] = `
       className="container"
     >
       <h1
-        className="react-reveal text-center nxt_heading-xlarge mb-5"
+        className="react-reveal text-center nxt_heading-xlarge undefined"
         style={
           Object {
             "opacity": undefined,

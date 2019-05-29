@@ -3,7 +3,7 @@
 exports[`PrivacyPolicy it should render 1`] = `
 <div>
   <div
-    className="container mb-6"
+    className="container pb-6 disc-container"
   >
     <div
       className="nxt_heading-xlarge text-center py-6"
@@ -87,21 +87,11 @@ exports[`PrivacyPolicy it should render 1`] = `
         <p>
           Updated: July 2016
         </p>
-      </div>
-    </div>
-  </div>
-  <div
-    className="container mb-6"
-  >
-    <div
-      className="nxt_heading-xlarge text-center py-6"
-    >
-      Our Privacy Promise
-    </div>
-    <div
-      className="text-left"
-    >
-      <div>
+        <div
+          className="nxt_heading-xlarge text-center py-6"
+        >
+          Our Privacy Promise
+        </div>
         <ul>
           <li>
             We do not sell information about you.

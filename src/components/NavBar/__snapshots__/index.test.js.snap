@@ -2,7 +2,7 @@
 
 exports[`NavBar it should render large 1`] = `
 <nav
-  className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
+  className="navbar navbar-expand-sm navbar-light fixed-top p-3"
 >
   <a
     aria-current="page"
@@ -13,9 +13,7 @@ exports[`NavBar it should render large 1`] = `
     <img
       alt="NEXT by Pacific Life"
       className="d-inline-block align-middle"
-      height="53"
       src="NXT_Logo_light.svg"
-      width="115"
     />
   </a>
   <div
@@ -55,7 +53,7 @@ exports[`NavBar it should render small 1`] = `
   width="400px"
 >
   <nav
-    className="navbar navbar-expand-sm navbar-light fixed-top bg-white p-3"
+    className="navbar navbar-expand-sm navbar-light fixed-top p-3"
   >
     <a
       aria-current="page"
@@ -66,9 +64,7 @@ exports[`NavBar it should render small 1`] = `
       <img
         alt="NEXT by Pacific Life"
         className="d-inline-block align-middle"
-        height="53"
         src="NXT_Logo_light.svg"
-        width="115"
       />
     </a>
     <div
