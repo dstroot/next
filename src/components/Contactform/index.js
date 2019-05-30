@@ -1,54 +1,40 @@
 import React from 'react';
+import firebase from 'firebase/app';
 
 //components
-import Button from '../Buttons/Button';
+// import Button from '../Buttons/Button';
 
-const Contactform = () => {
+const ContactForm = () => {
   return (
-    <div>
-      <div className="mb-6 text-left nxt_body-xsmall">
-        <form id="contactForm">
+    <div className="mb-6 text-left nxt_body-xsmall">
+      <form id="contactForm">
+        <div>
           <label>Name</label>
-          <input
-            type="text"
-            className="form-control mb-3"
-            name="name"
-            id="name"
-          />
-
+          <input type="text" className="form-control mb-3" id="name" />
+        </div>
+        <div>
           <label>Email</label>
-          <input
-            type="text"
-            className="form-control mb-3"
-            name="email"
-            id="email"
-          />
-
+          <input type="text" className="form-control mb-3" id="email" />
+        </div>
+        <div>
           <label>Phone</label>
-          <input
-            type="text"
-            className="form-control mb-3"
-            name="phone"
-            id="phone"
-          />
+          <input type="text" className="form-control mb-3" id="phone" />
+        </div>
+        <div>
           <label>Message</label>
           <textarea
             type="text"
             className="form-control mb-5"
-            name="message"
             id="message"
             rows="3"
           />
+        </div>
+        <div>
           <button type="submit">Submit</button>
-        </form>{' '}
-        {/* type for the addEventListener from Main.js  */}
-        {/* <Button buttonText="Submit" path="#" /> */}
-      </div>
-      {/* The core Firebase JS SDK is always required and must be listed first */}
-      <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js" />
-      <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js" />
-      <script src="main.js" />
+        </div>
+      </form>
     </div>
   );
 };
-export default Contactform;
+
+export default ContactForm;
