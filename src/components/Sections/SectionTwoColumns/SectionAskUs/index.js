@@ -1,7 +1,7 @@
 import React from 'react';
 
 //import components
-import Form from '../../../Form';
+import Contactform from '../../../Contactform';
 import SectionTwoColumns from '../../SectionTwoColumns';
 
 const SectionAskUs = () => {
@@ -18,7 +18,7 @@ const SectionAskUs = () => {
         </div>
       }
       styleRight="order-1 text-left"
-      contentRight={<Form />}
+      contentRight={<Contactform />}
     />
   );
 };
