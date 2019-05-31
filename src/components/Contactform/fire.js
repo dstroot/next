@@ -1,13 +1,14 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 // change lines below with your own Firebase snippets!
 var config = {
-  apiKey: 'AIzaSyDjADDXIRhlKVJyLjNsY8VL-WmbzhbPFQ4',
-  authDomain: 'nextbypl.firebaseapp.com',
-  databaseURL: 'https://nextbypl.firebaseio.com',
-  projectId: 'nextbypl',
-  storageBucket: 'nextbypl.appspot.com',
-  messagingSenderId: '769109645864',
-  appId: '1:769109645864:web:078e498747e42f99',
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
 };
 const fire = firebase.initializeApp(config);
 export default fire;
