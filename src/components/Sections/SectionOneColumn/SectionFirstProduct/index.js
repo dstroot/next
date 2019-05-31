@@ -1,7 +1,7 @@
 import React from 'react';
 
 // animation
-import { TweenMax, TimelineMax } from 'gsap';
+import { TimelineMax } from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
