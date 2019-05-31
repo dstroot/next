@@ -11,10 +11,10 @@ exports[`Card it should render 1`] = `
       alt="Evergreen"
       className="mb-2"
     />
-    <h5
+    <div
       className="card-title nxt_heading-small mb-4"
     />
-    <p
+    <div
       className="card-text circular mb-5"
     />
     <div />
