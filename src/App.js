@@ -20,6 +20,7 @@ import Contact from './pages/Contact';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SocialMediaGuidelines from './pages/SocialMediaGuidelines';
+import TesterPage from './pages/TesterPage';
 
 const App = () => (
   <div className="mt-5">
