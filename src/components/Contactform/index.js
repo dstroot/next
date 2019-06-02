@@ -1,9 +1,11 @@
 import React from 'react';
-import fire from './fire';
+import FirebaseConfig from '../FirebaseKey';
+import SubmitButton from '../Buttons/SubmitButton';
 
 class ContactForm extends React.Component {
   constructor() {
     super();
+    // set the state for the variables
     this.state = {
       name: '',
       email: '',
@@ -12,25 +14,28 @@ class ContactForm extends React.Component {
     };
   }
 
-  // What does this actually does?
+  // loop each entry and get the value
   updateInput = e => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
-
+  // add data to the database
   addData = e => {
+    // prevent default event that submits to the page
     e.preventDefault();
-    const db = fire.firestore();
+    const db = FirebaseConfig.firestore();
     db.settings({
       timestampsInSnapshots: true,
     });
-    db.collection('contactForm').add({
+    // set the state to the data values
+    db.collection('ContactForm').add({
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,
       message: this.state.message,
     });
+    // reset the state
     this.setState({
       name: '',
       email: '',
@@ -83,7 +88,7 @@ class ContactForm extends React.Component {
               value={this.state.message}
             />
           </div>
-          <button type="submit">Submit</button>
+          <SubmitButton buttonText="Submit" type="submit" />
         </form>
       </div>
     );
