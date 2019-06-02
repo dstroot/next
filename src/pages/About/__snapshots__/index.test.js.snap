@@ -2,6 +2,113 @@
 
 exports[`About it should render 1`] = `
 <div>
+  <svg
+    id="Layer_1"
+    style={
+      Object {
+        "left": "0",
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "marginTop": "12vh",
+        "minWidth": "50px",
+        "position": "absolute",
+        "right": "0",
+        "width": "10vh",
+      }
+    }
+    version="1.1"
+    viewBox="0 0 97 95"
+    x="0px"
+    y="0px"
+  >
+    <g
+      id="Clock-Frame"
+    >
+      <path
+        d="M39.3,1.1c0,0-21.6,4.9-31.6,19.7c-10,14.8-10,33.8-3.8,48.3c7.1,16.2,17.7,23.1,34.2,25 c16.5,1.9,34.6-0.2,45.5-13.9c10.9-13.7,16.2-25.7,10.9-44.5C89.4,16.8,74.2-4.4,39.3,1.1z"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+      <path
+        d="M45.3,6.1c0,0-31,4.1-37.4,32.5C1.5,67,18.4,84.5,40,87.5c21.6,3,48.7-3.8,50.2-37.2 C91.7,16.8,61.4,1.1,45.3,6.1z"
+        style={
+          Object {
+            "fill": "#FFFFFF",
+          }
+        }
+      />
+    </g>
+    <g
+      id="Lines"
+    >
+      <path
+        d="M46.8,8.4c-0.6,0-1.3,0.6-1.3,1.3v5.1c0,0.6,0.4,1.3,1.3,1.3c0.6,0,1.3-0.4,1.3-1.3V9.7 C48.1,9,47.7,8.4,46.8,8.4z"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+      <path
+        d="M46.8,79.4c-0.6,0-1.3,0.6-1.3,1.3v4.3c0,0.6,0.4,1.3,1.3,1.3c0.6,0,1.3-0.4,1.3-1.3v-4.3 C48.1,80,47.7,79.4,46.8,79.4z"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+      <path
+        d="M88.1,48.8h-5.8c-0.6,0-1.3,0.6-1.3,1.3c0.2,0.9,0.6,1.3,1.3,1.3h5.8c0.6,0,1.3-0.6,1.3-1.3 S88.7,48.8,88.1,48.8z"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+      <path
+        d="M13.4,49H9.2c-0.6,0-1.1,0.4-1.1,1.1s0.4,1.1,1.1,1.1h4.3c0.6,0,1.1-0.4,1.1-1.1C14.5,49.6,14.1,49,13.4,49z"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+    </g>
+    <g>
+      <path
+        d="M50.4,46L39.9,23.3c-0.2-0.6-0.9-0.9-1.5-0.6s-0.9,0.9-0.6,1.5l10.5,22.7 c0.2,0.6,0.9,0.9,1.5,0.6C50.4,47.2,50.6,46.6,50.4,46z"
+        id="Second-Hand"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+    </g>
+    <path
+      d="M49.2,48.8L49.2,48.8c-1.4,0-2.5-1.1-2.5-2.5V23.8c0-1.4,1.1-2.5,2.5-2.5h0 c1.4,0,2.5,1.1,2.5,2.5v22.5C51.7,47.7,50.6,48.8,49.2,48.8z"
+      id="Hour-Hand"
+      style={
+        Object {
+          "fill": "#F2F4F7",
+        }
+      }
+    />
+    <g>
+      <path
+        d="M47.1,45.1L47.1,45.1c0.7-1.2,2.2-1.6,3.4-0.9l30.3,17.5c1.2,0.7,1.6,2.2,0.9,3.4v0 c-0.7,1.2-2.2,1.6-3.4,0.9L48.1,48.5C46.9,47.8,46.4,46.3,47.1,45.1z"
+        id="Minute-Hand"
+        style={
+          Object {
+            "fill": "#F2F4F7",
+          }
+        }
+      />
+    </g>
+  </svg>
   <div
     className="background"
     style={
@@ -23,7 +130,7 @@ exports[`About it should render 1`] = `
             className="col text-center"
           >
             <h1
-              className="nxt_heading-large"
+              className="nxt_heading-xlarge"
             >
               Born in California
             </h1>
@@ -44,186 +151,244 @@ exports[`About it should render 1`] = `
         </div>
       </div>
     </div>
-    <img
-      className="hero-image"
-    />
   </div>
   <div
     className="py-6 bg-light"
   >
     <div
-      className="container text-left"
+      className="container"
     >
+      <h1
+        className="react-reveal text-center nxt_heading-xlarge undefined"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      />
       <div
-        className="container undefined"
+        className="row"
       >
-        <h1
-          className="react-reveal  nxt_heading-xlarge undefined "
+        <div
+          className="react-reveal col-md-5 order-2"
           style={
             Object {
               "opacity": undefined,
             }
           }
-        />
+        >
+          <img
+            alt="Our Story Group"
+            className="img-fluid pd-5"
+            src="ourstorygroup.svg"
+          />
+        </div>
         <div
-          className="row"
+          className="col-md-7 order-1"
         >
           <div
-            className="react-reveal col-md-5 order-2"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            <img
-              alt="Our Story Group"
-              className="img-fluid pd-5"
-              src="ourstorygroup.svg"
-            />
-          </div>
-          <div
-            className="col-md-7 order-1"
+            className="mt-5"
           >
             <div
-              className="mt-5"
+              className="react-reveal"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
               <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="nxt_heading-xlarge"
               >
                 Our Story
               </h1>
               <div
-                className="react-reveal mt-4 pr-5"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="mt-4 pr-5"
               >
                 We started Next by Pacific Life with the goal of creating a better, seamless digital experience for the modern investor. We talked to all types of customers. What became clear is customers wanted simple, easy-to-understand products with clear value propositions. We are creating transparent products and an engaging customer experience by starting with the customer and working backwards.
               </div>
+            </div>
+            <div>
+              <div
+                className="mt-4 pr-5"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div
-    className="py-6 undefined"
-  >
+  <div>
     <div
-      className="container text-left"
+      id="scrollStarts"
     >
       <div
-        className="container undefined"
+        className="py-6 undefined"
       >
-        <h1
-          className="react-reveal  nxt_heading-xlarge text-center mb-5 "
-          style={
-            Object {
-              "opacity": undefined,
-            }
-          }
-        >
-          Our Design Principles
-        </h1>
         <div
-          className="row"
+          className="container"
         >
-          <div
-            className="react-reveal col-md-5 undefined"
+          <h1
+            className="react-reveal text-center nxt_heading-xlarge text-center mb-5"
             style={
               Object {
                 "opacity": undefined,
               }
             }
           >
-            <img
-              alt="Design System"
-              src="designsystemhi.svg"
-            />
-          </div>
+            Our Design Principles
+          </h1>
           <div
-            className="col-md-7 undefined"
+            className="row"
           >
             <div
-              className="mt-5"
+              className="react-reveal col-md-5 undefined"
+              style={
+                Object {
+                  "opacity": undefined,
+                }
+              }
             >
-              <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              />
               <div
-                className="react-reveal mt-4 pr-5"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="text-center mb-6"
+                id="easel-container"
+              >
+                <img
+                  alt="Design System"
+                  id="easel"
+                  src="Easel.svg"
+                  width={200}
+                />
+                <img
+                  alt="Lollypop"
+                  className="easel-icon"
+                  src="Lollypop.svg"
+                  width={65}
+                />
+                <img
+                  alt="Flag"
+                  className="easel-icon"
+                  src="Flag.svg"
+                  width={90}
+                />
+                <img
+                  alt="Paper Plane"
+                  className="easel-icon"
+                  src="PaperPlane.svg"
+                />
+                <img
+                  alt="Hi"
+                  className="easel-icon"
+                  src="Hi.svg"
+                  width={85}
+                />
+                <img
+                  alt="Lock"
+                  className="easel-icon"
+                  src="Lock.svg"
+                />
+              </div>
+            </div>
+            <div
+              className="col-md-7 undefined"
+            >
+              <div
+                className="mt-5"
               >
                 <div
-                  className="m-5"
+                  className="react-reveal"
+                  style={
+                    Object {
+                      "opacity": undefined,
+                    }
+                  }
                 >
-                  <h3
-                    className="nxt_heading-small"
+                  <h1
+                    className="nxt_heading-xlarge"
+                  />
+                  <div
+                    className="mt-4 pr-5"
+                  />
+                </div>
+                <div>
+                  <div
+                    className="mt-4 pr-5"
                   >
-                     Simplicity 
-                  </h3>
-                  <p
-                    className="pb-4"
-                  >
-                    We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
-                  </p>
-                  <h3
-                    className="nxt_heading-small"
-                  >
-                     Empowerment 
-                  </h3>
-                  <p
-                    className="pb-4"
-                  >
-                    Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
-                  </p>
-                  <h3
-                    className="nxt_heading-small"
-                  >
-                     Flexibility 
-                  </h3>
-                  <p
-                    className="pb-4"
-                  >
-                    We recognize that customers’ needs change over time. Adopting a fluid mindset helps us design products that adapt to the customer over time.
-                  </p>
-                  <h3
-                    className="nxt_heading-small"
-                  >
-                     Engagement 
-                  </h3>
-                  <p
-                    className="pb-4"
-                  >
-                    Customers expect that we will be around for their entire lives, but traditionally most contact is at time of purchase and claims. We interact with customers in a meaningful and helpful way throughout the lifelong partnership.
-                  </p>
-                  <h3
-                    className="nxt_heading-small"
-                  >
-                     Transparency 
-                  </h3>
-                  <p
-                    className="pb-4"
-                  >
-                    We believe in an open and honest dialogue. Our industry may be complex, but we choose to always work in the best interest of the customer. That means we have to be clear about how our products work and the value they provide.
-                  </p>
+                    <div
+                      className="m-4"
+                    >
+                      <div
+                        className="odp-para mt-2"
+                      >
+                        <h3
+                          className="nxt_heading-small"
+                        >
+                           Simplicity 
+                        </h3>
+                        <p
+                          className="pb-1"
+                        >
+                          We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
+                        </p>
+                      </div>
+                      <div
+                        className="odp-para mt-2"
+                      >
+                        <h3
+                          className="nxt_heading-small"
+                        >
+                           Empowerment 
+                        </h3>
+                        <p
+                          className="pb-1"
+                        >
+                          Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
+                        </p>
+                      </div>
+                      <div
+                        className="odp-para mt-2"
+                      >
+                        <h3
+                          className="nxt_heading-small"
+                        >
+                           Flexibility 
+                        </h3>
+                        <p
+                          className="pb-1"
+                        >
+                          We recognize that customers’ needs change over time. Adopting a fluid mindset helps us design products that adapt to the customer over time.
+                        </p>
+                      </div>
+                      <div
+                        className="odp-para mt-2"
+                      >
+                        <h3
+                          className="nxt_heading-small"
+                        >
+                           Engagement 
+                        </h3>
+                        <p
+                          className="pb-1"
+                        >
+                          Customers expect that we will be around for their entire lives, but traditionally most contact is at time of purchase and claims. We interact with customers in a meaningful and helpful way throughout the lifelong partnership.
+                        </p>
+                      </div>
+                      <div
+                        className="odp-para mt-2"
+                      >
+                        <h3
+                          className="nxt_heading-small"
+                        >
+                           Transparency 
+                        </h3>
+                        <p
+                          className="pb-"
+                        >
+                          We believe in an open and honest dialogue. Our industry may be complex, but we choose to always work in the best interest of the customer. That means we have to be clear about how our products work and the value they provide.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,17 +397,15 @@ exports[`About it should render 1`] = `
       </div>
     </div>
   </div>
-  <div
-    className="py-6 undefined"
-  >
+  <div>
     <div
-      className="container text-left"
+      className="py-6 bg-light"
     >
       <div
-        className="container undefined"
+        className="container text-center"
       >
         <h1
-          className="react-reveal  nxt_heading-xlarge text-center "
+          className="react-reveal nxt_heading-xlarge"
           style={
             Object {
               "opacity": undefined,
@@ -252,68 +415,67 @@ exports[`About it should render 1`] = `
           Backed by Pacific Life
         </h1>
         <div
-          className="row"
-        >
-          <div
-            className="react-reveal col-md-5 text-center"
-            style={
-              Object {
-                "opacity": undefined,
-              }
+          className="react-reveal"
+          style={
+            Object {
+              "opacity": undefined,
             }
-          >
+          }
+        >
+          <div>
             <div
-              className="mt-5"
+              className="row"
             >
-              <img
-                alt="Pacific Life Logo"
-                src="PLVertBWv2.svg"
-              />
-              <img
-                alt="2.3 Billions in Benefits"
-                src="Twobillies.svg"
-              />
-              <p>
-                Combined insurance and annuities in 2017
-              </p>
-            </div>
-          </div>
-          <div
-            className="col-md-7 undefined"
-          >
-            <div
-              className="mt-5"
-            >
-              <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              />
               <div
-                className="react-reveal mt-4 pr-5"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
+                className="col-md-6"
+              >
+                <img
+                  alt="Pacific Life Logo"
+                  className="mt-5"
+                  src="PLVertBWv2.svg"
+                  width={350}
+                />
+              </div>
+              <div
+                className="col-md-6"
+              >
+                <p
+                  className="text-left mt-5 ml-5"
+                >
+                  Pacific Life is one of the most dependable and experienced insurers in the industry. Backed by 150 years of experience, you can count on us to be there so you can go out and pursue your passions.
+                </p>
+              </div>
+              <div
+                className="row mt-5"
               >
                 <div
-                  className="mt-5"
+                  className="col-md-6 mt-5"
                 >
-                  <p>
-                    Pacific Life is one of the most dependable and experienced insurers in the industry. Backed by 150 years of experience, you can count on us to be there so you can go out and pursue your passions.
+                  <img
+                    alt="2.3 Billions in Benefits"
+                    src="Twobillies.svg"
+                  />
+                  <p
+                    className="mt-4"
+                  >
+                    Combined insurance and annuities in 2017
                   </p>
+                </div>
+                <div
+                  className="col-md-6 mt-5"
+                >
                   <img
                     alt="A+ Superior"
                     src="ARating.svg"
                   />
-                  <p>
-                    A.M. Best rating for financial strength and claims-paying ability.
+                  <p
+                    className="mt-4"
+                  >
+                    A.M. Best rating for financial strength and claims-paying ability. 
                     <a
                       href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
+                      rel="noopener noreferrer"
+                      target="_blank"
                     >
                       What the ratings mean.
                     </a>

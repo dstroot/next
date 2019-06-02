@@ -3,16 +3,16 @@
 exports[`SectionDesignWithYouInMind it should render 1`] = `
 <div>
   <div
-    className="py-6 undefined"
+    id="scrollStarts"
   >
     <div
-      className="container text-left"
+      className="py-6 undefined"
     >
       <div
-        className="container text-center"
+        className="container"
       >
         <h1
-          className="react-reveal  nxt_heading-xlarge nxt_heading-large mb-5 "
+          className="react-reveal text-center nxt_heading-xlarge mb-5"
           style={
             Object {
               "opacity": undefined,
@@ -25,7 +25,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
           className="row"
         >
           <div
-            className="react-reveal col-md-5 undefined"
+            className="react-reveal col-md-5 order-2 order-sm-1"
             style={
               Object {
                 "opacity": undefined,
@@ -35,92 +35,81 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
             <img
               alt="Woman with the Phone"
               className="img-fluid p-5"
+              id="dwyim-woman"
               src="womanphone.svg"
             />
           </div>
           <div
-            className="col-md-7 undefined"
+            className="col-md-7 order-1 order-sm-2"
           >
             <div
               className="mt-5"
             >
-              <h1
-                className="react-reveal nxt_heading-xlarge"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              />
               <div
-                className="react-reveal mt-4 pr-5"
+                className="react-reveal"
                 style={
                   Object {
                     "opacity": undefined,
                   }
                 }
               >
-                <div>
-                  <h2
-                    className="react-reveal nxt_heading-small mb-2"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
+                <h1
+                  className="nxt_heading-xlarge"
+                />
+                <div
+                  className="mt-4 pr-5"
+                />
+              </div>
+              <div>
+                <div
+                  className="mt-4 pr-5"
+                >
+                  <div
+                    id="para-container"
                   >
-                     Fearlessly Flexible
-                  </h2>
-                  <p
-                    className="react-reveal mb-5"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
-                  >
-                    Our products adapt to your life’s biggest moments. Change them when your needs do.
-                  </p>
-                  <h2
-                    className="react-reveal nxt_heading-small mb-2"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
-                  >
-                    Radically Simple
-                  </h2>
-                  <p
-                    className="react-reveal mb-5"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
-                  >
-                    Straight forward products and features. Know what you're getting from the beginning.
-                  </p>
-                  <h2
-                    className="react-reveal nxt_heading-small mb-2"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
-                  >
-                    Brazenly Transparent
-                  </h2>
-                  <p
-                    className="react-reveal mb-5"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
-                  >
-                    No hidden fees or charges.
-                  </p>
+                    <div
+                      className="dwyim-para"
+                    >
+                      <h2
+                        className="nxt_heading-small mb-2"
+                      >
+                        Fearlessly Flexible
+                      </h2>
+                      <p
+                        className="mb-5"
+                      >
+                        Our products adapt to your life’s biggest moments. Change them when your needs do.
+                      </p>
+                    </div>
+                    <div
+                      className="dwyim-para"
+                    >
+                      <h2
+                        className="nxt_heading-small mb-2"
+                      >
+                        Radically Simple
+                      </h2>
+                      <p
+                        className="mb-5"
+                      >
+                        Straight forward products and features. Know what you're getting from the beginning.
+                      </p>
+                    </div>
+                    <div
+                      className="dwyim-para"
+                    >
+                      <h2
+                        className="nxt_heading-small mb-2"
+                      >
+                        Brazenly Transparent
+                      </h2>
+                      <p
+                        className="mb-5"
+                      >
+                        No hidden fees or charges.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -62,79 +62,66 @@ exports[`SectionAskUs it should render 1`] = `
             <div
               className="mt-4 pr-5"
             >
-              <div>
-                <form>
-                  <div
-                    className="text-left nxt_body-xsmall"
-                  >
-                    <form
-                      className="form-group"
-                      id="contactForm"
-                    >
-                      <label
-                        htmlFor="Name"
-                      >
-                        Name
-                      </label>
-                      <input
-                        className="form-control"
-                        id="Name"
-                        type="text"
-                      />
-                      <label
-                        className="mt-3"
-                        htmlFor="Email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        className="form-control"
-                        id="Email"
-                        type="email"
-                      />
-                      <label
-                        className="mt-3"
-                        htmlFor="Phone"
-                      >
-                        Phone
-                      </label>
-                      <input
-                        className="form-control"
-                        id="Phone"
-                        type="phone"
-                      />
-                      <label
-                        className="mt-3"
-                        htmlFor="Message"
-                      >
-                        Message
-                      </label>
-                      <textarea
-                        className="form-control"
-                        id="Message"
-                        rows="3"
-                        type="text"
-                      />
-                    </form>
-                    <div
-                      className="mt-5"
-                    >
-                      <a
-                        href="/#"
-                        onClick={[Function]}
-                      >
-                        <button
-                          className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
-                        >
-                          Submit
-                        </button>
-                      </a>
-                    </div>
+              <div
+                className="mb-6 text-left nxt_body-xsmall"
+              >
+                <form
+                  onSubmit={[Function]}
+                >
+                  <div>
+                    <label>
+                      Name
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="name"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
                   </div>
+                  <div>
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="email"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label>
+                      Phone
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="phone"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label>
+                      Message
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="message"
+                      onChange={[Function]}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                  >
+                    Submit
+                  </button>
                 </form>
-                <script
-                  scr="main.js"
-                />
               </div>
             </div>
           </div>

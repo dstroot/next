@@ -1,7 +1,7 @@
 import React from 'react';
 
 //import components
-import ContactForm from '../../../ContactForm';
+import ContactForm from '../../../Contactform';
 import SectionTwoColumns from '../../SectionTwoColumns';
 
 const SectionAskUs = () => {
