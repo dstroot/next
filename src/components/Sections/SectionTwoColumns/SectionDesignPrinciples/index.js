@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimelineLite } from 'gsap';
+import TimelineLite from 'gsap/TimelineLite';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 // import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';

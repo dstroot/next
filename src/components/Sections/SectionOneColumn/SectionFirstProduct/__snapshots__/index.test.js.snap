@@ -7,7 +7,7 @@ exports[`SectionFirstProduct it should render 1`] = `
   <div
     className="container text-center"
   >
-    <h1
+    <div
       className="react-reveal nxt_heading-xlarge mb-5"
       style={
         Object {
@@ -16,7 +16,7 @@ exports[`SectionFirstProduct it should render 1`] = `
       }
     >
       Introducing our first product
-    </h1>
+    </div>
     <div
       className="react-reveal"
       style={
@@ -24,39 +24,88 @@ exports[`SectionFirstProduct it should render 1`] = `
           "opacity": undefined,
         }
       }
-    >
+    />
+    <div>
       <div
-        className="card mx-auto my-5 card border-dark mb-3 nxt_rounded-corner p-3 nxt_card-width"
+        id="cardScrollStarts"
       >
         <div
-          className="card-body text-center"
+          className="row"
         >
-          <img
-            alt="Evergreen"
-            className="mb-2"
-            src="evergreen.svg"
-          />
-          <h5
-            className="card-title nxt_heading-small mb-4"
+          <div
+            className="col-sm-6 mb-5"
           >
-            Next Deferred Income Annuity
-          </h5>
-          <p
-            className="card-text circular mb-5"
-          >
-            Create a future income stream you can count on for the rest of your life by saving over time.
-          </p>
-          <div>
-            <a
-              href="/nextdeferredincomeannuity"
-              onClick={[Function]}
+            <div
+              className="card h-100"
             >
-              <button
-                className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+              <div
+                className="card-body py-4"
               >
-                Learn More
-              </button>
-            </a>
+                <img
+                  alt="Evergreen"
+                  className="mb-2"
+                  src="mountains.svg"
+                />
+                <div
+                  className="card-title nxt_heading-small mb-4"
+                >
+                  Next Term Life
+                </div>
+                <div
+                  className="card-text circular mb-5"
+                >
+                  <p>
+                    Help keep your loved ones protected with coverage that adapts with your life’s biggest moments.
+                  </p>
+                  <br />
+                  <p>
+                    <strong>
+                      Coming Soon! 
+                    </strong>
+                  </p>
+                </div>
+                <div />
+              </div>
+            </div>
+          </div>
+          <div
+            className="col-sm-6 mb-5"
+          >
+            <div
+              className="card h-100"
+            >
+              <div
+                className="card-body py-4"
+              >
+                <img
+                  alt="Evergreen"
+                  className="mb-2"
+                  src="evergreen.svg"
+                />
+                <div
+                  className="card-title nxt_heading-small mb-4"
+                >
+                  Next Deferred Income Annuity
+                </div>
+                <div
+                  className="card-text circular mb-5"
+                >
+                  Create a future income stream you can count on for the rest of your life by saving over time.
+                </div>
+                <div>
+                  <a
+                    href="/nextdeferredincomeannuity"
+                    onClick={[Function]}
+                  >
+                    <button
+                      className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                    >
+                      Learn More
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
