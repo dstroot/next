@@ -77,7 +77,7 @@ class ContactForm extends React.Component {
             <label>Message</label>
             <input
               className="form-control mb-3"
-              type="text"
+              type="textarea"
               name="message"
               onChange={this.updateInput}
               value={this.state.message}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TweenMax, RoughEase, Power0 } from 'gsap';
+import { RoughEase, Power0 } from 'gsap';
 import TimelineMax from 'gsap/src/uncompressed/TimelineMax';
 
 // SVG styles

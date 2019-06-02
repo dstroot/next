@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from '@reach/router';
 
 // animations
@@ -36,6 +36,7 @@ const NavBar = () => {
     window.scrollTo(0, 0);
   };
 
+  // eslint-disable-next-line
   const [animation, setAnimation] = useState(null);
 
   // Declare GSAP Timeline
