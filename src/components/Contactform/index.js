@@ -42,6 +42,11 @@ class ContactForm extends React.Component {
       phone: '',
       message: '',
     });
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 5000);
   };
 
   render() {
@@ -56,23 +61,25 @@ class ContactForm extends React.Component {
               name="name"
               onChange={this.updateInput}
               value={this.state.name}
+              required
             />
           </div>
           <div>
             <label>Email</label>
             <input
               className="form-control mb-3"
-              type="text"
+              type="email"
               name="email"
               onChange={this.updateInput}
               value={this.state.email}
+              required
             />
           </div>
           <div>
             <label>Phone</label>
             <input
               className="form-control mb-3"
-              type="text"
+              type="tel"
               name="phone"
               onChange={this.updateInput}
               value={this.state.phone}
@@ -80,16 +87,21 @@ class ContactForm extends React.Component {
           </div>
           <div>
             <label>Message</label>
-            <input
+            <textarea
               className="form-control mb-3"
-              type="textarea"
+              type="text"
               name="message"
               onChange={this.updateInput}
               value={this.state.message}
+              required
             />
           </div>
           <SubmitButton buttonText="Submit" type="submit" />
         </form>
+        {/* <button onClick={this.showAlert}>hello</button> */}
+        <h4 className="alert">
+          We received your message! <br /> We’ll get back to you shortly.
+        </h4>
       </div>
     );
   }
