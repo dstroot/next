@@ -132,6 +132,7 @@ class Moped extends React.Component {
           {
             x: window.innerWidth,
             repeat: -1,
+            repeatDelay: 6,
             ease: 'Linear.easeNone',
           }
         )
