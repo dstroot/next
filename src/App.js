@@ -9,7 +9,6 @@ import 'typeface-zilla-slab';
 import { Router } from '@reach/router';
 
 // Components
-import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 
 // Pages
@@ -29,12 +28,10 @@ const App = () => (
       <About path="/about" />
       <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
       <Contact path="/contact" />
-      {/*footer*/}
       <TermsOfUse path="/terms" />
       <PrivacyPolicy path="/privacy" />
       <SocialMediaGuidelines path="/social" />
     </Router>
-    <Footer />
   </div>
 );
 

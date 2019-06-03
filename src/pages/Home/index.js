@@ -7,6 +7,7 @@ import SectionManageUncertainty from '../../components/Sections/SectionTwoColumn
 import SectionFirstProduct from '../../components/Sections/SectionOneColumn/SectionFirstProduct';
 import SectionDesignWithYouInMind from '../../components/Sections/SectionTwoColumns/SectionDesignWithYouInMind';
 import SectionAskUs from '../../components/Sections/SectionTwoColumns/SectionAskUs';
+import Footer from '../../components/Footer';
 
 const Home = () => {
   // Set the page title and position using the useEffect hook
@@ -23,6 +24,7 @@ const Home = () => {
       <SectionFirstProduct />
       <SectionDesignWithYouInMind />
       <SectionAskUs />
+      <Footer />
     </>
   );
 };
