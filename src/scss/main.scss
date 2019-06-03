@@ -45,3 +45,12 @@ body {
 label {
   margin-bottom: 0;
 }
+
+.alert {
+  font-family: $circular;
+  font-size: calc(18px);
+  text-align: center;
+  padding: 10px;
+  background: theme-color('accent');
+  display: none;
+}
