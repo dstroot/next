@@ -833,12 +833,12 @@ Array [
                         className="form-control mb-3"
                         name="message"
                         onChange={[Function]}
-                        type="text"
+                        type="textarea"
                         value=""
                       />
                     </div>
                     <button
-                      type="submit"
+                      className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
                     >
                       Submit
                     </button>
