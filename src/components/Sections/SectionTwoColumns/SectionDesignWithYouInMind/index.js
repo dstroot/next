@@ -45,7 +45,7 @@ class SectionDesignWithYouInMind extends React.Component {
     })
       .setTween(this.tl)
       .setPin('#scrollStarts')
-      // .addIndicators() // for debugging
+      //.addIndicators() // for debugging
       .addTo(this.controller);
   }
 

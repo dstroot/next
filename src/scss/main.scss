@@ -54,3 +54,8 @@ label {
   background: theme-color('accent');
   display: none;
 }
+
+.form-control:focus {
+  border-color: theme-color('primary');
+  box-shadow: none;
+}

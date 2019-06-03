@@ -5,7 +5,7 @@ import SectionDeferedIncomeAnnuity from '../../components/Sections/SectionHero/S
 import SectionSafetyNet from '../../components/Sections/SectionTwoColumnsMultipleRows/SectionSafetyNet';
 import SectionStayInTouch from '../../components/Sections/SectionOneColumn/SectionStayInTouch';
 import SectionBeginModestly from '../../components/Sections/SectionTwoColumns/SectionBeginModestly';
-import SectionHowItWorks from '../../components/Sections/SectionThreeColumns/SectionHowItWorks';
+import SectionHowItWorks from '../../components/Sections/SectionOneColumn/SectionHowItWorks';
 import SectionQuoteToday from '../../components/Sections/SectionOneColumn/SectionQuoteToday';
 import FooterCustom from '../../components/FooterCustom';
 

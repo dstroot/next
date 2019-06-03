@@ -98,7 +98,6 @@ class ContactForm extends React.Component {
           </div>
           <SubmitButton buttonText="Submit" type="submit" />
         </form>
-        {/* <button onClick={this.showAlert}>hello</button> */}
         <h4 className="alert">
           We received your message! <br /> We’ll get back to you shortly.
         </h4>
