@@ -14,7 +14,7 @@ class Scene {
   }
 }
 
-class ScrollMagic {
+export class ScrollMagic {
   constructor() {
     // console.log('Mock ScrollMagic: constructor was called');
   }
