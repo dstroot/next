@@ -1,0 +1,41 @@
+.mq-para {
+  position: absolute;
+  top: 20%;
+}
+
+.mq-tall-image {
+  height: calc(300px + 12vw + 0.5vmin);
+}
+
+/***************************************/
+/*            Media Queries            */
+/***************************************/
+
+/******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+  .mediaQuery-para {
+    top: -40%;
+    width: 90%;
+    text-align: center;
+  }
+  .mq-tall-image {
+    margin-top: calc(25% + 5vw + 0.5vmin);
+    margin-left: calc(13% + 5vw + 0.5vmin);
+  }
+}
+
+// /******************* iPad in portrait & landscape ********************/
+
+// @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//   .mediaQuery-para {
+//     top: -40%;
+//     width: 90%;
+//     text-align: center;
+//   }
+//   .mediaQuery-image {
+//     margin-top: 38px;
+//     width: 60%;
+//     border: 1px solid blue;
+//   }
+// }

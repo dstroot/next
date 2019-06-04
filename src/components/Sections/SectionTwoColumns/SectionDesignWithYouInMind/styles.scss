@@ -1,36 +1,37 @@
-.dwyim-para {
-  position: absolute;
-  top: 30%;
-}
+// .dwyim-para {
+//   position: absolute;
+//   top: 30%;
+// }
 
-/***************************************/
-/*            Media Queries            */
-/***************************************/
+// /***************************************/
+// /*            Media Queries            */
+// /***************************************/
 
-/******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
+// /******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  .dwyim-para {
-    top: -40%;
-    width: 90%;
-    text-align: center;
-  }
-  #dwyim-woman {
-    margin-top: 38px;
-    width: 60%;
-  }
-}
+// @media only screen and (min-width: 375px) and (max-width: 667px) {
+//   .dwyim-para {
+//     top: -40%;
+//     width: 90%;
+//     text-align: center;
+//   }
+//   #dwyim-woman {
+//     margin-top: 38px;
+//     width: 60%;
+//     border: 1px solid blue;
+//   }
+// }
 
-/******************* iPad in portrait & landscape ********************/
+// /******************* iPad in portrait & landscape ********************/
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .dwyim-para {
-    top: 10%;
-    right: 20%;
-    width: 90%;
-    text-align: left;
-  }
-  #dwyim-woman {
-    margin-top: 0px;
-  }
-}
+// @media only screen and (min-width: 768px) and (max-width: 1024px) {
+//   .dwyim-para {
+//     top: 10%;
+//     right: 20%;
+//     width: 90%;
+//     text-align: left;
+//   }
+//   #dwyim-woman {
+//     margin-top: 0px;
+//   }
+// }

@@ -1,6 +1,7 @@
 import React from 'react';
 import FirebaseConfig from '../FirebaseKey';
 import SubmitButton from '../Buttons/SubmitButton';
+import PhoneInput from 'react-phone-number-input/basic-input';
 
 class ContactForm extends React.Component {
   constructor() {
@@ -77,14 +78,15 @@ class ContactForm extends React.Component {
           </div>
           <div>
             <label>Phone</label>
-            <input
+            <PhoneInput
               className="form-control mb-3"
+              country="US"
               type="tel"
               name="phone"
-              onChange={this.updateInput}
               value={this.state.phone}
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="xxx-xxx-xxxx"
+              onChange={phone => this.setState({ phone })}
+              // locks for phonenumbers without contry code and length of 10 digits ex: (123) 456-7890
+              maxlength="14"
             />
           </div>
           <div>

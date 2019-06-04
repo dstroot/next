@@ -12,7 +12,7 @@ const SectionOurStory = () => {
       styleBackground="bg-light"
       contentLeft={
         <img
-          className="img-fluid pd-5"
+          className="img-fluid pd-5 mq-tall-image"
           src={ourstorygroup}
           alt="Our Story Group"
         />

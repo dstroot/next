@@ -34,6 +34,9 @@ $spacers: map-merge(
 // import typography
 @import 'typography.scss';
 
+// import image resposiveness
+@import 'imageresposiveness.scss';
+
 // then component styles
 @import '../components/NavBar/styles.scss';
 
