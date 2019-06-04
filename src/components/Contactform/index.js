@@ -83,6 +83,8 @@ class ContactForm extends React.Component {
               name="phone"
               onChange={this.updateInput}
               value={this.state.phone}
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="xxx-xxx-xxxx"
             />
           </div>
           <div>
