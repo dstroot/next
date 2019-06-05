@@ -1,14 +1,6 @@
-// .odp-para {
-//   position: absolute;
-//   left: 10%;
-//   top: 20%;
-// }
-
-//look into scss variables or mixins for browser prefixes
-
 #easel-container {
   position: relative;
-  height: 500px; //relook into this for mobile sizes
+  height: 360px; //relook into this for mobile sizes
 
   #easel {
     position: absolute;
@@ -17,8 +9,8 @@
 
   .easel-icon {
     position: absolute;
-    top: 120px;
-    left: 210px;
+    top: 90px;
+    left: 200px;
     width: 80px;
   }
 }
@@ -27,35 +19,26 @@
 // /*            Media Queries            */
 // /***************************************/
 
-// /******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
+/******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
 
-// @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-//   .odp-para {
-//     position: absolute;
-//     left: 8%;
-//     top: -1800%;
-//     width: 84%;
-//     text-align: center;
-//   }
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  #easel-container {
+    height: 460px;
 
-//   #easel-container {
-//     position: relative;
-//     height: 800px; //relook into this for mobile sizes
+    #easel {
+      position: absolute;
+      left: 20%;
+      top: 24%;
+    }
 
-//     #easel {
-//       position: absolute;
-//       left: 20%;
-//       top: 40%;
-//     }
-
-//     .easel-icon {
-//       position: absolute;
-//       top: 54%;
-//       left: 40%;
-//       width: 80px;
-//     }
-//   }
-// }
+    .easel-icon {
+      position: absolute;
+      top: 62%;
+      left: 48%;
+      width: 60px;
+    }
+  }
+}
 
 // /******************* iPad in portrait ********************/
 
