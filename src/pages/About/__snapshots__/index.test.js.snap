@@ -220,172 +220,177 @@ exports[`About it should render 1`] = `
   </div>
   <div>
     <div
-      id="scrollStarts"
+      id="triggerODP"
     >
       <div
-        className="py-6 undefined"
+        id="pinODP"
       >
         <div
-          className="container"
+          className="py-6 undefined"
         >
-          <h1
-            className="react-reveal text-center nxt_heading-xlarge text-center mb-5"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            Our Design Principles
-          </h1>
           <div
-            className="row"
+            className="container"
           >
-            <div
-              className="react-reveal col-md-5 order-2 order-sm-1"
+            <h1
+              className="react-reveal text-center nxt_heading-xlarge text-center mb-5"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
-              <div
-                className="text-center mb-6"
-                id="easel-container"
-              >
-                <img
-                  alt="Design System"
-                  id="easel"
-                  src="Easel.svg"
-                  width={200}
-                />
-                <img
-                  alt="Lollypop"
-                  className="easel-icon"
-                  src="Lollypop.svg"
-                  width={65}
-                />
-                <img
-                  alt="Flag"
-                  className="easel-icon"
-                  src="Flag.svg"
-                  width={90}
-                />
-                <img
-                  alt="Paper Plane"
-                  className="easel-icon"
-                  src="PaperPlane.svg"
-                />
-                <img
-                  alt="Hi"
-                  className="easel-icon"
-                  src="Hi.svg"
-                  width={85}
-                />
-                <img
-                  alt="Lock"
-                  className="easel-icon"
-                  src="Lock.svg"
-                />
-              </div>
-            </div>
+              Our Design Principles
+            </h1>
             <div
-              className="col-md-7 order-1 order-sm-2"
+              className="row"
             >
               <div
-                className="mt-5"
+                className="react-reveal col-md-5 order-2 order-sm-1"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
               >
                 <div
-                  className="react-reveal"
-                  style={
-                    Object {
-                      "opacity": undefined,
-                    }
-                  }
+                  className="text-center mb-6"
+                  id="easel-container"
                 >
-                  <h1
-                    className="nxt_heading-xlarge"
+                  <img
+                    alt="Design System"
+                    className="mq-tall-image"
+                    id="easel"
+                    src="Easel.svg"
                   />
-                  <div
-                    className="mt-4 pr-5"
+                  <img
+                    alt="Lollypop"
+                    className="easel-icon"
+                    src="Lollypop.svg"
+                    width={65}
+                  />
+                  <img
+                    alt="Flag"
+                    className="easel-icon"
+                    src="Flag.svg"
+                    width={90}
+                  />
+                  <img
+                    alt="Paper Plane"
+                    className="easel-icon"
+                    src="PaperPlane.svg"
+                  />
+                  <img
+                    alt="Hi"
+                    className="easel-icon"
+                    src="Hi.svg"
+                    width={85}
+                  />
+                  <img
+                    alt="Lock"
+                    className="easel-icon"
+                    src="Lock.svg"
                   />
                 </div>
-                <div>
+              </div>
+              <div
+                className="col-md-7 order-1 order-sm-2"
+              >
+                <div
+                  className="mt-5"
+                >
                   <div
-                    className="mt-4 pr-5"
+                    className="react-reveal"
+                    style={
+                      Object {
+                        "opacity": undefined,
+                      }
+                    }
                   >
+                    <h1
+                      className="nxt_heading-xlarge"
+                    />
                     <div
-                      className="m-4"
+                      className="mt-4 pr-5"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      className="mt-4 pr-5"
                     >
                       <div
-                        className="mt-2 mq-para"
+                        className="m-4"
+                        id="mq-para-container"
                       >
-                        <h3
-                          className="nxt_heading-small"
+                        <div
+                          className="mt-2 mq-para"
                         >
-                           Simplicity 
-                        </h3>
-                        <p
-                          className="pb-1"
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Simplicity 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
                         >
-                          We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
-                        </p>
-                      </div>
-                      <div
-                        className="mt-2 mq-para"
-                      >
-                        <h3
-                          className="nxt_heading-small"
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Empowerment 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
                         >
-                           Empowerment 
-                        </h3>
-                        <p
-                          className="pb-1"
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Flexibility 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            We recognize that customers’ needs change over time. Adopting a fluid mindset helps us design products that adapt to the customer over time.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
                         >
-                          Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
-                        </p>
-                      </div>
-                      <div
-                        className="mt-2 mq-para"
-                      >
-                        <h3
-                          className="nxt_heading-small"
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Engagement 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            Customers expect that we will be around for their entire lives, but traditionally most contact is at time of purchase and claims. We interact with customers in a meaningful and helpful way throughout the lifelong partnership.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
                         >
-                           Flexibility 
-                        </h3>
-                        <p
-                          className="pb-1"
-                        >
-                          We recognize that customers’ needs change over time. Adopting a fluid mindset helps us design products that adapt to the customer over time.
-                        </p>
-                      </div>
-                      <div
-                        className="mt-2 mq-para"
-                      >
-                        <h3
-                          className="nxt_heading-small"
-                        >
-                           Engagement 
-                        </h3>
-                        <p
-                          className="pb-1"
-                        >
-                          Customers expect that we will be around for their entire lives, but traditionally most contact is at time of purchase and claims. We interact with customers in a meaningful and helpful way throughout the lifelong partnership.
-                        </p>
-                      </div>
-                      <div
-                        className="mt-2 mq-para"
-                      >
-                        <h3
-                          className="nxt_heading-small"
-                        >
-                           Transparency 
-                        </h3>
-                        <p
-                          className="pb-"
-                        >
-                          We believe in an open and honest dialogue. Our industry may be complex, but we choose to always work in the best interest of the customer. That means we have to be clear about how our products work and the value they provide.
-                        </p>
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Transparency 
+                          </h3>
+                          <p
+                            className="pb-"
+                          >
+                            We believe in an open and honest dialogue. Our industry may be complex, but we choose to always work in the best interest of the customer. That means we have to be clear about how our products work and the value they provide.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -11,9 +11,8 @@ import SectionTwoColumns from '..';
 import womanphone from './media/womanphone.svg';
 
 // calculating percentage of viewport height
+// eslint-disable-next-line
 const winHeight = (0.2 * window.innerHeight) / window.innerHeight;
-
-console.log(winHeight);
 
 class SectionDesignWithYouInMind extends React.Component {
   constructor(props) {
@@ -40,13 +39,13 @@ class SectionDesignWithYouInMind extends React.Component {
 
     // Scrollmagic
     new ScrollMagic.Scene({
-      triggerElement: '#scrollStarts',
-      triggerHook: winHeight,
+      triggerElement: '#triggerDWYIM',
+      triggerHook: 0,
       duration: '600%', // increase duration of each animated scroll
-      offset: 180, // start this scene after triggerElement
+      offset: -10, // start this scene after triggerElement
     })
       .setTween(this.tl)
-      .setPin('#scrollStarts')
+      .setPin('#pinDWYIM')
       // .addIndicators() // for debugging
       .addTo(this.controller);
   }
@@ -55,47 +54,49 @@ class SectionDesignWithYouInMind extends React.Component {
     return (
       <div>
         {/* extra div required for scrollmagic reach-router fix */}
-        <div id="scrollStarts">
-          <SectionTwoColumns
-            styleLeft="order-2 order-sm-1"
-            styleRight="order-1 order-sm-2"
-            sectionHeadStyle="mb-5"
-            sectionHead="Designed with you in mind"
-            contentLeft={
-              <img
-                id="dwyim-woman"
-                className="img-fluid p-5 mq-tall-image"
-                src={womanphone}
-                alt="Woman with the Phone"
-              />
-            }
-            noFadeContentRight={
-              <div id="para-container">
-                <div className="mq-para" ref={div => (this.para1 = div)}>
-                  <h2 className="nxt_heading-small mb-2">
-                    Fearlessly Flexible
-                  </h2>
-                  <p className="mb-5">
-                    Our products adapt to your life’s biggest moments. Change
-                    them when your needs do.
-                  </p>
+        <div id="triggerDWYIM">
+          <div id="pinDWYIM">
+            <SectionTwoColumns
+              styleLeft="order-2 order-sm-1"
+              styleRight="order-1 order-sm-2"
+              sectionHeadStyle="mb-5"
+              sectionHead="Designed with you in mind"
+              contentLeft={
+                <img
+                  id="dwyim-woman"
+                  className="img-fluid p-5 mq-tall-image"
+                  src={womanphone}
+                  alt="Woman with the Phone"
+                />
+              }
+              noFadeContentRight={
+                <div id="mq-para-container">
+                  <div className="mq-para" ref={div => (this.para1 = div)}>
+                    <h2 className="nxt_heading-small mb-2">
+                      Fearlessly Flexible
+                    </h2>
+                    <p className="mb-5">
+                      Our products adapt to your life’s biggest moments. Change
+                      them when your needs do.
+                    </p>
+                  </div>
+                  <div className="mq-para" ref={div => (this.para2 = div)}>
+                    <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
+                    <p className="mb-5">
+                      Straight forward products and features. Know what you're
+                      getting from the beginning.
+                    </p>
+                  </div>
+                  <div className="mq-para" ref={div => (this.para3 = div)}>
+                    <h2 className="nxt_heading-small mb-2">
+                      Brazenly Transparent
+                    </h2>
+                    <p className="mb-5">No hidden fees or charges.</p>
+                  </div>
                 </div>
-                <div className="mq-para" ref={div => (this.para2 = div)}>
-                  <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
-                  <p className="mb-5">
-                    Straight forward products and features. Know what you're
-                    getting from the beginning.
-                  </p>
-                </div>
-                <div className="mq-para" ref={div => (this.para3 = div)}>
-                  <h2 className="nxt_heading-small mb-2">
-                    Brazenly Transparent
-                  </h2>
-                  <p className="mb-5">No hidden fees or charges.</p>
-                </div>
-              </div>
-            }
-          />
+              }
+            />
+          </div>
         </div>
       </div>
     );
