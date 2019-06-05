@@ -86,7 +86,7 @@ class ContactForm extends React.Component {
               value={this.state.phone}
               onChange={phone => this.setState({ phone })}
               // locks for phonenumbers without contry code and length of 10 digits ex: (123) 456-7890
-              maxlength="14"
+              maxLength="14"
             />
           </div>
           <div>

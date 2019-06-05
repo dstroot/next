@@ -34,7 +34,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
           >
             <img
               alt="Woman with the Phone"
-              className="img-fluid p-5"
+              className="img-fluid p-5 mq-tall-image"
               id="dwyim-woman"
               src="womanphone.svg"
             />
@@ -68,7 +68,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
                     id="para-container"
                   >
                     <div
-                      className="dwyim-para"
+                      className="mq-para"
                     >
                       <h2
                         className="nxt_heading-small mb-2"
@@ -82,7 +82,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
                       </p>
                     </div>
                     <div
-                      className="dwyim-para"
+                      className="mq-para"
                     >
                       <h2
                         className="nxt_heading-small mb-2"
@@ -96,7 +96,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
                       </p>
                     </div>
                     <div
-                      className="dwyim-para"
+                      className="mq-para"
                     >
                       <h2
                         className="nxt_heading-small mb-2"
