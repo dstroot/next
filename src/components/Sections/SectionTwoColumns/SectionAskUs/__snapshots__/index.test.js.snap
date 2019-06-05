@@ -76,6 +76,7 @@ exports[`SectionAskUs it should render 1`] = `
                       className="form-control mb-3"
                       name="name"
                       onChange={[Function]}
+                      required={true}
                       type="text"
                       value=""
                     />
@@ -88,7 +89,8 @@ exports[`SectionAskUs it should render 1`] = `
                       className="form-control mb-3"
                       name="email"
                       onChange={[Function]}
-                      type="text"
+                      required={true}
+                      type="email"
                       value=""
                     />
                   </div>
@@ -97,10 +99,13 @@ exports[`SectionAskUs it should render 1`] = `
                       Phone
                     </label>
                     <input
+                      autoComplete="tel"
                       className="form-control mb-3"
+                      maxLength="14"
                       name="phone"
+                      onBlur={[Function]}
                       onChange={[Function]}
-                      type="text"
+                      type="tel"
                       value=""
                     />
                   </div>
@@ -108,11 +113,12 @@ exports[`SectionAskUs it should render 1`] = `
                     <label>
                       Message
                     </label>
-                    <input
+                    <textarea
                       className="form-control mb-3"
                       name="message"
                       onChange={[Function]}
-                      type="textarea"
+                      required={true}
+                      type="text"
                       value=""
                     />
                   </div>
@@ -122,6 +128,13 @@ exports[`SectionAskUs it should render 1`] = `
                     Submit
                   </button>
                 </form>
+                <h4
+                  className="alert"
+                >
+                  We received your message! 
+                  <br />
+                   We’ll get back to you shortly.
+                </h4>
               </div>
             </div>
           </div>
