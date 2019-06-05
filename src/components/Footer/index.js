@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from '@reach/router';
 import logo from './media/NXT_logo_footer_dark.svg';
 
-const Footer = () => {
+const Footer = props => {
   const year = new Date();
   return (
     <div className="container-fluid bg-dark">
@@ -49,6 +49,7 @@ const Footer = () => {
                 Product availability and features may vary by state. Fixed
                 annuity products are available through licensed third parties.
               </p>
+
               <p>
                 © {year.getFullYear()} Pacific Life Insurance Company, Newport
                 Beach, CA.

@@ -1,9 +1,12 @@
 import React from 'react';
-import fire from './fire';
+import FirebaseConfig from '../FirebaseKey';
+import SubmitButton from '../Buttons/SubmitButton';
+import PhoneInput from 'react-phone-number-input/basic-input';
 
 class ContactForm extends React.Component {
   constructor() {
     super();
+    // set the state for the variables
     this.state = {
       name: '',
       email: '',
@@ -12,31 +15,39 @@ class ContactForm extends React.Component {
     };
   }
 
-  // What does this actually does?
+  // loop each entry and get the value
   updateInput = e => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
-
+  // add data to the database
   addData = e => {
+    // prevent default event that submits to the page
     e.preventDefault();
-    const db = fire.firestore();
+    const db = FirebaseConfig.firestore();
     db.settings({
       timestampsInSnapshots: true,
     });
-    db.collection('contactForm').add({
+    // set the state to the data values
+    db.collection('ContactForm').add({
       name: this.state.name,
       email: this.state.email,
       phone: this.state.phone,
       message: this.state.message,
     });
+    // reset the state
     this.setState({
       name: '',
       email: '',
       phone: '',
       message: '',
     });
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 5000);
   };
 
   render() {
@@ -51,40 +62,49 @@ class ContactForm extends React.Component {
               name="name"
               onChange={this.updateInput}
               value={this.state.name}
+              required
             />
           </div>
           <div>
             <label>Email</label>
             <input
               className="form-control mb-3"
-              type="text"
+              type="email"
               name="email"
               onChange={this.updateInput}
               value={this.state.email}
+              required
             />
           </div>
           <div>
             <label>Phone</label>
-            <input
+            <PhoneInput
               className="form-control mb-3"
-              type="text"
+              country="US"
+              type="tel"
               name="phone"
-              onChange={this.updateInput}
               value={this.state.phone}
+              onChange={phone => this.setState({ phone })}
+              // locks for phonenumbers without contry code and length of 10 digits ex: (123) 456-7890
+              maxlength="14"
             />
           </div>
           <div>
             <label>Message</label>
-            <input
+            <textarea
               className="form-control mb-3"
               type="text"
               name="message"
               onChange={this.updateInput}
               value={this.state.message}
+              required
             />
           </div>
-          <button type="submit">Submit</button>
+          <SubmitButton buttonText="Submit" type="submit" />
         </form>
+        <h4 className="alert">
+          We received your message! <br /> We’ll get back to you shortly.
+        </h4>
       </div>
     );
   }

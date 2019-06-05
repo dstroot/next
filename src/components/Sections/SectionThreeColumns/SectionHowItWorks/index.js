@@ -1,7 +1,7 @@
-import React from 'react';
+import React from './node_modules/react';
 
 // components
-import SectionThreeColumns from '../../SectionThreeColumns';
+import SectionThreeColumns from '..';
 
 // images
 import Arrows from '../SectionHowItWorks/media/Arrows.svg';

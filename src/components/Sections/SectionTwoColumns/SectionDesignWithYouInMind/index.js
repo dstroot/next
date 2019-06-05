@@ -4,14 +4,16 @@ import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
-// styles
-import './styles.scss';
-
 // component
 import SectionTwoColumns from '..';
 
 // import image
 import womanphone from './media/womanphone.svg';
+
+// calculating percentage of viewport height
+const winHeight = (0.2 * window.innerHeight) / window.innerHeight;
+
+console.log(winHeight);
 
 class SectionDesignWithYouInMind extends React.Component {
   constructor(props) {
@@ -39,7 +41,7 @@ class SectionDesignWithYouInMind extends React.Component {
     // Scrollmagic
     new ScrollMagic.Scene({
       triggerElement: '#scrollStarts',
-      triggerHook: 0.15,
+      triggerHook: winHeight,
       duration: '600%', // increase duration of each animated scroll
       offset: 180, // start this scene after triggerElement
     })
@@ -62,14 +64,14 @@ class SectionDesignWithYouInMind extends React.Component {
             contentLeft={
               <img
                 id="dwyim-woman"
-                className="img-fluid p-5"
+                className="img-fluid p-5 mq-tall-image"
                 src={womanphone}
                 alt="Woman with the Phone"
               />
             }
             noFadeContentRight={
               <div id="para-container">
-                <div className="dwyim-para" ref={div => (this.para1 = div)}>
+                <div className="mq-para" ref={div => (this.para1 = div)}>
                   <h2 className="nxt_heading-small mb-2">
                     Fearlessly Flexible
                   </h2>
@@ -78,14 +80,14 @@ class SectionDesignWithYouInMind extends React.Component {
                     them when your needs do.
                   </p>
                 </div>
-                <div className="dwyim-para" ref={div => (this.para2 = div)}>
+                <div className="mq-para" ref={div => (this.para2 = div)}>
                   <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
                   <p className="mb-5">
                     Straight forward products and features. Know what you're
                     getting from the beginning.
                   </p>
                 </div>
-                <div className="dwyim-para" ref={div => (this.para3 = div)}>
+                <div className="mq-para" ref={div => (this.para3 = div)}>
                   <h2 className="nxt_heading-small mb-2">
                     Brazenly Transparent
                   </h2>

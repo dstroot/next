@@ -66,9 +66,6 @@ const bikeBody = {
   zIndex: '999',
 };
 
-// Find Device width
-const deviceWidth = window.innerWidth;
-
 class Mountainbike extends React.Component {
   constructor(props) {
     super(props);
@@ -81,53 +78,111 @@ class Mountainbike extends React.Component {
   }
 
   componentDidMount() {
-    this.tl
-      .to(this.wheel, 2, {
-        rotation: 360,
-        repeat: -1,
-        transformOrigin: '50% 50%',
-        ease: 'Linear.easeNone',
-      })
-      .to(this.wheelFront, 2, {
-        rotation: 360,
-        repeat: -1,
-        transformOrigin: '50% 50%',
-        ease: 'Linear.easeNone',
-      })
-      .fromTo(
-        this.bike,
-        8,
-        {
-          x: '-400',
+    const runAnimation = () => {
+      this.tl
+        .progress(0)
+        .clear()
+        .to(this.wheel, 2, {
+          rotation: 360,
           repeat: -1,
-          repeatDelay: 6,
+          transformOrigin: '50% 50%',
           ease: 'Linear.easeNone',
-        },
-        {
-          x: deviceWidth,
+        })
+        .to(this.wheelFront, 2, {
+          rotation: 360,
           repeat: -1,
-          repeatDelay: 6,
+          transformOrigin: '50% 50%',
           ease: 'Linear.easeNone',
-        }
-      )
-      .to(
-        this.bike,
-        16,
-        {
-          repeat: -1,
-          repeatDelay: 6,
-          y: 12,
-          ease: RoughEase.ease.config({
-            template: Power0.easeNone,
-            strenght: 20,
-            points: 60,
-            taper: 'none',
-            randomize: true,
-            clamp: true,
-          }),
-        },
-        '-=16'
-      );
+        })
+        .fromTo(
+          this.bike,
+          12,
+          {
+            x: '-400',
+            repeat: -1,
+            repeatDelay: 6,
+            ease: 'Linear.easeNone',
+          },
+          {
+            x: window.innerWidth,
+            repeat: -1,
+            repeatDelay: 6,
+            ease: 'Linear.easeNone',
+          }
+        )
+        .to(
+          this.bike,
+          12,
+          {
+            repeat: -1,
+            repeatDelay: 6,
+            y: 12,
+            ease: RoughEase.ease.config({
+              template: Power0.easeNone,
+              strenght: 10,
+              points: 30,
+              taper: 'none',
+              randomize: true,
+              clamp: true,
+            }),
+          },
+          '-=16'
+        );
+    };
+
+    // runAnimation everytime window resizes
+    window.addEventListener('resize', runAnimation);
+
+    // run animation first so it doesn't just sit there
+    runAnimation();
+
+    // this.tl
+    //   .to(this.wheel, 2, {
+    //     rotation: 360,
+    //     repeat: -1,
+    //     transformOrigin: '50% 50%',
+    //     ease: 'Linear.easeNone',
+    //   })
+    //   .to(this.wheelFront, 2, {
+    //     rotation: 360,
+    //     repeat: -1,
+    //     transformOrigin: '50% 50%',
+    //     ease: 'Linear.easeNone',
+    //   })
+    //   .fromTo(
+    //     this.bike,
+    //     8,
+    //     {
+    //       x: '-400',
+    //       repeat: -1,
+    //       repeatDelay: 6,
+    //       ease: 'Linear.easeNone',
+    //     },
+    //     {
+    //       x: deviceWidth,
+    //       repeat: -1,
+    //       repeatDelay: 6,
+    //       ease: 'Linear.easeNone',
+    //     }
+    //   )
+    //   .to(
+    //     this.bike,
+    //     16,
+    //     {
+    //       repeat: -1,
+    //       repeatDelay: 6,
+    //       y: 12,
+    //       ease: RoughEase.ease.config({
+    //         template: Power0.easeNone,
+    //         strenght: 20,
+    //         points: 60,
+    //         taper: 'none',
+    //         randomize: true,
+    //         clamp: true,
+    //       }),
+    //     },
+    //     '-=16'
+    //   );
   }
 
   render() {

@@ -82,67 +82,85 @@ const mopedBody = {
   zIndex: '1',
 };
 
-// prepare variables for animation
-const deviceWidth = window.innerWidth;
-
 class Moped extends React.Component {
   constructor(props) {
     super(props);
 
-    this.tl = new TimelineMax();
+    this.tl = new TimelineMax({
+      onComplete: function() {
+        this.delay(2).restart(true);
+      },
+    });
 
     this.moped = null;
-    this.wheel = null;
-    this.wheelFront = null;
+    this.roughEase = RoughEase.ease.config({
+      template: Power0.easeNone,
+      strength: 1,
+      points: 20,
+      taper: 'none',
+      randomize: true,
+      clamp: true,
+    });
   }
 
   componentDidMount() {
-    this.tl
-      .to(this.wheel, 2, {
-        rotation: 360,
-        repeat: -1,
-        transformOrigin: '50% 50%',
-        ease: 'Linear.easeNone',
-      })
-      .to(this.wheelFront, 2, {
-        rotation: 360,
-        repeat: -1,
-        transformOrigin: '50% 50%',
-        ease: 'Linear.easeNone',
-      })
-      .fromTo(
-        this.moped,
-        12,
-        {
-          x: '-400',
+    const runAnimation = () => {
+      this.tl
+        .progress(0)
+        .clear()
+        .to(this.wheel, 2, {
+          rotation: 360,
           repeat: -1,
-          repeatDelay: 6,
+          transformOrigin: '50% 50%',
           ease: 'Linear.easeNone',
-        },
-        {
-          x: deviceWidth,
+        })
+        .to(this.wheelFront, 2, {
+          rotation: 360,
           repeat: -1,
+          transformOrigin: '50% 50%',
           ease: 'Linear.easeNone',
-        }
-      )
-      .to(
-        this.moped,
-        16,
-        {
-          repeat: -1,
-          repeatDelay: 6,
-          y: 12,
-          ease: RoughEase.ease.config({
-            template: Power0.easeNone,
-            strenght: 10,
-            points: 30,
-            taper: 'none',
-            randomize: true,
-            clamp: true,
-          }),
-        },
-        '-=16'
-      );
+        })
+        .fromTo(
+          this.moped,
+          12,
+          {
+            x: '-400',
+            repeat: -1,
+            repeatDelay: 6,
+            ease: 'Linear.easeNone',
+          },
+          {
+            x: window.innerWidth,
+            repeat: -1,
+            repeatDelay: 6,
+            ease: 'Linear.easeNone',
+          }
+        )
+        .to(
+          this.moped,
+          12,
+          {
+            repeat: -1,
+            repeatDelay: 6,
+            y: 12,
+            ease: RoughEase.ease.config({
+              template: Power0.easeNone,
+              strenght: 10,
+              points: 30,
+              taper: 'none',
+              randomize: true,
+              clamp: true,
+            }),
+          },
+          '-=16'
+        );
+    };
+
+    // runAnimation everytime window resizes
+    window.addEventListener('resize', runAnimation);
+
+    // run animation first so it doesn't just sit there
+    runAnimation();
   }
 
   render() {

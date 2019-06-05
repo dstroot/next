@@ -2,10 +2,8 @@ import React from 'react';
 import TimelineLite from 'gsap/TimelineLite';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
-// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
-
-// styles
 import './styles.scss';
+// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators';
 
 // components
 import SectionTwoColumns from '..';
@@ -81,6 +79,8 @@ class SectionDesignPrinciples extends React.Component {
           <SectionTwoColumns
             sectionHeadStyle="text-center mb-5"
             sectionHead="Our Design Principles"
+            styleLeft="order-2 order-sm-1"
+            styleRight="order-1 order-sm-2"
             contentLeft={
               // add spacing to the end of the page since the image is larger then the conteiner
               <div className="text-center mb-6" id="easel-container">
@@ -122,7 +122,7 @@ class SectionDesignPrinciples extends React.Component {
             }
             noFadeContentRight={
               <div className="m-4">
-                <div className="odp-para mt-2" ref={div => (this.para1 = div)}>
+                <div className="mt-2 mq-para" ref={div => (this.para1 = div)}>
                   <h3 className="nxt_heading-small"> Simplicity </h3>
                   <p className="pb-1">
                     We strive to design products that are easy to use and
@@ -132,7 +132,7 @@ class SectionDesignPrinciples extends React.Component {
                     in a better experience for the customer.
                   </p>
                 </div>
-                <div className="odp-para mt-2" ref={div => (this.para2 = div)}>
+                <div className="mt-2 mq-para" ref={div => (this.para2 = div)}>
                   <h3 className="nxt_heading-small"> Empowerment </h3>
                   <p className="pb-1">
                     Reinforcing and celebrating positive actions toward
@@ -141,7 +141,7 @@ class SectionDesignPrinciples extends React.Component {
                     goals.
                   </p>
                 </div>
-                <div className="odp-para mt-2" ref={div => (this.para3 = div)}>
+                <div className="mt-2 mq-para" ref={div => (this.para3 = div)}>
                   <h3 className="nxt_heading-small"> Flexibility </h3>
                   <p className="pb-1">
                     We recognize that customers’ needs change over time.
@@ -149,7 +149,7 @@ class SectionDesignPrinciples extends React.Component {
                     to the customer over time.
                   </p>
                 </div>
-                <div className="odp-para mt-2" ref={div => (this.para4 = div)}>
+                <div className="mt-2 mq-para" ref={div => (this.para4 = div)}>
                   <h3 className="nxt_heading-small"> Engagement </h3>
                   <p className="pb-1">
                     Customers expect that we will be around for their entire
@@ -158,7 +158,7 @@ class SectionDesignPrinciples extends React.Component {
                     helpful way throughout the lifelong partnership.
                   </p>
                 </div>
-                <div className="odp-para mt-2" ref={div => (this.para5 = div)}>
+                <div className="mt-2 mq-para" ref={div => (this.para5 = div)}>
                   <h3 className="nxt_heading-small"> Transparency </h3>
                   <p className="pb-">
                     We believe in an open and honest dialogue. Our industry may
