@@ -11,6 +11,7 @@ import SectionTwoColumns from '..';
 import womanphone from './media/womanphone.svg';
 
 // calculating percentage of viewport height
+// eslint-disable-next-line
 const winHeight = (0.2 * window.innerHeight) / window.innerHeight;
 
 class SectionDesignWithYouInMind extends React.Component {
