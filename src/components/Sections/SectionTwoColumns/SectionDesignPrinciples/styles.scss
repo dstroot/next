@@ -11,7 +11,7 @@
     position: absolute;
     top: 90px;
     left: 200px;
-    width: 80px;
+    width: 64px;
   }
 }
 
@@ -21,7 +21,7 @@
 
 /******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+@media only screen and (min-width: 375px) and (max-width: 667px) {
   #easel-container {
     height: 460px;
 

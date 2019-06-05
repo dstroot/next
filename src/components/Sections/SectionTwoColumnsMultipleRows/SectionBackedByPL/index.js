@@ -14,7 +14,9 @@ const SectionBackedByPL = () => {
       <SectionTwoColumnsMultipleRows
         styleBackground="bg-light"
         styleTextAlign="text-center"
-        sectionHead="Backed by Pacific Life"
+        sectionHead={
+          <h1 className="nxt_heading-xlarge">Backed by Pacific Life</h1>
+        }
         content={
           <div>
             <div className="row">

@@ -1,5 +1,12 @@
 @import '../../scss/main.scss';
 
+@mixin box-shadow($val) {
+  -webkit-box-shadow: $val;
+  -moz-box-shadow: $val;
+  -ms-box-shadow: $val;
+  box-shadow: $val;
+}
+
 label {
   margin-bottom: 0;
 }
@@ -15,5 +22,5 @@ label {
 
 .form-control:focus {
   border-color: theme-color('primary');
-  box-shadow: none;
+  @include box-shadow(none);
 }

@@ -78,9 +78,8 @@ const NavBar = () => {
     setAnimation(
       // ScrollMagic config
       new ScrollMagic.Scene({
-        triggerElement: '#trig',
-        triggerHook: 0.2,
-        offset: 140,
+        triggerHook: 0,
+        offset: 100,
       })
         .setTween(tl)
         // .addIndicators() // for debugging

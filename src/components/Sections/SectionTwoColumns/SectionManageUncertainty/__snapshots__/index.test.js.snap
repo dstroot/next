@@ -52,11 +52,7 @@ exports[`SectionManageUncertainty it should render 1`] = `
               >
                 A way to manage uncertainty
               </h1>
-              <div
-                className="mt-4 pr-5"
-              >
-                Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
-              </div>
+              Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
             </div>
             <div>
               <div

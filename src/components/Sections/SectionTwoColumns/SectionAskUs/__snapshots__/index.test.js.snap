@@ -56,86 +56,79 @@ exports[`SectionAskUs it should render 1`] = `
               }
             }
           >
-            <h1
-              className="nxt_heading-xlarge"
-            />
             <div
-              className="mt-4 pr-5"
+              className="mb-6 text-left nxt_body-xsmall"
             >
-              <div
-                className="mb-6 text-left nxt_body-xsmall"
+              <form
+                onSubmit={[Function]}
               >
-                <form
-                  onSubmit={[Function]}
+                <div>
+                  <label>
+                    Name
+                  </label>
+                  <input
+                    className="form-control mb-3"
+                    name="name"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <label>
+                    Email
+                  </label>
+                  <input
+                    className="form-control mb-3"
+                    name="email"
+                    onChange={[Function]}
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <label>
+                    Phone
+                  </label>
+                  <input
+                    autoComplete="tel"
+                    className="form-control mb-3"
+                    maxLength="14"
+                    name="phone"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    type="tel"
+                    value=""
+                  />
+                </div>
+                <div>
+                  <label>
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control mb-3"
+                    name="message"
+                    onChange={[Function]}
+                    required={true}
+                    type="text"
+                    value=""
+                  />
+                </div>
+                <button
+                  className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
                 >
-                  <div>
-                    <label>
-                      Name
-                    </label>
-                    <input
-                      className="form-control mb-3"
-                      name="name"
-                      onChange={[Function]}
-                      required={true}
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div>
-                    <label>
-                      Email
-                    </label>
-                    <input
-                      className="form-control mb-3"
-                      name="email"
-                      onChange={[Function]}
-                      required={true}
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div>
-                    <label>
-                      Phone
-                    </label>
-                    <input
-                      autoComplete="tel"
-                      className="form-control mb-3"
-                      maxLength="14"
-                      name="phone"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      type="tel"
-                      value=""
-                    />
-                  </div>
-                  <div>
-                    <label>
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control mb-3"
-                      name="message"
-                      onChange={[Function]}
-                      required={true}
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <button
-                    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
-                  >
-                    Submit
-                  </button>
-                </form>
-                <h4
-                  className="alert"
-                >
-                  We received your message! 
-                  <br />
-                   We’ll get back to you shortly.
-                </h4>
-              </div>
+                  Submit
+                </button>
+              </form>
+              <h4
+                className="alert"
+              >
+                We received your message! 
+                <br />
+                 We’ll get back to you shortly.
+              </h4>
             </div>
           </div>
           <div>

@@ -2,6 +2,7 @@ import React from 'react';
 import FirebaseConfig from '../FirebaseKey';
 import SubmitButton from '../Buttons/SubmitButton';
 import PhoneInput from 'react-phone-number-input/basic-input';
+import './styles.scss';
 
 class ContactForm extends React.Component {
   constructor() {
