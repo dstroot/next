@@ -179,7 +179,7 @@ exports[`About it should render 1`] = `
         >
           <img
             alt="Our Story Group"
-            className="img-fluid pd-5"
+            className="img-fluid pd-5 mq-tall-image"
             src="ourstorygroup.svg"
           />
         </div>
@@ -242,7 +242,7 @@ exports[`About it should render 1`] = `
             className="row"
           >
             <div
-              className="react-reveal col-md-5 undefined"
+              className="react-reveal col-md-5 order-2 order-sm-1"
               style={
                 Object {
                   "opacity": undefined,
@@ -290,7 +290,7 @@ exports[`About it should render 1`] = `
               </div>
             </div>
             <div
-              className="col-md-7 undefined"
+              className="col-md-7 order-1 order-sm-2"
             >
               <div
                 className="mt-5"
@@ -318,7 +318,7 @@ exports[`About it should render 1`] = `
                       className="m-4"
                     >
                       <div
-                        className="odp-para mt-2"
+                        className="mt-2 mq-para"
                       >
                         <h3
                           className="nxt_heading-small"
@@ -332,7 +332,7 @@ exports[`About it should render 1`] = `
                         </p>
                       </div>
                       <div
-                        className="odp-para mt-2"
+                        className="mt-2 mq-para"
                       >
                         <h3
                           className="nxt_heading-small"
@@ -346,7 +346,7 @@ exports[`About it should render 1`] = `
                         </p>
                       </div>
                       <div
-                        className="odp-para mt-2"
+                        className="mt-2 mq-para"
                       >
                         <h3
                           className="nxt_heading-small"
@@ -360,7 +360,7 @@ exports[`About it should render 1`] = `
                         </p>
                       </div>
                       <div
-                        className="odp-para mt-2"
+                        className="mt-2 mq-para"
                       >
                         <h3
                           className="nxt_heading-small"
@@ -374,7 +374,7 @@ exports[`About it should render 1`] = `
                         </p>
                       </div>
                       <div
-                        className="odp-para mt-2"
+                        className="mt-2 mq-para"
                       >
                         <h3
                           className="nxt_heading-small"
@@ -485,6 +485,98 @@ exports[`About it should render 1`] = `
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid bg-dark"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col p-3"
+      >
+        <img
+          alt="Logo"
+          className="pr-3 pb-4"
+          src="NXT_logo_footer_dark.svg"
+        />
+        <span
+          className="nxt_footer"
+        >
+          By using this website you accept our
+           
+          <a
+            href="/terms"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Terms of Use
+            </span>
+          </a>
+          ,
+           
+          <a
+            href="/social"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Social Media Guidelines
+            </span>
+          </a>
+          , and
+           
+          <a
+            href="/privacy"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Privacy Policy
+            </span>
+          </a>
+        </span>
+        <small>
+          <div
+            className="nxt_footer"
+          >
+            <div
+              className="nxt_footer"
+            >
+              <p>
+                *Reflects the combined results of Pacific Life Insurance Company and its insurance subsidiaries on a statutory basis and primarily includes death and annuity benefits paid.
+              </p>
+              <p>
+                An insurer's financial strength rating represents an opinion by the issuing agency regarding the ability of an insurance company to meet its financial obligations to its policyholders and contract holders. A rating is an opinion of the rating agency only, and not a statement of fact or recommendation to purchase, sell or hold any security, policy or contract. These ratings do not imply approval of our products and do not reflect any indication of their performance. For more information about a particular rating or rating agency, please visit the website of the relevant agency.
+              </p>
+              <p>
+                No bank guarantee • Not a deposit • May lose value • Not FDIC/NCUA insured • Not insured by any federal government agency
+              </p>
+              <p>
+                Pacific Life, its affiliates, its distributors, and respective representatives do not provide tax, accounting, or legal advice. Any taxpayer should seek advice based on the taxpayer's particular circumstances from an independent tax advisor or attorney.
+              </p>
+              <p>
+                <i>
+                  Pacific Life is a product provider. It is not a fiduciary and therefore does not give advice or make recommendations regarding insurance or investment products.
+                </i>
+              </p>
+              <p>
+                Pacific Life Insurance Company (Newport Beach, CA) is licensed to issue insurance products in all states except New York. Product availability and features may vary by state. Fixed annuity products are available through licensed third parties.
+              </p>
+            </div>
+            <p>
+              © 
+              2019
+               Pacific Life Insurance Company, Newport Beach, CA.
+            </p>
+          </div>
+        </small>
       </div>
     </div>
   </div>

@@ -136,6 +136,7 @@ exports[`Contact it should render 1`] = `
                         className="form-control mb-3"
                         name="name"
                         onChange={[Function]}
+                        required={true}
                         type="text"
                         value=""
                       />
@@ -148,7 +149,8 @@ exports[`Contact it should render 1`] = `
                         className="form-control mb-3"
                         name="email"
                         onChange={[Function]}
-                        type="text"
+                        required={true}
+                        type="email"
                         value=""
                       />
                     </div>
@@ -157,10 +159,13 @@ exports[`Contact it should render 1`] = `
                         Phone
                       </label>
                       <input
+                        autoComplete="tel"
                         className="form-control mb-3"
+                        maxLength="14"
                         name="phone"
+                        onBlur={[Function]}
                         onChange={[Function]}
-                        type="text"
+                        type="tel"
                         value=""
                       />
                     </div>
@@ -168,11 +173,12 @@ exports[`Contact it should render 1`] = `
                       <label>
                         Message
                       </label>
-                      <input
+                      <textarea
                         className="form-control mb-3"
                         name="message"
                         onChange={[Function]}
-                        type="textarea"
+                        required={true}
+                        type="text"
                         value=""
                       />
                     </div>
@@ -182,6 +188,13 @@ exports[`Contact it should render 1`] = `
                       Submit
                     </button>
                   </form>
+                  <h4
+                    className="alert"
+                  >
+                    We received your message! 
+                    <br />
+                     We’ll get back to you shortly.
+                  </h4>
                 </div>
               </div>
             </div>
@@ -192,6 +205,88 @@ exports[`Contact it should render 1`] = `
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container-fluid bg-dark"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col p-3"
+      >
+        <img
+          alt="Logo"
+          className="pr-3 pb-4"
+          src="NXT_logo_footer_dark.svg"
+        />
+        <span
+          className="nxt_footer"
+        >
+          By using this website you accept our
+           
+          <a
+            href="/terms"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Terms of Use
+            </span>
+          </a>
+          ,
+           
+          <a
+            href="/social"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Social Media Guidelines
+            </span>
+          </a>
+          , and
+           
+          <a
+            href="/privacy"
+            onClick={[Function]}
+          >
+            <span
+              className="text-accent"
+            >
+              Privacy Policy
+            </span>
+          </a>
+        </span>
+        <small>
+          <div
+            className="nxt_footer"
+          >
+            <p>
+              No bank guarantee • Not a deposit • May lose value • Not FDIC/NCUA insured • Not insured by any federal government agency
+            </p>
+            <p>
+              Pacific Life, its affiliates, its distributors, and respective representatives do not provide tax, accounting, or legal advice. Any taxpayer should seek advice based on the taxpayer's particular circumstances from an independent tax advisor or attorney.
+            </p>
+            <p>
+              <i>
+                Pacific Life is a product provider. It is not a fiduciary and therefore does not give advice or make recommendations regarding insurance or investment products.
+              </i>
+            </p>
+            <p>
+              Pacific Life Insurance Company (Newport Beach, CA) is licensed to issue insurance products in all states except New York. Product availability and features may vary by state. Fixed annuity products are available through licensed third parties.
+            </p>
+            <p>
+              © 
+              2019
+               Pacific Life Insurance Company, Newport Beach, CA.
+            </p>
+          </div>
+        </small>
       </div>
     </div>
   </div>
