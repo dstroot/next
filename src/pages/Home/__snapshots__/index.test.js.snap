@@ -598,35 +598,30 @@ Array [
     id="triggerDWYIM"
   >
     <div
+<<<<<<< HEAD
       id="pinDWYIM"
+=======
+      id="triggerDWYIM"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
     >
       <div
-        className="py-6 undefined"
+        id="pinDWYIM"
       >
         <div
-          className="container"
+          className="py-6 undefined"
         >
-          <h1
-            className="react-reveal text-center nxt_heading-xlarge mb-5"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            Designed with you in mind
-          </h1>
           <div
-            className="row"
+            className="container"
           >
-            <div
-              className="react-reveal col-md-5 order-2 order-sm-1"
+            <h1
+              className="react-reveal text-center nxt_heading-xlarge mb-5"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
+<<<<<<< HEAD
               <img
                 alt="Woman with the Phone"
                 className="img-fluid p-5 nxt_mq-tall-image"
@@ -634,13 +629,33 @@ Array [
                 src="womanphone.svg"
               />
             </div>
+=======
+              Designed with you in mind
+            </h1>
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
             <div
-              className="col-md-7 order-1 order-sm-2"
+              className="row"
             >
               <div
-                className="mt-5"
+                className="react-reveal col-md-5 order-2 order-sm-1"
+                style={
+                  Object {
+                    "opacity": undefined,
+                  }
+                }
+              >
+                <img
+                  alt="Woman with the Phone"
+                  className="img-fluid p-5 mq-tall-image"
+                  id="dwyim-woman"
+                  src="womanphone.svg"
+                />
+              </div>
+              <div
+                className="col-md-7 order-1 order-sm-2"
               >
                 <div
+<<<<<<< HEAD
                   className="react-reveal"
                   style={
                     Object {
@@ -649,10 +664,28 @@ Array [
                   }
                 />
                 <div>
+=======
+                  className="mt-5"
+                >
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                   <div
-                    className="mt-4 pr-5"
+                    className="react-reveal"
+                    style={
+                      Object {
+                        "opacity": undefined,
+                      }
+                    }
                   >
+                    <h1
+                      className="nxt_heading-xlarge"
+                    />
                     <div
+                      className="mt-4 pr-5"
+                    />
+                  </div>
+                  <div>
+                    <div
+<<<<<<< HEAD
                       id="nxt_mq-para-container"
                     >
                       <div
@@ -671,15 +704,17 @@ Array [
                       </div>
                       <div
                         className="nxt_mq-para"
+=======
+                      className="mt-4 pr-5"
+                    >
+                      <div
+                        id="mq-para-container"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                       >
-                        <h2
-                          className="nxt_heading-small mb-2"
+                        <div
+                          className="mq-para"
                         >
-                          Radically Simple
-                        </h2>
-                        <p
-                          className="mb-5"
-                        >
+<<<<<<< HEAD
                           Straight forward products and features. Know what you're getting from the beginning.
                         </p>
                       </div>
@@ -688,14 +723,47 @@ Array [
                       >
                         <h2
                           className="nxt_heading-small mb-2"
+=======
+                          <h2
+                            className="nxt_heading-small mb-2"
+                          >
+                            Fearlessly Flexible
+                          </h2>
+                          <p
+                            className="mb-5"
+                          >
+                            Our products adapt to your life’s biggest moments. Change them when your needs do.
+                          </p>
+                        </div>
+                        <div
+                          className="mq-para"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                         >
-                          Brazenly Transparent
-                        </h2>
-                        <p
-                          className="mb-5"
+                          <h2
+                            className="nxt_heading-small mb-2"
+                          >
+                            Radically Simple
+                          </h2>
+                          <p
+                            className="mb-5"
+                          >
+                            Straight forward products and features. Know what you're getting from the beginning.
+                          </p>
+                        </div>
+                        <div
+                          className="mq-para"
                         >
-                          No hidden fees or charges.
-                        </p>
+                          <h2
+                            className="nxt_heading-small mb-2"
+                          >
+                            Brazenly Transparent
+                          </h2>
+                          <p
+                            className="mb-5"
+                          >
+                            No hidden fees or charges.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>

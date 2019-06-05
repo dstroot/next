@@ -254,7 +254,11 @@ exports[`About it should render 1`] = `
                 >
                   <img
                     alt="Design System"
+<<<<<<< HEAD
                     className="nxt_mq-tall-image"
+=======
+                    className="mq-tall-image"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                     id="easel"
                     src="Easel.svg"
                   />
@@ -301,13 +305,25 @@ exports[`About it should render 1`] = `
                         "opacity": undefined,
                       }
                     }
+<<<<<<< HEAD
                   />
+=======
+                  >
+                    <h1
+                      className="nxt_heading-xlarge"
+                    />
+                    <div
+                      className="mt-4 pr-5"
+                    />
+                  </div>
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                   <div>
                     <div
                       className="mt-4 pr-5"
                     >
                       <div
                         className="m-4"
+<<<<<<< HEAD
                         id="nxt_mq-para-container"
                       >
                         <div
@@ -340,10 +356,47 @@ exports[`About it should render 1`] = `
                         </div>
                         <div
                           className="mt-2 nxt_mq-para"
+=======
+                        id="mq-para-container"
+                      >
+                        <div
+                          className="mt-2 mq-para"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                         >
                           <h3
                             className="nxt_heading-small"
                           >
+<<<<<<< HEAD
+=======
+                             Simplicity 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            We strive to design products that are easy to use and understand. While it might seem that adding optional benefits to a product offers flexibility, it can increase complexity. Keeping the focus on fundamental value results in a better experience for the customer.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
+                        >
+                          <h3
+                            className="nxt_heading-small"
+                          >
+                             Empowerment 
+                          </h3>
+                          <p
+                            className="pb-1"
+                          >
+                            Reinforcing and celebrating positive actions toward customer’s financial health helps them realize success. We give customers confidence in going after their passions and goals.
+                          </p>
+                        </div>
+                        <div
+                          className="mt-2 mq-para"
+                        >
+                          <h3
+                            className="nxt_heading-small"
+                          >
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                              Flexibility 
                           </h3>
                           <p
@@ -353,7 +406,11 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
+<<<<<<< HEAD
                           className="mt-2 nxt_mq-para"
+=======
+                          className="mt-2 mq-para"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                         >
                           <h3
                             className="nxt_heading-small"
@@ -367,7 +424,11 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
+<<<<<<< HEAD
                           className="mt-2 nxt_mq-para"
+=======
+                          className="mt-2 mq-para"
+>>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                         >
                           <h3
                             className="nxt_heading-small"
