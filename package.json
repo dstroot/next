@@ -59,7 +59,7 @@
         "branches": 50,
         "functions": 60,
         "lines": 70,
-        "statements": -60
+        "statements": -100
       }
     }
   },
