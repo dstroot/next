@@ -16,7 +16,8 @@ label {
   font-size: calc(18px);
   text-align: center;
   padding: 10px;
-  background: theme-color('accent');
+  background-color: theme-color('secondary-dark');
+  border-left: 12px solid theme-color('accent');
   display: none;
 }
 

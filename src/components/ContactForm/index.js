@@ -15,6 +15,7 @@ class ContactForm extends React.Component {
       email: '',
       phone: '',
       message: '',
+      show: false,
     };
   }
 
@@ -41,11 +42,24 @@ class ContactForm extends React.Component {
       message: this.state.message,
     });
 
+    // handle the collaps
     document.querySelector('.alert').style.display = 'block';
+
+    this.setState({ show: true });
+
+    const setShowFalse = () => {
+      this.setState({ show: false });
+    };
+
+    setTimeout(function() {
+      setShowFalse();
+    }, 3000);
 
     setTimeout(function() {
       document.querySelector('.alert').style.display = 'none';
-    }, 5000);
+    }, 3500);
+
+    // setAlertNone();
 
     slackPost = () => {
       var Slack = require('slack-node');
@@ -94,10 +108,14 @@ class ContactForm extends React.Component {
     return (
       <div className="mb-6 text-left nxt_body-xsmall">
         <form onSubmit={this.addData}>
-          <Fade top>
-            <h4 className="alert">
-              We received your message! <br /> We’ll get back to you shortly.
-            </h4>
+          <Fade top when={this.state.show}>
+            <div className="alert nxt_body-small">
+              <p>We received your message! We’ll get back to you shortly.</p>
+              <p>
+                If this is an urgent matter, pleae call us at (833) 646-NEXT
+                (6398)
+              </p>
+            </div>
           </Fade>
           <div>
             <label>Name</label>
