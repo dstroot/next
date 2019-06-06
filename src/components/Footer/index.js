@@ -10,18 +10,20 @@ const Footer = props => {
         <div className="col p-3">
           <img src={logo} className="pr-3 pb-4" alt="Logo" />
           <span className="nxt_footer">
-            By using this website you accept our{' '}
-            <Link to="/terms">
-              <span className="text-accent">Terms of Use</span>
-            </Link>
-            ,{' '}
-            <Link to="/social">
-              <span className="text-accent">Social Media Guidelines</span>
-            </Link>
-            , and{' '}
-            <Link to="/privacy">
-              <span className="text-accent">Privacy Policy</span>
-            </Link>
+            <p>
+              By using this website you accept our{' '}
+              <Link to="/terms">
+                <span className="text-accent">Terms of Use</span>
+              </Link>
+              ,{' '}
+              <Link to="/social">
+                <span className="text-accent">Social Media Guidelines</span>
+              </Link>
+              , and{' '}
+              <Link to="/privacy">
+                <span className="text-accent">Privacy Policy</span>
+              </Link>
+            </p>
           </span>
           <small>
             <div className="nxt_footer">
