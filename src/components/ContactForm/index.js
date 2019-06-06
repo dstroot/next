@@ -2,6 +2,7 @@ import React from 'react';
 import FirebaseConfig from '../FirebaseKey';
 import SubmitButton from '../Buttons/SubmitButton';
 import PhoneInput from 'react-phone-number-input/basic-input';
+import Fade from 'react-reveal/Fade';
 import './styles.scss';
 import 'slack-node';
 
@@ -93,6 +94,11 @@ class ContactForm extends React.Component {
     return (
       <div className="mb-6 text-left nxt_body-xsmall">
         <form onSubmit={this.addData}>
+          <Fade top>
+            <h4 className="alert">
+              We received your message! <br /> We’ll get back to you shortly.
+            </h4>
+          </Fade>
           <div>
             <label>Name</label>
             <input
@@ -141,9 +147,6 @@ class ContactForm extends React.Component {
           </div>
           <SubmitButton buttonText="Submit" type="submit" />
         </form>
-        <h4 className="alert">
-          We received your message! <br /> We’ll get back to you shortly.
-        </h4>
       </div>
     );
   }

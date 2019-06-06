@@ -1,5 +1,6 @@
 import React from 'react';
 import FirebaseConfig from './../../../FirebaseKey';
+import Fade from 'react-reveal/Fade';
 
 //components
 import SectionOneColumn from '..';
@@ -32,6 +33,11 @@ class SectionStayInTouch extends React.Component {
       email: this.state.email,
     });
 
+    document.querySelector('.alert').style.display = 'block';
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 5000);
+
     //reset the state
     this.setState({
       email: '',
@@ -54,17 +60,21 @@ class SectionStayInTouch extends React.Component {
                     <div className="col-md-6">
                       <input
                         className="form-control"
-                        type="text"
+                        type="email"
                         name="email"
                         placeholder="Email Address"
                         onChange={this.updateInput}
                         value={this.state.email}
+                        required
                       />
                     </div>
                   </div>
                 </div>
                 <SubmitButton buttonText="Submit" type="submit" />
               </form>
+              <Fade bottom>
+                <h4 className="alert col-md-6">You are on the list</h4>
+              </Fade>
             </div>
           }
         />
