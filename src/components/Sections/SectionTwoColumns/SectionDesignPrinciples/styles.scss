@@ -5,12 +5,14 @@
   #easel {
     position: absolute;
     left: 140px;
+    right: 0;
+    top: 0;
   }
 
   .easel-icon {
     position: absolute;
-    top: 90px;
-    left: 200px;
+    top: 130px;
+    left: 222px;
     width: 64px;
   }
 }
@@ -33,7 +35,7 @@
 
     .easel-icon {
       position: absolute;
-      top: 62%;
+      top: 70%;
       left: 48%;
       width: 60px;
     }
