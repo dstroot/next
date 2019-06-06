@@ -3,6 +3,7 @@ import FirebaseConfig from '../FirebaseKey';
 import SubmitButton from '../Buttons/SubmitButton';
 import PhoneInput from 'react-phone-number-input/basic-input';
 import './styles.scss';
+import 'slack-node';
 
 class ContactForm extends React.Component {
   constructor() {
@@ -22,8 +23,9 @@ class ContactForm extends React.Component {
       [e.target.name]: e.target.value,
     });
   };
+
   // add data to the database
-  addData = e => {
+  addData = (e, slackPost) => {
     // prevent default event that submits to the page
     e.preventDefault();
     const db = FirebaseConfig.firestore();
@@ -37,6 +39,47 @@ class ContactForm extends React.Component {
       phone: this.state.phone,
       message: this.state.message,
     });
+
+    document.querySelector('.alert').style.display = 'block';
+
+    setTimeout(function() {
+      document.querySelector('.alert').style.display = 'none';
+    }, 5000);
+
+    slackPost = () => {
+      var Slack = require('slack-node');
+
+      var webhookUri =
+        'https://hooks.slack.com/services/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';
+
+      var slack = new Slack();
+      slack.setWebhook(webhookUri);
+
+      slack.webhook(
+        {
+          channel: '#contact-form',
+          username: 'WebHook-bot',
+          text:
+            '_New contact submission: _\n' +
+            '*Name*: ' +
+            this.state.name +
+            '\n' +
+            '*Email*: ' +
+            this.state.email +
+            '\n' +
+            '*Phone*: ' +
+            this.state.phone +
+            '\n' +
+            '*Message*: ' +
+            this.state.message,
+        },
+        function(err, response) {
+          console.log(response);
+        }
+      );
+    };
+
+    slackPost();
     // reset the state
     this.setState({
       name: '',
@@ -44,11 +87,6 @@ class ContactForm extends React.Component {
       phone: '',
       message: '',
     });
-    document.querySelector('.alert').style.display = 'block';
-
-    setTimeout(function() {
-      document.querySelector('.alert').style.display = 'none';
-    }, 5000);
   };
 
   render() {
