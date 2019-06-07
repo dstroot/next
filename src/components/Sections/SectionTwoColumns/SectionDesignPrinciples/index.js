@@ -96,14 +96,12 @@ class SectionDesignPrinciples extends React.Component {
                     className="easel-icon"
                     src={Lollypop}
                     alt="Lollypop"
-                    width={65}
                   />
                   <img
                     ref={img => (this.img2 = img)}
                     className="easel-icon"
                     src={Flag}
                     alt="Flag"
-                    width={90}
                   />
                   <img
                     ref={img => (this.img3 = img)}
@@ -116,7 +114,6 @@ class SectionDesignPrinciples extends React.Component {
                     className="easel-icon"
                     src={Hi}
                     alt="Hi"
-                    width={85}
                   />
                   <img
                     ref={img => (this.img5 = img)}
