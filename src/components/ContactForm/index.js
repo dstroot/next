@@ -53,11 +53,11 @@ class ContactForm extends React.Component {
 
     setTimeout(function() {
       setShowFalse();
-    }, 3000);
+    }, 10000);
 
     setTimeout(function() {
       document.querySelector('.alert').style.display = 'none';
-    }, 3500);
+    }, 10500);
 
     // setAlertNone();
 
@@ -112,8 +112,7 @@ class ContactForm extends React.Component {
             <div className="alert nxt_body-small">
               <p>We received your message! We’ll get back to you shortly.</p>
               <p>
-                If this is an urgent matter, pleae call us at (833) 646-NEXT
-                (6398)
+                If this is an urgent matter, pleae call us at (833) 646-6398
               </p>
             </div>
           </Fade>
