@@ -598,30 +598,35 @@ Array [
     id="triggerDWYIM"
   >
     <div
-<<<<<<< HEAD
       id="pinDWYIM"
-=======
-      id="triggerDWYIM"
->>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
     >
       <div
-        id="pinDWYIM"
+        className="py-6 undefined"
       >
         <div
-          className="py-6 undefined"
+          className="container"
         >
-          <div
-            className="container"
+          <h1
+            className="react-reveal text-center nxt_heading-xlarge mb-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
-            <h1
-              className="react-reveal text-center nxt_heading-xlarge mb-5"
+            Designed with you in mind
+          </h1>
+          <div
+            className="row"
+          >
+            <div
+              className="react-reveal col-md-5 order-2 order-sm-1"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
-<<<<<<< HEAD
               <img
                 alt="Woman with the Phone"
                 className="img-fluid p-5 nxt_mq-tall-image"
@@ -629,33 +634,13 @@ Array [
                 src="womanphone.svg"
               />
             </div>
-=======
-              Designed with you in mind
-            </h1>
->>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
             <div
-              className="row"
+              className="col-md-7 order-1 order-sm-2"
             >
               <div
-                className="react-reveal col-md-5 order-2 order-sm-1"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              >
-                <img
-                  alt="Woman with the Phone"
-                  className="img-fluid p-5 mq-tall-image"
-                  id="dwyim-woman"
-                  src="womanphone.svg"
-                />
-              </div>
-              <div
-                className="col-md-7 order-1 order-sm-2"
+                className="mt-5"
               >
                 <div
-<<<<<<< HEAD
                   className="react-reveal"
                   style={
                     Object {
@@ -664,28 +649,10 @@ Array [
                   }
                 />
                 <div>
-=======
-                  className="mt-5"
-                >
->>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                   <div
-                    className="react-reveal"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
-                    }
+                    className="mt-4 pr-5"
                   >
-                    <h1
-                      className="nxt_heading-xlarge"
-                    />
                     <div
-                      className="mt-4 pr-5"
-                    />
-                  </div>
-                  <div>
-                    <div
-<<<<<<< HEAD
                       id="nxt_mq-para-container"
                     >
                       <div
@@ -704,17 +671,15 @@ Array [
                       </div>
                       <div
                         className="nxt_mq-para"
-=======
-                      className="mt-4 pr-5"
-                    >
-                      <div
-                        id="mq-para-container"
->>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                       >
-                        <div
-                          className="mq-para"
+                        <h2
+                          className="nxt_heading-small mb-2"
                         >
-<<<<<<< HEAD
+                          Radically Simple
+                        </h2>
+                        <p
+                          className="mb-5"
+                        >
                           Straight forward products and features. Know what you're getting from the beginning.
                         </p>
                       </div>
@@ -723,47 +688,14 @@ Array [
                       >
                         <h2
                           className="nxt_heading-small mb-2"
-=======
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Fearlessly Flexible
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            Our products adapt to your life’s biggest moments. Change them when your needs do.
-                          </p>
-                        </div>
-                        <div
-                          className="mq-para"
->>>>>>> f19f7423847c5dc2f93b16e1d2ef3b0c2da73f90
                         >
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Radically Simple
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            Straight forward products and features. Know what you're getting from the beginning.
-                          </p>
-                        </div>
-                        <div
-                          className="mq-para"
+                          Brazenly Transparent
+                        </h2>
+                        <p
+                          className="mb-5"
                         >
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Brazenly Transparent
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            No hidden fees or charges.
-                          </p>
-                        </div>
+                          No hidden fees or charges.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -836,6 +768,21 @@ Array [
                 <form
                   onSubmit={[Function]}
                 >
+                  <div
+                    className="react-reveal alert nxt_body-small"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <p>
+                      We received your message! We’ll get back to you shortly.
+                    </p>
+                    <p>
+                      If this is an urgent matter, pleae call us at (833) 646-NEXT (6398)
+                    </p>
+                  </div>
                   <div>
                     <label>
                       Name
@@ -896,13 +843,6 @@ Array [
                     Submit
                   </button>
                 </form>
-                <h4
-                  className="alert"
-                >
-                  We received your message! 
-                  <br />
-                   We’ll get back to you shortly.
-                </h4>
               </div>
             </div>
             <div>
@@ -932,42 +872,44 @@ Array [
         <span
           className="nxt_footer"
         >
-          By using this website you accept our
-           
-          <a
-            href="/terms"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+          <p>
+            By using this website you accept our
+             
+            <a
+              href="/terms"
+              onClick={[Function]}
             >
-              Terms of Use
-            </span>
-          </a>
-          ,
-           
-          <a
-            href="/social"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+              <span
+                className="text-accent"
+              >
+                Terms of Use
+              </span>
+            </a>
+            ,
+             
+            <a
+              href="/social"
+              onClick={[Function]}
             >
-              Social Media Guidelines
-            </span>
-          </a>
-          , and
-           
-          <a
-            href="/privacy"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+              <span
+                className="text-accent"
+              >
+                Social Media Guidelines
+              </span>
+            </a>
+            , and
+             
+            <a
+              href="/privacy"
+              onClick={[Function]}
             >
-              Privacy Policy
-            </span>
-          </a>
+              <span
+                className="text-accent"
+              >
+                Privacy Policy
+              </span>
+            </a>
+          </p>
         </span>
         <small>
           <div
