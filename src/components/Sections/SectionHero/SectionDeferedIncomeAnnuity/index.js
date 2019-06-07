@@ -24,7 +24,9 @@ const SectiionDeferedIncomeAnnuity = () => {
       <Mountainbike />
       <SectionHero
         backgroundImage={background}
-        heading="Next Deferred Income Annuity"
+        heading={
+          <h1 className="nxt_heading-xlarge">Next Deferred Income Annuity</h1>
+        }
         content="A predictable and reliable paycheck for life."
         heroImage={mountainbike}
         linkElement={

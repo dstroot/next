@@ -19,7 +19,7 @@ const SectionBornInCalifornia = () => {
       <Clock />
       <SectionHero
         backgroundImage={background}
-        heading="Born in California"
+        heading={<h1 className="nxt_heading-xlarge">Born in California</h1>}
         content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
       />
     </>

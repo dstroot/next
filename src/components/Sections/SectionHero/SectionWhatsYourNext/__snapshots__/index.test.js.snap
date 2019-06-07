@@ -310,15 +310,13 @@ Array [
             <h1
               className="nxt_heading-xlarge"
             >
-              <span>
-                What’s your 
-                <span
-                  className="text-primary"
-                >
-                  next 
-                </span>
-                adventure?
+              What’s your 
+              <span
+                className="text-primary"
+              >
+                next 
               </span>
+              adventure?
             </h1>
           </div>
         </div>

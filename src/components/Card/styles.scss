@@ -1,8 +1,8 @@
 @import '../../scss/main.scss';
 
 .card {
-  border-radius: 12px;
-  border: 1px solid theme-color('primary-dark');
+  @include border-radius(12px !important);
+  border: 1px solid theme-color('primary-dark') !important;
   max-width: 400px;
   margin: 0 auto;
 }

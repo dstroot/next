@@ -10,10 +10,6 @@ import SectionTwoColumns from '..';
 // import image
 import womanphone from './media/womanphone.svg';
 
-// calculating percentage of viewport height
-// eslint-disable-next-line
-const winHeight = (0.2 * window.innerHeight) / window.innerHeight;
-
 class SectionDesignWithYouInMind extends React.Component {
   constructor(props) {
     super(props);
@@ -52,51 +48,48 @@ class SectionDesignWithYouInMind extends React.Component {
 
   render() {
     return (
-      <div>
-        {/* extra div required for scrollmagic reach-router fix */}
-        <div id="triggerDWYIM">
-          <div id="pinDWYIM">
-            <SectionTwoColumns
-              styleLeft="order-2 order-sm-1"
-              styleRight="order-1 order-sm-2"
-              sectionHeadStyle="mb-5"
-              sectionHead="Designed with you in mind"
-              contentLeft={
-                <img
-                  id="dwyim-woman"
-                  className="img-fluid p-5 mq-tall-image"
-                  src={womanphone}
-                  alt="Woman with the Phone"
-                />
-              }
-              noFadeContentRight={
-                <div id="mq-para-container">
-                  <div className="mq-para" ref={div => (this.para1 = div)}>
-                    <h2 className="nxt_heading-small mb-2">
-                      Fearlessly Flexible
-                    </h2>
-                    <p className="mb-5">
-                      Our products adapt to your life’s biggest moments. Change
-                      them when your needs do.
-                    </p>
-                  </div>
-                  <div className="mq-para" ref={div => (this.para2 = div)}>
-                    <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
-                    <p className="mb-5">
-                      Straight forward products and features. Know what you're
-                      getting from the beginning.
-                    </p>
-                  </div>
-                  <div className="mq-para" ref={div => (this.para3 = div)}>
-                    <h2 className="nxt_heading-small mb-2">
-                      Brazenly Transparent
-                    </h2>
-                    <p className="mb-5">No hidden fees or charges.</p>
-                  </div>
+      <div id="triggerDWYIM">
+        <div id="pinDWYIM">
+          <SectionTwoColumns
+            styleLeft="order-2 order-sm-1"
+            styleRight="order-1 order-sm-2"
+            sectionHeadStyle="mb-5"
+            sectionHead="Designed with you in mind"
+            contentLeft={
+              <img
+                id="dwyim-woman"
+                className="img-fluid p-5 nxt_mq-tall-image"
+                src={womanphone}
+                alt="Woman with the Phone"
+              />
+            }
+            noFadeContentRight={
+              <div id="nxt_mq-para-container">
+                <div className="nxt_mq-para" ref={div => (this.para1 = div)}>
+                  <h2 className="nxt_heading-small mb-2">
+                    Fearlessly Flexible
+                  </h2>
+                  <p className="mb-5">
+                    Our products adapt to your life’s biggest moments. Change
+                    them when your needs do.
+                  </p>
                 </div>
-              }
-            />
-          </div>
+                <div className="nxt_mq-para" ref={div => (this.para2 = div)}>
+                  <h2 className="nxt_heading-small mb-2">Radically Simple</h2>
+                  <p className="mb-5">
+                    Straight forward products and features. Know what you're
+                    getting from the beginning.
+                  </p>
+                </div>
+                <div className="nxt_mq-para" ref={div => (this.para3 = div)}>
+                  <h2 className="nxt_heading-small mb-2">
+                    Brazenly Transparent
+                  </h2>
+                  <p className="mb-5">No hidden fees or charges.</p>
+                </div>
+              </div>
+            }
+          />
         </div>
       </div>
     );

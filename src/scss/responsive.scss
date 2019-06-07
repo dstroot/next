@@ -1,10 +1,15 @@
-.mq-para {
+.nxt_mq-para {
   position: absolute;
   top: 20%;
 }
 
-.mq-tall-image {
+.nxt_mq-tall-image {
   height: calc(300px + 12vw + 0.5vmin);
+}
+
+.nxt_mq-wide-image {
+  width: calc(160px + 14vw + 0.5vmin);
+  max-width: 300px;
 }
 
 /***************************************/
@@ -14,7 +19,7 @@
 /******************* iPhone 6, 7, & 8 in portrait & landscape ********************/
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
-  .mq-para {
+  .nxt_mq-para {
     width: 80%;
     text-align: center;
     margin-left: auto;
@@ -23,9 +28,14 @@
     right: 0;
   }
 
-  .mq-tall-image {
+  .nxt_mq-tall-image {
     margin-top: calc(25% + 5vw + 0.5vmin);
     margin-left: calc(13% + 5vw + 0.5vmin);
+  }
+
+  img[alt='Logo'] {
+    /* Attribute has this exact value */
+    display: block;
   }
 }
 

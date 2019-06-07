@@ -9,9 +9,7 @@ const SectionHero = props => {
       <div className="divText">
         <div className="container">
           <div className="row">
-            <div className="col text-center">
-              <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-            </div>
+            <div className="col text-center">{props.heading}</div>
           </div>
           <div className="row">
             <div className="col-md-8 offset-md-2 text-center">

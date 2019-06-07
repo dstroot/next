@@ -10,6 +10,7 @@ https://getbootstrap.com/docs/4.0/getting-started/theming/
 $theme-colors: (
   'primary': #00a677,
   'primary-dark': #3c444c,
+  'secondary-dark': #dde1e7,
   'accent': #f2d292,
   'light': #f2f4f7,
 );
@@ -35,7 +36,7 @@ $spacers: map-merge(
 @import 'typography.scss';
 
 // import image resposiveness
-@import 'imageresposiveness.scss';
+@import 'responsive.scss';
 
 // then component styles
 @import '../components/NavBar/styles.scss';
@@ -43,22 +44,4 @@ $spacers: map-merge(
 body {
   margin-top: -50px;
   color: theme-color('primary-dark');
-}
-
-label {
-  margin-bottom: 0;
-}
-
-.alert {
-  font-family: $circular;
-  font-size: calc(18px);
-  text-align: center;
-  padding: 10px;
-  background: theme-color('accent');
-  display: none;
-}
-
-.form-control:focus {
-  border-color: theme-color('primary');
-  box-shadow: none;
 }

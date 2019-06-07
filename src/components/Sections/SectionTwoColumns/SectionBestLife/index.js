@@ -20,7 +20,9 @@ const SectionBestLife = () => {
         contentLeft={
           <img className="img-fluid p-5" src={yoga} alt="Yoga Lady" />
         }
-        heading="Keep living your best life"
+        heading={
+          <h1 className="nxt_heading-xlarge">Keep living your best life</h1>
+        }
         contentRight="Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones..."
       />
     </div>

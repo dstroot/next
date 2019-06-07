@@ -18,42 +18,44 @@ exports[`Footer it should render 1`] = `
       <span
         className="nxt_footer"
       >
-        By using this website you accept our
-         
-        <a
-          href="/terms"
-          onClick={[Function]}
-        >
-          <span
-            className="text-accent"
+        <p>
+          By using this website you accept our
+           
+          <a
+            href="/terms"
+            onClick={[Function]}
           >
-            Terms of Use
-          </span>
-        </a>
-        ,
-         
-        <a
-          href="/social"
-          onClick={[Function]}
-        >
-          <span
-            className="text-accent"
+            <span
+              className="text-accent"
+            >
+              Terms of Use
+            </span>
+          </a>
+          ,
+           
+          <a
+            href="/social"
+            onClick={[Function]}
           >
-            Social Media Guidelines
-          </span>
-        </a>
-        , and
-         
-        <a
-          href="/privacy"
-          onClick={[Function]}
-        >
-          <span
-            className="text-accent"
+            <span
+              className="text-accent"
+            >
+              Social Media Guidelines
+            </span>
+          </a>
+          , and
+           
+          <a
+            href="/privacy"
+            onClick={[Function]}
           >
-            Privacy Policy
-          </span>
-        </a>
+            <span
+              className="text-accent"
+            >
+              Privacy Policy
+            </span>
+          </a>
+        </p>
       </span>
       <small>
         <div

@@ -87,7 +87,7 @@ class SectionDesignPrinciples extends React.Component {
                 <div className="text-center mb-6" id="easel-container">
                   <img
                     id="easel"
-                    className="mq-tall-image"
+                    className="nxt_mq-tall-image"
                     src={Easel}
                     alt="Design System"
                   />
@@ -96,14 +96,12 @@ class SectionDesignPrinciples extends React.Component {
                     className="easel-icon"
                     src={Lollypop}
                     alt="Lollypop"
-                    width={65}
                   />
                   <img
                     ref={img => (this.img2 = img)}
                     className="easel-icon"
                     src={Flag}
                     alt="Flag"
-                    width={90}
                   />
                   <img
                     ref={img => (this.img3 = img)}
@@ -116,7 +114,6 @@ class SectionDesignPrinciples extends React.Component {
                     className="easel-icon"
                     src={Hi}
                     alt="Hi"
-                    width={85}
                   />
                   <img
                     ref={img => (this.img5 = img)}
@@ -127,8 +124,11 @@ class SectionDesignPrinciples extends React.Component {
                 </div>
               }
               noFadeContentRight={
-                <div className="m-4" id="mq-para-container">
-                  <div className="mt-2 mq-para" ref={div => (this.para1 = div)}>
+                <div className="m-4" id="nxt_mq-para-container">
+                  <div
+                    className="mt-2 nxt_mq-para"
+                    ref={div => (this.para1 = div)}
+                  >
                     <h3 className="nxt_heading-small"> Simplicity </h3>
                     <p className="pb-1">
                       We strive to design products that are easy to use and
@@ -138,7 +138,10 @@ class SectionDesignPrinciples extends React.Component {
                       in a better experience for the customer.
                     </p>
                   </div>
-                  <div className="mt-2 mq-para" ref={div => (this.para2 = div)}>
+                  <div
+                    className="mt-2 nxt_mq-para"
+                    ref={div => (this.para2 = div)}
+                  >
                     <h3 className="nxt_heading-small"> Empowerment </h3>
                     <p className="pb-1">
                       Reinforcing and celebrating positive actions toward
@@ -147,7 +150,10 @@ class SectionDesignPrinciples extends React.Component {
                       and goals.
                     </p>
                   </div>
-                  <div className="mt-2 mq-para" ref={div => (this.para3 = div)}>
+                  <div
+                    className="mt-2 nxt_mq-para"
+                    ref={div => (this.para3 = div)}
+                  >
                     <h3 className="nxt_heading-small"> Flexibility </h3>
                     <p className="pb-1">
                       We recognize that customers’ needs change over time.
@@ -155,7 +161,10 @@ class SectionDesignPrinciples extends React.Component {
                       adapt to the customer over time.
                     </p>
                   </div>
-                  <div className="mt-2 mq-para" ref={div => (this.para4 = div)}>
+                  <div
+                    className="mt-2 nxt_mq-para"
+                    ref={div => (this.para4 = div)}
+                  >
                     <h3 className="nxt_heading-small"> Engagement </h3>
                     <p className="pb-1">
                       Customers expect that we will be around for their entire
@@ -165,7 +174,10 @@ class SectionDesignPrinciples extends React.Component {
                       partnership.
                     </p>
                   </div>
-                  <div className="mt-2 mq-para" ref={div => (this.para5 = div)}>
+                  <div
+                    className="mt-2 nxt_mq-para"
+                    ref={div => (this.para5 = div)}
+                  >
                     <h3 className="nxt_heading-small"> Transparency </h3>
                     <p className="pb-">
                       We believe in an open and honest dialogue. Our industry

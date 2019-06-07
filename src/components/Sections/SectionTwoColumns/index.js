@@ -28,8 +28,8 @@ const SectionTwoColumns = props => {
             <div className="mt-5">
               <Fade bottom>
                 <div>
-                  <h1 className="nxt_heading-xlarge">{props.heading}</h1>
-                  <div className="mt-4 pr-5">{props.contentRight}</div>
+                  {props.heading}
+                  {props.contentRight}
                 </div>
               </Fade>
               {/* Optional div to bypass Fade */}

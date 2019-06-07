@@ -27,7 +27,9 @@ describe('Footer', () => {
       .find('p')
       .first();
 
-    expect(p.text()).toContain('No bank guarantee');
+    expect(p.text()).toContain(
+      'By using this website you accept our Terms of Use, Social Media Guidelines, and Privacy Policy'
+    );
   });
 });
 

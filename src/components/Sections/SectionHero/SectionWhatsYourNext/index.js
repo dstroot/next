@@ -22,9 +22,9 @@ const SectionWhatsYourNext = () => {
       <SectionHero
         backgroundImage={background}
         heading={
-          <span>
+          <h1 className="nxt_heading-xlarge">
             What’s your <span className="text-primary">next </span>adventure?
-          </span>
+          </h1>
         }
         content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
         linkElement={

@@ -30,7 +30,11 @@ const SectionHereToHelp = () => {
       <img src={twoLights} style={lightStyle} alt="Two Lights" />
       <SectionHero
         backgroundImage={background}
-        heading="Here to help whenever you need us!"
+        heading={
+          <h1 className="nxt_heading-xlarge">
+            Here to help whenever you need us!
+          </h1>
+        }
         content="Insurance products to complement your life goals and passions. We help you go after whatever's next for you."
       />
     </>

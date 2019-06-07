@@ -179,7 +179,7 @@ exports[`About it should render 1`] = `
         >
           <img
             alt="Our Story Group"
-            className="img-fluid pd-5 mq-tall-image"
+            className="img-fluid pd-5 nxt_mq-tall-image"
             src="ourstorygroup.svg"
           />
         </div>
@@ -202,11 +202,7 @@ exports[`About it should render 1`] = `
               >
                 Our Story
               </h1>
-              <div
-                className="mt-4 pr-5"
-              >
-                We started Next by Pacific Life with the goal of creating a better, seamless digital experience for the modern investor. We talked to all types of customers. What became clear is customers wanted simple, easy-to-understand products with clear value propositions. We are creating transparent products and an engaging customer experience by starting with the customer and working backwards.
-              </div>
+              We started Next by Pacific Life with the goal of creating a better, seamless digital experience for the modern investor. We talked to all types of customers. What became clear is customers wanted simple, easy-to-understand products with clear value propositions. We are creating transparent products and an engaging customer experience by starting with the customer and working backwards.
             </div>
             <div>
               <div
@@ -258,7 +254,7 @@ exports[`About it should render 1`] = `
                 >
                   <img
                     alt="Design System"
-                    className="mq-tall-image"
+                    className="nxt_mq-tall-image"
                     id="easel"
                     src="Easel.svg"
                   />
@@ -266,13 +262,11 @@ exports[`About it should render 1`] = `
                     alt="Lollypop"
                     className="easel-icon"
                     src="Lollypop.svg"
-                    width={65}
                   />
                   <img
                     alt="Flag"
                     className="easel-icon"
                     src="Flag.svg"
-                    width={90}
                   />
                   <img
                     alt="Paper Plane"
@@ -283,7 +277,6 @@ exports[`About it should render 1`] = `
                     alt="Hi"
                     className="easel-icon"
                     src="Hi.svg"
-                    width={85}
                   />
                   <img
                     alt="Lock"
@@ -305,24 +298,17 @@ exports[`About it should render 1`] = `
                         "opacity": undefined,
                       }
                     }
-                  >
-                    <h1
-                      className="nxt_heading-xlarge"
-                    />
-                    <div
-                      className="mt-4 pr-5"
-                    />
-                  </div>
+                  />
                   <div>
                     <div
                       className="mt-4 pr-5"
                     >
                       <div
                         className="m-4"
-                        id="mq-para-container"
+                        id="nxt_mq-para-container"
                       >
                         <div
-                          className="mt-2 mq-para"
+                          className="mt-2 nxt_mq-para"
                         >
                           <h3
                             className="nxt_heading-small"
@@ -336,7 +322,7 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
-                          className="mt-2 mq-para"
+                          className="mt-2 nxt_mq-para"
                         >
                           <h3
                             className="nxt_heading-small"
@@ -350,7 +336,7 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
-                          className="mt-2 mq-para"
+                          className="mt-2 nxt_mq-para"
                         >
                           <h3
                             className="nxt_heading-small"
@@ -364,7 +350,7 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
-                          className="mt-2 mq-para"
+                          className="mt-2 nxt_mq-para"
                         >
                           <h3
                             className="nxt_heading-small"
@@ -378,7 +364,7 @@ exports[`About it should render 1`] = `
                           </p>
                         </div>
                         <div
-                          className="mt-2 mq-para"
+                          className="mt-2 nxt_mq-para"
                         >
                           <h3
                             className="nxt_heading-small"
@@ -402,92 +388,89 @@ exports[`About it should render 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    className="py-6 bg-light"
+  >
     <div
-      className="py-6 bg-light"
+      className="container text-center"
     >
-      <div
-        className="container text-center"
+      <h1
+        className="react-reveal nxt_heading-xlarge"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
       >
-        <h1
-          className="react-reveal nxt_heading-xlarge"
-          style={
-            Object {
-              "opacity": undefined,
-            }
+        Backed by Pacific Life
+      </h1>
+      <div
+        className="react-reveal"
+        style={
+          Object {
+            "opacity": undefined,
           }
-        >
-          Backed by Pacific Life
-        </h1>
+        }
+      >
         <div
-          className="react-reveal"
-          style={
-            Object {
-              "opacity": undefined,
-            }
-          }
+          className="row"
         >
-          <div>
-            <div
-              className="row"
+          <div
+            className="col-md-6"
+          >
+            <img
+              alt="Pacific Life Logo"
+              className="mt-5 nxt_mq-wide-image"
+              src="PLVertBWv2.svg"
+            />
+          </div>
+          <div
+            className="col-md-6"
+          >
+            <p
+              className="text-left mt-5 ml-5"
             >
-              <div
-                className="col-md-6"
+              Pacific Life is one of the most dependable and experienced insurers in the industry. Backed by 150 years of experience, you can count on us to be there so you can go out and pursue your passions.
+            </p>
+          </div>
+        </div>
+        <div
+          className="row mt-5"
+        >
+          <div
+            className="col-md-6 mt-5"
+          >
+            <img
+              alt="2.3 Billions in Benefits"
+              className="nxt_mq-wide-image"
+              src="Twobillies.svg"
+            />
+            <p
+              className="mt-4"
+            >
+              Combined insurance and annuities in 2017
+            </p>
+          </div>
+          <div
+            className="col-md-6 mt-5"
+          >
+            <img
+              alt="A+ Superior"
+              className="nxt_mq-wide-image"
+              src="ARating.svg"
+            />
+            <p
+              className="mt-4"
+            >
+              A.M. Best rating for financial strength and claims-paying ability. 
+              <a
+                href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
               >
-                <img
-                  alt="Pacific Life Logo"
-                  className="mt-5"
-                  src="PLVertBWv2.svg"
-                  width={350}
-                />
-              </div>
-              <div
-                className="col-md-6"
-              >
-                <p
-                  className="text-left mt-5 ml-5"
-                >
-                  Pacific Life is one of the most dependable and experienced insurers in the industry. Backed by 150 years of experience, you can count on us to be there so you can go out and pursue your passions.
-                </p>
-              </div>
-              <div
-                className="row mt-5"
-              >
-                <div
-                  className="col-md-6 mt-5"
-                >
-                  <img
-                    alt="2.3 Billions in Benefits"
-                    src="Twobillies.svg"
-                  />
-                  <p
-                    className="mt-4"
-                  >
-                    Combined insurance and annuities in 2017
-                  </p>
-                </div>
-                <div
-                  className="col-md-6 mt-5"
-                >
-                  <img
-                    alt="A+ Superior"
-                    src="ARating.svg"
-                  />
-                  <p
-                    className="mt-4"
-                  >
-                    A.M. Best rating for financial strength and claims-paying ability. 
-                    <a
-                      href="https://www.pacificlife.com/content/dam/paclife/crp/public/ratings/2018WhattheRatingsMean.pdf"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      What the ratings mean.
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
+                What the ratings mean.
+              </a>
+            </p>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import firebase from 'firebase/app';
+// TODO why does the test fail here? It needed to import firestore to store in the database
 import 'firebase/firestore';
 // change lines below with your own Firebase snippets!
 var config = {

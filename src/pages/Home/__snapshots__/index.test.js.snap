@@ -310,15 +310,13 @@ Array [
             <h1
               className="nxt_heading-xlarge"
             >
-              <span>
-                What’s your 
-                <span
-                  className="text-primary"
-                >
-                  next 
-                </span>
-                adventure?
+              What’s your 
+              <span
+                className="text-primary"
+              >
+                next 
               </span>
+              adventure?
             </h1>
           </div>
         </div>
@@ -408,11 +406,7 @@ Array [
                 >
                   Keep living your best life
                 </h1>
-                <div
-                  className="mt-4 pr-5"
-                >
-                  Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
-                </div>
+                Everyone deserves a chance to do what they love. Next by Pacific Life helps you reach financial goals while you go after your personal ones...
               </div>
               <div>
                 <div
@@ -476,11 +470,7 @@ Array [
                 >
                   A way to manage uncertainty
                 </h1>
-                <div
-                  className="mt-4 pr-5"
-                >
-                  Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
-                </div>
+                Plans change over time—your insurance products can too. Redefine your insurance products as life happens.
               </div>
               <div>
                 <div
@@ -604,117 +594,108 @@ Array [
       </div>
     </div>
   </div>,
-  <div>
+  <div
+    id="triggerDWYIM"
+  >
     <div
-      id="triggerDWYIM"
+      id="pinDWYIM"
     >
       <div
-        id="pinDWYIM"
+        className="py-6 undefined"
       >
         <div
-          className="py-6 undefined"
+          className="container"
         >
-          <div
-            className="container"
+          <h1
+            className="react-reveal text-center nxt_heading-xlarge mb-5"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
           >
-            <h1
-              className="react-reveal text-center nxt_heading-xlarge mb-5"
+            Designed with you in mind
+          </h1>
+          <div
+            className="row"
+          >
+            <div
+              className="react-reveal col-md-5 order-2 order-sm-1"
               style={
                 Object {
                   "opacity": undefined,
                 }
               }
             >
-              Designed with you in mind
-            </h1>
+              <img
+                alt="Woman with the Phone"
+                className="img-fluid p-5 nxt_mq-tall-image"
+                id="dwyim-woman"
+                src="womanphone.svg"
+              />
+            </div>
             <div
-              className="row"
+              className="col-md-7 order-1 order-sm-2"
             >
               <div
-                className="react-reveal col-md-5 order-2 order-sm-1"
-                style={
-                  Object {
-                    "opacity": undefined,
-                  }
-                }
-              >
-                <img
-                  alt="Woman with the Phone"
-                  className="img-fluid p-5 mq-tall-image"
-                  id="dwyim-woman"
-                  src="womanphone.svg"
-                />
-              </div>
-              <div
-                className="col-md-7 order-1 order-sm-2"
+                className="mt-5"
               >
                 <div
-                  className="mt-5"
-                >
-                  <div
-                    className="react-reveal"
-                    style={
-                      Object {
-                        "opacity": undefined,
-                      }
+                  className="react-reveal"
+                  style={
+                    Object {
+                      "opacity": undefined,
                     }
+                  }
+                />
+                <div>
+                  <div
+                    className="mt-4 pr-5"
                   >
-                    <h1
-                      className="nxt_heading-xlarge"
-                    />
                     <div
-                      className="mt-4 pr-5"
-                    />
-                  </div>
-                  <div>
-                    <div
-                      className="mt-4 pr-5"
+                      id="nxt_mq-para-container"
                     >
                       <div
-                        id="mq-para-container"
+                        className="nxt_mq-para"
                       >
-                        <div
-                          className="mq-para"
+                        <h2
+                          className="nxt_heading-small mb-2"
                         >
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Fearlessly Flexible
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            Our products adapt to your life’s biggest moments. Change them when your needs do.
-                          </p>
-                        </div>
-                        <div
-                          className="mq-para"
+                          Fearlessly Flexible
+                        </h2>
+                        <p
+                          className="mb-5"
                         >
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Radically Simple
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            Straight forward products and features. Know what you're getting from the beginning.
-                          </p>
-                        </div>
-                        <div
-                          className="mq-para"
+                          Our products adapt to your life’s biggest moments. Change them when your needs do.
+                        </p>
+                      </div>
+                      <div
+                        className="nxt_mq-para"
+                      >
+                        <h2
+                          className="nxt_heading-small mb-2"
                         >
-                          <h2
-                            className="nxt_heading-small mb-2"
-                          >
-                            Brazenly Transparent
-                          </h2>
-                          <p
-                            className="mb-5"
-                          >
-                            No hidden fees or charges.
-                          </p>
-                        </div>
+                          Radically Simple
+                        </h2>
+                        <p
+                          className="mb-5"
+                        >
+                          Straight forward products and features. Know what you're getting from the beginning.
+                        </p>
+                      </div>
+                      <div
+                        className="nxt_mq-para"
+                      >
+                        <h2
+                          className="nxt_heading-small mb-2"
+                        >
+                          Brazenly Transparent
+                        </h2>
+                        <p
+                          className="mb-5"
+                        >
+                          No hidden fees or charges.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -781,86 +762,87 @@ Array [
                 }
               }
             >
-              <h1
-                className="nxt_heading-xlarge"
-              />
               <div
-                className="mt-4 pr-5"
+                className="mb-6 text-left nxt_body-xsmall"
               >
-                <div
-                  className="mb-6 text-left nxt_body-xsmall"
+                <form
+                  onSubmit={[Function]}
                 >
-                  <form
-                    onSubmit={[Function]}
+                  <div
+                    className="react-reveal alert nxt_body-small"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
                   >
-                    <div>
-                      <label>
-                        Name
-                      </label>
-                      <input
-                        className="form-control mb-3"
-                        name="name"
-                        onChange={[Function]}
-                        required={true}
-                        type="text"
-                        value=""
-                      />
-                    </div>
-                    <div>
-                      <label>
-                        Email
-                      </label>
-                      <input
-                        className="form-control mb-3"
-                        name="email"
-                        onChange={[Function]}
-                        required={true}
-                        type="email"
-                        value=""
-                      />
-                    </div>
-                    <div>
-                      <label>
-                        Phone
-                      </label>
-                      <input
-                        autoComplete="tel"
-                        className="form-control mb-3"
-                        maxLength="14"
-                        name="phone"
-                        onBlur={[Function]}
-                        onChange={[Function]}
-                        type="tel"
-                        value=""
-                      />
-                    </div>
-                    <div>
-                      <label>
-                        Message
-                      </label>
-                      <textarea
-                        className="form-control mb-3"
-                        name="message"
-                        onChange={[Function]}
-                        required={true}
-                        type="text"
-                        value=""
-                      />
-                    </div>
-                    <button
-                      className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
-                    >
-                      Submit
-                    </button>
-                  </form>
-                  <h4
-                    className="alert"
+                    <p>
+                      We received your message! We’ll get back to you shortly.
+                    </p>
+                    <p>
+                      If this is an urgent matter, pleae call us at (833) 646-6398
+                    </p>
+                  </div>
+                  <div>
+                    <label>
+                      Name
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="name"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label>
+                      Email
+                    </label>
+                    <input
+                      className="form-control mb-3"
+                      name="email"
+                      onChange={[Function]}
+                      required={true}
+                      type="email"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label>
+                      Phone
+                    </label>
+                    <input
+                      autoComplete="tel"
+                      className="form-control mb-3"
+                      maxLength="14"
+                      name="phone"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      type="tel"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label>
+                      Message
+                    </label>
+                    <textarea
+                      className="form-control mb-3"
+                      name="message"
+                      onChange={[Function]}
+                      required={true}
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <button
+                    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
                   >
-                    We received your message! 
-                    <br />
-                     We’ll get back to you shortly.
-                  </h4>
-                </div>
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
             <div>
@@ -890,42 +872,44 @@ Array [
         <span
           className="nxt_footer"
         >
-          By using this website you accept our
-           
-          <a
-            href="/terms"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+          <p>
+            By using this website you accept our
+             
+            <a
+              href="/terms"
+              onClick={[Function]}
             >
-              Terms of Use
-            </span>
-          </a>
-          ,
-           
-          <a
-            href="/social"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+              <span
+                className="text-accent"
+              >
+                Terms of Use
+              </span>
+            </a>
+            ,
+             
+            <a
+              href="/social"
+              onClick={[Function]}
             >
-              Social Media Guidelines
-            </span>
-          </a>
-          , and
-           
-          <a
-            href="/privacy"
-            onClick={[Function]}
-          >
-            <span
-              className="text-accent"
+              <span
+                className="text-accent"
+              >
+                Social Media Guidelines
+              </span>
+            </a>
+            , and
+             
+            <a
+              href="/privacy"
+              onClick={[Function]}
             >
-              Privacy Policy
-            </span>
-          </a>
+              <span
+                className="text-accent"
+              >
+                Privacy Policy
+              </span>
+            </a>
+          </p>
         </span>
         <small>
           <div
