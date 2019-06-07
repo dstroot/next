@@ -45,6 +45,8 @@ class ContactForm extends React.Component {
     // handle the collaps
     document.querySelector('.alert').style.display = 'block';
 
+    // TODO is there a better solution for the alert message?
+
     this.setState({ show: true });
 
     const setShowFalse = () => {
