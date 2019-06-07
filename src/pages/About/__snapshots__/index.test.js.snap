@@ -262,13 +262,11 @@ exports[`About it should render 1`] = `
                     alt="Lollypop"
                     className="easel-icon"
                     src="Lollypop.svg"
-                    width={65}
                   />
                   <img
                     alt="Flag"
                     className="easel-icon"
                     src="Flag.svg"
-                    width={90}
                   />
                   <img
                     alt="Paper Plane"
@@ -279,7 +277,6 @@ exports[`About it should render 1`] = `
                     alt="Hi"
                     className="easel-icon"
                     src="Hi.svg"
-                    width={85}
                   />
                   <img
                     alt="Lock"
