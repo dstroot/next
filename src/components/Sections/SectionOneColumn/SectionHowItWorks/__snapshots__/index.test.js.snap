@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHowItWorks it should render 1`] = `
+<div
+  className="py-6 undefined"
+>
+  <div
+    className="container text-center"
+  >
+    <div
+      className="react-reveal nxt_heading-xlarge mb-5"
+      style={
+        Object {
+          "opacity": undefined,
+        }
+      }
+    >
+      How it works
+    </div>
+    <div
+      className="react-reveal"
+      style={
+        Object {
+          "opacity": undefined,
+        }
+      }
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-4 align-bottom"
+        >
+          <img
+            alt="Potted Plant"
+            className="mt-5"
+            height={100}
+            src="pottedplant.svg"
+          />
+          <h2
+            className="nxt_heading-small mt-4"
+          >
+            Start small
+            <br />
+             today
+          </h2>
+          <p
+            className="mt-4"
+          >
+            Open an account for as little as $100. Set your contribution amount and we'll automatically debit your checking account every month.
+          </p>
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <img
+            alt="Arrows"
+            className="mt-5"
+            height={100}
+            src="arrows.svg"
+          />
+          <h2
+            className="nxt_heading-small mt-4 "
+          >
+            Flex your 
+            <br />
+             contributions
+          </h2>
+          <p
+            className="mt-4"
+          >
+            Adjust or pause your contributions anytime as your financial picture changes. Get a bonus at work? Make a one-time contribution anytime.
+          </p>
+        </div>
+        <div
+          className="col-md-4"
+        >
+          <img
+            alt="Clock"
+            className="mt-5"
+            height={100}
+            src="clock.svg"
+          />
+          <h2
+            className="nxt_heading-small mt-4 "
+          >
+            Enjoy lifetime 
+            <br />
+             income
+          </h2>
+          <p
+            className="mt-4"
+          >
+            We stop your contributions 13 months before your elected start date. Once that day arrives, we'll pay you every month for the rest of your life.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div />
+  </div>
+</div>
+`;

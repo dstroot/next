@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionStayInTouch it should render 1`] = `
+<div
+  id="stayintouch"
+>
+  <div
+    className="py-6 undefined"
+  >
+    <div
+      className="container text-center"
+    >
+      <div
+        className="react-reveal nxt_heading-xlarge mb-5"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      >
+        Stay in Touch
+      </div>
+      <div
+        className="react-reveal"
+        style={
+          Object {
+            "opacity": undefined,
+          }
+        }
+      >
+        <div>
+          <p
+            className="mb-4"
+          >
+            Enter your email address to receive updates
+          </p>
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="row justify-content-md-center mb-4"
+              >
+                <div
+                  className="col-md-6"
+                >
+                  <input
+                    className="form-control"
+                    name="email"
+                    onChange={[Function]}
+                    placeholder="Email Address"
+                    required={true}
+                    type="email"
+                    value=""
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
+            >
+              Submit
+            </button>
+          </form>
+          <h4
+            className="react-reveal alert col-md-6"
+            style={
+              Object {
+                "opacity": undefined,
+              }
+            }
+          >
+            You are on the list
+          </h4>
+        </div>
+      </div>
+      <div />
+    </div>
+  </div>
+</div>
+`;
