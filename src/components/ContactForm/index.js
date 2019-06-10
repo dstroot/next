@@ -127,8 +127,12 @@ class ContactForm extends React.Component {
               onChange={this.updateInput}
               value={this.state.name}
               required
-              oninvalid="this.setCustomValidity('Enter User Name Here')"
-              oninput="this.setCustomValidity('')"
+              // // TODO create custome validation
+              // oninvalid="this.setCustomValidity('Enter User Name Here')"
+              // oninput="this.setCustomValidity('')"
+
+              //validation examples https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation#Constraint_API%27s_element.setCustomValidity()
+              // validation example https://stackoverflow.com/questions/19122886/how-can-i-create-a-custom-message-when-an-html5-required-input-pattern-does-not
             />
           </div>
           <div>
