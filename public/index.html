@@ -14,10 +14,58 @@
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
+
+    <style>
+      .loader {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .loader:empty {
+        position: absolute;
+        top: calc(50% - 4em);
+        left: calc(50% - 4em);
+        width: 6em;
+        height: 6em;
+        border: 0.5em solid rgba(0, 0, 0, 0.1);
+        border-left: 0.5em solid #00a676;
+        border-radius: 50%;
+        -webkit-animation: load8 3s infinite linear;
+        -moz-animation: load8 3s infinite linear;
+        animation: load8 3s infinite linear;
+      }
+
+      @-webkit-keyframes load8 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-moz-keyframes load8 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes load8 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
   <body>
     <noscript> You need to enable JavaScript to run this app. </noscript>
-    <div id="root"></div>
+    <div id="root" class="loader"></div>
   </body>
   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
