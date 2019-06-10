@@ -1,5 +1,5 @@
 #easel-container {
-  position: relative;
+  // position: relative;
   height: 360px; //relook into this for mobile sizes
 
   #easel {
@@ -16,7 +16,7 @@
     margin-right: auto;
     left: 20px;
     right: 0;
-    top: 130px;
+    top: calc(60px + 2vw + 0.5vmin);
     width: 60px;
   }
 }
@@ -31,15 +31,10 @@
   #easel-container {
     height: 500px;
     #easel {
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
       top: 140px;
     }
     .easel-icon {
-      top: 314px;
+      top: calc(300px + 6vw + 0.5vmin);
       width: 40px;
     }
   }
