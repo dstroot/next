@@ -12,6 +12,7 @@ import { Router } from '@reach/router';
 import NavBar from './components/NavBar';
 
 // Pages
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import About from './pages/About';
 import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
@@ -24,7 +25,8 @@ const App = () => (
   <div className="mt-5">
     <NavBar />
     <Router>
-      <Home path="/" default />
+      <NotFound default />
+      <Home path="/" />
       <About path="/about" />
       <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
       <Contact path="/contact" />
