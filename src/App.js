@@ -13,6 +13,7 @@ import { Router } from '@reach/router';
 import NavBar from './components/NavBar';
 
 // Pages
+import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import About from './pages/About';
 import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
@@ -26,7 +27,8 @@ const App = () => (
     <ParallaxProvider>
       <NavBar />
       <Router>
-        <Home path="/" default />
+        <NotFound path="/404" default />
+        <Home path="/" />
         <About path="/about" />
         <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
         <Contact path="/contact" />

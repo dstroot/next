@@ -158,6 +158,7 @@ exports[`Contact it should render 1`] = `
                       className="form-control mb-3"
                       name="email"
                       onChange={[Function]}
+                      pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}"
                       required={true}
                       type="email"
                       value=""
