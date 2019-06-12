@@ -43,5 +43,6 @@ $spacers: map-merge(
 
 body {
   margin-top: -50px;
+  overflow-x: hidden;
   color: theme-color('primary-dark');
 }

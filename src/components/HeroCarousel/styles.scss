@@ -25,7 +25,7 @@
   }
 }
 
-.carousel-text {
+.nxt_carousel-text {
   position: absolute;
   clear: both;
   display: inline-block;
@@ -33,14 +33,14 @@
   white-space: nowrap;
 }
 
-.carousel-header {
+.nxt_carousel-header {
   position: relative;
   left: -100px;
 }
 
-.carousel-img {
+.nxt_carousel-img {
   width: 100vw;
-  object-fit: cover;
+  // object-fit: cover;
   position: absolute;
   bottom: 0;
 }

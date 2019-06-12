@@ -189,21 +189,21 @@ class HeroCarousel extends React.Component {
         <div className="background">
           {/* Moped image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Moped}
             alt="Moped"
             ref={div => (this.img1 = div)}
           />
           {/* Seamstress image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={SittingOnBeanBag}
             alt="SittingOnBeanBag"
             ref={div => (this.img2 = div)}
           />
           {/* Seamstress image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Seamstress}
             alt="Seamstress"
             ref={div => (this.img3 = div)}
@@ -211,7 +211,7 @@ class HeroCarousel extends React.Component {
 
           {/* Moving image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Moving}
             alt="Moving"
             ref={div => (this.img4 = div)}
@@ -219,7 +219,7 @@ class HeroCarousel extends React.Component {
 
           {/* Office image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Office}
             alt="Office"
             ref={div => (this.img5 = div)}
@@ -227,7 +227,7 @@ class HeroCarousel extends React.Component {
 
           {/* Graduation image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Graduation}
             alt="Graduation"
             ref={div => (this.img6 = div)}
@@ -235,7 +235,7 @@ class HeroCarousel extends React.Component {
 
           {/* Family image */}
           <img
-            className="carousel-img"
+            className="nxt_carousel-img"
             src={Family}
             alt="Family"
             ref={div => (this.img7 = div)}
@@ -244,46 +244,46 @@ class HeroCarousel extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col text-center">
-                  <h1 className="nxt_heading-xlarge carousel-header">
+                  <h1 className="nxt_heading-xlarge nxt_carousel-header">
                     What’s your <span className="text-primary">next&nbsp;</span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para1 = div)}
                     >
                       adventure?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para2 = div)}
                     >
                       big idea?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para3 = div)}
                     >
                       passion?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para4 = div)}
                     >
                       move?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para5 = div)}
                     >
                       career?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para6 = div)}
                     >
                       gradution?
                     </span>
                     <span
-                      className="carousel-text"
+                      className="nxt_carousel-text"
                       ref={div => (this.para7 = div)}
                     >
                       addition?
