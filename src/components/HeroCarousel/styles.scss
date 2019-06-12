@@ -1,0 +1,46 @@
+.background {
+  /* Set height relative to width */
+  height: 100vh;
+  min-height: 500px;
+
+  /* Position the image to scale nicely on all screens */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* Center child content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* bottom border */
+  border-bottom: 3px solid #dde1e7;
+
+  // place the text on the background image
+  .divText {
+    max-width: 90%;
+    position: absolute;
+    top: 34%;
+  }
+}
+
+.carousel-text {
+  position: absolute;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.carousel-header {
+  position: relative;
+  left: -100px;
+}
+
+.carousel-img {
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+}

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 // Components
-import SectionWhatsYourNext from '../../components/Sections/SectionHero/SectionWhatsYourNext';
+import HeroCarousel from '../../components/HeroCarousel';
 import SectionBestLife from '../../components/Sections/SectionTwoColumns/SectionBestLife';
 import SectionManageUncertainty from '../../components/Sections/SectionTwoColumns/SectionManageUncertainty';
 import SectionFirstProduct from '../../components/Sections/SectionOneColumn/SectionFirstProduct';
@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <>
-      <SectionWhatsYourNext />
+      <HeroCarousel />
       <SectionBestLife />
       <SectionManageUncertainty />
       <SectionFirstProduct />

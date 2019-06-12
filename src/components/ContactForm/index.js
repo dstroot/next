@@ -133,7 +133,9 @@ class ContactForm extends React.Component {
 
               //validation examples https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation#Constraint_API%27s_element.setCustomValidity()
               // validation example https://stackoverflow.com/questions/19122886/how-can-i-create-a-custom-message-when-an-html5-required-input-pattern-does-not
+              // npm for validation https://www.npmjs.com/package/react-validate-form
             />
+            <div class="invalid-feedback">Invalid Name</div>
           </div>
           <div>
             <label>Email</label>

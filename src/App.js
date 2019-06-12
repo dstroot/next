@@ -1,5 +1,6 @@
 import React from 'react';
 import './scss/main.scss';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 // Fonts
 import 'circular-std';
@@ -22,16 +23,18 @@ import SocialMediaGuidelines from './pages/SocialMediaGuidelines';
 
 const App = () => (
   <div className="mt-5">
-    <NavBar />
-    <Router>
-      <Home path="/" default />
-      <About path="/about" />
-      <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
-      <Contact path="/contact" />
-      <TermsOfUse path="/terms" />
-      <PrivacyPolicy path="/privacy" />
-      <SocialMediaGuidelines path="/social" />
-    </Router>
+    <ParallaxProvider>
+      <NavBar />
+      <Router>
+        <Home path="/" default />
+        <About path="/about" />
+        <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
+        <Contact path="/contact" />
+        <TermsOfUse path="/terms" />
+        <PrivacyPolicy path="/privacy" />
+        <SocialMediaGuidelines path="/social" />
+      </Router>
+    </ParallaxProvider>
   </div>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 // animation
-
 import TimelineMax from 'gsap/TimelineMax';
 import ScrollMagic from 'scrollmagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
@@ -51,49 +51,51 @@ class SectionFirstProduct extends React.Component {
 
   render() {
     return (
-      <SectionOneColumn
-        styleBackground="bg-light"
-        heading="Introducing our first product"
-        noFadeContent={
-          <div id="cardScrollStarts">
-            <div className="row">
-              <div className="col-sm-6 mb-5">
-                <Card
-                  reference={div => (this.cards[0] = div)}
-                  img={Mountains}
-                  title="Next Term Life"
-                  content={
-                    <>
-                      <p>
-                        Help keep your loved ones protected with coverage that
-                        adapts with your life’s biggest moments.
-                      </p>
-                      <br />
-                      <p>
-                        <strong>Coming Soon! </strong>
-                      </p>
-                    </>
-                  }
-                />
-              </div>
-              <div className="col-sm-6 mb-5">
-                <Card
-                  reference={div => (this.cards[1] = div)}
-                  img={Tree}
-                  title="Next Deferred Income Annuity"
-                  content="Create a future income stream you can count on for the rest of your life by saving over time."
-                  button={
-                    <Button
-                      path="/nextdeferredincomeannuity"
-                      buttonText="Learn More"
-                    />
-                  }
-                />
+      <Parallax className="custom-class" y={[-15, 15]}>
+        <SectionOneColumn
+          styleBackground="bg-light"
+          heading="Introducing our first product"
+          noFadeContent={
+            <div id="cardScrollStarts">
+              <div className="row">
+                <div className="col-sm-6 mb-5">
+                  <Card
+                    reference={div => (this.cards[0] = div)}
+                    img={Mountains}
+                    title="Next Term Life"
+                    content={
+                      <>
+                        <p>
+                          Help keep your loved ones protected with coverage that
+                          adapts with your life’s biggest moments.
+                        </p>
+                        <br />
+                        <p>
+                          <strong>Coming Soon! </strong>
+                        </p>
+                      </>
+                    }
+                  />
+                </div>
+                <div className="col-sm-6 mb-5">
+                  <Card
+                    reference={div => (this.cards[1] = div)}
+                    img={Tree}
+                    title="Next Deferred Income Annuity"
+                    content="Create a future income stream you can count on for the rest of your life by saving over time."
+                    button={
+                      <Button
+                        path="/nextdeferredincomeannuity"
+                        buttonText="Learn More"
+                      />
+                    }
+                  />
+                </div>
               </div>
             </div>
-          </div>
-        }
-      />
+          }
+        />
+      </Parallax>
     );
   }
 }

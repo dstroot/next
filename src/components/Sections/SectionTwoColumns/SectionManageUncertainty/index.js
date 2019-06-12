@@ -3,8 +3,9 @@ import React from 'react';
 // component
 import SectionTwoColumns from '../../SectionTwoColumns';
 
-//reveal
+// //reveal
 // import Fade from 'react-reveal/Fade';
+// //TODO Should we keep the text cascade
 
 // images
 import canoeCouple from './media/canoecouple.svg';
@@ -22,7 +23,8 @@ const SectionManageUncertainty = () => {
         heading={
           <h1 className="nxt_heading-xlarge">A way to manage uncertainty</h1>
         }
-        contentRight="Plans change over time—your insurance products can too. Redefine your insurance products as life happens."
+        contentRight="Plans change over time—your insurance products can too. Redefine
+              your insurance products as life happens."
       />
     </div>
   );
