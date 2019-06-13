@@ -7,11 +7,13 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 // media
 import Moped from './media/Moped.svg';
+import BeanBagBg from './media/Bean-bag-bg.svg';
+import BeanBagMain from './media/Bean-bag-main.svg';
+import Seamstress from './media/Seamstress.svg';
 import Graduation from './media/Graduation.svg';
 import Moving from './media/Moving.svg';
 import Office from './media/Office.svg';
-import Seamstress from './media/Seamstress.svg';
-import SittingOnBeanBag from './media/Sitting-on-bean-bag.svg';
+
 import Family from './media/Family.svg';
 import arrow from './media/arrowdown.svg';
 
@@ -56,7 +58,16 @@ class HeroCarousel extends React.Component {
         opacity: 0,
       })
 
-      .staggerTo([this.img2, this.para2], 1, {
+      .from(
+        this.img2b,
+        2,
+        {
+          opacity: 0,
+        },
+        '-=1.25'
+      )
+
+      .staggerTo([this.img2, this.img2b, this.para2], 1, {
         opacity: 0,
         delay: 4,
       });
@@ -218,12 +229,18 @@ class HeroCarousel extends React.Component {
             alt="Moped"
             ref={div => (this.img1 = div)}
           />
-          {/* Seamstress image */}
+          {/* Bean bag image */}
           <img
             className="nxt_carousel-img"
-            src={SittingOnBeanBag}
-            alt="SittingOnBeanBag"
+            src={BeanBagBg}
+            alt="BeanBagBg"
             ref={div => (this.img2 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={BeanBagMain}
+            alt="BeanBagMain"
+            ref={div => (this.img2b = div)}
           />
           {/* Seamstress image */}
           <img
@@ -325,57 +342,6 @@ class HeroCarousel extends React.Component {
                       </h1>
                     </div>
                   </div>
-                  {/* <h1 className="nxt_heading-xlarge nxt_carousel-header">
-                    What’s your <span className="text-primary">next&nbsp;</span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para0 = div)}
-                    >
-                      adventure?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para1 = div)}
-                    >
-                      adventure?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para2 = div)}
-                    >
-                      big idea?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para3 = div)}
-                    >
-                      passion?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para4 = div)}
-                    >
-                      move?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para5 = div)}
-                    >
-                      career?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para6 = div)}
-                    >
-                      gradution?
-                    </span>
-                    <span
-                      className="nxt_carousel-text"
-                      ref={div => (this.para7 = div)}
-                    >
-                      addition?
-                    </span>
-                  </h1> */}
                   <div className="row">
                     <div className="col-md-8 offset-md-2 text-center">
                       <p className="mt-4 circular">
