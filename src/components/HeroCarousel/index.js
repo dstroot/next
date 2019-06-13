@@ -268,7 +268,64 @@ class HeroCarousel extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col text-center">
-                  <h1 className="nxt_heading-xlarge nxt_carousel-header">
+                  <div class="nxt_carousel-header-container">
+                    <h1 className="nxt_heading-xlarge">
+                      {' '}
+                      What’s your{' '}
+                      <span className="text-primary">next&nbsp;</span>
+                    </h1>
+                    <div className="nxt_carousel-animated-text-container">
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para0 = div)}
+                      >
+                        adventure?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para1 = div)}
+                      >
+                        adventure?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para2 = div)}
+                      >
+                        big idea?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para3 = div)}
+                      >
+                        passion?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para4 = div)}
+                      >
+                        move?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para5 = div)}
+                      >
+                        career?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para6 = div)}
+                      >
+                        gradution?
+                      </h1>
+                      <h1
+                        className="nxt_heading-xlarge"
+                        ref={div => (this.para7 = div)}
+                      >
+                        addition?
+                      </h1>
+                    </div>
+                  </div>
+                  {/* <h1 className="nxt_heading-xlarge nxt_carousel-header">
                     What’s your <span className="text-primary">next&nbsp;</span>
                     <span
                       className="nxt_carousel-text"
@@ -318,7 +375,7 @@ class HeroCarousel extends React.Component {
                     >
                       addition?
                     </span>
-                  </h1>
+                  </h1> */}
                   <div className="row">
                     <div className="col-md-8 offset-md-2 text-center">
                       <p className="mt-4 circular">
