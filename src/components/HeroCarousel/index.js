@@ -21,172 +21,196 @@ class HeroCarousel extends React.Component {
     this.state = {};
 
     // GSAP
+
+    this.tlFirst = new TimelineMax();
+
     this.tl = new TimelineMax({
       onComplete: function() {
+        this.delay(-3);
         this.restart(true);
       },
     });
   }
 
   componentDidMount() {
-    // moped
-    this.tl
-      .from(this.img1, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
-
-      .from(
-        this.para1,
-        1,
-        {
-          opacity: 0,
-          x: window.innerWidth / 12,
-        },
-        '-=0.25'
-      )
-
-      .staggerTo([this.img1, this.para1], 1, {
-        opacity: 0,
-        delay: 3,
-      });
+    this.tlFirst.staggerTo([this.img0, this.para0], 1, {
+      opacity: 0,
+      delay: 2,
+    });
 
     // big idea
     this.tl
-      .from(this.img2, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para2,
-        1,
+        0.5,
         {
+          delay: 3,
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
 
+      .from(this.img2, 1, {
+        opacity: 0,
+      })
+
       .staggerTo([this.img2, this.para2], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
 
     // passion
     this.tl
-      .from(this.img3, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para3,
-        1,
+        0.5,
         {
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
 
+      .from(this.img3, 1, {
+        opacity: 0,
+      })
+
       .staggerTo([this.para3, this.img3], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
 
     // move
     this.tl
-      .from(this.img4, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para4,
-        1,
+        0.5,
         {
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
+      .from(this.img4, 1, {
+        opacity: 0,
+      })
 
       .staggerTo([this.para4, this.img4], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
 
     // office
     this.tl
-      .from(this.img5, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para5,
-        1,
+        0.5,
         {
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
+      .from(this.img5, 1, {
+        opacity: 0,
+      })
 
       .staggerTo([this.para5, this.img5], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
 
     // gradutaion
     this.tl
-      .from(this.img6, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para6,
-        1,
+        0.5,
         {
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
+      .from(this.img6, 1, {
+        opacity: 0,
+      })
 
       .staggerTo([this.para6, this.img6], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
 
     // addition
     this.tl
-      .from(this.img7, 1, {
-        opacity: 0,
-        x: window.innerWidth / 3,
-      })
 
       .from(
         this.para7,
-        1,
+        0.5,
         {
           opacity: 0,
-          x: window.innerWidth / 12,
+          x: window.innerWidth / 85,
         },
         '-=0.25'
       )
+      .from(this.img7, 1, {
+        opacity: 0,
+      })
+
       .staggerTo([this.para7, this.img7], 1, {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
+
+    // moped
+    this.tl
+
+      .from(
+        this.para1,
+        0.5,
+        {
+          opacity: 0,
+          x: window.innerWidth / 85,
+        },
+        '-=0.25'
+      )
+
+      .from(this.img1, 1, {
+        opacity: 0,
+      })
+
+      .staggerTo([this.img1, this.para1], 1, {
+        opacity: 0,
+        delay: 4,
+      })
+
+      .from(
+        this.para1,
+        0.5,
+        {
+          opacity: 0,
+          x: window.innerWidth / 85,
+        },
+        '-=0.25'
+      );
   }
 
   render() {
     return (
       <div>
         <div className="background">
+          {/* Moped image Opening */}
+          <img
+            className="nxt_carousel-img"
+            src={Moped}
+            alt="Moped"
+            ref={div => (this.img0 = div)}
+          />
           {/* Moped image */}
           <img
             className="nxt_carousel-img"
@@ -246,6 +270,12 @@ class HeroCarousel extends React.Component {
                 <div className="col text-center">
                   <h1 className="nxt_heading-xlarge nxt_carousel-header">
                     What’s your <span className="text-primary">next&nbsp;</span>
+                    <span
+                      className="nxt_carousel-text"
+                      ref={div => (this.para0 = div)}
+                    >
+                      adventure?
+                    </span>
                     <span
                       className="nxt_carousel-text"
                       ref={div => (this.para1 = div)}
@@ -320,5 +350,4 @@ class HeroCarousel extends React.Component {
     );
   }
 }
-
 export default HeroCarousel;
