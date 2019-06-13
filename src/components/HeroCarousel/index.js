@@ -6,15 +6,27 @@ import { TimelineMax } from 'gsap';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 // media
-import Moped from './media/Moped.svg';
+import MopedBg from './media/Moped-bg.svg';
+import MopedMain from './media/Moped-main.svg';
+
 import BeanBagBg from './media/Bean-bag-bg.svg';
 import BeanBagMain from './media/Bean-bag-main.svg';
-import Seamstress from './media/Seamstress.svg';
-import Graduation from './media/Graduation.svg';
-import Moving from './media/Moving.svg';
-import Office from './media/Office.svg';
 
-import Family from './media/Family.svg';
+import SeamstressBg from './media/Seamstress-bg.svg';
+import SeamstressMain from './media/Seamstress-main.svg';
+
+import MovingBg from './media/Moving-bg.svg';
+import MovingMain from './media/Moving-main.svg';
+
+import OfficeBg from './media/Office-bg.svg';
+import OfficeMain from './media/Office-main.svg';
+
+import GraduationBg from './media/Graduation-bg.svg';
+import GraduationMain from './media/Graduation-main.svg';
+
+import FamilyBg from './media/Family-bg.svg';
+import FamilyMain from './media/Family-main.svg';
+
 import arrow from './media/arrowdown.svg';
 
 class HeroCarousel extends React.Component {
@@ -35,14 +47,12 @@ class HeroCarousel extends React.Component {
   }
 
   componentDidMount() {
-    this.tlFirst.staggerTo([this.img0, this.para0], 1, {
+    this.tlFirst.staggerTo([this.para0, this.img0, this.bg0], 1, {
       opacity: 0,
       delay: 2,
     });
-
-    // big idea
+    // ======================== big idea ========================
     this.tl
-
       .from(
         this.para2,
         0.5,
@@ -53,28 +63,16 @@ class HeroCarousel extends React.Component {
         },
         '-=0.25'
       )
-
       .from(this.img2, 1, {
         opacity: 0,
       })
-
-      .from(
-        this.img2b,
-        2,
-        {
-          opacity: 0,
-        },
-        '-=1.25'
-      )
-
-      .staggerTo([this.img2, this.img2b, this.para2], 1, {
+      .from(this.bg2, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para2, this.img2, this.bg2], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // passion
+    // ======================== passion ========================
     this.tl
-
       .from(
         this.para3,
         0.5,
@@ -84,19 +82,16 @@ class HeroCarousel extends React.Component {
         },
         '-=0.25'
       )
-
       .from(this.img3, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.para3, this.img3], 1, {
+      .from(this.bg3, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para3, this.img3, this.bg3], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // move
+    // ======================== move ========================
     this.tl
-
       .from(
         this.para4,
         0.5,
@@ -109,15 +104,13 @@ class HeroCarousel extends React.Component {
       .from(this.img4, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.para4, this.img4], 1, {
+      .from(this.bg4, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para4, this.img4, this.bg4], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // office
+    // ======================== office ========================
     this.tl
-
       .from(
         this.para5,
         0.5,
@@ -130,15 +123,13 @@ class HeroCarousel extends React.Component {
       .from(this.img5, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.para5, this.img5], 1, {
+      .from(this.bg5, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para5, this.img5, this.bg5], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // gradutaion
+    // ======================== gradutaion ========================
     this.tl
-
       .from(
         this.para6,
         0.5,
@@ -151,15 +142,13 @@ class HeroCarousel extends React.Component {
       .from(this.img6, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.para6, this.img6], 1, {
+      .from(this.bg6, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para6, this.img6, this.bg6], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // addition
+    // ======================== addition ========================
     this.tl
-
       .from(
         this.para7,
         0.5,
@@ -172,15 +161,13 @@ class HeroCarousel extends React.Component {
       .from(this.img7, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.para7, this.img7], 1, {
+      .from(this.bg7, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.para7, this.img7, this.bg7], 1, {
         opacity: 0,
         delay: 4,
       });
-
-    // moped
+    // ======================== moped ========================
     this.tl
-
       .from(
         this.para1,
         0.5,
@@ -190,16 +177,14 @@ class HeroCarousel extends React.Component {
         },
         '-=0.25'
       )
-
       .from(this.img1, 1, {
         opacity: 0,
       })
-
-      .staggerTo([this.img1, this.para1], 1, {
+      .from(this.bg1, 2, { delay: 0.5, opacity: 0 }, '-=1.25')
+      .staggerTo([this.img1, this.para1, this.bg1], 1, {
         opacity: 0,
         delay: 4,
       })
-
       .from(
         this.para1,
         0.5,
@@ -215,72 +200,117 @@ class HeroCarousel extends React.Component {
     return (
       <div>
         <div className="background">
-          {/* Moped image Opening */}
+          {/* ======================== Moped Slide Opening ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Moped}
-            alt="Moped"
+            src={MopedBg}
+            alt="MopedBg"
+            ref={div => (this.bg0 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={MopedMain}
+            alt="MopedMain"
             ref={div => (this.img0 = div)}
           />
-          {/* Moped image */}
+          {/* ======================== Moped Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Moped}
-            alt="Moped"
+            src={MopedBg}
+            alt="MopedBg"
+            ref={div => (this.bg1 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={MopedMain}
+            alt="MopedMain"
             ref={div => (this.img1 = div)}
           />
-          {/* Bean bag image */}
+
+          {/* ======================== Bean bag Slide ======================== */}
           <img
             className="nxt_carousel-img"
             src={BeanBagBg}
             alt="BeanBagBg"
-            ref={div => (this.img2 = div)}
+            ref={div => (this.bg2 = div)}
           />
           <img
             className="nxt_carousel-img-main"
             src={BeanBagMain}
             alt="BeanBagMain"
-            ref={div => (this.img2b = div)}
+            ref={div => (this.img2 = div)}
           />
-          {/* Seamstress image */}
+          {/* ======================== Seamstress Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Seamstress}
-            alt="Seamstress"
+            src={SeamstressBg}
+            alt="SeamstressBg"
+            ref={div => (this.bg3 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={SeamstressMain}
+            alt="SeamstressMain"
             ref={div => (this.img3 = div)}
           />
 
-          {/* Moving image */}
+          {/* ======================== Moving Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Moving}
+            src={MovingBg}
             alt="Moving"
+            ref={div => (this.bg4 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={MovingMain}
+            alt="MovingMain"
             ref={div => (this.img4 = div)}
           />
 
-          {/* Office image */}
+          {/* ======================== Office Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Office}
-            alt="Office"
+            src={OfficeBg}
+            alt="OfficeBg"
+            ref={div => (this.bg5 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={OfficeMain}
+            alt="OfficeMain"
             ref={div => (this.img5 = div)}
           />
 
-          {/* Graduation image */}
+          {/* ======================== Graduation Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Graduation}
-            alt="Graduation"
+            src={GraduationBg}
+            alt="GraduationBg"
+            ref={div => (this.bg6 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={GraduationMain}
+            alt="GraduationMain"
             ref={div => (this.img6 = div)}
           />
 
-          {/* Family image */}
+          {/* ======================== Family Slide ======================== */}
           <img
             className="nxt_carousel-img"
-            src={Family}
-            alt="Family"
+            src={FamilyBg}
+            alt="FamilyBg"
+            ref={div => (this.bg7 = div)}
+          />
+          <img
+            className="nxt_carousel-img-main"
+            src={FamilyMain}
+            alt="FamilyMain"
             ref={div => (this.img7 = div)}
           />
+
+          {/* ======================== Body ======================== */}
           <div className="divText">
             <div className="container">
               <div className="row">
@@ -316,12 +346,14 @@ class HeroCarousel extends React.Component {
                       >
                         passion?
                       </h1>
+
                       <h1
                         className="nxt_heading-xlarge"
                         ref={div => (this.para4 = div)}
                       >
                         move?
                       </h1>
+
                       <h1
                         className="nxt_heading-xlarge"
                         ref={div => (this.para5 = div)}
