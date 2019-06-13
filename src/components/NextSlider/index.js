@@ -6,11 +6,10 @@ import './styles.scss';
 import Slider from 'rc-slider/lib/Slider';
 import 'rc-slider/assets/index.css';
 
-import Doubler from '../Doubler';
+import FutureValue from '../FutureValue';
 
 const NextSlider = () => {
-  const [value, setValue] = useState(500);
-
+  const [value, setValue] = useState(100);
   // set value to slider position
   const handleChange = num => {
     setValue(num);
@@ -19,10 +18,10 @@ const NextSlider = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col">
           <div className="mt-4">
-            <div className="d-flex justify-content-between">
-              <span>Intial Value</span>
+            <div id="Monthly">
+              <span>Monthly contribution amount:</span>
               <span>{value}</span>
             </div>
             <Slider
@@ -31,11 +30,12 @@ const NextSlider = () => {
               defaultValue={value}
               onChange={handleChange}
             />
-            <Doubler number={value} />
           </div>
         </div>
       </div>
+      <FutureValue pv={value} rate={2} years={30} />
     </div>
+    // TODO create funcitons to enter a value on rate and years to pass into the calc engine (FutureValue Component)
   );
 };
 

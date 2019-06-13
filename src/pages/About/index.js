@@ -16,6 +16,7 @@ const About = () => {
   return (
     <div>
       <SectionBornInCalifornia />
+
       <SectionOurStory />
       <SectionDesignPrinciples />
       <SectionBackedByPL />

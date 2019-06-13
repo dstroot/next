@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`chart it should render 1`] = `
+Array [
+  <div
+    className="recharts-responsive-container"
+    style={
+      Object {
+        "height": 400,
+        "maxHeight": undefined,
+        "minHeight": undefined,
+        "minWidth": undefined,
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "none",
+          "height": 0,
+          "position": "absolute",
+          "visibility": "hidden",
+          "width": 0,
+        }
+      }
+    />
+  </div>,
+  <div
+    className="d-flex justify-content-between mb-3 text-muted"
+  >
+    <div
+      className="p-2 font-weight-bold ml-5"
+    >
+      Today
+    </div>
+    <div
+      className="p-2 font-weight-bold"
+    >
+      30 Years
+    </div>
+  </div>,
+]
+`;

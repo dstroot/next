@@ -1,0 +1,7 @@
+// make the slider handle larger
+.rc-slider-handle {
+  width: 20px;
+  height: 20px;
+  margin-left: -10px; // half width
+  margin-top: -8px; // half height allowing for 4px bar width
+}
