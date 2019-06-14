@@ -117,7 +117,7 @@ exports[`Contact it should render 1`] = `
               }
             >
               <div
-                className="mb-6 text-left nxt_body-xsmall"
+                className="text-left nxt_body-xsmall"
               >
                 <form
                   onSubmit={[Function]}
@@ -126,7 +126,7 @@ exports[`Contact it should render 1`] = `
                     className="react-reveal alert nxt_body-small"
                     style={
                       Object {
-                        "opacity": 0,
+                        "opacity": undefined,
                       }
                     }
                   >
@@ -149,6 +149,11 @@ exports[`Contact it should render 1`] = `
                       type="text"
                       value=""
                     />
+                    <div
+                      class="invalid-feedback"
+                    >
+                      Invalid Name
+                    </div>
                   </div>
                   <div>
                     <label>

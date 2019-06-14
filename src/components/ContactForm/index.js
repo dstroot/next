@@ -15,7 +15,7 @@ class ContactForm extends React.Component {
       email: '',
       phone: '',
       message: '',
-      show: false,
+      show: true,
     };
   }
 

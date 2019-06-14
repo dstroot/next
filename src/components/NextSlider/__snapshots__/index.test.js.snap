@@ -8,19 +8,19 @@ exports[`NextSlider it should render 1`] = `
     className="row"
   >
     <div
-      className="col-md-6"
+      className="col"
     >
       <div
         className="mt-4"
       >
         <div
-          className="d-flex justify-content-between"
+          id="Monthly"
         >
           <span>
-            Intial Value
+            Monthly contribution amount:
           </span>
           <span>
-            500
+            100
           </span>
         </div>
         <div
@@ -41,7 +41,7 @@ exports[`NextSlider it should render 1`] = `
             style={
               Object {
                 "left": "0%",
-                "width": "49.94994994994995%",
+                "width": "9.90990990990991%",
               }
             }
           />
@@ -52,7 +52,7 @@ exports[`NextSlider it should render 1`] = `
             aria-disabled={false}
             aria-valuemax={1000}
             aria-valuemin={1}
-            aria-valuenow={500}
+            aria-valuenow={100}
             className="rc-slider-handle"
             onBlur={[Function]}
             onKeyDown={[Function]}
@@ -60,7 +60,7 @@ exports[`NextSlider it should render 1`] = `
             role="slider"
             style={
               Object {
-                "left": "49.94994994994995%",
+                "left": "9.90990990990991%",
               }
             }
             tabIndex={0}
@@ -69,12 +69,12 @@ exports[`NextSlider it should render 1`] = `
             className="rc-slider-mark"
           />
         </div>
-        <div>
-          Doubled number is: 
-          1000
-        </div>
       </div>
     </div>
+  </div>
+  <div>
+    Projected Monthly Income: 
+    6100
   </div>
 </div>
 `;

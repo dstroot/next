@@ -18,7 +18,7 @@ label {
   padding: 10px;
   background-color: theme-color('secondary-dark');
   border-left: 12px solid theme-color('accent');
-  display: none;
+  display: block;
 }
 
 .form-control:focus {
