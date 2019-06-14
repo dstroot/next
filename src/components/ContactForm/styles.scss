@@ -25,3 +25,8 @@ label {
   border-color: theme-color('primary');
   @include box-shadow(none);
 }
+
+// set it to red when input is invalid
+input:invalid {
+  border-color: none;
+}

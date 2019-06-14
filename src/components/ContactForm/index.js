@@ -26,6 +26,10 @@ class ContactForm extends React.Component {
     });
   };
 
+  validateEmail = () => {
+    console.log('It is working');
+  };
+
   // add data to the database
   addData = (e, slackPost) => {
     // prevent default event that submits to the page
@@ -44,6 +48,9 @@ class ContactForm extends React.Component {
 
     // handle the collaps
     document.querySelector('.alert').style.display = 'block';
+
+    // set to red when error happens
+    // document.querySelector('.input').style.invalid.border-color = 'red';
 
     // TODO is there a better solution for the alert message?
 
@@ -72,28 +79,23 @@ class ContactForm extends React.Component {
       var slack = new Slack();
       slack.setWebhook(webhookUri);
 
-      slack.webhook(
-        {
-          channel: '#contact-form',
-          username: 'WebHook-bot',
-          text:
-            '_New contact submission: _\n' +
-            '*Name*: ' +
-            this.state.name +
-            '\n' +
-            '*Email*: ' +
-            this.state.email +
-            '\n' +
-            '*Phone*: ' +
-            this.state.phone +
-            '\n' +
-            '*Message*: ' +
-            this.state.message,
-        },
-        function(err, response) {
-          console.log(response);
-        }
-      );
+      slack.webhook({
+        channel: '#contact-form',
+        username: 'WebHook-bot',
+        text:
+          '_New contact submission: _\n' +
+          '*Name*: ' +
+          this.state.name +
+          '\n' +
+          '*Email*: ' +
+          this.state.email +
+          '\n' +
+          '*Phone*: ' +
+          this.state.phone +
+          '\n' +
+          '*Message*: ' +
+          this.state.message,
+      });
     };
 
     slackPost();
