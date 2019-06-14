@@ -11,14 +11,25 @@ label {
   margin-bottom: 0;
 }
 
-.alert {
+.alert-success {
   font-family: $circular;
   font-size: calc(18px);
   text-align: center;
   padding: 10px;
   background-color: theme-color('secondary-dark');
-  border-left: 12px solid theme-color('accent');
-  display: none;
+  border-left: 12px solid theme-color('primary');
+  display: block;
+  color: theme-color('primary-dark');
+}
+
+.alert-fail {
+  font-family: $circular;
+  font-size: calc(18px);
+  text-align: center;
+  padding: 10px;
+  background-color: theme-color('secondary-dark');
+  border-left: 12px solid #f44336;
+  display: block;
 }
 
 .form-control:focus {
@@ -29,4 +40,9 @@ label {
 // set it to red when input is invalid
 input:invalid {
   border-color: none;
+}
+
+.input-fail {
+  color: red;
+  text-align: left;
 }

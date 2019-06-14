@@ -15,8 +15,10 @@ class ContactForm extends React.Component {
       email: '',
       phone: '',
       message: '',
-      show: false,
+      show: true,
+      valid: true,
     };
+    this.handleEmailChange = this.handleEmailChange.bind(this);
   }
 
   // loop each entry and get the value
@@ -26,9 +28,51 @@ class ContactForm extends React.Component {
     });
   };
 
-  validateEmail = () => {
-    console.log('It is working');
+  // input validations
+  validateName = () => {
+    if (this.state.name === '') {
+      console.log('name is empty');
+      document.querySelector('#name').innerHTML = 'Name ';
+    }
   };
+
+  validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  handleEmailChange(e) {
+    const email = e.target.value;
+    const emailValid = this.validateEmail(email);
+
+    this.setState({
+      email: e.target.value,
+      valid: emailValid,
+    });
+  }
+
+  // validateEmail = () => {
+  //   if (this.state.email === '') {
+  //     console.log('email is empty');
+  //     document.querySelector('#email').innerHTML = 'Email ';
+  //   } else if (this.value.email === 'not email') {
+  //     console.log('not emai');
+  //     document.querySelector('#email').innerHTML = 'Email ';
+  //   }
+  // };
+
+  validateMessage = () => {
+    if (this.state.message === '') {
+      console.log('message is empty');
+      document.querySelector('#message').innerHTML = 'Message';
+    }
+  };
+
+  componentDidMount() {
+    this.validateName();
+    this.validateEmail();
+    this.validateMessage();
+  }
 
   // add data to the database
   addData = (e, slackPost) => {
@@ -47,7 +91,7 @@ class ContactForm extends React.Component {
     });
 
     // handle the collaps
-    document.querySelector('.alert').style.display = 'block';
+    document.querySelector('.alert-success').style.display = 'block';
 
     // set to red when error happens
     // document.querySelector('.input').style.invalid.border-color = 'red';
@@ -65,10 +109,8 @@ class ContactForm extends React.Component {
     }, 10000);
 
     setTimeout(function() {
-      document.querySelector('.alert').style.display = 'none';
+      document.querySelector('.alert-success').style.display = 'none';
     }, 10500);
-
-    // setAlertNone();
 
     slackPost = () => {
       var Slack = require('slack-node');
@@ -111,13 +153,21 @@ class ContactForm extends React.Component {
   render() {
     return (
       <div className="text-left nxt_body-xsmall">
-        <form onSubmit={this.addData}>
+        <form noValidate onSubmit={this.addData}>
           <Fade top when={this.state.show}>
-            <div className="alert nxt_body-small">
+            <div className="alert-success nxt_body-small">
               <p>We received your message! We’ll get back to you shortly.</p>
               <p>
                 If this is an urgent matter, pleae call us at (833) 646-6398
               </p>
+            </div>
+            <div className="alert-fail nxt_body-small">
+              <p>
+                The form is incomplete, please update the follwing field(s):
+              </p>
+              <span className="input-fail" id="name" />
+              <span className="input-fail" id="email" />
+              <span className="input-fail" id="message" />
             </div>
           </Fade>
           <div>
@@ -137,7 +187,7 @@ class ContactForm extends React.Component {
               // validation example https://stackoverflow.com/questions/19122886/how-can-i-create-a-custom-message-when-an-html5-required-input-pattern-does-not
               // npm for validation https://www.npmjs.com/package/react-validate-form
             />
-            <div class="invalid-feedback">Invalid Name</div>
+            {/* <div className="invalid-feedback">Invalid Name</div> */}
           </div>
           <div>
             <label>Email</label>
@@ -145,7 +195,8 @@ class ContactForm extends React.Component {
               className="form-control mb-3"
               type="email"
               name="email"
-              onChange={this.updateInput}
+              // onChange={this.updateInput}
+              onChange={this.handleEmailChange}
               value={this.state.email}
               // this pattern makes sure that the user enters a email that contains @ and . in the input
               pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}"
