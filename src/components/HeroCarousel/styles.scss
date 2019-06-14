@@ -64,8 +64,8 @@
 /*            Media Queries            */
 /***************************************/
 
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
   .nxt_carousel-header-container {
     .nxt_carousel-animated-text-container {
       width: 280px;
@@ -73,6 +73,23 @@
   }
 }
 
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+  .background {
+    /* Set height relative to width */
+    height: 90vh;
+    min-height: 500px;
+  }
+
+  .nxt_carousel-img-main {
+    position: absolute;
+    bottom: 0;
+    height: 30vw;
+  }
+}
+
+/* ----------- Breakpoint fix ----------- */
 @media only screen and (max-width: 992px) {
   .nxt_carousel-header-container {
     .nxt_carousel-animated-text-container * {
