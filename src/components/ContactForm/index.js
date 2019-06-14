@@ -108,7 +108,7 @@ class ContactForm extends React.Component {
 
   render() {
     return (
-      <div className="mb-6 text-left nxt_body-xsmall">
+      <div className="text-left nxt_body-xsmall">
         <form onSubmit={this.addData}>
           <Fade top when={this.state.show}>
             <div className="alert nxt_body-small">
