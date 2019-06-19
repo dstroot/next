@@ -315,7 +315,7 @@ class HeroCarousel extends React.Component {
             <div className="container">
               <div className="row">
                 <div className="col text-center">
-                  <div class="nxt_carousel-header-container">
+                  <div className="nxt_carousel-header-container">
                     <h1 className="nxt_heading-xlarge">
                       {' '}
                       What’s your{' '}

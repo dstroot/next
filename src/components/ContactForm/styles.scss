@@ -17,9 +17,6 @@ label {
   text-align: center;
   padding: 10px;
   background-color: theme-color('secondary-dark');
-<<<<<<< HEAD
-  border-left: 12px solid theme-color('accent');
-=======
   border-left: 12px solid theme-color('primary');
   display: block;
   color: theme-color('primary-dark');
@@ -32,7 +29,6 @@ label {
   padding: 10px;
   background-color: theme-color('secondary-dark');
   border-left: 12px solid #f44336;
->>>>>>> 211534f4e77cc1f93e7abac82c73e4fd6cab9ca2
   display: block;
 }
 
@@ -47,6 +43,9 @@ input:invalid {
 }
 
 .input-fail {
-  color: red;
   text-align: left;
+}
+
+.form-input-fail {
+  border: 1px solid #f44336;
 }
