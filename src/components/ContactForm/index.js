@@ -80,6 +80,12 @@ class ContactForm extends React.Component {
     }
   };
 
+  // validate email
+  validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
   handleSubmit = (e, slackPost) => {
     // prevent default behavior
     e.preventDefault();
@@ -209,7 +215,7 @@ class ContactForm extends React.Component {
             </div>
             <div className="alert-fail nxt_body-small">
               <span className="input-fail" id="fail-message" />
-              <span id="email" />
+              <span id="email-fail" />
             </div>
           </Fade>
           <div>

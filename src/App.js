@@ -16,7 +16,9 @@ import NavBar from './components/NavBar';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import About from './pages/About';
+import Faq from './pages/Faq';
 import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
+import Lid from './pages/LidProduct';
 import Contact from './pages/Contact';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -30,7 +32,9 @@ const App = () => (
         <NotFound path="/404" default />
         <Home path="/" />
         <About path="/about" />
+        <Faq path="/faq" />
         <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
+        <Lid path="/lid" />
         <Contact path="/contact" />
         <TermsOfUse path="/terms" />
         <PrivacyPolicy path="/privacy" />

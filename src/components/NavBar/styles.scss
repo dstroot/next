@@ -63,3 +63,30 @@
     color: theme-color('primary');
   }
 }
+
+/************ dropdown ****************/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: auto;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 6px 12px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: theme-color('primary-dark');
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

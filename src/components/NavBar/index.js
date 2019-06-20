@@ -121,8 +121,14 @@ const NavBar = () => {
             <ExactNavLink to="/" onClick={toggle}>
               Home
             </ExactNavLink>
+            <ExactNavLink to="/products" onClick={toggle}>
+              Products
+            </ExactNavLink>
             <ExactNavLink to="/about" onClick={toggle}>
               About
+            </ExactNavLink>
+            <ExactNavLink to="/faq" onClick={toggle}>
+              FAQ
             </ExactNavLink>
             <ExactNavLink to="/contact" onClick={toggle}>
               Contact
@@ -150,8 +156,24 @@ const NavBar = () => {
         <ExactNavLink to="/" onClick={toggle}>
           Home
         </ExactNavLink>
+        <ExactNavLink to="/#" onClick={toggle}>
+          <div className="dropdown">
+            Products
+            <div class="dropdown-content">
+              <ExactNavLink to="/nextdeferredincomeannuity" onClick={toggle}>
+                <a href="#">Next Deferred Income Annuity</a>
+              </ExactNavLink>
+              <ExactNavLink to="/lid" onClick={toggle}>
+                <a href="#">Next Term Life</a>
+              </ExactNavLink>
+            </div>
+          </div>
+        </ExactNavLink>
         <ExactNavLink to="/about" onClick={toggle}>
           About
+        </ExactNavLink>
+        <ExactNavLink to="/faq" onClick={toggle}>
+          FAQ
         </ExactNavLink>
         <ExactNavLink to="/contact" onClick={toggle}>
           Contact
