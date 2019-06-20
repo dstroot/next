@@ -12,6 +12,7 @@ import HamButton from '../HamButton';
 
 // images
 import logo from './media/NXT_Logo_light.svg';
+import arrow from '../../components/HeroCarousel/media/arrowdown.svg';
 
 // hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -158,7 +159,13 @@ const NavBar = () => {
         </ExactNavLink>
         <ExactNavLink to="/#" onClick={toggle}>
           <div className="dropdown">
-            Products
+            Products <span> </span>
+            <img
+              className="d-block-inline"
+              width={20}
+              src={arrow}
+              alt="Arrow"
+            />
             <div class="dropdown-content">
               <ExactNavLink to="/nextdeferredincomeannuity" onClick={toggle}>
                 <a href="#">Next Deferred Income Annuity</a>
