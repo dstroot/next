@@ -18,7 +18,7 @@ label {
   padding: 10px;
   background-color: theme-color('secondary-dark');
   border-left: 12px solid theme-color('primary');
-  display: block;
+  display: none;
   color: theme-color('primary-dark');
 }
 
@@ -29,7 +29,7 @@ label {
   padding: 10px;
   background-color: theme-color('secondary-dark');
   border-left: 12px solid #f44336;
-  display: block;
+  display: none;
 }
 
 .form-control:focus {
@@ -37,7 +37,6 @@ label {
   @include box-shadow(none);
 }
 
-// set it to red when input is invalid
 input:invalid {
   border-color: none;
 }

@@ -5,6 +5,7 @@ import PhoneInput from 'react-phone-number-input/basic-input';
 import Fade from 'react-reveal/Fade';
 import './styles.scss';
 import 'slack-node';
+import { fail } from 'assert';
 
 class ContactForm extends React.Component {
   constructor() {
@@ -18,7 +19,6 @@ class ContactForm extends React.Component {
       },
       phone: '',
       show: true,
-      // valid: true,
       errors: {
         name: false,
         email: false,
@@ -40,7 +40,8 @@ class ContactForm extends React.Component {
         errors: {
           ...this.state.errors,
           email:
-            value.includes('@') && value.slice(-4).includes('.com')
+            (value.includes('@') && value.slice(-4).includes('.com')) ||
+            value.slice(-4).includes('.edu')
               ? false
               : true,
         },
@@ -59,65 +60,87 @@ class ContactForm extends React.Component {
     }
   };
 
+  handleOnBlur = e => {
+    if (this.state.errors.email === true) {
+      document.querySelector('#invalid-email-message').innerHTML =
+        'Please enter a valid email';
+    }
+  };
+
   handleSubmit = (e, slackPost) => {
     // prevent default behavior
     e.preventDefault();
 
     let inputFields = document.getElementsByClassName('form-input');
+    let invalidEmailMessage = document.querySelector('#invalid-email-message');
+    let failMessage = document.querySelector('#fail-message');
+    let failMessageBox = document.querySelector('.alert-fail');
+
+    // empty array to house empty field names
     const emptyFieldNames = [];
 
-    // Define errors object which will contain updated errors state based on form values
+    // empty object to house input state
     let errors = {};
 
-    // loop through input fields for empty values & add name attribute to new empty array
     for (var i = 0; i < inputFields.length; i++) {
       if (inputFields[i].value === '') {
         let inputName = inputFields[i].name;
         emptyFieldNames.push(inputFields[i].getAttribute('name'));
-
-        // Gather all error state into a single object
-        errors = { ...errors, [inputName]: true };
-
-        // Call setState once - this is more efficient and simplifies updating the nested errors object
-        this.setState(state => {
-          // Replace nested error state with newly defined errors object
-          return { ...state, errors };
-        });
+        errors[inputName] = true;
+        failMessageBox.style.display = 'block';
       }
     }
 
-    let invalidEmailMessage = document.querySelector('#invalid-email-message');
-    let failMessage = document.querySelector('#fail-message');
+    this.setState({ errors });
+
+    // // Define errors object which will contain updated errors state based on form values
+    // let errors = {};
+
+    // // loop through input fields for empty values & add name attribute to new empty array
+    // for (var i = 0; i < inputFields.length; i++) {
+    //   if (inputFields[i].value === '') {
+    //     let inputName = inputFields[i].name;
+    //     emptyFieldNames.push(inputFields[i].getAttribute('name'));
+
+    //     // Gather all error state into a single object
+    //     errors = { ...errors, [inputName]: true };
+
+    //     // Call setState once - this is more efficient and simplifies updating the nested errors object
+    //     this.setState(state => {
+    //       // Replace nested error state with newly defined errors object
+    //       return { ...state, errors };
+    //     });
+    //   }
+    // }
 
     if (this.state.errors.email === true) {
       invalidEmailMessage.innerHTML = 'invalid email';
     } else if (emptyFieldNames.length > 0) {
       failMessage.innerHTML =
-        'Please complete the following fields: ' + emptyFieldNames.join(', ');
+        'Please complete the following field(s): ' + emptyFieldNames.join(', ');
       invalidEmailMessage.innerHTML = '';
     } else {
       failMessage.innerHTML = '';
       invalidEmailMessage.innerHTML = '';
+      failMessageBox.style.display = 'none';
 
       const db = FirebaseConfig.firestore();
       db.settings({
         timestampsInSnapshots: true,
       });
       // set the state to the data values
-      db.collection('ContactForm').add({
+      db.collection('ContactUs').add({
         name: this.state.inputs.name,
         email: this.state.inputs.email,
         phone: this.state.phone,
         message: this.state.inputs.message,
       });
 
-      // handle the collapse
-      document.querySelector('.alert-success').style.display = 'block';
-
       // set to red when error happens
       // document.querySelector('.input').style.invalid.border-color = 'red';
 
-      // TODO is there a better solution for the alert message?
+      // handle the collapse
+      document.querySelector('.alert-success').style.display = 'block';
 
       this.setState({ show: true });
 
@@ -133,38 +156,37 @@ class ContactForm extends React.Component {
         document.querySelector('.alert-success').style.display = 'none';
       }, 10500);
 
-      slackPost = () => {
-        var Slack = require('slack-node');
+      // slackPost = () => {
+      //   var Slack = require('slack-node');
 
-        var webhookUri =
-          'https://hooks.slack.com/services/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';
+      //   var webhookUri =
+      //     'https://hooks.slack.com/services/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';
 
-        var slack = new Slack();
-        slack.setWebhook(webhookUri);
+      //   var slack = new Slack();
+      //   slack.setWebhook(webhookUri);
 
-        slack.webhook({
-          channel: '#contact-form',
-          username: 'WebHook-bot',
-          text:
-            '_New contact submission: _\n' +
-            '*Name*: ' +
-            this.state.inputs.name +
-            '\n' +
-            '*Email*: ' +
-            this.state.inputs.email +
-            '\n' +
-            '*Phone*: ' +
-            this.state.phone +
-            '\n' +
-            '*Message*: ' +
-            this.state.inputs.message,
-        });
-      };
+      //   slack.webhook({
+      //     channel: '#contact-form',
+      //     username: 'WebHook-bot',
+      //     text:
+      //       '_New contact submission: _\n' +
+      //       '*Name*: ' +
+      //       this.state.inputs.name +
+      //       '\n' +
+      //       '*Email*: ' +
+      //       this.state.inputs.email +
+      //       '\n' +
+      //       '*Phone*: ' +
+      //       this.state.phone +
+      //       '\n' +
+      //       '*Message*: ' +
+      //       this.state.inputs.message,
+      //   });
+      // };
 
-      slackPost();
+      // slackPost();
 
-      // reset the state
-      this.state = {
+      this.setState({
         inputs: {
           name: '',
           email: '',
@@ -177,7 +199,7 @@ class ContactForm extends React.Component {
           email: false,
           message: false,
         },
-      };
+      });
     }
   };
 
@@ -225,6 +247,7 @@ class ContactForm extends React.Component {
               type="email"
               name="email"
               onChange={this.handleOnChange}
+              onBlur={this.handleOnBlur}
               value={this.state.inputs.email}
             />
           </div>
