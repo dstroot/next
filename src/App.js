@@ -18,7 +18,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Faq from './pages/Faq';
 import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
-import Lid from './pages/LidProduct';
+import Lid from './pages/NextTermLife';
 import Contact from './pages/Contact';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
