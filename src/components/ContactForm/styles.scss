@@ -28,7 +28,7 @@ label {
   text-align: center;
   padding: 10px;
   background-color: theme-color('secondary-dark');
-  border-left: 12px solid #f44336;
+  border-left: 12px solid theme-color('error');
   display: none;
 }
 
@@ -47,5 +47,5 @@ input:invalid {
 }
 
 .form-input-fail {
-  border: 1px solid #f44336;
+  border: 1px solid theme-color('error');
 }
