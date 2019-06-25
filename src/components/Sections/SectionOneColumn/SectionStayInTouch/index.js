@@ -20,17 +20,11 @@ class SectionStayInTouch extends React.Component {
     };
   }
 
-  // //loop each entry and get the value
-  // handleOnChange = e => {
-  //   this.setState({
-  //     [e.target.name]: e.target.value,
-  //   });
-  // };
-
   handleOnChange = e => {
     // destructuring assignment - unpack values from object into distinct variable
     const { name, value } = e.target;
 
+    // TODO refactor this block since it's just one input field
     if (name === 'email') {
       this.setState({
         inputs: {
@@ -112,6 +106,7 @@ class SectionStayInTouch extends React.Component {
         email: this.state.inputs.email,
       });
 
+      // reset state
       this.setState({
         inputs: {
           email: '',
@@ -122,40 +117,6 @@ class SectionStayInTouch extends React.Component {
       });
     }
   };
-
-  //add the data to the database
-  // handleSubmit = e => {
-  // e.preventDefault();
-  // if (this.state.errors.email === true) {
-  //   document.querySelector('.alert-fail').innerHTML =
-  //     'Please enter a valid email';
-  //   // document.querySelector('.alert-fail').style.display = 'block';
-  // } else {
-  //   document.querySelector('.alert-fail').innerHTML = '';
-
-  // // reset state
-  // this.setState({
-  //   inputs: {
-  //     email: '',
-  //   },
-  //   errors: {
-  //     email: false,
-  //   },
-  // });
-
-  // const db = FirebaseConfig.firestore();
-  // db.settings({
-  //   timestampsInSnapshots: true,
-  // });
-  // db.collection('StayInTouch').add({
-  //   email: this.state.email,
-  // });
-
-  // document.querySelector('.alert').style.display = 'block';
-  // setTimeout(function() {
-  //   document.querySelector('.alert').style.display = 'none';
-  // }, 5000);
-  // };
 
   render() {
     return (
