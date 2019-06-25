@@ -16,7 +16,7 @@ class SectionStayInTouch extends React.Component {
       errors: {
         email: false,
       },
-      show: true,
+      show: false,
     };
   }
 
@@ -72,10 +72,12 @@ class SectionStayInTouch extends React.Component {
       });
       failMessageBox.style.display = 'block';
       failMessage.innerHTML = 'Please enter your email';
+      this.setState({ show: true });
     } else if (this.state.errors.email === true) {
       invalidEmailMessage.innerHTML = 'Please enter a valid email';
       failMessage.innerHTML = '';
       failMessageBox.style.display = 'block';
+      this.setState({ show: true });
     } else {
       invalidEmailMessage.innerHTML = '';
       failMessageBox.style.display = 'none';
@@ -91,11 +93,11 @@ class SectionStayInTouch extends React.Component {
 
       setTimeout(function() {
         setShowFalse();
-      }, 3000);
+      }, 3500);
 
       setTimeout(function() {
         successMessage.style.display = 'none';
-      }, 3500);
+      }, 4000);
 
       // add to database
       const db = FirebaseConfig.firestore();
@@ -136,6 +138,7 @@ class SectionStayInTouch extends React.Component {
                         <div className="alert-success nxt_body-small mb-3">
                           <span>You are on the list!</span>
                         </div>
+
                         <div className="alert-fail nxt_body-small mb-3">
                           <span className="input-fail" id="fail-message" />
                           <span
