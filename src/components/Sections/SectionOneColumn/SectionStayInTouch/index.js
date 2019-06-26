@@ -36,8 +36,14 @@ class SectionStayInTouch extends React.Component {
           ...this.state.errors,
           email:
             // TODO look into more comprehensive validation?
-            (value.includes('@') && value.slice(-4).includes('.com')) ||
-            value.slice(-4).includes('.edu')
+            // (value.includes('@') && value.slice(-4).includes('.com')) ||
+            // value.slice(-4).includes('.edu')
+            //   ? false
+            //   : true,
+
+            // ie fix, using ES5
+            (value.indexOf('@') > -1 && value.slice(-4).indexOf('.com') > -1) ||
+            value.slice(-4).indexOf('.edu') > -1
               ? false
               : true,
         },
