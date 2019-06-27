@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 // component
 import SectionNotFound from '../../components/Sections/SectionHero/SectionNotFound';
 import Footer from '../../components/Footer';
-import Button from '../../components/Buttons/Button';
+// import Button from '../../components/Buttons/Button';
 
 const NotFound = () => {
   // Set the page title and position using the useEffect hook

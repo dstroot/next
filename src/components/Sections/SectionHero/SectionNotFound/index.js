@@ -4,7 +4,7 @@ import SectionHero from '../../SectionHero';
 import Button from '../../../Buttons/Button';
 
 // image
-import notfound from './media/notfound.svg';
+// import notfound from './media/notfound.svg';
 import bg from './media/notfound.svg';
 
 // styles
