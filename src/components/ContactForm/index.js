@@ -25,26 +25,26 @@ class ContactForm extends React.Component {
     };
   }
 
+  validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
   // set state for each property as user inputs & validate email
   handleOnChange = e => {
     // destructuring assignment - unpack values from object into distinct variable
     const { name, value } = e.target;
 
+    const emailInput = e.target.value;
+    const emailValid = this.validateEmail(emailInput);
+
     if (name === 'email') {
       this.setState({
         inputs: {
-          //... is a spread operator. Copy existing key-value pairs from existing, to new object
-          ...this.state.inputs,
-          [name]: value,
+          email: emailInput,
         },
         errors: {
-          ...this.state.errors,
-          email:
-            // TODO look into more comprehensive validation?
-            (value.includes('@') && value.slice(-4).includes('.com')) ||
-            value.slice(-4).includes('.edu')
-              ? false
-              : true,
+          email: !emailValid,
         },
       });
     } else {
@@ -59,10 +59,12 @@ class ContactForm extends React.Component {
         },
       });
     }
+
+    console.log('errors.email onChange ' + this.state.errors.email);
   };
 
   // show invalid email message when field loses focus
-  handleOnBlur = e => {
+  handleOnBlur = () => {
     if (this.state.errors.email === true) {
       document.querySelector('#invalid-email-message').innerHTML =
         'Please enter a valid email';
@@ -93,97 +95,130 @@ class ContactForm extends React.Component {
         // add input name and value of true to new object
         errors[inputName] = true;
         failMessageBox.style.display = 'block';
+      } else {
+        let inputName = inputFields[i].name;
+        errors[inputName] = false;
       }
-    }
+    } // end of Loop
     this.setState({ errors });
 
-    if (this.state.errors.email === true) {
+    console.log('errors.email onSubmit ' + this.state.errors.email);
+
+    if (emptyFieldNames.length === 0 && this.state.errors.email === true) {
+      failMessageBox.style.display = 'block';
       invalidEmailMessage.innerHTML = 'Please enter a valid email';
+      this.setState({
+        errors: {
+          email: true,
+        },
+      });
+    } else if (this.state.errors.email === true) {
+      invalidEmailMessage.innerHTML = 'Please enter a valid email';
+      this.setState({
+        errors: {
+          email: true,
+        },
+      });
     } else if (emptyFieldNames.length > 0) {
       failMessage.innerHTML =
         'Please complete the following field(s): ' + emptyFieldNames.join(', ');
       invalidEmailMessage.innerHTML = '';
     } else {
-      failMessage.innerHTML = '';
-      invalidEmailMessage.innerHTML = '';
-      failMessageBox.style.display = 'none';
-
-      // handle success message
-      document.querySelector('.alert-success').style.display = 'block';
-
-      this.setState({ show: true });
-
-      const setShowFalse = () => {
-        this.setState({ show: false });
-      };
-
-      setTimeout(function() {
-        setShowFalse();
-      }, 10000);
-
-      setTimeout(function() {
-        document.querySelector('.alert-success').style.display = 'none';
-      }, 10500);
-
-      // DB configurations
-      const db = FirebaseConfig.firestore();
-      db.settings({
-        timestampsInSnapshots: true,
-      });
-      db.collection('ContactUs').add({
-        name: this.state.inputs.name,
-        email: this.state.inputs.email,
-        phone: this.state.phone,
-        message: this.state.inputs.message,
-      });
-
-      // slack configuration
-      slackPost = () => {
-        var Slack = require('slack-node');
-
-        var webhookUri =
-          'https://hooks.slack.com/services/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';
-
-        var slack = new Slack();
-        slack.setWebhook(webhookUri);
-
-        slack.webhook({
-          channel: '#contact-form',
-          username: 'WebHook-bot',
-          text:
-            '_New contact submission: _\n' +
-            '*Name*: ' +
-            this.state.inputs.name +
-            '\n' +
-            '*Email*: ' +
-            this.state.inputs.email +
-            '\n' +
-            '*Phone*: ' +
-            this.state.phone +
-            '\n' +
-            '*Message*: ' +
-            this.state.inputs.message,
-        });
-      };
-
-      slackPost();
-
-      // reset state
-      this.setState({
-        inputs: {
-          name: '',
-          email: '',
-          message: '',
-        },
-        phone: '',
-        show: true,
-        errors: {
-          name: false,
-          email: false,
-          message: false,
-        },
-      });
+      console.log('For Submitted!');
     }
+
+    // if (this.state.errors.email === true) {
+    //   failMessageBox.style.display = 'block';
+    //   invalidEmailMessage.innerHTML = 'Please enter a valid email';
+    // } else if (emptyFieldNames.length > 0) {
+    //   failMessage.innerHTML =
+    //     'Please complete the following field(s): ' + emptyFieldNames.join(', ');
+    //   invalidEmailMessage.innerHTML = '';
+    // } else if (emptyFieldNames.length > 0 || this.state.errors.email === true) {
+    //   invalidEmailMessage.innerHTML = 'Please enter a valid email';
+    //   failMessage.innerHTML =
+    //     'Please complete the following field(s): ' + emptyFieldNames.join(', ');
+    // } else {
+    //   failMessage.innerHTML = '';
+    //   invalidEmailMessage.innerHTML = '';
+    //   failMessageBox.style.display = 'none';
+
+    //   // handle success message
+    //   document.querySelector('.alert-success').style.display = 'block';
+
+    //   this.setState({ show: true });
+
+    //   const setShowFalse = () => {
+    //     this.setState({ show: false });
+    //   };
+
+    //   setTimeout(function() {
+    //     setShowFalse();
+    //   }, 10000);
+
+    //   setTimeout(function() {
+    //     document.querySelector('.alert-success').style.display = 'none';
+    //   }, 10500);
+
+    // // DB configurations
+    // const db = FirebaseConfig.firestore();
+    // db.settings({
+    //   timestampsInSnapshots: true,
+    // });
+    // db.collection('ContactUs').add({
+    //   name: this.state.inputs.name,
+    //   email: this.state.inputs.email,
+    //   phone: this.state.phone,
+    //   message: this.state.inputs.message,
+    // });
+
+    // // slack configuration
+    // slackPost = () => {
+    //   var Slack = require('slack-node');
+
+    //   var webhookUri =
+    //     'https://hooks.slack.com/services/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';
+
+    //   var slack = new Slack();
+    //   slack.setWebhook(webhookUri);
+
+    //   slack.webhook({
+    //     channel: '#contact-form',
+    //     username: 'WebHook-bot',
+    //     text:
+    //       '_New contact submission: _\n' +
+    //       '*Name*: ' +
+    //       this.state.inputs.name +
+    //       '\n' +
+    //       '*Email*: ' +
+    //       this.state.inputs.email +
+    //       '\n' +
+    //       '*Phone*: ' +
+    //       this.state.phone +
+    //       '\n' +
+    //       '*Message*: ' +
+    //       this.state.inputs.message,
+    //   });
+    // };
+
+    // slackPost();
+
+    // reset state
+    //   this.setState({
+    //     inputs: {
+    //       name: '',
+    //       email: '',
+    //       message: '',
+    //     },
+    //     phone: '',
+    //     show: true,
+    //     errors: {
+    //       name: false,
+    //       email: false,
+    //       message: false,
+    //     },
+    //   });
+    // } // /else
   };
 
   render() {

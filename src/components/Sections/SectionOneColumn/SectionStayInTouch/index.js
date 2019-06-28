@@ -20,46 +20,64 @@ class SectionStayInTouch extends React.Component {
     };
   }
 
+  validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
   handleOnChange = e => {
     // destructuring assignment - unpack values from object into distinct variable
     const { name, value } = e.target;
 
-    // TODO refactor this block since it's just one input field
+    const emailInput = e.target.value;
+    const emailValid = this.validateEmail(emailInput);
+
     if (name === 'email') {
       this.setState({
         inputs: {
-          //... is a spread operator. Copy existing key-value pairs from existing, to new object
-          ...this.state.inputs,
-          [name]: value,
+          email: emailInput,
         },
         errors: {
-          ...this.state.errors,
-          email:
-            // TODO look into more comprehensive validation?
-            // (value.includes('@') && value.slice(-4).includes('.com')) ||
-            // value.slice(-4).includes('.edu')
-            //   ? false
-            //   : true,
-
-            // ie fix, using ES5
-            (value.indexOf('@') > -1 && value.slice(-4).indexOf('.com') > -1) ||
-            value.slice(-4).indexOf('.edu') > -1
-              ? false
-              : true,
-        },
-      });
-    } else {
-      this.setState({
-        inputs: {
-          ...this.state.inputs,
-          [name]: value,
-        },
-        errors: {
-          ...this.state.errors,
-          [name]: false,
+          email: emailValid,
         },
       });
     }
+
+    // // TODO refactor this block since it's just one input field
+    // if (name === 'email') {
+    //   this.setState({
+    //     inputs: {
+    //       //... is a spread operator. Copy existing key-value pairs from existing, to new object
+    //       ...this.state.inputs,
+    //       [name]: value,
+    //     },
+    //     errors: {
+    //       ...this.state.errors,
+    //       email:
+    //         // (value.includes('@') && value.slice(-4).includes('.com')) ||
+    //         // value.slice(-4).includes('.edu')
+    //         //   ? false
+    //         //   : true,
+
+    //         // ie fix, using ES5
+    //         (value.indexOf('@') > -1 && value.slice(-4).indexOf('.com') > -1) ||
+    //         value.slice(-4).indexOf('.edu') > -1
+    //           ? false
+    //           : true,
+    //     },
+    //   });
+    // } else {
+    //   this.setState({
+    //     inputs: {
+    //       ...this.state.inputs,
+    //       [name]: value,
+    //     },
+    //     errors: {
+    //       ...this.state.errors,
+    //       [name]: false,
+    //     },
+    //   });
+    // }
   };
 
   handleSubmit = e => {
@@ -71,15 +89,10 @@ class SectionStayInTouch extends React.Component {
     let successMessage = document.querySelector('.alert-success');
 
     if (this.state.inputs.email === '') {
-      this.setState({
-        errors: {
-          email: true,
-        },
-      });
       failMessageBox.style.display = 'block';
       failMessage.innerHTML = 'Please enter your email';
       this.setState({ show: true });
-    } else if (this.state.errors.email === true) {
+    } else if (this.state.errors.email === false) {
       invalidEmailMessage.innerHTML = 'Please enter a valid email';
       failMessage.innerHTML = '';
       failMessageBox.style.display = 'block';
@@ -105,14 +118,14 @@ class SectionStayInTouch extends React.Component {
         successMessage.style.display = 'none';
       }, 4000);
 
-      // add to database
-      const db = FirebaseConfig.firestore();
-      db.settings({
-        timestampsInSnapshots: true,
-      });
-      db.collection('StayInTouch').add({
-        email: this.state.inputs.email,
-      });
+      // // add to database
+      // const db = FirebaseConfig.firestore();
+      // db.settings({
+      //   timestampsInSnapshots: true,
+      // });
+      // db.collection('StayInTouch').add({
+      //   email: this.state.inputs.email,
+      // });
 
       // reset state
       this.setState({
