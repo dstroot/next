@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.scss';
-import { TimelineMax } from 'gsap';
+import TimelineMax from 'gsap/TimelineMax';
 
 // components
 import AnchorLink from 'react-anchor-link-smooth-scroll';

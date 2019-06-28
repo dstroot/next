@@ -26,14 +26,6 @@ describe('chart', () => {
     let tree = create(<ChartContainer />, { createNodeMock });
     expect(tree.toJSON()).toMatchSnapshot();
   });
-
-  it('it should say "Design Your Future"', () => {
-    const h1 = getMountedComponent()
-      .find('h1')
-      .first();
-
-    expect(h1.text()).toContain('Design Your Future');
-  });
 });
 
 // describe('futureValue', () => {

@@ -35,6 +35,7 @@ exports[`SectionStayInTouch it should render 1`] = `
             Enter your email address to receive updates
           </p>
           <form
+            noValidate={true}
             onSubmit={[Function]}
           >
             <div
@@ -46,12 +47,40 @@ exports[`SectionStayInTouch it should render 1`] = `
                 <div
                   className="col-md-6"
                 >
+                  <div
+                    className="react-reveal alert-success nxt_body-small mb-3"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <span>
+                      You are on the list!
+                    </span>
+                  </div>
+                  <div
+                    className="react-reveal alert-fail nxt_body-small mb-3"
+                    style={
+                      Object {
+                        "opacity": 0,
+                      }
+                    }
+                  >
+                    <span
+                      className="input-fail"
+                      id="fail-message"
+                    />
+                    <span
+                      className="input-fail"
+                      id="invalid-email-message"
+                    />
+                  </div>
                   <input
-                    className="form-control"
+                    className="form-control form-input"
                     name="email"
                     onChange={[Function]}
                     placeholder="Email Address"
-                    required={true}
                     type="email"
                     value=""
                   />
@@ -64,16 +93,6 @@ exports[`SectionStayInTouch it should render 1`] = `
               Submit
             </button>
           </form>
-          <h4
-            className="react-reveal alert col-md-6"
-            style={
-              Object {
-                "opacity": undefined,
-              }
-            }
-          >
-            You are on the list
-          </h4>
         </div>
       </div>
       <div />

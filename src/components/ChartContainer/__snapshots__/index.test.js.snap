@@ -8,34 +8,16 @@ exports[`chart it should render 1`] = `
     className="row"
   >
     <div
-      className="col-md-6"
-    >
-      <svg
-        className="d-block w-100"
-        height={300}
-      >
-        saving3.svg
-      </svg>
-    </div>
+      className="col-md-12"
+    />
     <div
-      className="col-md-6 text-center"
+      className="col-md-12 text-center"
     >
-      <h1
-        style={
-          Object {
-            "fontSize": "calc(36px + 1vw)",
-            "fontWeight": "300",
-            "marginBottom": "0",
-            "marginTop": "30",
-          }
-        }
-      >
-        Design Your Future
+      <h1>
+        Try Yourself
       </h1>
-      <p
-        className="lead text-muted mt-0"
-      >
-        See how fast your money can grow!
+      <p>
+        Use the slider to see how monthly income can change based on the monthly contribution amount and income start date.
       </p>
       <div
         className="mt-4"
@@ -43,9 +25,7 @@ exports[`chart it should render 1`] = `
         <div
           className="d-flex justify-content-between"
         >
-          <div
-            className="text-muted"
-          >
+          <div>
             Initial Deposit
           </div>
           <div>
@@ -109,9 +89,7 @@ exports[`chart it should render 1`] = `
         <div
           className="d-flex justify-content-between"
         >
-          <div
-            className="text-muted"
-          >
+          <div>
             Monthly Deposit
           </div>
           <div>
@@ -175,9 +153,7 @@ exports[`chart it should render 1`] = `
         <div
           className="d-flex justify-content-between"
         >
-          <div
-            className="text-muted"
-          >
+          <div>
             Risk Level
           </div>
           <div>
@@ -354,13 +330,11 @@ exports[`chart it should render 1`] = `
         className="d-flex justify-content-between mb-3 text-muted"
       >
         <div
-          className="p-2 font-weight-bold ml-5"
+          className="ml-5"
         >
           Today
         </div>
-        <div
-          className="p-2 font-weight-bold"
-        >
+        <div>
           30 Years
         </div>
       </div>
