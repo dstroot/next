@@ -1,7 +1,7 @@
 .background {
   /* Set height relative to width */
   height: 100vh;
-  min-height: 500px;
+  min-height: 700px;
 
   /* Position the image to scale nicely on all screens */
   background-position: bottom;
@@ -21,7 +21,7 @@
   .divText {
     max-width: 90%;
     position: absolute;
-    top: 34%;
+    top: 30vh;
   }
 }
 
