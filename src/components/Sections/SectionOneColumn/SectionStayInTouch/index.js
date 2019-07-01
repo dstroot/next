@@ -27,7 +27,7 @@ class SectionStayInTouch extends React.Component {
 
   handleOnChange = e => {
     // destructuring assignment - unpack values from object into distinct variable
-    const { name, value } = e.target;
+    const { name } = e.target;
 
     const emailInput = e.target.value;
     const emailValid = this.validateEmail(emailInput);

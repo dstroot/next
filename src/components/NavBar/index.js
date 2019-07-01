@@ -12,7 +12,6 @@ import HamButton from '../HamButton';
 
 // images
 import logo from './media/NXT_Logo_light.svg';
-import arrow from '../../components/HeroCarousel/media/arrowdown.svg';
 
 // hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
