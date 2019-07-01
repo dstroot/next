@@ -614,7 +614,7 @@ Array [
                     className="react-reveal alert-success nxt_body-small"
                     style={
                       Object {
-                        "opacity": undefined,
+                        "opacity": 0,
                       }
                     }
                   >
@@ -629,7 +629,7 @@ Array [
                     className="react-reveal alert-fail nxt_body-small"
                     style={
                       Object {
-                        "opacity": undefined,
+                        "opacity": 0,
                       }
                     }
                   >
