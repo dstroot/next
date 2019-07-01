@@ -16,7 +16,7 @@ class ContactForm extends React.Component {
         message: '',
       },
       phone: '',
-      show: true,
+      show: false,
       errors: {
         name: false,
         email: false,
@@ -69,6 +69,7 @@ class ContactForm extends React.Component {
       document.querySelector('#invalid-email-message').innerHTML =
         'Please enter a valid email';
       document.querySelector('.alert-fail').style.display = 'block';
+      this.setState({ show: true });
     }
   };
 
@@ -114,10 +115,12 @@ class ContactForm extends React.Component {
           email: true,
         },
       });
+      this.setState({ show: true });
     } else if (emptyFieldNames.length > 0) {
       failMessage.innerHTML =
         'Please complete the following field(s): ' + emptyFieldNames.join(', ');
       invalidEmailMessage.innerHTML = '';
+      this.setState({ show: true });
     } else {
       console.log('For Submitted!');
 

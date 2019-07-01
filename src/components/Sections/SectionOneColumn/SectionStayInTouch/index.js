@@ -42,42 +42,6 @@ class SectionStayInTouch extends React.Component {
         },
       });
     }
-
-    // // TODO refactor this block since it's just one input field
-    // if (name === 'email') {
-    //   this.setState({
-    //     inputs: {
-    //       //... is a spread operator. Copy existing key-value pairs from existing, to new object
-    //       ...this.state.inputs,
-    //       [name]: value,
-    //     },
-    //     errors: {
-    //       ...this.state.errors,
-    //       email:
-    //         // (value.includes('@') && value.slice(-4).includes('.com')) ||
-    //         // value.slice(-4).includes('.edu')
-    //         //   ? false
-    //         //   : true,
-
-    //         // ie fix, using ES5
-    //         (value.indexOf('@') > -1 && value.slice(-4).indexOf('.com') > -1) ||
-    //         value.slice(-4).indexOf('.edu') > -1
-    //           ? false
-    //           : true,
-    //     },
-    //   });
-    // } else {
-    //   this.setState({
-    //     inputs: {
-    //       ...this.state.inputs,
-    //       [name]: value,
-    //     },
-    //     errors: {
-    //       ...this.state.errors,
-    //       [name]: false,
-    //     },
-    //   });
-    // }
   };
 
   handleSubmit = e => {
@@ -118,14 +82,14 @@ class SectionStayInTouch extends React.Component {
         successMessage.style.display = 'none';
       }, 4000);
 
-      // // add to database
-      // const db = FirebaseConfig.firestore();
-      // db.settings({
-      //   timestampsInSnapshots: true,
-      // });
-      // db.collection('StayInTouch').add({
-      //   email: this.state.inputs.email,
-      // });
+      // add to database
+      const db = FirebaseConfig.firestore();
+      db.settings({
+        timestampsInSnapshots: true,
+      });
+      db.collection('StayInTouch').add({
+        email: this.state.inputs.email,
+      });
 
       // reset state
       this.setState({
