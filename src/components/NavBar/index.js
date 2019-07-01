@@ -122,9 +122,9 @@ const NavBar = () => {
             <ExactNavLink to="/" onClick={toggle}>
               Home
             </ExactNavLink>
-            <ExactNavLink to="/products" onClick={toggle}>
+            {/* <ExactNavLink to="/products" onClick={toggle}>
               Products
-            </ExactNavLink>
+            </ExactNavLink> */}
             <ExactNavLink to="/about" onClick={toggle}>
               About
             </ExactNavLink>
@@ -157,7 +157,7 @@ const NavBar = () => {
         <ExactNavLink to="/" onClick={toggle}>
           Home
         </ExactNavLink>
-        <div onClick={toggle}>
+        {/* <div onClick={toggle}>
           <div className="dropdown">
             Products <span> </span>
             <img
@@ -175,7 +175,7 @@ const NavBar = () => {
               </ExactNavLink>
             </div>
           </div>
-        </div>
+        </div> */}
         <ExactNavLink to="/about" onClick={toggle}>
           About
         </ExactNavLink>

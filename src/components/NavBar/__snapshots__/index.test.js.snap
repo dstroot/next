@@ -30,42 +30,6 @@ exports[`NavBar it should render large 1`] = `
     >
       Home
     </a>
-    <div
-      onClick={[Function]}
-    >
-      <div
-        className="dropdown"
-      >
-        Products 
-        <span>
-           
-        </span>
-        <img
-          alt="Arrow"
-          className="d-block-inline"
-          src="arrowdown.svg"
-          width={20}
-        />
-        <div
-          className="dropdown-content"
-        >
-          <a
-            className="nav-link"
-            href="/nextdeferredincomeannuity"
-            onClick={[Function]}
-          >
-            Next Deferred Income Annuity
-          </a>
-          <a
-            className="nav-link"
-            href="/lid"
-            onClick={[Function]}
-          >
-            Next Term Life
-          </a>
-        </div>
-      </div>
-    </div>
     <a
       className="nav-link"
       href="/about"
@@ -124,42 +88,6 @@ exports[`NavBar it should render small 1`] = `
       >
         Home
       </a>
-      <div
-        onClick={[Function]}
-      >
-        <div
-          className="dropdown"
-        >
-          Products 
-          <span>
-             
-          </span>
-          <img
-            alt="Arrow"
-            className="d-block-inline"
-            src="arrowdown.svg"
-            width={20}
-          />
-          <div
-            className="dropdown-content"
-          >
-            <a
-              className="nav-link"
-              href="/nextdeferredincomeannuity"
-              onClick={[Function]}
-            >
-              Next Deferred Income Annuity
-            </a>
-            <a
-              className="nav-link"
-              href="/lid"
-              onClick={[Function]}
-            >
-              Next Term Life
-            </a>
-          </div>
-        </div>
-      </div>
       <a
         className="nav-link"
         href="/about"

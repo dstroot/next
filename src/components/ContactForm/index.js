@@ -16,7 +16,7 @@ class ContactForm extends React.Component {
         message: '',
       },
       phone: '',
-      show: true,
+      show: false,
       errors: {
         name: false,
         email: false,
@@ -25,26 +25,28 @@ class ContactForm extends React.Component {
     };
   }
 
+  validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
   // set state for each property as user inputs & validate email
   handleOnChange = e => {
     // destructuring assignment - unpack values from object into distinct variable
     const { name, value } = e.target;
 
+    const emailInput = e.target.value;
+    const emailValid = this.validateEmail(emailInput);
+
     if (name === 'email') {
       this.setState({
         inputs: {
-          //... is a spread operator. Copy existing key-value pairs from existing, to new object
           ...this.state.inputs,
-          [name]: value,
+          email: emailInput,
         },
         errors: {
           ...this.state.errors,
-          email:
-            // TODO look into more comprehensive validation?
-            (value.includes('@') && value.slice(-4).includes('.com')) ||
-            value.slice(-4).includes('.edu')
-              ? false
-              : true,
+          email: !emailValid,
         },
       });
     } else {
@@ -62,11 +64,12 @@ class ContactForm extends React.Component {
   };
 
   // show invalid email message when field loses focus
-  handleOnBlur = e => {
+  handleOnBlur = () => {
     if (this.state.errors.email === true) {
       document.querySelector('#invalid-email-message').innerHTML =
         'Please enter a valid email';
       document.querySelector('.alert-fail').style.display = 'block';
+      this.setState({ show: true });
     }
   };
 
@@ -78,13 +81,9 @@ class ContactForm extends React.Component {
     let failMessage = document.querySelector('#fail-message');
     let failMessageBox = document.querySelector('.alert-fail');
 
-    // empty array to house empty field names
     const emptyFieldNames = [];
-
-    // empty object to house input state
     let errors = {};
 
-    // loop through input fields...
     for (var i = 0; i < inputFields.length; i++) {
       if (inputFields[i].value === '') {
         let inputName = inputFields[i].name;
@@ -93,17 +92,38 @@ class ContactForm extends React.Component {
         // add input name and value of true to new object
         errors[inputName] = true;
         failMessageBox.style.display = 'block';
+      } else {
+        let inputName = inputFields[i].name;
+        errors[inputName] = false;
       }
-    }
+    } // end of Loop
     this.setState({ errors });
 
-    if (this.state.errors.email === true) {
+    if (emptyFieldNames.length === 0 && this.state.errors.email === true) {
+      failMessageBox.style.display = 'block';
       invalidEmailMessage.innerHTML = 'Please enter a valid email';
+      this.setState({
+        errors: {
+          email: true,
+        },
+      });
+    } else if (this.state.errors.email === true) {
+      failMessage.innerHTML = '';
+      invalidEmailMessage.innerHTML = 'Please enter a valid email';
+      this.setState({
+        errors: {
+          email: true,
+        },
+      });
+      this.setState({ show: true });
     } else if (emptyFieldNames.length > 0) {
       failMessage.innerHTML =
         'Please complete the following field(s): ' + emptyFieldNames.join(', ');
       invalidEmailMessage.innerHTML = '';
+      this.setState({ show: true });
     } else {
+      console.log('For Submitted!');
+
       failMessage.innerHTML = '';
       invalidEmailMessage.innerHTML = '';
       failMessageBox.style.display = 'none';

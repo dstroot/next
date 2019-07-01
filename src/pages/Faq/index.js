@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
+
 // component
 import SectionHero from '../../components/Sections/SectionHero';
 import Footer from '../../components/Footer';
-// import Button from '../../components/Buttons/Button';
 
 const Faq = () => {
   // Set the page title and position using the useEffect hook
