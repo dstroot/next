@@ -253,7 +253,7 @@ class ContactForm extends React.Component {
             />
           </div>
           <div>
-            <label>Phone</label>
+            <label>Phone Number</label>
             <PhoneInput
               className="form-control mb-3"
               country="US"
