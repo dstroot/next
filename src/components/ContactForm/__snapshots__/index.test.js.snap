@@ -67,7 +67,7 @@ exports[`ContactForm it should render 1`] = `
     </div>
     <div>
       <label>
-        Phone
+        Phone Number
       </label>
       <input
         autoComplete="tel"

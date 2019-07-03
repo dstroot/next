@@ -669,7 +669,7 @@ Array [
                   </div>
                   <div>
                     <label>
-                      Phone
+                      Phone Number
                     </label>
                     <input
                       autoComplete="tel"
