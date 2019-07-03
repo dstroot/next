@@ -215,7 +215,7 @@ class ContactForm extends React.Component {
             <div className="alert-success nxt_body-small">
               <p>We received your message! We’ll get back to you shortly.</p>
               <p>
-                If this is an urgent matter, pleae call us at (833) 646-6398
+                If this is an urgent matter, pleae call us at (833) 646-6398.
               </p>
             </div>
             <div className="alert-fail nxt_body-small">
