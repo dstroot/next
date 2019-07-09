@@ -7,6 +7,7 @@ export class TimelineMax {
     this.from = jest.fn().mockReturnThis();
     this.fromTo = jest.fn().mockReturnThis();
     this.staggerFrom = jest.fn().mockReturnThis();
+    this.staggerTo = jest.fn().mockReturnThis();
   }
 }
 

@@ -39,6 +39,13 @@ exports[`NavBar it should render large 1`] = `
     </a>
     <a
       className="nav-link"
+      href="/faq"
+      onClick={[Function]}
+    >
+      FAQ
+    </a>
+    <a
+      className="nav-link"
       href="/contact"
       onClick={[Function]}
     >
@@ -87,6 +94,13 @@ exports[`NavBar it should render small 1`] = `
         onClick={[Function]}
       >
         About
+      </a>
+      <a
+        className="nav-link"
+        href="/faq"
+        onClick={[Function]}
+      >
+        FAQ
       </a>
       <a
         className="nav-link"

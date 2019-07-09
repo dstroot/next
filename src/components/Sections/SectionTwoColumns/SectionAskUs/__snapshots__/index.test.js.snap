@@ -60,13 +60,14 @@ exports[`SectionAskUs it should render 1`] = `
               className="text-left nxt_body-xsmall"
             >
               <form
+                noValidate={true}
                 onSubmit={[Function]}
               >
                 <div
-                  className="react-reveal alert nxt_body-small"
+                  className="react-reveal alert-success nxt_body-small"
                   style={
                     Object {
-                      "opacity": undefined,
+                      "opacity": 0,
                     }
                   }
                 >
@@ -77,41 +78,51 @@ exports[`SectionAskUs it should render 1`] = `
                     If this is an urgent matter, pleae call us at (833) 646-6398
                   </p>
                 </div>
+                <div
+                  className="react-reveal alert-fail nxt_body-small"
+                  style={
+                    Object {
+                      "opacity": 0,
+                    }
+                  }
+                >
+                  <span
+                    className="input-fail"
+                    id="fail-message"
+                  />
+                  <span
+                    className="input-fail"
+                    id="invalid-email-message"
+                  />
+                </div>
                 <div>
                   <label>
                     Name
                   </label>
                   <input
-                    className="form-control mb-3"
+                    className="form-control form-input"
                     name="name"
                     onChange={[Function]}
-                    required={true}
                     type="text"
                     value=""
                   />
-                  <div
-                    class="invalid-feedback"
-                  >
-                    Invalid Name
-                  </div>
                 </div>
                 <div>
                   <label>
                     Email
                   </label>
                   <input
-                    className="form-control mb-3"
+                    className="form-control form-input"
                     name="email"
+                    onBlur={[Function]}
                     onChange={[Function]}
-                    pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{1,}[.]{1}[a-zA-Z]{2,}"
-                    required={true}
                     type="email"
                     value=""
                   />
                 </div>
                 <div>
                   <label>
-                    Phone
+                    Phone Number
                   </label>
                   <input
                     autoComplete="tel"
@@ -129,7 +140,7 @@ exports[`SectionAskUs it should render 1`] = `
                     Message
                   </label>
                   <textarea
-                    className="form-control mb-3"
+                    className="form-control mb-3 form-input"
                     name="message"
                     onChange={[Function]}
                     required={true}

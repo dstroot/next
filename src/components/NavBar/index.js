@@ -12,7 +12,6 @@ import HamButton from '../HamButton';
 
 // images
 import logo from './media/NXT_Logo_light.svg';
-import arrow from '../../components/HeroCarousel/media/arrowdown.svg';
 
 // hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -122,9 +121,9 @@ const NavBar = () => {
             <ExactNavLink to="/" onClick={toggle}>
               Home
             </ExactNavLink>
-            <ExactNavLink to="/products" onClick={toggle}>
+            {/* <ExactNavLink to="/products" onClick={toggle}>
               Products
-            </ExactNavLink>
+            </ExactNavLink> */}
             <ExactNavLink to="/about" onClick={toggle}>
               About
             </ExactNavLink>
@@ -157,7 +156,7 @@ const NavBar = () => {
         <ExactNavLink to="/" onClick={toggle}>
           Home
         </ExactNavLink>
-        <ExactNavLink to="/#" onClick={toggle}>
+        {/* <div onClick={toggle}>
           <div className="dropdown">
             Products <span> </span>
             <img
@@ -166,16 +165,16 @@ const NavBar = () => {
               src={arrow}
               alt="Arrow"
             />
-            <div class="dropdown-content">
+            <div className="dropdown-content">
               <ExactNavLink to="/nextdeferredincomeannuity" onClick={toggle}>
-                <a href="#">Next Deferred Income Annuity</a>
+                Next Deferred Income Annuity
               </ExactNavLink>
               <ExactNavLink to="/lid" onClick={toggle}>
-                <a href="#">Next Term Life</a>
+                Next Term Life
               </ExactNavLink>
             </div>
           </div>
-        </ExactNavLink>
+        </div> */}
         <ExactNavLink to="/about" onClick={toggle}>
           About
         </ExactNavLink>
