@@ -16,13 +16,12 @@ import NavBar from './components/NavBar';
 import NotFound from './pages/NotFound';
 import Home from './pages/Home';
 import About from './pages/About';
-import Faq from './pages/Faq';
 import NextDeferredIncomeAnnuity from './pages/NextDeferredIncomeAnnuity';
-import Lid from './pages/NextTermLife';
 import Contact from './pages/Contact';
 import TermsOfUse from './pages/TermsOfUse';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import SocialMediaGuidelines from './pages/SocialMediaGuidelines';
+import Faq from './pages/Faq';
 
 const App = () => (
   <div className="mt-5">
@@ -34,7 +33,6 @@ const App = () => (
         <About path="/about" />
         <Faq path="/faq" />
         <NextDeferredIncomeAnnuity path="/nextdeferredincomeannuity" />
-        <Lid path="/lid" />
         <Contact path="/contact" />
         <TermsOfUse path="/terms" />
         <PrivacyPolicy path="/privacy" />

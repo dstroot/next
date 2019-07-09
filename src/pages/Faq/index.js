@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
+
 // component
-import SectionHero from '../../components/Sections/SectionHero';
 import Footer from '../../components/Footer';
-import Button from '../../components/Buttons/Button';
+import FaqCard from '../../components/FaqCard';
+import Accordion from '../../components/Accordion';
 
 const Faq = () => {
   // Set the page title and position using the useEffect hook
@@ -13,14 +14,8 @@ const Faq = () => {
 
   return (
     <div>
-      <SectionHero
-        heading={
-          <div>
-            <h1 className="nxt_heading-xlarge">FAQ</h1>
-          </div>
-        }
-        content={<div />}
-      />
+      <FaqCard />
+      <Accordion />
       <Footer />
     </div>
   );
