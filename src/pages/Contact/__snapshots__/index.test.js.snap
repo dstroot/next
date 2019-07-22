@@ -68,7 +68,7 @@ exports[`Contact it should render 1`] = `
       className="container"
     >
       <h1
-        className="react-reveal text-center nxt_heading-xlarge undefined"
+        className="react-reveal text-center nxt_heading-large undefined"
         style={
           Object {
             "opacity": undefined,
@@ -209,7 +209,7 @@ exports[`Contact it should render 1`] = `
                     />
                   </div>
                   <button
-                    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
+                    className="btn btn-primary nxt_rounded-pill nxt_body-small px-4 py-2 submit"
                   >
                     Submit
                   </button>

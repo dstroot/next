@@ -437,11 +437,6 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
               href="#stayintouch"
               onClick={[Function]}
             >
-              <p
-                className="mt-4 mb-2 text-uppercase text-primary"
-              >
-                Learn More
-              </p>
               <img
                 alt="Arrow"
                 className="d-block-inline"
@@ -484,7 +479,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
               className="col-md-6"
             >
               <h1
-                className="nxt_heading-xlarge"
+                className="nxt_heading-large"
               >
                 A safety net for later
               </h1>
@@ -518,7 +513,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
               className="col-md-6 order-1 order-sm-2"
             >
               <h1
-                className="nxt_heading-xlarge"
+                className="nxt_heading-large"
               >
                 Plays nice with other retirement products
               </h1>
@@ -541,7 +536,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
         className="container text-center"
       >
         <div
-          className="react-reveal nxt_heading-xlarge mb-5"
+          className="react-reveal nxt_heading-large mb-5"
           style={
             Object {
               "opacity": undefined,
@@ -618,7 +613,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
                 </div>
               </div>
               <button
-                className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
+                className="btn btn-primary nxt_rounded-pill nxt_body-small px-4 py-2 submit"
               >
                 Submit
               </button>
@@ -636,7 +631,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
       className="container"
     >
       <h1
-        className="react-reveal text-center nxt_heading-xlarge undefined"
+        className="react-reveal text-center nxt_heading-large undefined"
         style={
           Object {
             "opacity": undefined,
@@ -754,7 +749,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
       className="container text-center"
     >
       <div
-        className="react-reveal nxt_heading-xlarge mb-5"
+        className="react-reveal nxt_heading-large mb-5"
         style={
           Object {
             "opacity": undefined,
@@ -852,7 +847,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
       className="container text-center"
     >
       <div
-        className="react-reveal nxt_heading-xlarge mb-5"
+        className="react-reveal nxt_heading-large mb-5"
         style={
           Object {
             "opacity": undefined,
@@ -888,7 +883,7 @@ exports[`NextDeferredIncomeAnnuity it should render 1`] = `
               target="_blank"
             >
               <button
-                className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+                className="btn btn-primary nxt_rounded-pill nxt_body-small px-4 py-2"
               >
                 View Site
               </button>

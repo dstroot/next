@@ -9,7 +9,7 @@ exports[`SectionManageUncertainty it should render 1`] = `
       className="container"
     >
       <h1
-        className="react-reveal text-center nxt_heading-xlarge undefined"
+        className="react-reveal text-center nxt_heading-large undefined"
         style={
           Object {
             "opacity": undefined,
@@ -48,7 +48,7 @@ exports[`SectionManageUncertainty it should render 1`] = `
               }
             >
               <h1
-                className="nxt_heading-xlarge"
+                className="nxt_heading-large"
               >
                 A way to manage uncertainty
               </h1>

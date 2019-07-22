@@ -7,7 +7,7 @@ exports[`Button it should render 1`] = `
   onClick={[Function]}
 >
   <button
-    className="btn btn-primary rounded-pill nxt_body-small px-4 py-2"
+    className="btn btn-primary nxt_rounded-pill nxt_body-small px-4 py-2"
   />
 </a>
 `;

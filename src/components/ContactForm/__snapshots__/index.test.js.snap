@@ -94,7 +94,7 @@ exports[`ContactForm it should render 1`] = `
       />
     </div>
     <button
-      className="btn btn-primary rounded-pill nxt_body-small px-4 py-2 submit"
+      className="btn btn-primary nxt_rounded-pill nxt_body-small px-4 py-2 submit"
     >
       Submit
     </button>

@@ -9,7 +9,7 @@ exports[`Card it should render 1`] = `
   >
     <img
       alt="Evergreen"
-      className="mb-2"
+      className="mb-3"
     />
     <div
       className="card-title nxt_heading-small mb-4"

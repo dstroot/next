@@ -14,7 +14,7 @@ exports[`SectionDesignWithYouInMind it should render 1`] = `
         className="container"
       >
         <h1
-          className="react-reveal text-center nxt_heading-xlarge mb-5"
+          className="react-reveal text-center nxt_heading-large mb-5"
           style={
             Object {
               "opacity": undefined,

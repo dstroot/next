@@ -8,7 +8,7 @@ exports[`SectionHowItWorks it should render 1`] = `
     className="container text-center"
   >
     <div
-      className="react-reveal nxt_heading-xlarge mb-5"
+      className="react-reveal nxt_heading-large mb-5"
       style={
         Object {
           "opacity": undefined,

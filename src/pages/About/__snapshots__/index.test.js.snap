@@ -159,7 +159,7 @@ exports[`About it should render 1`] = `
       className="container"
     >
       <h1
-        className="react-reveal text-center nxt_heading-xlarge undefined"
+        className="react-reveal text-center nxt_heading-large undefined"
         style={
           Object {
             "opacity": undefined,
@@ -198,7 +198,7 @@ exports[`About it should render 1`] = `
               }
             >
               <h1
-                className="nxt_heading-xlarge"
+                className="nxt_heading-large"
               >
                 Our Story
               </h1>
@@ -228,7 +228,7 @@ exports[`About it should render 1`] = `
             className="container"
           >
             <h1
-              className="react-reveal text-center nxt_heading-xlarge text-center mb-5"
+              className="react-reveal text-center nxt_heading-large text-center mb-5"
               style={
                 Object {
                   "opacity": undefined,
@@ -395,7 +395,7 @@ exports[`About it should render 1`] = `
       className="container text-center"
     >
       <h1
-        className="react-reveal nxt_heading-xlarge"
+        className="react-reveal nxt_heading-large"
         style={
           Object {
             "opacity": undefined,

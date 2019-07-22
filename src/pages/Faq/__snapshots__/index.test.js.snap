@@ -3,43 +3,186 @@
 exports[`Faq it should render 1`] = `
 <div>
   <div
-    className="background"
+    className="bg-light py-6"
   >
     <div
-      className="divText"
+      className="nxt_heading-xlarge text-center"
+    >
+      FAQ
+    </div>
+    <div
+      className="my-5 text-center"
+    >
+      All references to “you or your” assumes the insured and policy owner are the same person.
+    </div>
+    <div
+      className="container"
     >
       <div
-        className="container"
+        className="row mb-4"
       >
         <div
-          className="row"
+          className="col-sm text-center"
         >
           <div
-            className="col text-center"
+            className="card h-40 py-4"
           >
+            <img
+              alt="Speech Bubble"
+              className="nxt_icon pb-3"
+              src="speech_bubble.svg"
+            />
             <div>
-              <h1
-                className="nxt_heading-xlarge"
-              >
-                FAQ
-              </h1>
+              Frequently used terms
             </div>
           </div>
         </div>
         <div
-          className="row"
+          className="col-sm text-center"
         >
           <div
-            className="col-md-8 offset-md-2 text-center"
+            className="card h-40 py-4"
           >
-            <p
-              className="mt-4 circular"
-            >
-              <div />
-            </p>
+            <img
+              alt="Plant"
+              className="nxt_icon pb-3"
+              src="plant.svg"
+            />
+            <div>
+              Life insurance basics
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Shield"
+              className="nxt_icon pb-3"
+              src="shield.svg"
+            />
+            <div>
+              Next Term Life
+            </div>
           </div>
         </div>
       </div>
+      <div
+        className="row mb-4"
+      >
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Checkbox"
+              className="nxt_icon pb-3"
+              src="checkbox.svg"
+            />
+            <div>
+              Eligibility
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Clipboard"
+              className="nxt_icon pb-3"
+              src="clipboard.svg"
+            />
+            <div>
+              Applying
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Moneybag"
+              className="nxt_icon pb-3"
+              src="moneybag.svg"
+            />
+            <div>
+              Premium Payment
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="row mb-4"
+      >
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Legal Document"
+              className="nxt_icon pb-3"
+              src="legal_document.svg"
+            />
+            <div>
+              Managing Your Policy
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="Dollar Document"
+              className="nxt_icon pb-3"
+              src="dollar_document.svg"
+            />
+            <div>
+              Claims
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-sm text-center"
+        >
+          <div
+            className="card h-40 py-4"
+          >
+            <img
+              alt="People Group"
+              className="nxt_icon pb-3"
+              src="people_group.svg"
+            />
+            <div>
+              Beneficiaries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container my-5"
+  >
+    <div
+      className="nxt_heading-large"
+    >
+      Create the accordian here
     </div>
   </div>
   <div

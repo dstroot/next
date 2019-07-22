@@ -19,16 +19,13 @@ exports[`NavBar it should render large 1`] = `
   <div
     className="navbar-collapse collapse"
   >
-    <div
-      className="mx-auto"
-    />
     <a
       aria-current="page"
       className="active nav-link"
       href="/"
       onClick={[Function]}
     >
-      Home
+      Prodcts
     </a>
     <a
       className="nav-link"
@@ -77,16 +74,13 @@ exports[`NavBar it should render small 1`] = `
     <div
       className="navbar-collapse collapse"
     >
-      <div
-        className="mx-auto"
-      />
       <a
         aria-current="page"
         className="active nav-link"
         href="/"
         onClick={[Function]}
       >
-        Home
+        Prodcts
       </a>
       <a
         className="nav-link"
