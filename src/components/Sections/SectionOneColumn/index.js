@@ -8,7 +8,7 @@ const SectionOneColumn = props => {
     <div className={`py-6 ${props.styleBackground}`}>
       <div className="container text-center">
         <Fade bottom>
-          <div className="nxt_heading-xlarge mb-5">{props.heading}</div>
+          <div className="nxt_heading-large mb-5">{props.heading}</div>
           <div>{props.content}</div>
         </Fade>
         {/* Optional div to bypass Fade */}

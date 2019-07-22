@@ -17,7 +17,7 @@ const SectionSafetyNet = () => {
         <div>
           <div className="row">
             <div className="col-md-6">
-              <h1 className="nxt_heading-xlarge">A safety net for later</h1>
+              <h1 className="nxt_heading-large">A safety net for later</h1>
               <p>
                 Create an income goal for the future along with a plan that fits
                 your priorities and budget. At a future date, Next Deferred
@@ -41,7 +41,7 @@ const SectionSafetyNet = () => {
               />
             </div>
             <div className="col-md-6 order-1 order-sm-2">
-              <h1 className="nxt_heading-xlarge">
+              <h1 className="nxt_heading-large">
                 Plays nice with other retirement products
               </h1>
               <p>

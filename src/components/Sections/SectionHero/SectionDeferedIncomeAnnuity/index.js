@@ -31,7 +31,7 @@ const SectiionDeferedIncomeAnnuity = () => {
         heroImage={mountainbike}
         linkElement={
           <AnchorLink href="#stayintouch" className="text-decoration-none mt-4">
-            <p className="mt-4 mb-2 text-uppercase text-primary">Learn More</p>
+            {/* <p className="mt-4 mb-2 text-uppercase text-primary">Learn More</p> */}
             <img
               className="d-block-inline"
               width={45}

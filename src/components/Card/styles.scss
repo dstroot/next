@@ -2,7 +2,7 @@
 
 .card {
   @include border-radius(12px !important);
-  border: 1px solid theme-color('primary-dark') !important;
+  border: 1px solid theme-color('secondary-dark') !important;
   max-width: 400px;
   margin: 0 auto;
 }

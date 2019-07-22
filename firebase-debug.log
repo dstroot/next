@@ -1,0 +1,12 @@
+[debug] [2019-07-16T22:07:42.512Z] ----------------------------------------------------------------------
+[debug] [2019-07-16T22:07:42.514Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login --no-localhost
+[debug] [2019-07-16T22:07:42.514Z] CLI Version:   7.1.0
+[debug] [2019-07-16T22:07:42.514Z] Platform:      darwin
+[debug] [2019-07-16T22:07:42.514Z] Node Version:  v10.15.3
+[debug] [2019-07-16T22:07:42.514Z] Time:          Tue Jul 16 2019 15:07:42 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-07-16T22:07:42.515Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=19918531&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 

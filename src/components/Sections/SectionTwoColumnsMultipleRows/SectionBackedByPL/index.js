@@ -15,7 +15,7 @@ const SectionBackedByPL = () => {
         styleBackground="bg-light"
         styleTextAlign="text-center"
         sectionHead={
-          <h1 className="nxt_heading-xlarge">Backed by Pacific Life</h1>
+          <h1 className="nxt_heading-large">Backed by Pacific Life</h1>
         }
         content={
           <>

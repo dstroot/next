@@ -21,7 +21,7 @@ const SectionManageUncertainty = () => {
           <img className="img-fluid p-5" src={canoeCouple} alt="Canoe Couple" />
         }
         heading={
-          <h1 className="nxt_heading-xlarge">A way to manage uncertainty</h1>
+          <h1 className="nxt_heading-large">A way to manage uncertainty</h1>
         }
         contentRight="Plans change over time—your insurance products can too. Redefine
               your insurance products as life happens."

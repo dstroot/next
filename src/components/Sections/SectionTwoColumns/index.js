@@ -11,9 +11,7 @@ const SectionTwoColumns = props => {
       <div className="container">
         <Fade bottom>
           <h1
-            className={`text-center nxt_heading-xlarge ${
-              props.sectionHeadStyle
-            }`}
+            className={`text-center nxt_heading-large ${props.sectionHeadStyle}`}
           >
             {props.sectionHead}
           </h1>

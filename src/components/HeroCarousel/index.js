@@ -386,9 +386,9 @@ class HeroCarousel extends React.Component {
                     href="#bestlife"
                     className="text-decoration-none mt-4"
                   >
-                    <p className="mt-4 mb-2 text-uppercase text-primary">
+                    {/* <p className="mt-4 mb-2 text-uppercase text-primary">
                       Learn More
-                    </p>
+                    </p> */}
                     <img
                       className="d-block-inline"
                       width={45}

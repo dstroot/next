@@ -1,4 +1,5 @@
 .navbar {
+  padding: 1rem !important;
   // box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.1);
   // text-transform: uppercase;
   // height: 110px;
@@ -11,7 +12,7 @@
     // text-transform: uppercase;
     font-weight: 400;
     color: gray('800');
-    font-size: 24px;
+    font-size: 18px;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     padding-bottom: 2px;
     &:hover {
@@ -34,8 +35,7 @@
   }
 
   .navbar-brand img {
-    width: 115px;
-    height: 53px;
+    width: 100px;
   }
 }
 
@@ -64,29 +64,78 @@
   }
 }
 
-/************ dropdown ****************/
+// /************ dropdown ****************/
+// nav {
+//   margin-bottom: 100px;
+// }
 
-.dropdown-content {
-  display: none;
+.nav,
+.nav a,
+.nav ul,
+.nav li {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  cursor: default;
+  width: 100%;
+}
+
+.nav > li {
+  position: relative;
+  padding: 10px 0;
+  z-index: 999;
+  // background-color: #ffffff;
+}
+
+.nav > li:hover {
+  cursor: pointer;
+}
+
+.nav li {
+  list-style: none;
+  position: relative;
+}
+
+.nav > li:last-child {
+  flex: 1;
+}
+
+.nav > li > a {
+  display: block;
+  z-index: 510;
+  height: 54px;
+  width: 180px;
+  padding: 0 10px;
+  line-height: 54px;
+  text-align: left;
+}
+
+.nav .subnav-block li a {
+  display: block;
+  line-height: 24px;
+  font-size: 14px;
+  color: theme-color('light');
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.nav .subnav-block li a:hover {
+  color: theme-color('accent');
+}
+
+.subnav-block {
   position: absolute;
-  background-color: #f1f1f1;
-  width: auto;
-  z-index: 1;
-}
-
-.dropdown-content a {
-  padding: 6px 12px;
-  text-decoration: none;
-  display: block;
-  font-size: 20px;
-  white-space: nowrap;
-}
-
-.dropdown-content a:hover {
-  background-color: theme-color('primary-dark');
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+  top: 80px;
+  width: 100% !important;
+  padding: 20px 0 !important;
+  visibility: hidden;
+  opacity: 1;
+  height: 0;
+  background: theme-color('primary-dark');
 }

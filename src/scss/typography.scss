@@ -12,8 +12,8 @@ $circular: 'CircularStd', sans-serif;
 
 body {
   font-family: $circular;
-  font-size: calc(16px + 0.5vw);
-  line-height: calc(24px + 1vw);
+  font-size: calc(12px + 0.5vw);
+  line-height: calc(20px + 1vw);
 }
 
 // Next custom header
@@ -26,19 +26,21 @@ body {
 
 .nxt_heading-large {
   font-family: $zilla-slab;
-  font-size: calc(60px);
+  font-size: calc(28px + 1.5vw + 0.5vmin);
   font-weight: 600;
+  line-height: calc(30px + 2.5vw);
 }
 
 .nxt_heading-medium {
   font-family: $zilla-slab;
-  font-size: calc(48px);
+  font-size: 48px;
   font-weight: 600;
 }
 
 .nxt_heading-small {
   font-family: $zilla-slab;
-  font-size: calc(26px + 0.5vw + 0.5vmin);
+  font-size: 24px;
+  // font-size: calc(26px + 0.5vw + 0.5vmin);
   font-weight: 600;
 }
 
@@ -79,16 +81,17 @@ body {
 @media screen and (min-width: 1200px) {
   // setting max font size based on Amasa Design System
   body {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 1.6em;
   }
 
   .nxt_heading-xlarge {
-    font-size: 72px;
+    font-size: 60px;
     line-height: 86px;
   }
 
-  .nxt_heading-small {
-    font-size: 36px;
+  .nxt_heading-large {
+    font-size: 48px;
+    line-height: 1.2em;
   }
 }
